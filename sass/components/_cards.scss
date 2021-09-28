@@ -1,0 +1,331 @@
+.card {
+  -moz-perspective: 150rem;
+  perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  @include respond(tab-land) {
+    height: auto;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 3rem $box-shadow-1;
+  }
+
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: $border-radius;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+    overflow: hidden;
+
+    @include respond(tab-land) {
+      height: auto;
+      margin-top: -4rem;
+    }
+
+    &--front {
+      background-color: $color-white;
+
+      @include react(dark) {
+        background-color: $color-grey-dark;
+      }
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary,
+          darken($color-secondary, 30%)
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary,
+          darken($color-primary-light, 30%)
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-teal,
+          $color-teal-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+
+    @include respond(tab-land) {
+      transform: rotateY(0);
+    }
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+  //front side styling
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+
+    &--1 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-secondary,
+          darken($color-secondary, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card__picture--1-resp.jpg?sfvrsn=15e2c1ba_2);
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--1.jpg?sfvrsn=a8cff9ba_2
+    }
+    &--2 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-primary,
+          darken($color-primary-light, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card__picture--2-resp.jpg?sfvrsn=b0e2c1ba_2);
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--2.jpg?sfvrsn=3dcef9ba_2
+    }
+    &--3 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-teal,
+          $color-teal-dark
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card__picture--2-resp.jpg?sfvrsn=b0e2c1ba_2);
+      background-position: bottom;
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--3.jpg?sfvrsn=d9cff9ba_2
+    }
+    &--ag-1 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-secondary,
+          darken($color-secondary, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card-ag-1.jpg?sfvrsn=e3e7c1ba_2);
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--1.jpg?sfvrsn=a8cff9ba_2
+    }
+    &--ag-2 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-primary,
+          darken($color-primary-light, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card-ag-2.jpg?sfvrsn=e2e7c1ba_2);
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--2.jpg?sfvrsn=3dcef9ba_2
+    }
+    &--ag-3 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-teal,
+          $color-teal-dark
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card-ag-3.jpg?sfvrsn=e4e7c1ba_2);
+      background-position: bottom;
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--3.jpg?sfvrsn=d9cff9ba_2
+    }
+    &--ssw-1 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-secondary,
+          darken($color-secondary, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card-ssw-1.jpg?sfvrsn=49fcc1ba_2);
+      background-position: bottom;
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--1.jpg?sfvrsn=a8cff9ba_2
+    }
+    &--ssw-2 {
+      background-image: linear-gradient(
+          to bottom right,
+          $color-primary,
+          darken($color-primary-light, 30%)
+        ),
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/card-img/img-resp/card-ssw-2.jpg?sfvrsn=f4fcc1ba_2);
+      //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/card__picture--2.jpg?sfvrsn=3dcef9ba_2
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white !important;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 75%;
+
+    @include react(dark) {
+      color: $color-grey-dark;
+    }
+
+    @include respond(card-head-fix) {
+      top: 4rem;
+    }
+    @include respond(card-fix) {
+      top: 4rem;
+    }
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    line-height: 2;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary, 0.85),
+        rgba(darken($color-secondary, 30%), 0.85)
+      );
+    }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.85),
+        rgba(darken($color-primary-light, 30%), 0.85)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-teal, 0.85),
+        rgba($color-teal-dark, 0.85)
+      );
+    }
+  }
+  &__details {
+    padding: 3rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        margin-bottom: 0.2rem;
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-lighter;
+          padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  &__signup {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+
+    @include react(dark) {
+      color: $color-grey-dark;
+    }
+  }
+  &__signup-service {
+    font-size: 2rem;
+    text-transform: uppercase;
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+    &--back-heading {
+      font-size: 4rem;
+      font-weight: 100;
+      font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica,
+        Arial, sans-serif;
+    }
+  }
+  &__signup-details {
+    font-size: 1.5rem;
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  @include respond(tab-land) {
+    .card {
+      height: auto;
+      box-shadow: 0 1.5rem 3rem $box-shadow-1;
+      border-radius: 3px;
+      margin-bottom: 2rem;
+      background-color: $color-white;
+
+      &__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+
+        &--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+
+      &:hover &__side--front {
+        transform: rotateY(0deg);
+      }
+      &:hover &__side--back {
+        transform: rotateY(0deg);
+      }
+      //front side styling
+
+      &__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem;
+      }
+      &__signup {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 3rem;
+      }
+      &__signup-service {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        &:not(:first-child) {
+          margin-top: 2rem;
+        }
+        &--back-heading {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

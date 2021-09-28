@@ -1,0 +1,206 @@
+//section - intro
+.section-intro {
+  height: 95vh;
+  background-image: linear-gradient(
+      rgba(darken($color-teal, 40%), 0.7),
+      rgba(darken($color-teal-dark, 40%), 0.7)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-min-min.jpg?sfvrsn=4ae5c1ba_2);
+  background-size: cover;
+  align-items: center;
+  background-attachment: fixed;
+  position: relative;
+
+  @include respond(phone) {
+    background-image: none;
+    background-color: $color-teal-dark;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    @include respond(phone) {
+      top: 3rem;
+      left: -7rem;
+    }
+  }
+  &__logo {
+    height: 3.5rem;
+
+    @include respond(phone) {
+      visibility: hidden;
+    }
+
+    &--lh {
+      height: 15rem;
+
+      @include respond(phone) {
+        visibility: hidden;
+      }
+      @include respond(tab-land) {
+        height: 10rem;
+      }
+    }
+  }
+  &__logo--vert {
+    height: 10rem;
+    visibility: hidden;
+    @include respond(phone) {
+      visibility: visible;
+    }
+  }
+  &__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__btns {
+    text-align: left;
+  }
+}
+
+.intro__heading {
+  @include respond(phone-ex-small) {
+    margin-top: 2rem;
+  }
+}
+
+.section__intro--sub {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
+  &--ag {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ag-resp/hero-ag-top-min.jpg?sfvrsn=d8f8c1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-purp;
+    }
+  }
+  &--si {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/si-hero-imgs-resp/hero-si-top-min.jpg?sfvrsn=4bfbc1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-grey-dark;
+    }
+  }
+  &--ip {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-ip-top-min.jpg?sfvrsn=92fdc1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-pink;
+    }
+  }
+  &--ssw {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ssw-img-resp/hero-ssw-top-min.jpg?sfvrsn=e8fbc1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-pink;
+    }
+  }
+  &--ssw-asp {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ssw-asp-top.jpg?sfvrsn=232cc4ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+  &--ell {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ell-top.jpg?sfvrsn=851ac4ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+  &--fsr {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-fsr-img-resp/hero-fsr-top-min.jpg?sfvrsn=cdfec1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-pink;
+    }
+  }
+  &--au {
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-site-grey, 0.6) 0%,
+        rgba($color-site-grey, 0.8) 50%,
+        rgba($color-site-grey, 0.6) 100%
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-au-imgs-resp/hero-au-top-min.jpg?sfvrsn=b0fec1ba_2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    @include respond(phone) {
+      background-image: none;
+      background-color: $color-purp-dark;
+    }
+  }
+}

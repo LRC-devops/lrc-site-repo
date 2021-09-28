@@ -1,0 +1,138 @@
+//Index.html -- main LRC page
+
+//section - about us
+.section__about-us {
+  background-image: linear-gradient(rgba($color-black, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-index-section-about-min.jpg?sfvrsn=48e5c1ba_2);
+  //https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/devonshire-1k-rifcj7cy-unsplash.jpg?sfvrsn=17eff9ba_2
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10rem 0;
+
+  @include respond(phone) {
+    background-image: none;
+    background-color: $color-pink;
+  }
+}
+
+//section - LRC
+.section__lrc {
+  background-color: $color-white;
+
+  @include react(dark) {
+    background-color: $color-grey-dark;
+  }
+
+  padding: 15rem 0;
+  //margin-top: -17rem;
+  &--col {
+    hyphens: auto;
+  }
+  &--text {
+    border-bottom: 1px solid $color-grey-lighter;
+  }
+  &--img {
+    img {
+      width: 100%;
+    }
+  }
+}
+.section__testimonials {
+  position: relative;
+  padding-left: 15rem 0;
+
+  @include react(dark) {
+    background-color: rgba($color-grey-dark, 0.5);
+  }
+
+  @include respond(tab-port) {
+    padding: 8rem;
+    margin-top: 0;
+  }
+  @include respond(phone-small) {
+    padding: 3rem 0;
+  }
+}
+
+.section__services {
+  background-color: $color-white;
+  padding: 10rem;
+
+  @include react(dark) {
+    background-color: darken($color-grey-dark, 10%);
+  }
+
+  @include respond(phone-small) {
+    padding: 3rem;
+  }
+}
+
+.section__overview {
+  background-image: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.3)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/devonshire-1k-rifcj7cy-unsplash.jpg?sfvrsn=17eff9ba_2);
+  background-size: cover;
+  //height: 100vh;
+  background-attachment: fixed;
+  padding: 10rem 0;
+  //position: relative;
+
+  @include respond(phone) {
+    background-image: none;
+    background-color: $color-pink;
+  }
+  &--hero-box {
+    background-color: rgba($color-white, 0.95);
+    display: inline-block;
+    padding: 3rem 5rem;
+
+    @include react(dark) {
+      background-color: rgba($color-grey-dark, 0.95);
+    }
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    &-text {
+      column-count: 2;
+      hyphens: none;
+      font-size: $default-font-size;
+      color: $color-grey-dark;
+
+      @include react(dark) {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.section__tutoring {
+  padding: 15rem 0;
+  background-image: linear-gradient(rgba($color-black, 0.8)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-index-tutoring-min.jpg?sfvrsn=49e5c1ba_2);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  p {
+    column-count: 2;
+    column-rule: 3px solid $color-secondary;
+    column-gap: 6rem;
+
+    @include respond(tab-port) {
+      column-count: 1;
+    }
+  }
+  h2 {
+    border-bottom: 3px solid $color-primary;
+  }
+
+  @include respond(phone) {
+    background-image: none;
+    background-color: $color-purp;
+  }
+}

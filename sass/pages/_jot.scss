@@ -1,0 +1,50 @@
+.section__join-us {
+  padding: 15rem 2rem;
+  background-color: $color-grey-lighter;
+
+  @include react(dark) {
+    background-color: $color-grey-dark;
+  }
+  @include respond(phone) {
+    padding: 10rem 1rem;
+  }
+}
+
+.section__overview--jot {
+  background-color: $color-white;
+  padding: 10rem 2rem;
+
+  @include react(dark) {
+    background-color: $color-grey-light;
+  }
+  @include respond(phone) {
+    padding: 10rem 1rem;
+  }
+}
+
+.section__per {
+  padding: 15rem 2rem;
+  background-color: $color-white;
+
+  @include react(dark) {
+    background-color: darken($color-grey-dark, 10%);
+  }
+  @include respond(phone) {
+    padding: 10rem 1rem;
+  }
+}
+
+.section__lha {
+  padding: 15rem 2rem;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.7)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/default-album/lha.jpg?sfvrsn=6b7d73ba_2);
+  background-size: cover;
+  background-attachment: fixed;
+  @include respond(phone) {
+    padding: 10rem 1rem;
+  }
+}

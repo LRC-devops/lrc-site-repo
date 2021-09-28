@@ -1,0 +1,28 @@
+.section__about-us--au {
+  padding: 10rem 0;
+}
+
+.section__testimonials--au {
+  position: relative;
+  padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 4rem 1rem;
+  }
+  @include respond(tab-port) {
+    padding: 8rem 0;
+    margin-top: 0;
+  }
+}
+.section__testimonials--lha {
+  position: relative;
+  padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 4rem 1rem;
+  }
+  @include respond(tab-port) {
+    padding: 8rem 0;
+    margin-top: 0;
+  }
+}

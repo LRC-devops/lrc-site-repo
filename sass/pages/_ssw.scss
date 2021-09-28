@@ -1,0 +1,45 @@
+.section__services--ssw {
+  background-color: $color-grey-lighter;
+  padding: 10rem 0;
+  //height: 100vh;
+
+  @include react(dark) {
+    background-color: $color-site-grey;
+  }
+}
+
+.section__student-lingo {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-black, 0.3),
+      rgba($color-black, 0.5)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ssw-img-resp/hero-ssw-1-min.jpg?sfvrsn=cbfcc1ba_2);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 0;
+  //height: 100vh;
+
+  @include respond(phone) {
+    background-image: none;
+    background-color: $color-teal;
+  }
+}
+
+.section__overview--ssw {
+  background-color: $color-white;
+  padding: 10rem 0;
+
+  @include react(dark) {
+    background-color: $color-grey-light;
+  }
+}
+
+.section-schedule {
+  padding: 10rem 0;
+  background-color: $color-white;
+
+  @include react(dark) {
+    background-color: $color-grey-dark;
+  }
+}

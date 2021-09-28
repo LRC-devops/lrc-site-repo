@@ -1,0 +1,50 @@
+//colors
+$color-primary: rgb(145, 207, 150);
+$color-primary-light: #91cfb9;
+
+$color-primary-ada: #46844b;
+
+$color-secondary: rgb(207, 184, 124);
+$color-secondary-ada: #a99256;
+$color-secondary-ada__small: #8b7438;
+
+$color-teal: #86c0cf;
+$color-teal-dark: #5b7a82;
+
+$color-teal-ada: #447e8d;
+
+$color-purp: #8b72cf;
+$color-purp-dark: #534182;
+
+$color-pink: #cf7291;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-grey-dark: #565a5c;
+$color-grey-light: #a2a4a3;
+$color-grey-lighter: #eee;
+$color-site-grey: #222;
+
+$color-footer: #222;
+
+//gradient
+$gradient-teal: linear-gradient(
+  rgba($color-teal, 0.7),
+  rgba($color-teal-dark, 0.7)
+);
+
+//grid
+$grid-width: 114rem;
+$gutter-vertical-small: 6rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//font sizes
+$default-font-size: 1.6rem;
+
+//border-radius
+$border-radius: 0.3rem;
+
+//box-shadow
+$box-shadow-1: rgba($color-black, 0.15);

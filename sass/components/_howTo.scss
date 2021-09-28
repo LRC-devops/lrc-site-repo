@@ -1,0 +1,35 @@
+.section__how-to {
+  padding: 5rem;
+  &--heading {
+    padding-left: 4rem;
+  }
+  &--img {
+    width: 60rem;
+    float: left;
+    margin-top: 6rem;
+  }
+  &--text {
+    font-size: $default-font-size;
+    margin-bottom: 2rem;
+
+    & span {
+      font-size: 1.8rem;
+      margin: 1rem 3rem;
+      //display: inline-block;
+      color: $color-primary;
+      border: 2px solid $color-primary;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      text-align: center;
+      vertical-align: middle;
+      padding: 1rem;
+      float: left;
+      font-weight: 700;
+    }
+  }
+  &--btn {
+    margin-top: 5rem;
+    margin-left: 2rem;
+  }
+}

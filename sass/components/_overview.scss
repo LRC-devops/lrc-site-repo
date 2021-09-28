@@ -1,0 +1,69 @@
+.overview {
+  &__box {
+    background-color: $color-grey-lighter;
+    padding: 2rem 4rem;
+    transition: all 2.5s;
+    display: inline-block;
+
+    @include react(dark) {
+      background-color: $color-grey-dark;
+    }
+    @include respond(tab-land) {
+    &--icon {
+      &-hammer {
+        animation: aniHammer 4s infinite;
+      }
+      &-boat {
+        animation: aniBoat 6s infinite;
+      }
+      &-lang {
+        animation: aniLang 5s infinite;
+      }
+      &-plane {
+        animation: aniPlane 7s infinite;
+      }
+      &-clip {
+        animation: aniClip 7s infinite;
+      }
+      &-earth {
+        animation: aniEarth 7s infinite;
+      }
+      &-bag {
+        animation: aniBag 7s infinite;
+      }
+      &-check {
+        animation: aniCheck 7s infinite;
+      }
+    }
+  }
+    &:hover &--icon-hammer {
+      animation: aniHammer 2s infinite;
+    }
+    &:hover &--icon-boat {
+      animation: aniBoat 4s infinite;
+    }
+    &:hover &--icon-lang {
+      animation: aniLang 3s infinite;
+    }
+    &:hover &--icon-plane {
+      animation: aniPlane 5s infinite;
+    }
+    &:hover &--icon-clip {
+      animation: aniClip 5s infinite;
+    }
+    &:hover &--icon-earth {
+      animation: aniEarth 5s infinite;
+    }
+    &:hover &--icon-bag {
+      animation: aniBag 5s infinite;
+    }
+    &:hover &--icon-check {
+      animation: aniCheck 5s infinite;
+    }
+    &--icon {
+      font-size: 10rem;
+      color: $color-primary;
+    }
+  }
+
+}

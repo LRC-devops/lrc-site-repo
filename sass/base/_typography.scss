@@ -1,0 +1,349 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.618;
+  color: $color-grey-dark;
+  //padding: 3rem;
+  box-sizing: border-box;
+
+  @include react(dark) {
+    color: $color-white !important;
+  }
+}
+
+.main__heading {
+  font-size: 4rem;
+  color: $color-primary !important;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+  line-height: 145%;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial,
+    sans-serif;
+
+  &--gold,
+  &--sub {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+  &--gold {
+    color: $color-secondary;
+    letter-spacing: 1.5px;
+
+    @include respond(phone) {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  &--black {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $color-black;
+    letter-spacing: 1.5px;
+
+    @include react(dark) {
+      color: $color-white !important;
+    }
+  }
+
+  &--sub {
+    color: $color-white;
+    letter-spacing: 3.5px;
+
+    @include respond(phone) {
+      letter-spacing: 1px;
+    }
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  &--lh {
+    color: $color-secondary !important;
+  }
+}
+.heading-secondary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: $color-primary-ada !important;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+
+  display: inline-block;
+
+  letter-spacing: 0.2rem;
+
+  @include react(dark) {
+    background-image: none;
+    color: $color-white !important;
+    background-clip: none;
+  }
+}
+.heading-secondary-cards {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $color-secondary-ada 0%,
+    $color-primary-ada 50%,
+    $color-teal-dark 100%
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  letter-spacing: 0.2rem;
+
+  @include react(dark) {
+    color: $color-white !important;
+  }
+}
+.heading-secondary--white {
+  font-size: 3rem;
+  color: $color-white !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+}
+.heading-secondary--primaryGreen {
+  font-size: 3rem;
+  color: $color-primary !important;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+}
+.heading-secondary--grey {
+  font-size: 3rem;
+  color: $color-grey-dark;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+
+  @include react(dark) {
+    color: $color-white !important;
+  }
+}
+.heading-secondary__ag {
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-primary-ada,
+  //   darken($color-primary-ada, 30%)
+  // );
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+  // color: $color-secondary-ada !important;
+  color: $color-white;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent !important;
+  letter-spacing: 0.2rem;
+}
+.heading-secondary__pe {
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-secondary-ada,
+  //   darken($color-secondary-ada, 30%)
+  // );
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  color: $color-grey-dark !important;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent !important;
+  letter-spacing: 0.2rem;
+
+  @include react(dark) {
+    color: $color-secondary !important;
+    background-image: none;
+    background-clip: none;
+  }
+}
+.heading-secondary__ssw {
+  // background-image: linear-gradient(
+  //   to right,
+  //   darken($color-teal, 25%),
+  //   $color-teal-dark
+  // );
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  display: inline-block;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+  color: $color-teal-dark !important;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // color: transparent !important;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.heading-secondary-1 {
+  color: $color-white !important;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+  font-weight: 100;
+  //transform: skewY(6deg);
+}
+
+.heading-secondary-dark {
+  color: $color-grey-dark !important;
+  font-size: 3rem;
+  text-transform: uppercase;
+  //transform: skewY(6deg);
+
+  @include react(dark) {
+    color: $color-white !important;
+  }
+}
+
+.heading-tertiary,
+h3 {
+  color: $color-grey-dark;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  @include react(dark) {
+    color: $color-white !important;
+  }
+  &-sub {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+.heading-tertiary--white {
+  color: $color-white !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------------- */
+p {
+  font-family: "Roboto Slab", serif;
+}
+/* ----------------------------------------------------------------- */
+
+.paragraph {
+  font-size: $default-font-size;
+
+  &__head {
+    color: $color-primary-ada;
+    font-weight: bold;
+
+    @include react(dark) {
+      color: $color-primary;
+    }
+  }
+  &-hero {
+    color: $color-white;
+    font-size: $default-font-size;
+  }
+  &__white {
+    font-size: $default-font-size;
+    color: $color-white;
+  }
+}
+.h3-line {
+  border-bottom: 1px solid $color-secondary;
+}
+.heading-tertiary__gold {
+  @include react(light) {
+    color: $color-secondary !important;
+  }
+  @include react(dark) {
+    color: $color-secondary !important;
+  }
+}
+
+.heading-tertiary__gold--keep {
+  color: $color-secondary !important;
+}
+
+//testing
+/*.test-1 {
+  font-family: rokkitt;
+  letter-spacing: -2px;
+}
+*/
+.tertiary-heading__gold {
+  color: $color-secondary-ada !important;
+
+  @include react(dark) {
+    color: $color-secondary !important;
+  }
+}
+
+.heading-tertiary__testimonials-text {
+  text-transform: none;
+}
+.heading-secondary__strong {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.iprep-transform {
+  text-transform: none;
+}
+
+.heading-quaternary {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $color-grey-dark !important;
+}
+
+.QS-conflicts {
+  color: $color-secondary-ada__small;
+}
+
+li {
+  font-family: "Roboto Slab", serif;
+}
+
+.lc {
+  text-transform: none;
+  color: $color-grey-dark;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to right,
+    red 14%,
+    orange 28%,
+    darken(yellow, 15%) 42%,
+    $color-primary 56%,
+    blue 70%,
+    indigo 84%,
+    $color-purp 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  font-size: 2rem;
+}
+.purp-text {
+  color: $color-purp;
+  font-size: 2rem;
+}

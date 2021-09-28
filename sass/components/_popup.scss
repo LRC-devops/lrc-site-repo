@@ -1,0 +1,491 @@
+.popup {
+  // background-color: rgba($color-black, 0.8);
+  background-image: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    $color-pink
+  );
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10001;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  overflow-y: auto;
+  overflow-x: auto;
+
+  iframe {
+    height: 90vh;
+    width: 100%;
+
+    overflow-y: auto;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), scale(0.25);
+
+    background-color: rgba($color-white, 0.5);
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s 0.2s;
+    overflow-y: auto;
+    max-height: 95vh !important;
+
+    @include react(dark) {
+      background-color: $color-grey-dark;
+    }
+
+    @include respond(tab-port) {
+      //background-image: linear-gradient(rgba($color-white, .9)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/popup-img-vertical-pe.jpg?sfvrsn=5b83faba_2);
+      background-size: cover;
+    }
+    @include respond(phone) {
+      width: 90%;
+      display: inline-block;
+      height: 95vh;
+    }
+
+    &-sl {
+      padding: 3rem 5rem;
+    }
+  }
+  &__left {
+    display: table-cell;
+    width: 33.333334%;
+    @include respond(tab-land) {
+      width: 0%;
+    }
+  }
+  &__right {
+    display: table-cell;
+    width: 66.66667%;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__text {
+    font-size: $default-font-size;
+    margin-bottom: 1.4rem;
+
+    column-count: 2;
+    hyphens: none;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
+
+    &--no-col em {
+      column-count: none;
+      font-size: 1.4rem;
+    }
+
+    &--head-gold {
+      font-weight: 700;
+      color: $color-secondary-ada__small;
+      hyphens: none;
+    }
+    &--head-green {
+      font-weight: 700;
+      color: $color-primary-ada;
+      hyphens: none;
+    }
+    &--head-teal {
+      font-weight: 700;
+      color: $color-teal-dark;
+      hyphens: none;
+    }
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-light;
+      position: absolute;
+      top: 0rem;
+      right: 1rem;
+      font-size: 6rem;
+      text-decoration: none;
+      line-height: 1;
+      display: inline-block;
+      transition: all 0.4s;
+
+      @include respond(vertical-bug) {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+    &:hover {
+      color: $color-primary;
+      transform: rotate(360deg);
+    }
+  }
+  &__back {
+    &:link,
+    &:visited {
+      color: $color-grey-light;
+      position: absolute;
+      top: 0rem;
+      left: 1.5rem;
+      font-size: 6rem;
+      text-decoration: none;
+      line-height: 1;
+      display: inline-block;
+      transition: all 0.4s;
+
+      @include respond(vertical-bug) {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+    &:hover {
+      color: $color-primary;
+      animation: aniArr 2s infinite;
+    }
+  }
+
+  &__table--courses {
+    // border: 1px solid $color-teal;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0.2rem 0.5rem;
+    thead,
+    tr {
+      background-color: rgba($color-secondary, 0.7);
+    }
+    th {
+      padding: 2rem 5rem;
+    }
+
+    tr {
+      @include react(dark) {
+        background-color: $color-grey-dark !important;
+      }
+    }
+
+    th,
+    td {
+      font-size: $default-font-size;
+      border-bottom: 1px solid $color-grey-dark;
+      border-collapse: collapse;
+      padding: 0.2rem 0.5rem;
+    }
+    th {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    tbody tr:last-of-type {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+//BTN POPUP
+
+.popupBtn {
+  background-image: linear-gradient(
+    to bottom right,
+    $color-secondary,
+    $color-pink
+  );
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10001;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  overflow-y: auto;
+  overflow-x: scroll;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), scale(0.25);
+
+    background-color: $color-white;
+    // width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s 0.2s;
+    overflow-y: auto;
+    max-height: 95vh !important;
+
+    @include react(dark) {
+      background-color: $color-grey-dark;
+    }
+
+    @include respond(tab-port) {
+      //background-image: linear-gradient(rgba($color-white, .9)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/popup-img-vertical-pe.jpg?sfvrsn=5b83faba_2);
+      background-size: cover;
+    }
+    @include respond(phone) {
+      // width: 90%;
+      display: inline-block;
+      // height: 95vh;
+    }
+
+    &-sl {
+      padding: 3rem 5rem;
+    }
+  }
+
+  &__text {
+    font-size: $default-font-size;
+    margin-bottom: 1.4rem;
+
+    column-count: 2;
+    hyphens: none;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
+
+    &--no-col em {
+      column-count: none;
+      font-size: 1.4rem;
+    }
+
+    &--head-gold {
+      font-weight: 700;
+      color: $color-secondary-ada__small;
+      hyphens: none;
+    }
+    &--head-green {
+      font-weight: 700;
+      color: $color-primary-ada;
+      hyphens: none;
+    }
+    &--head-teal {
+      font-weight: 700;
+      color: $color-teal-dark;
+      hyphens: none;
+    }
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-light;
+      position: absolute;
+      top: 0rem;
+      right: 1rem;
+      font-size: 6rem;
+      text-decoration: none;
+      line-height: 1;
+      display: inline-block;
+      transition: all 0.4s;
+
+      @include respond(vertical-bug) {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+    &:hover {
+      color: $color-primary;
+      transform: rotate(360deg);
+    }
+  }
+  &__back {
+    &:link,
+    &:visited {
+      color: $color-grey-light;
+      position: absolute;
+      top: 0rem;
+      left: 1.5rem;
+      font-size: 6rem;
+      text-decoration: none;
+      line-height: 1;
+      display: inline-block;
+      transition: all 0.4s;
+
+      @include respond(vertical-bug) {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+    &:hover {
+      color: $color-primary;
+      animation: aniArr 2s infinite;
+    }
+  }
+}
+
+.table-box {
+  max-height: 50vh;
+  overflow-y: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.zoom-session {
+  background-color: rgba($color-primary, 0.8) !important;
+
+  transition: all 0.2s;
+  &:hover {
+    background-color: $color-primary-light !important;
+  }
+}
+
+.cancel-session {
+  background-color: rgba(orangered, 0.8) !important;
+  color: #000 !important;
+  // position: relative;
+
+  a {
+    &:link,
+    &:visited {
+      color: #000;
+    }
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+
+  transition: all 0.2s;
+  &:hover {
+    background-color: orangered !important;
+  }
+  // &:hover > .cancel-hov {
+  //   display: block;
+  //   opacity: 1;
+  // }
+}
+
+.inPerson-session {
+  background-color: rgba($color-secondary, 0.2) !important;
+
+  transition: all 0.2s;
+  &:hover {
+    background-color: $color-secondary !important;
+  }
+}
+.inPerson-session-span {
+  background-color: rgba($color-secondary, 0.2);
+}
+.zoom-session-span {
+  background-color: rgba($color-primary, 0.8);
+}
+.cancel-session-span {
+  background-color: rgba(orangered, 0.5);
+}
+.popup__text--list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.popup__link {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: $color-grey-dark;
+    border-bottom: 1px solid $color-grey-dark;
+    transition: all 0.2s;
+    display: inline-block;
+    backface-visibility: hidden;
+
+    @include react(dark) {
+      color: $color-white;
+      border-bottom: 1px solid $color-white;
+    }
+  }
+  &:hover,
+  &:active {
+    color: $color-black;
+    transform: scale(1.05) translateY(-3px);
+
+    @include react(dark) {
+      color: $color-white;
+    }
+  }
+}
+.section__how-to {
+  height: 75vh;
+  background-color: $color-white;
+  display: relative;
+}
+
+.popup-link {
+  &:link,
+  &:visited {
+    color: $color-grey-dark;
+    text-decoration: none;
+    border-bottom: 1px solid $color-secondary;
+    transition: all 0.2s;
+    display: inline-block;
+
+    @include react(dark) {
+      color: $color-white;
+    }
+  }
+  &:hover,
+  &:active {
+    color: $color-black;
+    border-bottom: 1px solid $color-primary;
+    transform: scale(1.2);
+
+    @include react(dark) {
+      color: $color-white;
+    }
+  }
+}

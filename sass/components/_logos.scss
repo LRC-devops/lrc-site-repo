@@ -1,0 +1,15 @@
+.section__intro--logo {
+  display: relative;
+
+  &-green {
+    display: absolute;
+    //height: 10%;
+    top: 0;
+    left: 0;
+
+    &lrc-logo__green {
+      width: 2rem;
+      display: block;
+    }
+  }
+}

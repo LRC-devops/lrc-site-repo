@@ -1,0 +1,51 @@
+.collapsible {
+  background-color: $color-secondary;
+  color: $color-grey-dark;
+  cursor: pointer;
+  padding: 2rem;
+  width: 100%;
+  border: 3px solid $color-grey-dark;
+  border-radius: 5px;
+  text-align: left;
+  //outline: 3px solid $color-grey-dark;
+  font-size: 2rem;
+  transition: all 0.2s;
+  box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+  transform: translateY(0), scale(0);
+  position: relative;
+
+  &__content {
+    padding: 2rem 3rem;
+    display: none;
+    overflow: hidden;
+    background-color: $color-grey-lighter;
+    z-index: 1;
+
+    @include react(dark) {
+      background-color: $color-grey-light;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    &--long {
+      column-count: 2;
+      list-style: none;
+    }
+  }
+
+  &__item {
+    font-size: $default-font-size;
+  }
+
+  &:hover {
+    transform: translateY(-1rem), scale(1.05);
+  }
+}
+
+.active,
+.collapsible:hover {
+  background-color: $color-primary;
+  transform: scale(1.05) translateY(-1rem);
+  box-shadow: 0 3rem 4rem rgba($color-black, 0.2);
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="sass/style.css">
+  </head>
+
+
+    <body>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <!--Main Navigation--><!--
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <div class="dropdown">
+             <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/tutoring" class="navigation__link dropdown__link"><ion-icon name="caret-down-outline" class="dropdown__icon"></ion-icon> Peer to Peer</a></li>
+              <div class="dropdown__content">
+                <li class="navigation__item"><a href="#" class="navigation__link dropdown__link--sub">ELL</a></li>
+              </div>
+            </div>
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction" class="navigation__link">SI</a></li>
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="navigation__link">iPrep</a></li>
+            <div class="dropdown">
+              <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources" class="navigation__link dropdown__link"><ion-icon name="caret-down-outline" class="dropdown__icon"></ion-icon> Workshops</a></li>
+              <div class="dropdown__content">
+                <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs" class="navigation__link dropdown__link--sub">Academic Support</a></li>
+              </div>
+            </div>
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources" class="navigation__link">Faculty/Staff Resources</a></li>
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team" class="navigation__link">Join Our Team</a></li>
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/about" class="navigation__link">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      -->
+
+      <!--PREVIEW NAVIGATION-->
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center-site-dev/Action/Preview?sf-auth=49eEGNE%2bXez08V22JU%2bMOz1Z92YkY5OWABnWcW4DuLhHxuM4DwXkJ0DwFJ%2fsH1%2flcDmPyAhpOimfXiLW%2b7zZzyX0k3%2b3BGsBrxHgGHnSc2L1Po%2bc7cQsy1Xje0h%2fq7f8xoF6KD%2fRH1It%2bFgED5%2fNbVxamlH4uviUTY%2fjA4eIdIIF3YQSJuR3Px20zlzQRl%2bnjFypdNqHvMcpuENtMMVWY0XlM5xpOUaM%2fgVC6PherZTkeJs0XjPqsUs96AtFYuEnPE4STnLwE37zu1dGsKulgbtizJ0%2b%2ftLdh145sASsTcTcWOf%2buNZTMHMwhvm3tpil%2bcHWGDNbvXjKaKnOXIci5PQAAAA%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">HOME</a></li>
+          <div class="dropdown">
+           <li class="navigation__item"><a href="https://www.ucdenver.edu/tutoring-site-dev/Action/Preview?sf-auth=x1jR6uFPmbJeeXGBSJ%2fBOPvsYbEsuuD1tOepCtn5UtCIUGuS4e9mDAAV5z4QHNlgRRBv%2b4dVPRoG%2fn7%2bQOXmtpnjUYoBj8xPUdMYcEIjPhdOjwf90v7GQt2PIz%2fA700fd11VNEm2a2AqyrgWYHxhuJPiR4R7RlFTOkqRadybUq%2biq7z7sY4XK8ONS%2fqseaQp28ZMB3KG76kDvr2bdSrWqwpBQ3MmyUlVyZxRrqDLeY30qDCilSHEdUsUylGluRF7%2fibs2Pu5EbgHS6cI0xl%2bn%2bu7ovYvOjY1x14wq7bGu3bSAAAA&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link dropdown__link"><ion-icon name="caret-down-outline" class="dropdown__icon"></ion-icon> Peer to Peer</a></li>
+            <div class="dropdown__content">
+              <li class="navigation__item"><a href="https://www.ucdenver.edu/ell-site-dev/Action/Preview?sf-auth=aE%2byxLn3QzdvoXf%2birT49kOQYHIQShiS2%2bkLZdEttpUT%2bj%2fzIGYZRTQNXesHUhWnXFm2q1CpwI3xZor1mOrdgNDsIiFuVjqwRJN6hWCT6Vj5PPfdyQRffzo%2fYO63HIipbQKihmawlYQRIlqw8rE0FRozIQqP4q4bv0qoJHg6GYW5C%2b9Ku3l2z7pgfkcbyczLZ8VGTYua0BahkGjJ0V1HUV%2bJu6Wcq4PWpSTfIsdihzOmJ4TZ3oRqXhFEIrpCiwRZ96%2fslenDevw46%2fGquMU9Po%2fUc0Y27mb5yAAAAA%3d%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link dropdown__link--sub">ELL</a></li>
+            </div>
+          </div>
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/si-site-dev/Action/Preview?sf-auth=qziVRYwbRGUb66txnUPxB354rHNfb6gU9i3BBuCA5gMSajdGQnnHXXeoYQugZB6cPbF0qwSZ7AHkGMX330v%2bia3uERjIcMuopC9Ipe05AUmVw7oXbLI02ir4msyf0nzcSjucOaEUvEOtcSgxYwHCWlBZSLetBTUsmBj5404WllbjTjH8Py7m9sYy3qtgUODZ5XI51%2bl2dfB4AADaHU%2bSLhukCSXiEGfaDxb0%2fK4P%2bIOlBsH6iVqcqwMpAJsL3m2VSRh2qAXhGH5UuCWRx%2b%2bafMYAAAA%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">SI</a></li>
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/iprep-site-dev/Action/Preview?sf-auth=Yj8x5hsuT6Z6%2bMweJfwxw831T9hpJwmUH99%2fTX7%2fKQssD9kjTMB6fXlNKPH31Hx2tJtael086AEgLndJKGuJy4CoSIBEoySOs6ZEM9MPErXoFFcVlb9mU8ccpsTo8%2fkyIHyf2oc9fZYzQd75h%2fIUPEk4gxQfdn4GY7WnSdvjCvhY2ZrBNcbW%2bToFhvKpDWUxZMk0%2bPLZxL6tTwtzz4lZPhxJwSq%2bxOLVdM2fx6Jpigww64xc7SLSbW5siDFD4QxMUqNcp8htr8bqqtXC%2blUlCjUARHUwDrk0zAAAAA%3d%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">iPrep</a></li>
+          <div class="dropdown">
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/ssw-site-dev/Action/Preview?sf-auth=Y6uzSKtPQ%2bJ4cyvrKGCBTTTv1WA7IPiv0LUKPllceJFBklrNnMuR2MK7OimNDIl7IWb5nmUu1VHDncgS2OWlust0Wt%2bCJEq%2btMUzNPc2CPZTpTkjg4n1w9MNNzHgKMMNWX6qz%2fH5CtraqgcNBwa2tQEOh0Odxs96lQiVB30bvbdyhpUUfkI1ye7URihDRkfr09F4ZyV2yRe7aeVdnpC6xzhNaDO2qu3VMSQqkYcaf34o9nx7FaPjdp2Uc%2fDPR0RHOZxP%2fVpmC9NDrBZNZgwpaeqN%2bGsfCvdWyAAAAA%3d%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link dropdown__link"><ion-icon name="caret-down-outline" class="dropdown__icon"></ion-icon> Workshops</a></li>
+            <div class="dropdown__content">
+              <li class="navigation__item"><a href="https://www.ucdenver.edu/ssw-site-dev/ssw-asp-site-dev/Action/Preview?sf-auth=BNtfJdpMYy8smPHpvlDD5XyyC1v9nLplxkpjnsZoNQEGfjLCS0pwVS%2b8wnTVCQBS9qF0woW6JU2%2bVZs7S3UACV0KxnhOuy17TlgXt2IVME326Kvr4gLiJ4fnnOLFa9BHfpcBdiSB1ODWMlX%2b%2fulxCXUcZ8ZVtDgzsnrH2iiLkjkn1YTU3Imdw%2budkRD21ILZTpq6pKJ8%2bsl4roLJxSqN46eigOLk8bqOl2eMHpb6YPmU0VAUgyleAZGs2EvA3VZ3%2btL0Qnl0Crld3a%2bcKHUH66%2f%2b3AZOtyC7w3Q1fhreTOxhi788h42qXEkYdHlZ%2fNomXauISe2qRFbuAAAA&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link dropdown__link--sub">Academic Support</a></li>
+            </div>
+          </div>
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/fsr-site-dev/Action/Preview?sf-auth=JCa98QFyOsN%2f9wzMoxNTbeSk9m%2bwiXK%2fweDt6oYA7iGlzme49Htjpv4rectpb6UF4yl8fSt1wQb9cpdZAM0BnORqHaGnlA7tdEh%2fdbvAeRzsfRSvKAeWOMZsAQXa%2byynPJTmh%2buwbcBU2axaPsY1%2fO%2bVFGXBQJYjWrBv0DEyMXqpA%2bseRfm4NmNTnIFvtdpQvGjLIBj5s0mANNUCC2bORUjaa9aDLrxQOx%2fH7EBdL4sr%2b%2fQ3g8EQ2AwEMqcxPPm5ITY4JNfWwb9VwhbFBhY3rs7wUCpCpXZmyAAAAA%3d%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">Faculty/Staff Resources</a></li>
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/jot-site-dev/Action/Preview?sf-auth=KDSlxshacUD1f4IeOt9l%2bBLiL%2fqtj3njAElaLaATmM0aNQhO2OAbZLUNt0qXrBv1U0Sb7pUpU5%2f9otnvvLWOntgMvBoASGudH8kDyzT2sFQh1it1yeUlWQvxc6O1Ex8MMgHmL0WGjYCKzfA3ksF5dwm6Swkoh5KaAxCv%2fZa8aBru914avdHnWvNtmBNHcJtBI1HBYr0vUAMQECkEIvZIJ0ukxYTiw2foBkSyQIO%2bpF7OZXunsa%2fujA432GV9oKKIrvDhEKb07yhlbUV2v54l1bHtXP7hHwluyAAAAA%3d%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">Join Our Team</a></li>
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/au-site-dev/Action/Preview?sf-auth=7kqIimtB49iOLKE4biO11K3Xq%2bItrmqKFcqtByivx5sa6sqiWKgg%2bEqobyP4xdAZ2cKupKzUhfqBb4PQdnWQcK8ltjdR2Zymc9Uea4LSGgEmpyRx%2fMq2pESrP2MKGShimacqxT1UIePS3KK1JbyBqO03DXOnjgff%2fBJe6VIbF19WgXGbkaIo0Hb%2fYeI0xAgm2vorOopf5KYkCOWgjX5M2pEhC11FfIMAwCTkjUU19Irj%2f8EuS8%2b%2fFG9zHxUtqi41AywpqCOSQ0%2fA%2fbVMEid0t8YAAAA%3d&sf_site=17d611e5-3028-64d9-a5bf-ff0a001ce385&sf_site_temp=True" class="navigation__link">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <header class="section__intro--sub section__intro--sub--si">
+        <!--<div class="section__intro--logo-box row">
+          <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/lrc-logo-horz-gold-white@2x.png?sfvrsn=e949f8ba_2" alt="LRC logo" class="section__intro--logo">
+        </div>-->
+        <div class="row">
+          <div class="intro__heading">
+            <h1 class="main__heading u-margin-bottom-big"><span class="main__heading--gold">Learning Resources Center</span> Supplemental Instruction <span class="main__heading--sub">Extra Support for Difficult Courses</span></h1>
+            <div class="section__intro--btns">
+              <a href="#popup-si-courses" class="btn btn-full">Courses</a>
+              <!--
+                <a href="#section__services" class="btn btn-full">Flyer</a>
+              -->
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Section LRC-->
+      <section class="section__lrc">
+        <div class="u-center-text u-margin-bottom-medium">
+          <h2 class="heading-secondary">How it works</h2>
+        </div>
+      
+        <div class="row">
+          <p class="paragraph u-margin-bottom-small section__lrc--text u-line-height-medium">Supplemental Instruction (SI) is offered for courses like Biology, Chemistry, Physics, and other traditionally difficult courses. With SI, you maximize your study time, get to know your classmates, and have fun! Statistics show that students who regularly attend (at least one a week) SI sessions perform better in class.<br>
+            <strong>Note: </strong>SI sessions are subject to change at any time if attendance is low.</p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small u-center-text">Striving for your success</h3>
+            <p class="paragraph u-margin-bottom-small">Students can attend the sessions in person or through Zoom (The Zoom link can be found on the course's Canvas page or by emailing the course's SI Leader)</p>
+              <div class="col-1-of-2">
+                <p class="paragraph  section__lrc--col">
+                  <span class="paragraph__head">A trained SI Leader,</span> approved by the course instructor, is assigned to your course to help you develop a deeper understanding of difficult course concepts 
+                  <br><br>
+    
+                  <span class="paragraph__head">The leader holds</span> weekly interactive and collaborative study sessions for you to work in small groups with your classmates<br><br>
+    
+                  <span class="paragraph__head">You'll engage in critical</span> thinking to analyze and make connections with difficult concepts<br><br>
+    
+                  <span class="paragraph__head">Your leader will share</span> effective study strategies to help you learn and engage in fun and effective learning activities with your classmates<br><br>
+                </p>
+              </div>
+              <div class="col-1-of-2">
+                <p class="paragraph">
+                  <span class="paragraph__head">SI is an environment</span> where you can make mistakes/be confused and learn from it<br><br>
+    
+                  <span class="paragraph__head">You can compare</span> notes and share study tips with your classmates<br><br>
+    
+                  <span class="paragraph__head">Session mainly focus</span> on the most challenging concepts from the week’s lecture<br><br>
+
+                  <span class="paragraph__head">Note:</span> SI Sessions are only for students enrolled in a course with an SI Leader assigned to it. Check back later in the semester for a list of Spring courses that will have an assigned SI Leader<br><br>
+    
+                </p>
+              </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/comp-imgs/img-resp/comp-img-si-1.jpg?sfvrsn=31f9c1ba_2" alt="physics" class="composition__photo composition__photo--1">
+              <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/comp-imgs/img-resp/comp-img-si-2.jpg?sfvrsn=32f9c1ba_2" alt="chemistry" class="composition__photo composition__photo--2">
+              <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/comp-imgs/img-resp/comp-img-si-3.jpg?sfvrsn=c1fac1ba_2" alt="Biology" class="composition__photo composition__photo--3">
+              <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/comp-imgs/img-resp/comp-img-si-4.jpg?sfvrsn=c0fac1ba_2" alt="Physics" class="composition__photo composition__photo--4">
+              <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/comp-imgs/img-resp/comp-img-si-5.jpg?sfvrsn=cafac1ba_2" alt="Biology" class="composition__photo composition__photo--5">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!--Standard Footer-->
+    <footer class="section__end">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="section__end--logo-box">
+            <a href="#section-head" class="scroll-link"><img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/lrc-logo-horz-gold-white@1.png?sfvrsn=9df3c4ba_2" alt="LRC Logo" class="section__end--logo"></a>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="section__end--add">
+            <h3 class="heading-tertiary__gold--keep">Learning Resources Center</h3>
+            <p class="section__end--text">
+              CU Denver City Heights <span class="section__end--text--div-line">|</span> Learning Commons<br>
+              <a href="https://www.google.com/maps/search/1191+Larimer+St+%231201,+Denver,+CO+80204/@39.7446014,-105.0109047,16z/data=!3m1!4b1" class="box__link" target="_blank">1191 Larimer, Suite 1201 Denver, CO 80204</a><br>
+              <a href="mailto: lrc@ucdenver.edu" class="box__link">LRC@ucdenver.edu</a><br>
+              <a href="tel: 303-315-3531" class="box__link">303-315-3531</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="section__end--policy">
+          <div class="section__end--policy-box">
+            <h3 class="heading-tertiary__gold--keep u-center-text">
+              LRC graded assignment policy
+            </h3>
+          </div>
+            <p class="section__end--policy-box--text"><em>Tutors are prohibited from assisting students with any assignments that will be submitted for a grade. The tutor can clarify concepts related to an assignment and/or do similar practice problems. Please view the CU Denver <a href="https://www.ucdenver.edu/student/health-wellness/student-conduct/academic-integrity" class="box__link">Academic Integrity Policy</a> for more information.</em></p>
+        </div>
+      </div>
+
+        <!--   SOCIAL LINKS   -->
+        <div class="row u-center-text">
+          <div class="section__end--social">
+            <a href="https://www.facebook.com/CUDenverLRC" class="section__end--social-link" target="_blank"><ion-icon name="logo-facebook" class="fb-icon"></ion-icon></a>
+            <a href="https://www.instagram.com/cudenverlrc/" class="section__end--social-link" target="_blank"><ion-icon name="logo-instagram" class="insta-icon"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/uc-denver-learning-resources-center" class="section__end--social-link" target="_blank"><ion-icon name="logo-linkedin" class="lin-icon"></ion-icon></a>
+            <a href="https://twitter.com/CUDenverLRC/" class="section__end--social-link" target="_blank"><ion-icon name="logo-twitter" class="twit-icon"></ion-icon></a>
+          </div>
+        </div>
+
+      <!--   NAVI LINKS   -->
+      <div class="row u-center-text">
+        <div class="section__end--navigation u-center-text">
+          <!--MAIN NAVIGATION-->
+        <ul class="section__end--list">
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center" class="section__end--link">Home</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer" class="section__end--link">P2P</a></li>
+            <!--<li class="section__end--item"><a href="#" class="section__end--link">ELL</a></li>-->
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction" class="section__end--link">SI</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="section__end--link">iPrep</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/resources" class="section__end--link">Workshops</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs" class="section__end--link">Academic Support</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources" class="section__end--link">Faculty/Staff Resources</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team" class="section__end--link">Join Us</a></li>
+            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/about" class="section__end--link">About Us</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+
+      
+      <div class="row">
+        <div class="col-1-of-2">
+          <p class="section__end--text">Please note, regardless of synchronous or asynchronous course delivery, students are unable to sign up for any LRC service that conflicts with a scheduled class time. </p>
+        </div>
+        <div class="col-1-of-2">
+          <p class="section__end--text">
+            If you're unable to sign up for LRC services for any reason other than technical issues, please let us know by completing the form below. This will help us in future planning and how we deliver services to best meet the needs of our CU Denver student/community. Contact us at LRC@ucdenver.edu for questions.</p>
+          </div>
+        </div>
+      </footer>
+
+          <!--SI Courses popup-->
+          <div class="popup" id="popup-si-courses">
+            <div class="popup__content popup__content-sl">
+                <a href="#section__services" class="popup__close">&times;</a>
+                <div class="row u-center-text">
+                  <h2 class="heading-secondary__ssw u-margin-bottom-small">Supplemental Instruction</h2>
+                  <h4 class="heading-quaternary"><a href="#" class="popup-link" target"_blank">Important &mdash; Please read the LRC's Expectations prior to your appointment</a></h4>
+                </div>
+                <div class="row">
+                  <div class="table-box">
+                    <table class="popup__table--courses u-center-text-2">
+
+                      <tr>
+                        <th>Course</th>
+                        <th>Section</th> 
+                        <th>Time</th>
+                        <th>Days</th>
+                        <th>Room</th>
+                      </tr>
+
+                      <tr class="inPerson-session">
+                        <td>Human Anatomy</td>
+                        <td>001</td>
+                        <td>9:45-10:45am</td>
+                        <td>Monday/Wednesday</td>
+                        <td>LC 2230</td>
+                      </tr>
+                      <!-- SI LEADER: Nancy Martin -->
+
+                      <tr class="zoom-session">
+                        <td>General Genetics</td>
+                        <td>E01</td>
+                        <td>5-6pm</td>
+                        <td>Monday/Wednesday</td>
+                        <td>Online Zoom Session</td>
+                      </tr>
+                      <!-- SI LEADER: Ray Martin -->
+                      
+                      <tr class="zoom-session">
+                        <td>General Chemistry</td>
+                        <td>001 and 003</td>
+                        <td>6-7pm</td>
+                        <td>Monday/Wednesday</td>
+                        <td>Online Zoom Session</td>
+                      </tr>
+                      <!-- SI LEADER: Zeyna Aouad -->
+                    
+                      <tr class="zoom-session">
+                        <td>College Physics</td>
+                        <td>001 and 004</td>
+                        <td>8:30-9:30pm</td>
+                        <td>Monday</td>
+                        <td>Online Zoom Session</td>
+                      </tr>
+                      <!-- SI LEADER: Matthew Harris -->
+                    
+                      <tr class="zoom-session">
+                        <td>General Genetics</td>
+                        <td>E01</td>
+                        <td>8-9am</td>
+                        <td>Tuesday/Thursday</td>
+                        <td>Online Zoom Session</td>
+                      </tr>
+                      <!-- SI LEADER: Ray Martin -->
+                    
+                      <tr class="inPerson-session">
+                        <td>General Chemistry</td>
+                        <td>001 and 003</td>
+                        <td>11-12pm</td>
+                        <td>Tuesday/Thursday</td>
+                        <td>LC 2230</td>
+                      </tr>
+                      <!-- SI LEADER: Zeyna Aouad -->
+                    
+                      <tr class="inPerson-session">
+                        <td>College Physics</td>
+                        <td>001 and 004</td>
+                        <td>4-5pm</td>
+                        <td>Tuesday</td>
+                        <td>LC 2222</td>
+                      </tr>
+                      <!-- SI LEADER: Zeyna Aouad -->
+                    
+                      <tr class="inPerson-session">
+                        <td>Human Anatomy</td>
+                        <td>001</td>
+                        <td>11:30-12:30pm</td>
+                        <td>Wednesday</td>
+                        <td>LC 2222</td>
+                      </tr>
+                      <!-- SI LEADER: Nancy Martin -->
+                    
+                      <tr class="inPerson-session">
+                        <td>College Physics</td>
+                        <td>001 and 004</td>
+                        <td>1-2pm</td>
+                        <td>Thursday</td>
+                        <td>LC 2222</td>
+                      </tr>
+                      <!-- SI LEADER: Nancy Martin -->
+                    
+                    </table>
+                  </div>
+                    <h4 class="heading-quaternary"><span class="zoom-session-span">Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person session are marked with this color</span>. Zoom log-in requires your CU Denver Student account. In-Person sessions are held in the City Heights Learning Commons</h4>
+                    <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and SI Leader availability</h4>
+                </div>
+            </div>
+        </div>
+
+</main>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
+<!--Section Feature Box-->
+     <!--
+<section class="section__si-overview">
+  <div class="u-margin-bottom-big u-center-text">
+<!--ROW 1
+<div class="row ">
+
+  <div class="col-1-of-4">
+    <div class="feature-box">
+      <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">trained Leader</h3>
+      <p class="feature-box__text">A trained SI Leader, approved by the course instructor, is assigned to your course to help you develop a deeper understanding of difficult course concepts</p>
+    </div>
+  </div>
+
+  <div class="col-1-of-4">
+    <div class="feature-box">
+      <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">weekly</h3>
+      <p class="feature-box__text">The leader holds weekly interactive and collaborative study sessions for you to work in small groups with your classmates</p>
+    </div>
+  </div>
+
+  <div class="col-1-of-4">
+    <div class="feature-box">
+      <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">critical thinking</h3>
+      <p class="feature-box__text">You'll engage in critical thinking to analyze and make connections with difficult concepts</p>
+    </div>
+  </div>
+
+  <div class="col-1-of-4">
+    <div class="feature-box">
+      <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">effective study strategies</h3>
+      <p class="feature-box__text">Your leader will share effective study strategies to help you learn and engage in fun and effective learning activities with your classmates</p>
+    </div>
+  </div>
+
+</div>
+<!--
+
+  <!--ROW 2
+    <div class="row ">
+
+      <div class="col-1-of-4">
+        <div class="feature-box">
+          <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">learn from mistakes</h3>
+          <p class="feature-box__text">SI is an environment where you can make mistakes/be confused and learn from it</p>
+        </div>
+      </div>
+
+      <div class="col-1-of-4">
+        <div class="feature-box">
+          <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">compare notes</h3>
+          <p class="feature-box__text">You can compare notes and share study tips with your classmates</p>
+        </div>
+      </div>
+
+      <div class="col-1-of-4">
+        <div class="feature-box">
+          <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">challenging concepts</h3>
+          <p class="feature-box__text">Session mainly focus on the most challenging concepts from the week’s lecture</p>
+        </div>
+      </div>
+
+      <div class="col-1-of-4">
+        <div class="feature-box">
+          <h3 class="heading-tertiary heading-tertiary__gold u-margin-bottom-small">no sign up</h3>
+          <p class="feature-box__text">No sign-up required! Students can attend the session using the Zoom ID in the flyer.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+-->

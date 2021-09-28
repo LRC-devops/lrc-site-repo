@@ -1,0 +1,602 @@
+.h1-box {
+  height: 50vh;
+  width: 100%;
+  background-color: $color-grey-dark;
+  position: relative;
+
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.tile-50 {
+    height: 50%;
+    overflow-y: auto;
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+}
+.tile-25 {
+    height: 25%;
+    overflow-x: auto;
+
+    @include respond(tab-port) {
+      width: 100% !important;
+    }
+}
+.tile-v2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  p {
+    font-size: 2rem;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-1 {
+
+    &__color {
+      background-color: $color-pink;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        transition: all .2s;
+        position: absolute;
+        //position: relative;
+        top: 0;
+        left: 0;
+
+
+      }
+
+
+
+  }
+/*
+  &-2 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-teal;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 25%;
+      height: 50%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        transition: all .2s;
+        position: absolute;
+        //position: relative;
+        top: 0;
+        left: 25%;
+
+
+
+      }
+
+  }
+  */
+  &-2 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-teal;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 25%;
+      height: 50%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+  
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        height: 50%;
+        transition: all .2s;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        overflow-y: auto;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+  &-3 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-purp;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 50%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+  
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        height: 50%;
+        transition: all .2s;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        overflow-y: auto;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+
+  &-4 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-primary;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 75%;
+      height: 50%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+  
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        transition: all .2s;
+        position: absolute;
+        top: 0;
+        left: 75%;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+  &-5 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-secondary;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 25%;
+      width: 50%;
+      transition: all .2s;
+      z-index: 100;
+  
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 50%;
+        transition: all .2s;
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+  &-6 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-teal-dark;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 50%;
+      width: 50%;
+      transition: all .2s;
+      z-index: 100;
+  
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 50%;
+        transition: all .2s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+  &-7 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-purp-dark;
+      opacity: 1;
+      position: absolute;
+      top: 75%;
+      left: 0%;
+      height: 25%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+  
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        transition: all .2s;
+        position: absolute;
+        top: 75%;
+        left: 0;
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+  &-8 {
+    //position: relative;
+
+    &__color {
+      background-color: $color-primary-light;
+      opacity: 1;
+      position: absolute;
+      top: 75%;
+      left: 25%;
+      height: 25%;
+      width: 25%;
+      transition: all .2s;
+      z-index: 100;
+  
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+
+    }
+    &:hover &__color {
+      //opacity: .2;
+      transform: translateY(-1rem) scale(1.2);
+      z-index: 900;
+
+    }
+    &:hover &__head {
+      opacity: 0;
+    }
+    &:hover &__text {
+      opacity: 1;
+    }
+
+      &__head {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s;
+      }
+    
+      &__text {
+        text-align: center;
+        color: $color-white;
+        padding: 1rem 2rem;
+        opacity: 0;
+        display: inline-block;
+        z-index: 1000;
+        width: 25%;
+        transition: all .2s;
+        position: absolute;
+        top: 75%;
+        left: 25%;
+
+
+
+      }
+
+      @include respond(tab-port) {
+        width: 100% !important;
+      }
+
+  }
+
+}

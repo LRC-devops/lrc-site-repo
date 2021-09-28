@@ -1,0 +1,117 @@
+// .popup-takeOver {
+//   background-image: linear-gradient(
+//     to right bottom,
+//     $color-secondary,
+//     $color-pink
+//   );
+//   height: 100vh;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   position: fixed;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: all 0.2s;
+
+//   &__box {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: column;
+
+//     background-color: orangered;
+//     transition: all 0.3s 0.2s;
+//     flex-grow: 1;
+//     width: 80%;
+//     max-height: 95rem;
+//     overflow-y: auto;
+//     overflow-x: scroll;
+//   }
+//   &__table-box {
+//     // flex-basis: 1;
+//     margin-bottom: 2rem;
+//   }
+//   &__table--courses {
+//     // border: 1px solid $color-teal;
+//     transition: all 0.2s;
+//     // opacity: 0;
+//     border-collapse: collapse;
+//     text-align: left;
+//     // box-shadow: 0 2rem 3rem rgba($color-black, 0.2);
+//     border-radius: 5px;
+//     overflow-y: auto;
+//     max-height: 80vh;
+
+//     padding: 0.2rem 0.5rem;
+//     thead,
+//     tr {
+//       // background-color: rgba($color-secondary, 0.7);
+//       font-size: 5rem;
+//     }
+//     th {
+//       padding: 2rem 5rem;
+//     }
+
+//     tr {
+//       @include react(dark) {
+//         background-color: $color-grey-dark !important;
+//       }
+//     }
+
+//     th,
+//     td {
+//       font-size: $default-font-size;
+//       border-bottom: 1px solid $color-grey-dark;
+//       border-collapse: collapse;
+//       padding: 0.2rem 0.5rem;
+//     }
+//     th {
+//       font-weight: 700;
+//       font-size: 1.5rem;
+//     }
+//     tbody tr:last-of-type {
+//       border-bottom: 1px solid transparent;
+//     }
+//   }
+
+//   table {
+//     width: 100%;
+//     // flex: 1;
+//   }
+
+//   &__course-list {
+//     align-self: center;
+//     justify-self: center;
+//   }
+//   &__close--icon {
+//     text-decoration: none;
+//     color: $color-grey-dark;
+//     font-size: 5rem;
+//     position: fixed;
+//     top: 1rem;
+//     right: 1rem;
+//     line-height: 1;
+//     transition: all 0.2s;
+//     &:hover {
+//       color: $color-primary;
+//       transform: rotate(360deg);
+//     }
+//     &:active .popup-takeOver {
+//       visibility: hidden;
+//     }
+//   }
+//   &:target {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+
+//   &:target &__box {
+//     transform: translate(-50%, -50%) scale(1);
+//     opacity: 1;
+//   }
+// }

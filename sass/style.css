@@ -3791,26 +3791,24 @@ html {
   padding: 0.2rem 0.5rem;
 }
 
-.popup__table--courses thead,
-.popup__table--courses tr {
-  background-color: rgba(207, 184, 124, 0.7);
-}
-
 .popup__table--courses th {
-  padding: 2rem 5rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #fff !important;
+  background-color: #cfb87c;
+  white-space: nowrap;
 }
 
-.popup__table--courses th,
 .popup__table--courses td {
   font-size: 1.6rem;
   border-bottom: 1px solid #565a5c;
   border-collapse: collapse;
   padding: 0.2rem 0.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .popup__table--courses th {
   font-weight: 700;
-  font-size: 1.5rem;
 }
 
 .popup__table--courses tbody tr:last-of-type {
@@ -5043,6 +5041,9 @@ html {
 
 .qs-tile p {
   color: #fff !important;
+  font-size: 2rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .qs-tile:not(:last-child) {
@@ -5054,10 +5055,6 @@ html {
     margin-right: 0;
     margin-bottom: 2rem;
   }
-}
-
-.qs-tile p {
-  font-size: 2rem;
 }
 
 .qs-tile h3 {
@@ -5075,6 +5072,8 @@ html {
   display: block;
   width: 50%;
   text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 @media (max-width: 75em) {
@@ -5095,19 +5094,31 @@ html {
   }
 }
 
-.qs-tile:hover {
-  -webkit-transform: translateY(-1rem) scale(1.05);
-          transform: translateY(-1rem) scale(1.05);
-  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+.qs-tile:hover .qs-tile__icon {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 75em) {
-  .qs-tile:hover {
-    -webkit-transform: translateY(0), scale(1);
-            transform: translateY(0), scale(1);
-    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  .qs-tile:hover .qs-tile__icon {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.qs-tile:hover .qs-tile__title {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 75em) {
+  .qs-tile:hover .qs-tile__title {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -5197,6 +5208,8 @@ html {
 .qs-tile__icon {
   font-size: 8rem;
   color: #fff;
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .qs-instruct {

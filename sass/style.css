@@ -2019,7 +2019,6 @@ html {
           transform: translateY(-0.3rem);
   color: #000;
   background-color: #cfb87c;
-  border: 5px solid #cf7291;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -2129,7 +2128,7 @@ html {
   background-color: #cf7291;
   -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  border: 5px solid #cfb87c;
+  border: 1px solid #cfb87c;
   color: #000;
 }
 
@@ -3842,7 +3841,7 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, -50%), scale(0.25);
           transform: translate(-50%, -50%), scale(0.25);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -4021,7 +4020,7 @@ html {
 }
 
 .inPerson-session {
-  background-color: rgba(207, 184, 124, 0.2) !important;
+  background-color: rgba(207, 184, 124, 0.5) !important;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }

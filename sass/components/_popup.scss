@@ -251,7 +251,7 @@
     left: 50%;
     transform: translate(-50%, -50%), scale(0.25);
 
-    background-color: $color-white;
+    background-color: rgba($color-white, 0.5);
     // width: 75%;
     margin: 0 auto;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
@@ -417,7 +417,7 @@
 }
 
 .inPerson-session {
-  background-color: rgba($color-secondary, 0.2) !important;
+  background-color: rgba($color-secondary, 0.5) !important;
 
   transition: all 0.2s;
   &:hover {

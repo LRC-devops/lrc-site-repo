@@ -255,7 +255,7 @@
     // width: 75%;
     margin: 0 auto;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-    border-radius: 3px;
+    border-radius: 10px;
     display: table;
     overflow: hidden;
     opacity: 0;
@@ -415,6 +415,11 @@
   //   opacity: 1;
   // }
 }
+.week {
+  th {
+    border-right: 1px solid #fff;
+  }
+}
 
 .inPerson-session {
   background-color: rgba($color-secondary, 0.5) !important;
@@ -425,7 +430,7 @@
   }
 }
 .inPerson-session-span {
-  background-color: rgba($color-secondary, 0.2);
+  background-color: rgba($color-secondary, 0.5) !important;
 }
 .zoom-session-span {
   background-color: rgba($color-primary, 0.8);

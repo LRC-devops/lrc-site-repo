@@ -1466,8 +1466,8 @@ html {
 }
 
 .section__intro--sub--ell {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), color-stop(50%, rgba(34, 34, 34, 0.8)), to(rgba(34, 34, 34, 0.6))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ell-top.jpg?sfvrsn=851ac4ba_2);
-  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(34, 34, 34, 0.6) 100%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ell-top.jpg?sfvrsn=851ac4ba_2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), color-stop(50%, rgba(34, 34, 34, 0.8)), to(rgba(34, 34, 34, 0.6))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/rise/rise-background-clouds-alt-2-v2@3x.png?sfvrsn=8cd3d5ba_2);
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(34, 34, 34, 0.6) 100%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/rise/rise-background-clouds-alt-2-v2@3x.png?sfvrsn=8cd3d5ba_2);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
@@ -2612,6 +2612,90 @@ html {
 .btn-qs-v2:hover, .btn-qs-v2:active {
   background-color: #cfb87c;
   color: #565a5c;
+}
+
+.btn-colorShadow {
+  margin-bottom: 2rem;
+}
+
+.btn-colorShadow:link, .btn-colorShadow:visited {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-colorShadow:hover, .btn-colorShadow:active {
+  -webkit-transform: translateY(-0.2rem) scale(1.01);
+          transform: translateY(-0.2rem) scale(1.01);
+}
+
+.btn-colorShadow:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media (max-width: 75em) {
+  .btn-colorShadow:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.btn-colorShadow__gold {
+  color: #a99256;
+  border: 1px solid #cfb87c;
+  -webkit-box-shadow: 1rem 1rem 0 #cfb87c;
+          box-shadow: 1rem 1rem 0 #cfb87c;
+}
+
+.btn-colorShadow__gold:hover, .btn-colorShadow__gold:active {
+  background-color: #cfb87c;
+  color: #565a5c;
+  -webkit-box-shadow: 1.5rem 1.5rem 1rem #a99256;
+          box-shadow: 1.5rem 1.5rem 1rem #a99256;
+}
+
+.btn-colorShadow__green {
+  color: #46844b;
+  border: 1px solid #91cf96;
+  -webkit-box-shadow: 1rem 1rem 0 #91cf96;
+          box-shadow: 1rem 1rem 0 #91cf96;
+}
+
+.btn-colorShadow__green:hover, .btn-colorShadow__green:active {
+  background-color: #91cf96;
+  color: #565a5c;
+  -webkit-box-shadow: 1.5rem 1.5rem 1rem #46844b;
+          box-shadow: 1.5rem 1.5rem 1rem #46844b;
+}
+
+.btn-colorShadow__pink {
+  color: #cf7291;
+  border: 1px solid #cf7291;
+  -webkit-box-shadow: 1rem 1rem 0 #cf7291;
+          box-shadow: 1rem 1rem 0 #cf7291;
+}
+
+.btn-colorShadow__pink:hover, .btn-colorShadow__pink:active {
+  background-color: #cf7291;
+  color: #fff;
+  -webkit-box-shadow: 1.5rem 1.5rem 1rem #c24c73;
+          box-shadow: 1.5rem 1.5rem 1rem #c24c73;
+}
+
+.btn-colorShadow__teal {
+  color: #5b7a82;
+  border: 1px solid #86c0cf;
+  -webkit-box-shadow: 1rem 1rem 0 #86c0cf;
+          box-shadow: 1rem 1rem 0 #86c0cf;
+}
+
+.btn-colorShadow__teal:hover, .btn-colorShadow__teal:active {
+  background-color: #86c0cf;
+  color: #565a5c;
+  -webkit-box-shadow: 1.5rem 1.5rem 1rem #5b7a82;
+          box-shadow: 1.5rem 1.5rem 1rem #5b7a82;
 }
 
 .composition {
@@ -3845,7 +3929,7 @@ html {
   margin: 0 auto;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 10px;
   display: table;
   overflow: hidden;
   opacity: 0;
@@ -4019,6 +4103,10 @@ html {
   background-color: orangered !important;
 }
 
+.week th {
+  border-right: 1px solid #fff;
+}
+
 .inPerson-session {
   background-color: rgba(207, 184, 124, 0.5) !important;
   -webkit-transition: all 0.2s;
@@ -4030,7 +4118,7 @@ html {
 }
 
 .inPerson-session-span {
-  background-color: rgba(207, 184, 124, 0.2);
+  background-color: rgba(207, 184, 124, 0.5) !important;
 }
 
 .zoom-session-span {
@@ -5724,6 +5812,152 @@ html {
 
 .section__lrc--ell--img img {
   width: 100%;
+}
+
+.section__services--rise {
+  background-color: #fff;
+  padding: 5rem 15rem;
+}
+
+.rise-service__box {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rise-service__bubble {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.rise-service__bubble--icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.rise-service__bubble p {
+  color: #fff;
+}
+
+.bubble-1 {
+  background-color: #91cf96;
+}
+
+.bubble-1 p {
+  color: #565a5c;
+}
+
+.bubble-2 {
+  background-color: #cfb87c;
+}
+
+.bubble-2 p {
+  color: #565a5c;
+}
+
+.bubble-3 {
+  background-color: #cf7291;
+  color: #fff;
+}
+
+.bubble-4 {
+  background-color: #8b72cf;
+  color: #fff;
+}
+
+.bubble-5 {
+  background-color: #86c0cf;
+}
+
+.bubble-5 p {
+  color: #565a5c;
+}
+
+.section__we--rise {
+  padding: 10rem;
+  background-color: #eee;
+}
+
+.rise-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.rise-text-box p {
+  -webkit-column-count: 2;
+          column-count: 2;
+}
+
+.rise-text-span {
+  color: #8b7438;
+}
+
+.section-rise__guide {
+  padding: 15rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/rise/rise-background-clouds-alt-2-v1@3x.png?sfvrsn=90d4d5ba_2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/rise/rise-background-clouds-alt-2-v1@3x.png?sfvrsn=90d4d5ba_2);
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.section-rise__guide h2 {
+  margin-bottom: 5rem;
+  background-color: rgba(207, 184, 124, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #cf7291 !important;
+}
+
+.rise-guide__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rise-guide__text {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 114, 145, 0.8)), to(rgba(207, 184, 124, 0.8)));
+  background-image: linear-gradient(rgba(207, 114, 145, 0.8), rgba(207, 184, 124, 0.8));
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 5rem;
+  border-radius: 5rem;
+}
+
+.rise-guide__text p {
+  color: #fff;
+}
+
+.rise-guide__text:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .section__overview--lh {

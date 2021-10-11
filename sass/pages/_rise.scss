@@ -1,0 +1,152 @@
+.section__overview--ell {
+  background-image: linear-gradient(
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.3)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-ell-1.jpg?sfvrsn=9118c4ba_2);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15rem 0;
+}
+
+.section__lrc--ell {
+  background-color: $color-white;
+  padding: 15rem 0;
+  //margin-top: -17rem;
+  &--col {
+    hyphens: auto;
+  }
+  &--text {
+    border-bottom: 1px solid $color-grey-lighter;
+  }
+  &--img {
+    img {
+      width: 100%;
+    }
+  }
+}
+.section__services--rise {
+  background-color: #fff;
+  padding: 5rem 15rem;
+}
+.rise-service {
+  &__box {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__bubble {
+    height: 30rem;
+    width: 30rem;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    &--icon {
+      font-size: 5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: $color-white;
+    }
+    // &:not(:last-child) {
+    //   margin-right: 2rem;
+    //   @include respond(tab-port) {
+    //     margin-right: 0;
+    //   }
+    // }
+  }
+}
+
+.bubble {
+  &-1 {
+    background-color: $color-primary;
+    p {
+      color: $color-grey-dark;
+    }
+  }
+  &-2 {
+    background-color: $color-secondary;
+    p {
+      color: $color-grey-dark;
+    }
+  }
+  &-3 {
+    background-color: $color-pink;
+    color: #fff;
+  }
+  &-4 {
+    background-color: $color-purp;
+    color: #fff;
+  }
+  &-5 {
+    background-color: $color-teal;
+    p {
+      color: $color-grey-dark;
+    }
+  }
+}
+.section__we--rise {
+  padding: 10rem;
+  background-color: $color-grey-lighter;
+}
+.rise-text {
+  &-box {
+    display: flex;
+    width: 50vw;
+    margin: 0 auto;
+
+    p {
+      column-count: 2;
+    }
+  }
+  &-span {
+    color: $color-secondary-ada__small;
+  }
+}
+
+.section-rise__guide {
+  padding: 15rem;
+  background-image: linear-gradient(rgba($color-black, 0.1)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/rise/rise-background-clouds-alt-2-v1@3x.png?sfvrsn=90d4d5ba_2);
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  h2 {
+    margin-bottom: 5rem;
+    background-color: rgba($color-secondary, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    color: $color-pink !important;
+  }
+}
+.rise-guide {
+  &__box {
+    display: flex;
+    // flex-wrap: wrap;
+    // padding: 0 10rem;
+  }
+  &__text {
+    // background-color: rgba($color-pink, 0.7);
+    background-image: linear-gradient(
+      rgba($color-pink, 0.8),
+      rgba($color-secondary, 0.8)
+    );
+    flex-shrink: 1;
+    padding: 5rem;
+    border-radius: 5rem;
+    // box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+    p {
+      color: #fff;
+    }
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}

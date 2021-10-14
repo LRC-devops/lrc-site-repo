@@ -17,6 +17,18 @@
     <body>
     <main>
 
+      <header class="banner banner-gold">
+        <div class="banner__box">
+          <div class="banner__text">
+            <p class="paragraph">** New updates to the Question Session schedule. Check here to find new sessions and subjects! **</p>
+          </div>
+          <div class="banner__close">
+            <input type="checkbox" class="banner__checkbox">
+            <p class="paragraph banner__close--icon"><a>&times;</a></p>
+          </div>
+        </div>
+      </header>
+
 
 <!--
   CARD SUBSTITUTE BUILD
@@ -63,7 +75,7 @@
                 <h3 class="heading-tertiary--white">Online <br>or In-Person</h3>
               </div>
               <div class="qs-tile__icon-box">
-                <ion-icon name="desktop-outline" class="qs-tile__icon"></ion-icon>
+                <ion-icon name="desktop-outline" class="qs-tile__icon" id="qs-instruct"></ion-icon>
               </div>
               <p class="paragraph">session formats are available</p>
             </div>
@@ -100,12 +112,12 @@
             <a href="#popup-courses__bio--btns" class="btn-colorShadow btn-colorShadow__gold">Biology</a>
             <a href="#popup-courses__chem--btns" class="btn-colorShadow btn-colorShadow__gold">Chemistry</a>
             <a href="#popup-courses__phys" class="btn-colorShadow btn-colorShadow__gold">Physics</a>
+            <a href="#popup-courses__eac" class="btn-colorShadow btn-colorShadow__gold">Engineering and Computing</a>
+            <a href="#popup-courses__pbhl" class="btn-colorShadow btn-colorShadow__gold">Public Health</a>
             <a href="#popup-courses__pmus" class="btn-colorShadow btn-colorShadow__green">Music</a>
-            <a href="#popup-courses__eac" class="btn-colorShadow btn-colorShadow__green">Engineering and Computing</a>
-            <a href="#popup-courses__pbhl" class="btn-colorShadow btn-colorShadow__pink">Public Health</a>
-            <a href="#popup-courses__modLang" class="btn-colorShadow btn-colorShadow__pink">Modern Languages</a>
-            <a href="#popup-courses__philo" class="btn-colorShadow btn-colorShadow__teal">Philosophy</a>
-            <a href="#popup-courses__other" class="btn-colorShadow btn-colorShadow__teal">Other Courses</a>
+            <a href="#popup-courses__philo" class="btn-colorShadow btn-colorShadow__green">Philosophy</a>
+            <a href="#popup-courses__modLang" class="btn-colorShadow btn-colorShadow__green">Modern Languages</a>
+            <a href="#popup-courses__other" class="btn-colorShadow btn-colorShadow__pink">Other Courses</a>
           </div>
 
           <div class="footnote u-center-text">
@@ -193,7 +205,9 @@
 
                 <table class="popup__table--courses">
 
-                  <!-- ANATOMY -->
+                  <!-- ------------- ------- ---------------- -->
+                  <!-- ------------- Anatomy ---------------- -->
+                  <!-- ------------- ------- ---------------- -->
                   <tr>
   
                     <th>Anatomy</th>
@@ -215,21 +229,27 @@
                   <tr class="zoom-session">
                     <td>Anatomy</td>
                     <td>W 7-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0sfuGsqjkpGtyXX092VOhEUmIRoqa0ucXK" title="Katie H. Wednesday Anatomy Sessions Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
-                  
+
 
                   <tr class="zoom-session">
                     <td>Anatomy</td>
                     <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAqcuGrrzMsH9I5GLv_E0dqsFtZ1_dDjS0N" title="Katie H. Saturday Anatomy Sessions Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
+
+                  <!-- ------------- ---------- ---------------- -->
+                  <!-- ------------- Physiology ---------------- -->
+                  <!-- ------------- ---------- ---------------- -->
                  
                   <tr>
                     <th>Physiology</th>
                     <th></th>
                     <th></th>
                   </tr>
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
 
                   <tr class="zoom-session">
                     <td>Human Physiology</td>
@@ -928,7 +948,8 @@
   
                   </tr>
   
-                  <tr class="inPerson-session">
+                  <tr class="inPerson-session"> 
+                    <!--  -->
                     <td>College Physics 1 & 2</td>
                     <td>M 4-5pm</td>
                     <td>* In Person</td>
@@ -939,7 +960,7 @@
                   <tr class="zoom-session">
                     <td>College Physics 1 & 2</td>
                     <td>M 6-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAlcumgrTwjH9Xhqyq5ZmWk2BmSHm89iyQ5" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAlcumgrTwjH9Xhqyq5ZmWk2BmSHm89iyQ5" title="Karl's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
                   <tr class="zoom-session">
@@ -1351,8 +1372,14 @@
               <!-- ------------- ZOOM SESSIONS ---------------- -->
               <tr class="zoom-session">
                 <td>Spanish Language</td>
+                <td>Tu 3-4pm</td>
+                <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0qduqsrTIqHteDIB84ZrdcjfB2_-eYuQBs" title="Katie H. Tuesday session Spanish Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+              </tr>
+
+              <tr class="zoom-session">
+                <td>Spanish Language</td>
                 <td>W 5:30-7pm</td>
-                <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0sfuGsqjkpGtyXX092VOhEUmIRoqa0ucXK" title="Katie H. Wednesday session Spanish Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
               </tr>
 
               <tr>
@@ -1417,13 +1444,18 @@
                 <!-- ------------- ZOOM SESSIONS ---------------- -->
                 
 
+               <tr class="zoom-session">
+                  <td>Philosophy</td>
+                  <td>Tu 5:30-7:30pm</td>
+                  <td><a href="https://ucdenver.zoom.us/meeting/register/tJcrc-CvqzovGd3K9kIObW2gKmCnm1Zjw8Kx" title="Eli's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                </tr> 
+<!--FIXME: IS THIS A DUPLICATE SESSION? I HAVE TWO MONDAY TASKS SET FOR SAME SUBJECT AND TIME, BOTH ONLINE-->
                <!-- <tr class="zoom-session">
-                  <td>Computer Science</td>
-                  <td>F 12-1:30pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/92310857800" title="Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  <td>Philosophy</td>
+                  <td>Tu 5:30-7:30pm</td>
+                  <td><a href="https://ucdenver.zoom.us/meeting/register/tJcrc-CvqzovGd3K9kIObW2gKmCnm1Zjw8Kx" title="AG's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                 </tr>  -->
 
-                
               </table>
             </div>
             <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>

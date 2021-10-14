@@ -1,0 +1,59 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: rgba($color-secondary, 0.9);
+
+  // display: block;
+  text-align: center;
+  width: 100vw;
+  // padding: 1rem 2rem;
+  z-index: 100;
+
+  &__checkbox:checked ~ &__box {
+    // display: none;
+    // visibility: hidden;
+    background-color: orangered;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-secondary, 0.9),
+      rgba($color-pink, 0.9)
+    );
+    transition: all 0.2s;
+  }
+  &__text {
+    align-self: center;
+    justify-self: center;
+    p {
+      font-size: 2rem;
+    }
+  }
+  //FIXME: TROUBLE CONFIGURING BANNER CLOSE
+  &__close {
+    justify-self: flex-end;
+    align-self: flex-end;
+    // &--checkbox {
+    //   display: none;
+    // }
+
+    &--icon {
+      font-size: 4rem;
+      line-height: 1.7;
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: $color-grey-dark;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      a:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

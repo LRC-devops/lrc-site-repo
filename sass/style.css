@@ -3305,6 +3305,28 @@ html {
   transition: all 0.5s;
 }
 
+.testimonials-au__lha__img--dane {
+  height: 100%;
+  width: auto;
+  -webkit-transform: translateX(-0.5rem) translateY(3.5rem) scale(2.4);
+          transform: translateX(-0.5rem) translateY(3.5rem) scale(2.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.testimonials-au__lha__img--maya {
+  height: 100%;
+  width: auto;
+  -webkit-transform: translateX(0.5rem) translateY(1.5rem) scale(2.4);
+          transform: translateX(0.5rem) translateY(1.5rem) scale(2.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .testimonials-au__lha__caption {
   position: absolute;
   top: 50%;

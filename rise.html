@@ -149,7 +149,7 @@
         </div>-->
         <div class="row">
           <div class="intro__heading">
-            <h1 class="main__heading u-margin-bottom-big">
+            <h1 class="main__heading u-margin-bottom-big" id="rise-head">
               <span class="main__heading--gold">Learning Resources Center</span
               >RISE<span class="main__heading--sub"
                 >Resources for Immigrant Students<br />
@@ -157,15 +157,30 @@
               >
             </h1>
             <div class="section__intro--btns">
-              <a
-                href="https://outlook.office365.com/owa/calendar/RISE@olucdenver.onmicrosoft.com/bookings/"
-                class="btn btn-full"
+              <a href="#popup-rise__register" class="btn btn-full"
                 >Schedule a RISE Session</a
               >
+              <!-- href="https://outlook.office365.com/owa/calendar/RISE@olucdenver.onmicrosoft.com/bookings/" -->
             </div>
           </div>
         </div>
       </header>
+
+      <div class="popup" id="popup-rise__register">
+        <div class="popup__content">
+          <a href="#rise-head" class="popup__close">&times;</a>
+
+          <div class="row u-center-text">
+            <iframe
+              src="https://outlook.office365.com/owa/calendar/RISE@olucdenver.onmicrosoft.com/bookings/"
+              width="100%"
+              height="100%"
+              scrolling="yes"
+              style="border: 0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
 
       <section class="section__we--rise">
         <div class="u-center-text u-margin-bottom-medium">
@@ -180,9 +195,9 @@
             program is an academic and social support program that has a goal to
             support immigrant and English Language Learners at CU Denver by
             providing them with one-on-one meetings in which they can talk about
-            their academic needs. RISE Peer Mentors connect students to campus
-            and off campus resources, and facilitate workshops and presentations
-            focused on the needs of Immigrant and ELL students.
+            their academic needs. RISE Peer Mentors connect students on and off
+            campus resources, and facilitate workshops and presentations focused
+            on the needs of Immigrant and ELL students.
           </p>
         </div>
       </section>

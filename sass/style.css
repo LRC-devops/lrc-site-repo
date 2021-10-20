@@ -1407,8 +1407,8 @@ html {
 
 @media (max-width: 37.5em) {
   .section__intro--sub--ag {
-    background-image: none;
-    background-color: #8b72cf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
   }
 }
 
@@ -1581,7 +1581,7 @@ html {
 }
 
 .navigation__item {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .navigation__link:link, .navigation__link:visited {
@@ -1589,7 +1589,7 @@ html {
   font-size: 2.5rem;
   font-weight: 100;
   font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -5120,8 +5120,8 @@ html {
 
 @media (max-width: 37.5em) {
   .section__overview--ag {
-    background-image: none;
-    background-color: #cf7291;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
   }
 }
 

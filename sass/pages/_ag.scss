@@ -16,8 +16,13 @@
   padding: 10rem 0;
   //position: relative;
   @include respond(phone) {
-    background-image: none;
-    background-color: $color-pink;
+    background-image: linear-gradient(
+        rgba($color-black, 0.5),
+        rgba($color-black, 0.3)
+      ),
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
+    // background-image: none;
+    // background-color: $color-pink;
   }
   &--hero-box {
     background-color: rgba($color-white, 0.95);

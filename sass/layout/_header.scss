@@ -95,7 +95,10 @@
           rgba($color-black, 0.5),
           rgba($color-black, 0.3)
         ),
-        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=4bf6d1ba_2);
+        url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v4-largeqs-artwork-6.png?sfvrsn=5422d2ba_2);
+      background-size: contain;
+      background-attachment: fixed;
+      background-position: center;
       // background-image: none;
       // background-color: $color-pink;
     }

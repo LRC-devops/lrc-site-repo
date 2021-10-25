@@ -1506,6 +1506,27 @@ html {
   }
 }
 
+.section-intro2 {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 86, 98, 0.7)), to(rgba(7, 9, 10, 0.7))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-min-min.jpg?sfvrsn=4ae5c1ba_2);
+  background-image: linear-gradient(rgba(39, 86, 98, 0.7), rgba(7, 9, 10, 0.7)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-min-min.jpg?sfvrsn=4ae5c1ba_2);
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-attachment: fixed;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-intro2__logo-box {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 2rem 3rem;
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -5632,6 +5653,85 @@ html {
     background-image: none;
     background-color: #8b72cf;
   }
+}
+
+.nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 37.5em) {
+  .nav-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.nav-box__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-box__head {
+  font-size: 2.5rem;
+  color: #fff;
+  border-bottom: 2px solid #cfb87c;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  font-family: "HelveticaNeueLTW05-45Light", sans-serif !important;
+  font-weight: 100;
+}
+
+@media (max-width: 37.5em) {
+  .nav-box__head {
+    font-size: 2rem;
+  }
+}
+
+.nav-box__list {
+  list-style: none;
+}
+
+.nav-box__item {
+  font-size: 2rem;
+}
+
+@media (max-width: 37.5em) {
+  .nav-box__item {
+    font-size: 1.7rem;
+  }
+}
+
+.nav-box__link {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.nav-box__link--arr {
+  color: #91cf96;
+  line-height: 2;
+  font-size: 3rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.nav-box__link:hover, .nav-box__link:active {
+  color: #cfb87c;
+  border-bottom: 2px solid transparent;
 }
 
 .section__about-us--au {

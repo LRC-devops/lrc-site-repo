@@ -213,3 +213,22 @@
     }
   }
 }
+
+.section-intro2 {
+  height: 95vh;
+  background-image: linear-gradient(
+      rgba(darken($color-teal, 40%), 0.7),
+      rgba(darken($color-teal-dark, 40%), 0.7)
+    ),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-min-min.jpg?sfvrsn=4ae5c1ba_2);
+  background-size: cover;
+  align-items: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+
+  &__logo-box {
+    align-self: flex-start;
+    padding: 2rem 3rem;
+  }
+}

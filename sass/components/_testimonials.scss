@@ -301,6 +301,20 @@
     backface-visibility: hidden;
     transition: all 0.5s;
   }
+  &__img--dane {
+    height: 100%;
+    width: auto;
+    transform: translateX(-0.5rem) translateY(3.5rem) scale(2.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
+  &__img--maya {
+    height: 100%;
+    width: auto;
+    transform: translateX(0.5rem) translateY(1.5rem) scale(2.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
 
   &__caption {
     position: absolute;

@@ -1,5 +1,8 @@
 # lrc-compiled-site
 
+To make changes to the site, make sure to read through the basic formatting section so that you understand how to edit the underlying code. 
+After reading, navigate to the section that explains how to make the edit you need. 
+
 Basic HTML formatting explanation
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
@@ -33,6 +36,12 @@ ________________________________________________________________________________
     //comments 
     //like 
     //this
+    
+    Classes are used to style HTML elements and are styled in a completly different way. There should be no need to edit a CSS element, only add one to an HTML element. CSS IS CASE SENSITIVE so be sure to watch out for that.
+    HTML elements are styeled by added a CSS class to the element that tells it to look a certian way. 
+    
+    HTML tags set the structure, and anything after the > of the opening tag will appear as text on the website. ex: 
+    <div class="test">THIS TEXT WILL BE VISIBLE AND STYLED HOWEVER THE test CLASS SPECIFIES</div>
 
  
 

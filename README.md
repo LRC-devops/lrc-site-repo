@@ -12,7 +12,7 @@ ________________________________________________________________________________
       </div>
 
     Comments are elements that the computer skips over and only for documentation to help keep the programmer organized and let others know how things work. In HTML, comments open with this tag: 
-    <!—
+    <!—-
     And close with this tag
     -->
     Anything between these tags will be greyed out and ignored by the computer. 
@@ -36,13 +36,9 @@ ________________________________________________________________________________
 
  
 
-TO ADD AN IN-PERSON SESSION
+HOW SESSIONS ARE FORMATTED
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-    Begin by locating the correct course popup with the schedule you are attempting to alter
-
-    Find a space for the new session. Pay attention to how the sessions are organized by course, then by day of the week and time
-      example
     <!--
     <tr class="inPerson-session"> //This is where the color of the row is added. use class="inPerson-session" for gold, class="zoom-session" for green, and class="cancel-session" for red cancelations. 
       <td>Computer Science</td> //This is the title of the session. For cancellations: use this HTML code &times; to insert an 'X', state that the session is canceled then add <br> for a breakpoint. The title of the session should break to a new line, so the students know what session is canceled. 
@@ -56,8 +52,14 @@ ________________________________________________________________________________
       <td>* In Person</td>
     </tr>
     -->
+    
+TO ADD AN IN-PERSON SESSION
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
     For adding a session, simply find the correct slot in between the days/times that the new session should sit. Copy the session above and edit the information to reflect the new session.
+    Begin by locating the correct course popup with the schedule you are attempting to alter
+
+    Find a space for the new session. Pay attention to how the sessions are organized by course, then by day of the week and time
   
 TO ADD A ZOOM SESSION 
 ________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

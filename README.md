@@ -3,7 +3,6 @@
 To make changes to the site, make sure to read through the basic formatting section so that you understand how to edit the underlying code.
 After reading, navigate to the section that explains how to make the edit you need.
 
-If you are preforming a basic and non-permanent edit to the site, you may do so directly in sitefinity. This should only include changes to the HTML elements.
 NEVER ALTER THE FIRST TWO CONTENT BLOCKS ON ANY PAGE OF THE WEBSITE. These two elements are shared blocks and contain the CSS stylesheet and Navigation menu. If a change is made in these elements and something is broken, it will break all pages on the site as well.
 
 For permanent changes, the alterations need to be done inside of a local environment. You will need to download VSCode, clone this repository, make the changes in a branch, commit that branch, and upload the new code to Sitefinity. Instructions on how to do this can be found below.

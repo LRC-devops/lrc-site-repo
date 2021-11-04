@@ -47,12 +47,12 @@ Basic HTML formatting explanation
 
     HTML tags set the structure, and anything after the > of the opening tag will appear as text on the website. ex:
     <div class="test">THIS TEXT WILL BE VISIBLE AND STYLED HOWEVER THE test CLASS SPECIFIES</div>
-    
+
 USING VSCODE TO MAKE CHANGES
 
 ---
 
-    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" to update the code in your local environment.
+    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" (It may also say "Pull Origin") to update the code in your local environment.
     Next, you will create a new branch to make your edits. Use the tab next to "fetch Origin" to do so. Click on "Current Branch", then click on the button on the upper-right side of the popup window that says "New Branch".
       Title the new branch with the name of the update(s) you are making. Ex.
         If you are updating Question Session schedules, title the branch something like ag-qs-sched-update
@@ -74,8 +74,8 @@ HOW SESSIONS ARE FORMATTED
       <td>Tu 2:30-4pm</td> //This row is super simple and only states the day and time of the session
       <td>* In Person</td> //This row is simply for in-person sessions, but a little different for zoom sessions. The * directs the viewer down to the bottom of the popup for additional information.
     </tr> //This tag simply closes the row.
-    
-    This is how the session look without my comments next to them. 
+
+    This is how the session look without my comments next to them.
 
     <tr class="inPerson-session">
       <td>Computer Science</td>

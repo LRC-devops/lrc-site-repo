@@ -43,10 +43,26 @@ Basic HTML formatting explanation
     //this
 
     Classes are used to style HTML elements and are styled in a completely different way. There should be no need to edit a CSS element, only add one to an HTML element. CSS IS CASE SENSITIVE so be sure to watch out for that.
-    HTML elements are styled by added a CSS class to the element that tells it to look a certain way.
+    HTML elements are styled by adding a CSS class to the element that tells it to look a certain way.
 
     HTML tags set the structure, and anything after the > of the opening tag will appear as text on the website. ex:
     <div class="test">THIS TEXT WILL BE VISIBLE AND STYLED HOWEVER THE test CLASS SPECIFIES</div>
+    
+USING VSCODE TO MAKE CHANGES
+
+---
+
+    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" to update the code in your local environment.
+    Next, you will create a new branch to make your edits. Use the tab next to "fetch Origin" to do so. Click on "Current Branch", then click on the button on the upper-right side of the popup window that says "New Branch".
+      Title the new branch with the name of the update(s) you are making. Ex.
+        If you are updating Question Session schedules, title the branch something like ag-qs-sched-update
+          You will use a description later to explain your edits more in-depth.
+    Once you have created a new branch, you are ready to make changes to the code! Click the button on the main window that says "open in Visual Studio Code".
+    Make your edits.
+    Once you are done editing the code, return to GitHub desktop.
+    Use the window in the lower left-hand corner to create a message attached to your update. Title the message, and describe the changes you made.
+    Use the blue button below that message window to commit the changes.
+    Next, the tab at the top which previously read "fetch origin" new says something like "publish branch". Click this button to finalize the edits. Once you have published the branch, I can review our edits and okay the changes to be added to the master branch origin.
 
 HOW SESSIONS ARE FORMATTED
 
@@ -56,8 +72,10 @@ HOW SESSIONS ARE FORMATTED
     <tr class="inPerson-session"> //This is where the color of the row is added. use class="inPerson-session" for gold, class="zoom-session" for green, and class="cancel-session" for red cancellations.
       <td>Computer Science</td> //This is the title of the session. For cancellations: use this HTML code &times; to insert an 'X', state that the session is canceled then add <br> for a breakpoint. The title of the session should break to a new line, so the students know what session is canceled.
       <td>Tu 2:30-4pm</td> //This row is super simple and only states the day and time of the session
-      <td>* In Person</td> //This row is simple for in-person sessions, but a little different for zoom sessions. The * directs the viewer down to the bottom of the popup for additional information.
+      <td>* In Person</td> //This row is simply for in-person sessions, but a little different for zoom sessions. The * directs the viewer down to the bottom of the popup for additional information.
     </tr> //This tag simply closes the row.
+    
+    This is how the session look without my comments next to them. 
 
     <tr class="inPerson-session">
       <td>Computer Science</td>
@@ -85,7 +103,7 @@ TO ADD A ZOOM SESSION
          <tr class="zoom-session"> //This is where the zoom-session styling is added to the row.
           <td>Computer Science</td> //This is the title of the session
           <td>F 12-1:30pm</td> //This is the day/time of the session
-          <td><a href="https://ucdenver.zoom.us/j/92310857800" title="Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td> //This is where this row differs from the inPerson session. The <td> tag opens, and another tag opens directly after it, the <a> tag. This is where the link goes. The link to the zoom session goes in the href, href="place-link-here", the style goes in the class tag, and the title is the name of academic guide, title="Academic-Guide's Zoom Link". This title exists for accessibility and organizational purposes.
+          <td><a href="https://ucdenver.zoom.us/j/92310857800" title="Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td> //This is where this row differs from the inPerson session. The <td> tag opens, and another tag opens directly after it, the <a> tag. This is where the link goes. The link to the zoom session goes in the href, href="place-link-here" (make sure there are no spaces before or after the url), the style goes in the class tag, and the title is the name of academic guide, title="Academic-Guide's Zoom Link". This title exists for accessibility and organizational purposes.
         </tr>
        -->
 
@@ -99,19 +117,3 @@ TO CANCEL A SESSION
         <td>&times; Session canceled DATE<br>Computer Science</td> //add the &times; elements, specify the cancellation and date, add a <br> to break the line, then leave the title of the session.
       -->
       This process should be the same for inPerson and zoom sessions.
-
-USING VSCODE TO MAKE CHANGES
-
----
-
-    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" to update the code in your local environment.
-    Next, you will create a new branch to make your edits. Use the tab next to "fetch Origin" to do so. Click on "Current Branch", then click on the button on the upper-right side of the popup window that says "New Branch".
-      Title the new branch with the name of the update(s) you are making. Ex.
-        If you are updating Question Session schedules, title the branch something like ag-qs-sched-update
-          You will use a description later to explain your edits more in-depth.
-    Once you have created a new branch, you are ready to make changes to the code! Click the button on the main window that says "open in Visual Studio Code".
-    Make your edits.
-    Once you are done editing the code, return to GitHub desktop.
-    Use the window in the lower left-hand corner to create a message attached to your update. Title the message, and describe the changes you made.
-    Use the blue button below that message window to commit the changes.
-    Next, the tab at the top which previously read "fetch origin" new says something like "publish branch". Click this button to finalize the edits. Once you have published the branch, I can review our edits and okay the changes to be added to the master branch origin.

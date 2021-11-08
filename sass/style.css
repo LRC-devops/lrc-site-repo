@@ -3856,6 +3856,10 @@ html {
   opacity: 1;
 }
 
+.popup__close {
+  z-index: 10000;
+}
+
 .popup__close:link, .popup__close:visited {
   color: #a2a4a3;
   position: absolute;
@@ -6007,6 +6011,12 @@ html {
   padding: 5rem 15rem;
 }
 
+@media (max-width: 37.5em) {
+  .section__services--rise {
+    padding: 2.5rem 7rem;
+  }
+}
+
 .rise-service__box {
   margin-top: 5rem;
   display: -webkit-box;
@@ -6132,12 +6142,22 @@ html {
   background-attachment: fixed;
 }
 
+@media (max-width: 37.5em) {
+  .section-rise__guide {
+    padding: 5rem;
+  }
+}
+
 .section-rise__guide h2 {
   margin-bottom: 5rem;
   background-color: rgba(207, 184, 124, 0.7);
   padding: 1rem;
   border-radius: 10px;
   color: #cf7291 !important;
+}
+
+.rise-guide {
+  width: 100%;
 }
 
 .rise-guide__box {
@@ -6166,8 +6186,15 @@ html {
 }
 
 @media (max-width: 56.25em) {
+  .rise-guide__text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 100%;
+  }
   .rise-guide__text:not(:last-child) {
     margin-bottom: 1rem;
+    margin-right: 0;
   }
 }
 
@@ -6177,6 +6204,12 @@ html {
 
 .rise-guide__text:not(:last-child) {
   margin-right: 3rem;
+}
+
+@media (max-width: 37.5em) {
+  .rise-guide__text:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .section__overview--lh {

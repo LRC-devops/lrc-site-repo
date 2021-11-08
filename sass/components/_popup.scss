@@ -126,6 +126,7 @@
     opacity: 1;
   }
   &__close {
+    z-index: 10000;
     &:link,
     &:visited {
       color: $color-grey-light;

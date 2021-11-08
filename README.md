@@ -70,7 +70,7 @@ HOW SESSIONS ARE FORMATTED
 
     <!--
     <tr class="inPerson-session"> //This is where the color of the row is added. use class="inPerson-session" for gold, class="zoom-session" for green, and class="cancel-session" for red cancellations.
-      <td>Computer Science</td> //This is the title of the session. For cancellations: use this HTML code &times; to insert an 'X', state that the session is canceled then add <br> for a breakpoint. The title of the session should break to a new line, so the students know what session is canceled.
+      <td>Computer Science</td> //This is the title of the session. For cancellations: use this HTML code "&times;" to insert an "X", state that the session is canceled then add "<br>" for a breakpoint. The title of the session should break to a new line, so the students know what session is canceled.
       <td>Tu 2:30-4pm</td> //This row is super simple and only states the day and time of the session
       <td>* In Person</td> //This row is simply for in-person sessions, but a little different for zoom sessions. The * directs the viewer down to the bottom of the popup for additional information.
     </tr> //This tag simply closes the row.

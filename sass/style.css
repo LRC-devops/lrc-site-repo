@@ -6043,6 +6043,14 @@ html {
   padding: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .rise-service__bubble {
+    height: 100%;
+    width: 100vw;
+    border-radius: 0;
+  }
+}
+
 .rise-service__bubble--icon {
   font-size: 5rem;
   margin-bottom: 1rem;
@@ -6104,6 +6112,13 @@ html {
           column-count: 2;
 }
 
+@media (max-width: 37.5em) {
+  .rise-text-box p {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
 .rise-text-span {
   color: #8b7438;
 }
@@ -6131,6 +6146,16 @@ html {
   display: flex;
 }
 
+@media (max-width: 56.25em) {
+  .rise-guide__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .rise-guide__text {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 114, 145, 0.8)), to(rgba(207, 184, 124, 0.8)));
   background-image: linear-gradient(rgba(207, 114, 145, 0.8), rgba(207, 184, 124, 0.8));
@@ -6138,6 +6163,12 @@ html {
       flex-shrink: 1;
   padding: 5rem;
   border-radius: 5rem;
+}
+
+@media (max-width: 56.25em) {
+  .rise-guide__text:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 .rise-guide__text p {

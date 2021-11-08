@@ -39,6 +39,11 @@
   &__bubble {
     height: 30rem;
     width: 30rem;
+    @include respond(phone) {
+      height: 100%;
+      width: 100vw;
+      border-radius: 0;
+    }
     border-radius: 100%;
     box-shadow: 0 1rem 2rem rgba(#000, 0.2);
     text-align: center;
@@ -104,6 +109,9 @@
 
     p {
       column-count: 2;
+      @include respond(phone) {
+        column-count: 1;
+      }
     }
   }
   &-span {
@@ -129,7 +137,10 @@
 .rise-guide {
   &__box {
     display: flex;
-    // flex-wrap: wrap;
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     // padding: 0 10rem;
   }
   &__text {
@@ -141,6 +152,12 @@
     flex-shrink: 1;
     padding: 5rem;
     border-radius: 5rem;
+
+    @include respond(tab-port) {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
     // box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
     p {
       color: #fff;

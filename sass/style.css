@@ -1527,6 +1527,33 @@ html {
   padding: 2rem 3rem;
 }
 
+.section-intro3 {
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-intro3__logo-box {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.section-intro3__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 3rem;
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -3398,6 +3425,25 @@ html {
 }
 
 .bg-video__lh--content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-video-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.bg-video-index__content {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;

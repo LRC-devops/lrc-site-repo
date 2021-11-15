@@ -5951,6 +5951,10 @@ html {
   margin-bottom: 5rem;
 }
 
+.peerEducators-sp22__right--textBox P {
+  color: #000;
+}
+
 .peerEducators-sp22__right--textBox h3 {
   margin-bottom: 1.5rem;
 }

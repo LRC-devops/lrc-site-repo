@@ -48,3 +48,111 @@
     padding: 10rem 1rem;
   }
 }
+
+.paragraph-indent {
+  text-indent: 1rem;
+  display: block;
+}
+
+.peerEducators-sp22 {
+  padding: 7rem 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &__box {
+    display: flex;
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    // background-color: orange;
+    padding: 2rem 3rem;
+    flex: 0 0 70%;
+
+    @include respond(tab-port) {
+      flex: 0 0 100%;
+    }
+
+    &--textBox {
+      margin-bottom: 1.5rem;
+      background-color: $color-primary;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      box-shadow: 1rem 2rem 2rem rgba($color-black, 0.5);
+      margin-bottom: 5rem;
+      P {
+        color: $color-black;
+      }
+
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+    }
+    &--overview {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__left {
+    // background-color: $color-pink;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+
+    &--listBox {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-grey-lighter;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 1rem 2rem 2rem rgba($color-black, 0.5);
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &--list {
+        font-size: $default-font-size;
+        list-style: none;
+      }
+      &--item {
+        &:not(:last-child) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__whoHowBox {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  &__listBox {
+    margin-right: 1rem;
+  }
+  &__list {
+    font-size: $default-font-size;
+  }
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

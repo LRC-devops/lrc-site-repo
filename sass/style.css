@@ -1542,6 +1542,12 @@ html {
       align-self: flex-start;
 }
 
+@media (max-width: 37.5em) {
+  .section-intro3__logo-box {
+    margin-left: -10.8rem;
+  }
+}
+
 .section-intro3__modal {
   display: -webkit-box;
   display: -ms-flexbox;

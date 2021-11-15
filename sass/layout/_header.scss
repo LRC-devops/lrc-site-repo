@@ -248,6 +248,9 @@
   &__logo-box {
     align-self: flex-start;
     // padding: 2rem 3rem;
+    @include respond(phone) {
+      margin-left: -10.8rem;
+    }
   }
 
   &__modal {

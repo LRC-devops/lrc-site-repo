@@ -10,6 +10,15 @@ For permanent changes, the alterations need to be done inside of a local environ
 Video Tutorials can be found here for a more visual explanation of these processes:
 https://www.ucdenver.edu/learning-resources-center/pro-staff-resources
 
+WHAT YOU'LL NEED:
+Download GitHub Desktop: https://desktop.github.com/
+Download VSCode (Visual Studio Code): https://code.visualstudio.com/
+Once you have downloaded VSCode, you will need to install the following extensions:
+
+1. Live Server by Ritwick Dey
+2. Live Sass Compiler by Ritwick Dey (This extension may install automatically when you install the live server extension)
+3. GitHub by KnisterPeter (This extension has an icon that looks like a cartoon person dressed up like a cat)
+
 Basic HTML formatting explanation
 
 ---

@@ -48,6 +48,18 @@ Basic HTML formatting explanation
     HTML tags set the structure, and anything after the > of the opening tag will appear as text on the website. ex:
     <div class="test">THIS TEXT WILL BE VISIBLE AND STYLED HOWEVER THE test CLASS SPECIFIES</div>
 
+HOW THIS CODE IS CONNECTED TO SITEFINITY
+
+---
+
+    This website was developed from scratch outside of Sitefinity, the University's CMS (content management system). That means the site can stand on its own in a local environment (like when using the Live Server to preview the HTML interfaces).
+
+    Sitefinity is used to display the different parts of this website via content blocks. Each section of the site is broken up into different content blocks. On each page of the site, different sections are broken up via the <section> tags. That means each content block starts with the <section> tag and ends with the </section> tag.
+
+      *Popup sections are slightly different. Because they are hidden by default, popup sections begin and end with a <div> tag.
+
+    When editing sections of the website, it is extremely important to copy the entire section of the code you are editing and replace all of the code in the section you are editing on sitefinity. This practice will keep this codebase up-to-date. If there is ever a problem in sitefinity or something ends up broken on that end, we have access to the functional code here where we can simply copy and replace the broken section in Sitefinity.
+
 USING VSCODE TO MAKE CHANGES
 
 ---

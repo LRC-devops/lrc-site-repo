@@ -7,6 +7,9 @@ NEVER ALTER THE FIRST TWO CONTENT BLOCKS ON ANY PAGE OF THE WEBSITE. These two e
 
 For permanent changes, the alterations need to be done inside of a local environment. You will need to download VSCode, clone this repository, make the changes in a branch, commit that branch, and upload the new code to Sitefinity. Instructions on how to do this can be found below.
 
+Video Tutorials can be found here for a more visual explanation of these processes:
+https://www.ucdenver.edu/learning-resources-center/pro-staff-resources
+
 Basic HTML formatting explanation
 
 ---
@@ -60,21 +63,32 @@ HOW THIS CODE IS CONNECTED TO SITEFINITY
 
     When editing sections of the website, it is extremely important to copy the entire section of the code you are editing and replace all of the code in the section you are editing on sitefinity. This practice will keep this codebase up-to-date. If there is ever a problem in sitefinity or something ends up broken on that end, we have access to the functional code here where we can simply copy and replace the broken section in Sitefinity.
 
-USING VSCODE TO MAKE CHANGES
+USING VSCODE AND GITHUB TO MAKE CHANGES
 
 ---
 
-    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" (It may also say "Pull Origin") to update the code in your local environment.
+    Begin inside of GitHub desktop. You will use the tabs at the top to fetch the most updated version of the code. Click "Fetch Origin" (if there are updates available to download, the button will change to say "Pull Origin", click this to update you code).
+
     Next, you will create a new branch to make your edits. Use the tab next to "fetch Origin" to do so. Click on "Current Branch", then click on the button on the upper-right side of the popup window that says "New Branch".
+
       Title the new branch with the name of the update(s) you are making. Ex.
         If you are updating Question Session schedules, title the branch something like ag-qs-sched-update
           You will use a description later to explain your edits more in-depth.
+
     Once you have created a new branch, you are ready to make changes to the code! Click the button on the main window that says "open in Visual Studio Code".
+
     Make your edits.
+
     Once you are done editing the code, return to GitHub desktop.
+
     Use the window in the lower left-hand corner to create a message attached to your update. Title the message, and describe the changes you made.
     Use the blue button below that message window to commit the changes.
-    Next, the tab at the top which previously read "fetch origin" new says something like "publish branch". Click this button to finalize the edits. Once you have published the branch, I can review our edits and okay the changes to be added to the master branch origin.
+
+    Next, the tab at the top which previously read "fetch origin" now says something like "publish branch". Click this button to finalize the edits.
+
+    Finally, click the bright blue button that says "Create Pull Request".
+
+    Once you have published the branch and created a pull request, I can review your edits and okay the changes to be added to the master branch origin.
 
 HOW SESSIONS ARE FORMATTED
 

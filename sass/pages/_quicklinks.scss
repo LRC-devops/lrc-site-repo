@@ -6,3 +6,41 @@
 .links-box {
   margin: 0 auto;
 }
+
+.learn-more {
+  padding: 3rem 5rem;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    background-color: $color-grey-lighter;
+    border-radius: 10px;
+    box-shadow: 1rem 2rem 0 rgba($color-black, 0.5);
+
+    @include respond(phone) {
+      height: 50vh;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+      @include respond(phone) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__link-box {
+    margin-top: 1.2rem;
+
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-grow: 1;
+    }
+  }
+}

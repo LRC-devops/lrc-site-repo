@@ -297,6 +297,28 @@ li {
   font-size: 2rem;
 }
 
+.heading-primary__stroke {
+  font-size: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.heading-primary__stroke-small {
+  font-size: 3.7rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.heading-primary__stroke-fill {
+  color: #fff;
+}
+
+.heading-primary__stroke-outline {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+}
+
 *,
 *::after,
 *::before {
@@ -1052,6 +1074,60 @@ html {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes aniH1 {
+  0% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  10% {
+    -webkit-text-stroke: 2px #91cf96;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  20% {
+    -webkit-text-stroke: 2px #cfb87c;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  30% {
+    -webkit-text-stroke: 2px #cf7291;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    -webkit-text-stroke: 2px #8b72cf;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes aniH1 {
+  0% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  10% {
+    -webkit-text-stroke: 2px #91cf96;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  20% {
+    -webkit-text-stroke: 2px #cfb87c;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  30% {
+    -webkit-text-stroke: 2px #cf7291;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    -webkit-text-stroke: 2px #8b72cf;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    -webkit-text-stroke: 2px #fff;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -6681,8 +6757,6 @@ html {
   padding: 5rem 0;
   height: 100%;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
   min-height: 100vh;
 }
 

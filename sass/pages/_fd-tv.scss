@@ -1,5 +1,6 @@
 .fd-tv__section {
   // background-color: #403641;
+  background-image: linear-gradient(rgba(#000, 0.5));
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -37,8 +38,8 @@
 
 .tv-container .tv-card {
   position: relative;
-  width: 28rem;
-  height: 40rem;
+  width: 30vw;
+  height: 70vh;
   margin: 3rem;
   box-shadow: 2rem 2rem 5rem rgba($color-black, 0.5);
   border-radius: 15px;
@@ -61,7 +62,7 @@
   position: absolute;
   top: -49px;
   right: -6px;
-  font-size: 8rem;
+  font-size: 20rem;
   color: rgba($color-white, 0.05) !important;
   font-weight: 700;
   pointer-events: none;

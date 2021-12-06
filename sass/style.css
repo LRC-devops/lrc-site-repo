@@ -7048,6 +7048,7 @@ html {
   max-width: 100vw;
   height: 15vh;
   border-bottom: 2px solid #eee;
+  padding: 1rem 2rem;
   overflow-x: hidden;
 }
 
@@ -7167,5 +7168,9 @@ html {
 .gallery__box--text h3 {
   font-size: 1.5rem;
   text-transform: none;
+}
+
+.gallery__box--text h3 {
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=style.css.map */

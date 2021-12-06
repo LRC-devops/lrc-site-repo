@@ -7036,16 +7036,23 @@ html {
   color: #fff !important;
 }
 
-.gallery__header {
+.body__gallery {
   width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.gallery__header {
+  max-width: 100vw;
   height: 15vh;
   border-bottom: 2px solid #eee;
-  padding: 1rem 2rem;
+  overflow-x: hidden;
 }
 
 .heading-primary__gallery {
   font-size: 4rem;
-  padding: 2rem;
   font-family: "Merriweather", serif;
   color: #000;
 }
@@ -7059,6 +7066,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 100vw;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .gallery__box {
@@ -7087,6 +7097,16 @@ html {
   margin-bottom: 5rem;
   border: 10px solid #000;
   max-width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .gallery__box--img--vert img {
@@ -7098,12 +7118,23 @@ html {
 .gallery__box--img--horz {
   margin-bottom: 5rem;
   border: 10px solid #000;
-  max-width: 90vw;
+  max-width: 80vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .gallery__box--img--horz img {
   height: auto;
-  max-width: 85vw;
+  max-width: 75vw;
 }
 
 .gallery__box--text {
@@ -7126,5 +7157,14 @@ html {
 .gallery__box--text h3 {
   font-family: "Merriweather", serif;
   color: #000;
+}
+
+.gallery__box--text h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.gallery__box--text h3 {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

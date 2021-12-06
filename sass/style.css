@@ -7160,11 +7160,6 @@ html {
   color: #000;
 }
 
-<<<<<<< HEAD
-.gallery__box--text h3 {
-  text-transform: none;
-}
-=======
 .gallery__box--text h2 {
   font-size: 3rem;
   font-weight: 900;
@@ -7176,7 +7171,6 @@ html {
 }
 
 .gallery__box--text h3 {
-  text-transform: lowercase;
+  text-transform: none;
 }
->>>>>>> f058d8700971c14524a6f4c76079b34f1823ad36
 /*# sourceMappingURL=style.css.map */

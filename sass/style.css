@@ -7127,4 +7127,8 @@ html {
   font-family: "Merriweather", serif;
   color: #000;
 }
+
+.gallery__box--text h3 {
+  text-transform: none;
+}
 /*# sourceMappingURL=style.css.map */

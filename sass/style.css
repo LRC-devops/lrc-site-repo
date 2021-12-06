@@ -7166,5 +7166,6 @@ html {
 
 .gallery__box--text h3 {
   font-size: 1.5rem;
+  text-transform: none;
 }
 /*# sourceMappingURL=style.css.map */

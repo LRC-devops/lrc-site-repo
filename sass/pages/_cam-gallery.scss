@@ -88,6 +88,7 @@
         font-family: "Merriweather", serif;
         color: $color-black;
       }
+<<<<<<< HEAD
       h2 {
         font-size: 3rem;
         font-weight: 900;
@@ -96,6 +97,13 @@
         font-size: 1.5rem;
         text-transform: none;
       }
+=======
+      h3 {
+        text-transform: lowercase;
+      }
+
+>>>>>>> 72963fc4335514de53bc2a171d21b39dade734f9
     }
   }
 }
+

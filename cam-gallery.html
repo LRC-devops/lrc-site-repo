@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+
+  <body class="body__gallery">
+    <!--Main Navigation-->
+
+    <!-- <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+    </label>
+  
+  
+    <div class="navigation__background">&nbsp;</div>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center" class="navigation__link">Home</a></li>
+        <div class="dropdown">
+         <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer" class="navigation__link dropdown__link">Peer to Peer<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon></a></li>
+          <div class="dropdown__content">
+            <li class="navigation__item"><a href="#" class="navigation__link dropdown__link--sub">ELL</a></li>
+          </div>
+        </div>
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction" class="navigation__link">Supplemental Instruction</a></li>
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="navigation__link">iPrep</a></li>
+        <div class="dropdown">
+          <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources" class="navigation__link dropdown__link">Workshops<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon></a></li>
+          <div class="dropdown__content">
+            <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs" class="navigation__link dropdown__link--sub">Academic Support</a></li>
+          </div>
+        </div>
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources" class="navigation__link">Faculty/Staff Resources</a></li>
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team" class="navigation__link">Join Our Team</a></li>
+        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/about" class="navigation__link">About Us</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+    <main>
+      <section class="gallery__header">
+        <h1 class="heading-primary__gallery">CAM Gallery</h1>
+      </section>
+      <section class="section__gallery">
+        <!-- These individual boxes will hold all of the information for each of the works presented in the gallery
+        For each work these "gallery__box" divs will need to be copied over. Each box will have a unique id that lets the URL scroll directly to the piece when the corresponding QR code is scanned -->
+        <div class="gallery__box" id="1a">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/1a_abdelmajid.jpeg?sfvrsn=f79da4ba_2"
+              alt="Sarah Abdelmajid"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Argeele</h2>
+            <h3 class="heading-tertiary__gallery">Sarah Abdelmajid</h3>
+            <h3 class="heading-tertiary__gallery">$175</h3>
+            <h3 class="heading-tertiary__gallery"> Sarah.abdelmajid@ucdenver.edu
+            </h3>
+          </div>
+        </div>
+
+        <div class="gallery__box" id="2a">
+          <div class="gallery__box--img--horz">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/2a_addisontaylor.jpeg?sfvrsn=b59da4ba_2"
+              alt="Corey Addison-Taylor"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Untitled</h2>
+            <h3 class="heading-tertiary__gallery">Corey Addison-Taylor</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">caddisontaylor@gmail.com</h3>
+          </div>
+        </div>
+        <div class="gallery__box" id="2b">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/2b_addisontaylor.jpeg?sfvrsn=289da4ba_2"
+              alt="Corey Addison-Taylor"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Snake Oil</h2>
+            <h3 class="heading-tertiary__gallery">Corey Addison-Taylor</h3>
+            <h3 class="heading-tertiary__gallery">$ Contact Artist</h3>
+            <h3 class="heading-tertiary__gallery">caddisontaylor@gmail.com</h3>
+          </div>
+        </div>
+        <div class="gallery__box" id="3a">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/3a_briganti.jpeg?sfvrsn=ab94a4ba_2"
+              alt="Isabella Briganti"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Cup O’ Joey</h2>
+            <h3 class="heading-tertiary__gallery">Isabella Briganti</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">
+              Isabella.Briganti@ucdenver.edu
+            </h3>
+            <h3 class="heading-tertiary__gallery">IG: @unrefinedmarsupial</h3>
+          </div>
+        </div>
+        <div class="gallery__box" id="3b">
+          <div class="gallery__box--img--horz">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/3b_briganti.jpeg?sfvrsn=d495a4ba_2"
+              alt="Isabella Briganti"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Piece of Mind</h2>
+            <h3 class="heading-tertiary__gallery">Isabella Briganti</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">
+              Isabella.Briganti@ucdenver.edu
+            </h3>
+            <h3 class="heading-tertiary__gallery">IG: @unrefinedmarsupial</h3>
+          </div>
+        </div>
+
+        <div class="gallery__box" id="4a">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/4a_buchanan.jpeg?sfvrsn=b495a4ba_2"
+              alt="Robin Buchanan"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Rosh Hashanah</h2>
+            <h3 class="heading-tertiary__gallery">Robin Buchanan</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">
+              Robin.Buchanan@ucdenver.edu
+            </h3>
+          </div>
+        </div>
+
+        <div class="gallery__box" id="5a">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/5a_madden.jpeg?sfvrsn=1b95a4ba_2"
+              alt="Angus Madden"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Sunfest</h2>
+            <h3 class="heading-tertiary__gallery">Angus Madden</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">gusmadden@mac.com</h3>
+          </div>
+        </div>
+
+        <div class="gallery__box" id="5b">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/5b_madden.jpeg?sfvrsn=de96a4ba_2"
+              alt="Angus Madden"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Sun Bathing</h2>
+            <h3 class="heading-tertiary__gallery">Angus Madden</h3>
+            <h3 class="heading-tertiary__gallery">$ Contact Artist</h3>
+            <h3 class="heading-tertiary__gallery">gusmadden@mac.com</h3>
+          </div>
+
+        </div>
+        <div class="gallery__box" id="6a">
+          <div class="gallery__box--img--vert">
+            <img
+              src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/6a_ramirez.jpeg?sfvrsn=4996a4ba_2"
+              alt="Alex Ramirez"
+            />
+          </div>
+          <div class="gallery__box--text">
+            <h2 class="heading-secondary__gallery">Rough Cut</h2>
+            <h3 class="heading-tertiary__gallery">Alex Ramirez</h3>
+            <h3 class="heading-tertiary__gallery">$150</h3>
+            <h3 class="heading-tertiary__gallery">Alex.Ramirez@ucdenver.edu</h3>
+          </div>
+        </div>
+
+      </div>
+      <div class="gallery__box" id="7a">
+        <div class="gallery__box--img--vert">
+          <img
+            src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/7a_smith.jpeg?sfvrsn=6297a4ba_2"
+            alt="Nichole Smith"
+          />
+        </div>
+        <div class="gallery__box--text">
+          <h2 class="heading-secondary__gallery">Scavenger</h2>
+          <h3 class="heading-tertiary__gallery">Nichole Smith</h3>
+          <h3 class="heading-tertiary__gallery">$150</h3>
+          <h3 class="heading-tertiary__gallery">SmithNichole2016@gmail.com</h3>
+        </div>
+      </div>
+
+    </div>
+    <div class="gallery__box" id="7b">
+      <div class="gallery__box--img--vert">
+        <img
+          src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/7b_smith.jpeg?sfvrsn=dee8a4ba_2"
+          alt="Nichole Smith"
+        />
+      </div>
+      <div class="gallery__box--text">
+        <h2 class="heading-secondary__gallery">Celestial Beauty</h2>
+        <h3 class="heading-tertiary__gallery">Nichole Smith</h3>
+        <h3 class="heading-tertiary__gallery">$ Contact Artist</h3>
+        <h3 class="heading-tertiary__gallery">SmithNichole2016@gmail.com</h3>
+      </div>
+    </div>
+
+      </div>
+      <div class="gallery__box" id="8a">
+        <div class="gallery__box--img--vert">
+          <img
+            src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/8a_tran.jpeg?sfvrsn=1e96a4ba_2"
+            alt="Alex Ramirez"
+          />
+        </div>
+        <div class="gallery__box--text">
+          <h2 class="heading-secondary__gallery">Lobster</h2>
+          <h3 class="heading-tertiary__gallery">Whitney Tran</h3>
+          <h3 class="heading-tertiary__gallery">$150</h3>
+          <h3 class="heading-tertiary__gallery">das.whitneytran@gmail.com</h3>
+        </div>
+      </div>
+
+    </div>
+    <div class="gallery__box" id="8b">
+      <div class="gallery__box--img--vert">
+        <img
+          src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/8b_tran.jpeg?sfvrsn=9596a4ba_2"
+          alt="Alex Ramirez"
+        />
+      </div>
+      <div class="gallery__box--text">
+        <h2 class="heading-secondary__gallery">Bring Home The Lobster </h2>
+        <h3 class="heading-tertiary__gallery">Whitney Tran</h3>
+        <h3 class="heading-tertiary__gallery">$ Contact Artist</h3>
+        <h3 class="heading-tertiary__gallery">das.whitneytran@gmail.com</h3>
+      </div>
+    </div>
+
+  </div>
+  <div class="gallery__box" id="9a">
+    <div class="gallery__box--img--horz">
+      <img
+        src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/9a_trujillo.jpeg?sfvrsn=797a4ba_2"
+        alt="Jack Trujillo"
+      />
+    </div>
+    <div class="gallery__box--text">
+      <h2 class="heading-secondary__gallery">Peppers</h2>
+      <h3 class="heading-tertiary__gallery">Jack Trujillo</h3>
+      <h3 class="heading-tertiary__gallery">$150</h3>
+      <h3 class="heading-tertiary__gallery">Jacktrujillo315@gmail.com</h3>
+    </div>
+  </div>
+
+</div>
+<div class="gallery__box" id="9b">
+  <div class="gallery__box--img--horz">
+    <img
+      src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/9b_trujillo.jpeg?sfvrsn=e4e8a4ba_2"
+      alt="Jack Trujillo"
+    />
+  </div>
+  <div class="gallery__box--text">
+    <h2 class="heading-secondary__gallery">Pep in Your Step</h2>
+    <h3 class="heading-tertiary__gallery">Jack Trujillo</h3>
+    <h3 class="heading-tertiary__gallery">$150</h3>
+    <h3 class="heading-tertiary__gallery">Jacktrujillo315@gmail.com</h3>
+  </div>
+</div>
+
+</div>
+<div class="gallery__box" id="10a">
+  <div class="gallery__box--img--vert">
+    <img
+      src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/10a_turner.jpeg?sfvrsn=2f97a4ba_2"
+      alt="Dylan Turner"
+    />
+  </div>
+  <div class="gallery__box--text">
+    <h2 class="heading-secondary__gallery">POW</h2>
+    <h3 class="heading-tertiary__gallery">Dylan Turner</h3>
+    <h3 class="heading-tertiary__gallery">$75</h3>
+    <h3 class="heading-tertiary__gallery">Dylan.Turner@ucdenver.edu </h3>
+  </div>
+</div>
+
+</div>
+<div class="gallery__box" id="11a">
+  <div class="gallery__box--img--vert">
+    <img
+      src="https://www.ucdenver.edu/images/librariesprovider132/cam-gallery/11a_dent.jpg?sfvrsn=8ce8a4ba_2"
+      alt="Kat Dent"
+    />
+  </div>
+  <div class="gallery__box--text">
+    <h2 class="heading-secondary__gallery">Cold Blooded</h2>
+    <h3 class="heading-tertiary__gallery">Kat Dent</h3>
+    <h3 class="heading-tertiary__gallery">$75</h3>
+    <h3 class="heading-tertiary__gallery">Kayla.Dent@ucdenver.edu</h3>
+  </div>
+</div>
+
+      </section>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

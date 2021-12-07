@@ -127,7 +127,14 @@
         rgba($color-site-grey, 0.8) 50%,
         rgba($color-site-grey, 0.6) 100%
       ),
-      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-ip-top-min.jpg?sfvrsn=92fdc1ba_2);
+      url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/iprep-hero-img_backdrop.png?sfvrsn=599fdbba_2);
+    // background-image: linear-gradient(
+    //     to bottom,
+    //     rgba($color-site-grey, 0.6) 0%,
+    //     rgba($color-site-grey, 0.8) 50%,
+    //     rgba($color-site-grey, 0.6) 100%
+    //   ),
+    //   url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-ip-top-min.jpg?sfvrsn=92fdc1ba_2);
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;

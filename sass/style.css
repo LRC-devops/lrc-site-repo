@@ -1466,8 +1466,8 @@ html {
 }
 
 .section__intro--sub--ip {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), color-stop(50%, rgba(34, 34, 34, 0.8)), to(rgba(34, 34, 34, 0.6))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-ip-top-min.jpg?sfvrsn=92fdc1ba_2);
-  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(34, 34, 34, 0.6) 100%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-ip-top-min.jpg?sfvrsn=92fdc1ba_2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.6)), color-stop(50%, rgba(34, 34, 34, 0.8)), to(rgba(34, 34, 34, 0.6))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/iprep-hero-img_backdrop.png?sfvrsn=599fdbba_2);
+  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.6) 0%, rgba(34, 34, 34, 0.8) 50%, rgba(34, 34, 34, 0.6) 100%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/iprep-hero-img_backdrop.png?sfvrsn=599fdbba_2);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
@@ -5964,6 +5964,117 @@ html {
 
 .section-qual {
   padding: 10rem 0 0 0;
+}
+
+.ip-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60vh;
+  padding: 5rem 7rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/v2iprep-hero-img.png?sfvrsn=799edbba_2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/v2iprep-hero-img.png?sfvrsn=799edbba_2);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ip-glass {
+  border-top: 1.5px solid #fff;
+  border-left: 1.5px solid #fff;
+  padding-top: 2rem;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(to right top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.ip-glass:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.ip-glass ul {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+.ip-glass__section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 56.25em) {
+  .ip-glass__section1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.ip-glass__section1--flex:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.ip-glass__btn-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+@media (max-width: 56.25em) {
+  .ip-glass__btn-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.ip-glass__btn-box a:not(:last-of-type) {
+  margin-right: 3rem;
+}
+
+.ip-glass__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 56.25em) {
+  .ip-glass__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .section__join-us {

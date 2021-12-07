@@ -1,0 +1,168 @@
+
+      <section class="section__ip--overview">
+        <div class="row">
+          <div class="col-2-of-3">
+            <div class="section__ip--overview--hero-box u-margin-bottom-medium">
+              <div class="section__ip--overview--hero-box-head">
+                <h3 class="heading-tertiary">Refresh Your Memory</h3>
+              </div>
+              <p class="paragraph">
+                Has it been a while since you took chemistry? Are your math
+                skills a little rusty? Don't worry, most people struggle to
+                remember everything about a subject when they've been out of
+                practice. But there's no need to struggle. Intense Preparation
+                (I-Prep) can get you up to speed and ready to jump back in
+                before the semester starts.<br /><br />
+
+                <strong
+                  >Registration is required. Don't wait; spaces are
+                  limited!</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div
+              class="
+                section__ip--overview--hero-box
+                u-margin-bottom-medium u-center-text-2
+              "
+            >
+              <div class="section__ip--overview--hero-box-head">
+                <h3 class="heading-tertiary">What is iPrep?</h3>
+              </div>
+              <p class="paragraph">
+                I-Prep focuses on core knowledge areas and key concepts to
+                maximize your success. They take place weeks before the semester
+                starts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section__ip--overview--cta u-center-text u-center-text-2">
+            <div class="col-1-of-4">
+              <a
+                href="https://www.ucdenver.edu/docs/librariesprovider132/i-prep/iprep-f21-flyers/iprep-f21-gchem.pdf?sfvrsn=901c6ba_8"
+                class="btn btn-full"
+                target="_blank"
+                >F21 General CHEM</a
+              >
+            </div>
+            <div class="col-1-of-4">
+              <a
+                href="https://www.ucdenver.edu/docs/librariesprovider132/i-prep/iprep-f21-flyers/iprep-f21-ochem.pdf?sfvrsn=d206c6ba_12"
+                class="btn btn-full"
+                target="_blank"
+                >F21 Organic CHEM</a
+              >
+            </div>
+            <div class="col-1-of-4">
+              <a
+                href="https://www.ucdenver.edu/docs/librariesprovider132/i-prep/iprep-f21-flyers/iprep-f21-pbhl.pdf?sfvrsn=d106c6ba_4"
+                class="btn btn-full"
+                target="_blank"
+                >F21 Epidemiology</a
+              >
+            </div>
+            <div class="col-1-of-4">
+              <a
+                href="https://www.ucdenver.edu/docs/librariesprovider132/i-prep/iprep-f21-flyers/iprep-f21-math.pdf?sfvrsn=e05c6ba_6"
+                class="btn btn-full"
+                target="_blank"
+                >F21 MATH</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="section__ip--overview--hero-box u-margin-bottom-medium">
+              <div class="section__ip--overview--hero-box-head">
+                <h3 class="heading-tertiary">At I-Prep Sessions You Will</h3>
+              </div>
+              <ul>
+                <li>
+                  Work with peers to learn key concepts, complete practice
+                  problems similar to those in class
+                </li>
+                <li>
+                  Solidify your understanding of foundational knowledge so you
+                  feel ready to take the course
+                </li>
+                <li>Build transferable study strategies</li>
+                <li>
+                  Receive additional course-related materials to reference
+                  throughout the semester
+                </li>
+                <li>Meet classmates, opportunity to form study groups</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="section__ip--overview--hero-box u-margin-bottom-medium">
+              <div class="section__ip--overview--hero-box-head">
+                <h3 class="heading-tertiary">
+                  You Should Register for I-Prep if
+                </h3>
+              </div>
+
+              <ul>
+                <li>
+                  You know you will be taking CHEM 1000 or CHEM 2031, CHEM 3411,
+                  PBHL 3001, a math class, or any other subject we offer I-Prep
+                  sessions for.
+                </li>
+                <li>
+                  You will be taking the General Chemistry Assessment Test
+                  (GCAT)
+                </li>
+                <li>You want to brush up your math skills</li>
+                <li>
+                  You want to learn or practice how to use a scientific
+                  calculator
+                </li>
+              </ul>
+              <p class="paragraph">
+                <em
+                  >*I-Prep is open to all currently enrolled, fee-paying
+                  students at CU Denver</em
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="section-qual" id="section-qual">
+        <div class="u-center-text u-margin-bottom-medium">
+          <h2 class="heading-secondary">Sign Up Here!</h2>
+        </div>
+
+        <div class="row u-center-text-2">
+          <div class="col-1-of-4 u-center-text">
+            <a href="#popup-ochem-signup" class="btn-text u-center-text"
+              >O-CHEM Sign Up</a
+            >
+          </div>
+          <div class="col-1-of-4 u-center-text">
+            <a href="#popup-gchem-signup" class="btn-text u-center-text"
+              >Gen CHEM Sign Up</a
+            >
+          </div>
+          <div class="col-1-of-4 u-center-text">
+            <a href="#popup-math-signup" class="btn-text u-center-text"
+              >MATH Sign Up</a
+            >
+          </div>
+          <div class="col-1-of-4 u-center-text">
+            <a href="#popup-pbhl-signup" class="btn-text u-center-text"
+              >PBHL Sign Up</a
+            >
+          </div>
+        </div>
+      </section>

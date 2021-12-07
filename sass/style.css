@@ -7019,7 +7019,7 @@ html {
 
 .tv-container .tv-card {
   position: relative;
-  width: 80vw;
+  width: 30vw;
   height: 70vh;
   margin: 3rem;
   -webkit-box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.5);
@@ -7100,5 +7100,10 @@ html {
   margin-right: 5rem;
   border-right: 1px solid #fff;
   padding-right: 1rem;
+}
+
+.tv-card__img img {
+  height: 76rem;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

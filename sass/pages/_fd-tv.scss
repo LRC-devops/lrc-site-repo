@@ -39,8 +39,8 @@
 
 .tv-container .tv-card {
   position: relative;
-  // width: 30vw;
-  width: 80vw;
+  width: 30vw;
+  // width: 80vw;
   height: 70vh;
   margin: 3rem;
   box-shadow: 2rem 2rem 5rem rgba($color-black, 0.5);
@@ -109,6 +109,13 @@
       border-right: 1px solid $color-white;
       padding-right: 1rem;
     }
+  }
+}
+
+.tv-card__img {
+  img {
+    height: 76rem;
+    width: auto;
   }
 }
 

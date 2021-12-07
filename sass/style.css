@@ -7170,7 +7170,7 @@ html {
 
 .tv-container .tv-card .tv-content h2 {
   position: absolute;
-  top: -108px;
+  top: -76px;
   right: -19px;
   font-size: 20rem;
   color: rgba(255, 255, 255, 0.05) !important;
@@ -7179,7 +7179,7 @@ html {
 }
 
 .tv-container .tv-card .tv-content h3 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: #fff;
   font-weight: 300;
   z-index: 1;
@@ -7188,6 +7188,7 @@ html {
 
 .tv-container .tv-card .tv-content p {
   color: #fff !important;
+  font-size: 2.4rem;
 }
 
 .heading-primary__fd-tv {
@@ -7201,6 +7202,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .tv-card__info--box {
@@ -7209,7 +7212,6 @@ html {
 
 .tv-card__info--box:not(:last-child) {
   margin-right: 5rem;
-  border-right: 1px solid #fff;
   padding-right: 1rem;
 }
 

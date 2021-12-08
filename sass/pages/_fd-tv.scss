@@ -114,13 +114,22 @@
   }
 }
 
-.tv-card__img {
+.tv-card__img--large {
   img {
     height: 76rem;
     width: auto;
   }
 }
-
+// .tv-card__img--small {
+//   img {
+//     height: 53rem;
+//     width: auto;
+//   }
+// }
+.tv-card__img--studyTips {
+  height: 68rem;
+  width: auto;
+}
 // .heading-tertiary--tv {
 //   color: $color-black !important;
 // }

@@ -7215,8 +7215,13 @@ html {
   padding-right: 1rem;
 }
 
-.tv-card__img img {
+.tv-card__img--large img {
   height: 76rem;
+  width: auto;
+}
+
+.tv-card__img--studyTips {
+  height: 68rem;
   width: auto;
 }
 

@@ -7237,9 +7237,10 @@ html {
 }
 
 .heading-primary__gallery {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Merriweather", serif;
   color: #000;
+  font-weight: 300;
 }
 
 .section__gallery {

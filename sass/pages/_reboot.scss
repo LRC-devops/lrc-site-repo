@@ -5,12 +5,18 @@
   //   darken($color-pink, 50%),
   //   darken($color-secondary, 50%)
   // );
+
+  ////////////////////
+  //create keyframe animation on background position for header element
+  ////////////////////
+  animation: aniGradient 10s infinite;
   background-image: linear-gradient(
     to bottom right,
     darken($color-teal, 45%),
     darken($color-pink, 45%),
     darken($color-purp, 45%)
   );
+  background-size: 300%;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -237,18 +243,21 @@
         );
         box-shadow: 1rem 2rem rgba($color-black, 0.5);
         backface-visibility: hidden;
+        background-size: 300%;
+        background-position: left;
       }
 
       &:hover {
         transform: translateY(-0.5rem) scale(1.05);
-        background-image: linear-gradient(
-          to bottom right,
-          darken($color-teal, 20%),
-          darken($color-pink, 20%),
-          darken($color-purp, 20%)
-        );
+        // background-image: linear-gradient(
+        //   to bottom right,
+        //   darken($color-teal, 20%),
+        //   darken($color-pink, 20%),
+        //   darken($color-purp, 20%)
+        // );
         box-shadow: 2rem 3rem 1rem rgba($color-black, 0.5);
         backface-visibility: hidden;
+        background-position: right;
       }
       &:active {
         transform: translateY(0) scale(1);
@@ -258,13 +267,14 @@
         //   $color-primary,
         //   $color-secondary
         // );
-        background-image: linear-gradient(
-          to bottom right,
-          darken($color-teal, 30%),
-          darken($color-pink, 30%),
-          darken($color-purp, 30%)
-        );
+        // background-image: linear-gradient(
+        //   to bottom right,
+        //   darken($color-teal, 30%),
+        //   darken($color-pink, 30%),
+        //   darken($color-purp, 30%)
+        // );
         box-shadow: 1rem 2rem rgba($color-black, 0.5);
+        background-position: center;
       }
 
       img {

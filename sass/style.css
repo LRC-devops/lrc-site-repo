@@ -7365,12 +7365,18 @@ html {
 }
 
 .reboot__header {
-  background-color: #3d4042;
+  background-color: #252627;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 10px solid rgba(255, 255, 255, 0.2);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 56.25em) {
@@ -7398,6 +7404,12 @@ html {
 
 .reboot__header--img-box img {
   height: 70vh;
+}
+
+@media (max-width: 75em) {
+  .reboot__header--img-box img {
+    height: 40rem;
+  }
 }
 
 @media (max-width: 56.25em) {
@@ -7441,7 +7453,7 @@ html {
 
 .reboot__header--right-box h1 {
   color: #91cf96;
-  font-size: 15rem;
+  font-size: 13rem;
   font-weight: 100;
   font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
@@ -7531,7 +7543,7 @@ html {
 @media (max-width: 75em) {
   .reboot__sessions--box:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
   }
 }
 

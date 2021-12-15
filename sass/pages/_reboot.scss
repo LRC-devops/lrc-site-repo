@@ -1,8 +1,10 @@
 .reboot__header {
-  background-color: darken($color-grey-dark, 10%);
+  background-color: darken($color-grey-dark, 20%);
   height: 80vh;
   display: flex;
-  border-bottom: 10px solid rgba($color-white, 0.2);
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid rgba($color-white, 0.3);
 
   @include respond(tab-port) {
     height: 90vh;
@@ -18,6 +20,10 @@
     padding: 2rem 3rem;
     img {
       height: 70vh;
+
+      @include respond(tab-land) {
+        height: 40rem;
+      }
 
       @include respond(tab-port) {
         height: 20rem;
@@ -43,7 +49,7 @@
     }
     h1 {
       color: $color-primary;
-      font-size: 15rem;
+      font-size: 13rem;
       font-weight: 100;
       font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica,
         Arial, sans-serif;
@@ -112,7 +118,7 @@
 
       @include respond(tab-land) {
         margin-right: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 3.5rem;
       }
     }
 

@@ -7360,7 +7360,19 @@ html {
   text-transform: none;
 }
 
-.gallery__box--text h3 {
-  text-transform: none;
+.gallery__box--link {
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.gallery__box--link:link, .gallery__box--link:visited {
+  color: #a99256;
+  border-bottom: 1px solid #a99256;
+}
+
+.gallery__box--link:hover, .gallery__box--link:active {
+  color: #cfb87c;
+  border-bottom: 1px solid #cfb87c;
 }
 /*# sourceMappingURL=style.css.map */

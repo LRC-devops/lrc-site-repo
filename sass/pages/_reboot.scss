@@ -1,0 +1,296 @@
+.reboot__header {
+  // background-color: darken($color-grey-dark, 20%);
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   darken($color-pink, 50%),
+  //   darken($color-secondary, 50%)
+  // );
+  background-image: linear-gradient(
+    to bottom right,
+    darken($color-teal, 45%),
+    darken($color-pink, 45%),
+    darken($color-purp, 45%)
+  );
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 10px solid rgba($color-white, 0.3);
+
+  @include respond(tab-port) {
+    height: 90vh;
+  }
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--img-box {
+    padding: 2rem 3rem;
+    img {
+      height: 70vh;
+
+      @include respond(tab-land) {
+        height: 40rem;
+      }
+
+      @include respond(tab-port) {
+        height: 20rem;
+      }
+    }
+  }
+  &--right-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      align-items: center;
+    }
+    @include respond(phone) {
+      margin-left: 0;
+    }
+
+    img {
+      height: 8rem;
+      width: auto;
+
+      @include respond(phone) {
+        height: 4rem;
+        width: auto;
+      }
+    }
+    h1 {
+      color: $color-primary;
+      font-size: 13rem;
+      font-weight: 100;
+      font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica,
+        Arial, sans-serif;
+
+      @include respond(tab-land) {
+        font-size: 10rem;
+      }
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+.reboot__sessions {
+  padding: 10rem 12rem;
+  // background-color: #4b4f51;
+  background-image: linear-gradient(
+    to bottom right,
+    darken($color-teal, 50%),
+    darken($color-pink, 50%),
+    darken($color-purp, 50%)
+  );
+  border-bottom: 10px solid rgba($color-white, 0.3);
+
+  @include respond(phone) {
+    padding: 2rem 3rem;
+  }
+
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &--h2 {
+    &-purp {
+      color: $color-purp;
+    }
+    &-teal {
+      color: $color-teal;
+    }
+    &-pink {
+      color: $color-pink;
+    }
+    &-green {
+      color: $color-secondary;
+    }
+    &-white {
+      color: $color-white;
+    }
+  }
+
+  &--box {
+    border: 5px solid rgba($color-white, 0.2);
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    box-shadow: 1rem 2rem rgba($color-black, 0.5);
+
+    @include respond(phone) {
+      padding: 0.5rem 1rem;
+    }
+
+    p {
+      color: $color-white;
+      margin-top: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @include respond(tab-land) {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  &--icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &--cal {
+    border: 3px solid rgba($color-white, 0.5);
+    border-radius: 5px;
+    padding: 2rem 2.5rem;
+    border-top: 15px solid rgba($color-white, 0.5);
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $color-white;
+    }
+  }
+
+  &--icon {
+    font-size: 10rem;
+    &-pink {
+      color: rgba($color-pink, 0.5);
+    }
+    &-teal {
+      color: rgba($color-teal, 0.5);
+    }
+    &-purp {
+      color: rgba($color-purp, 0.5);
+    }
+  }
+
+  &--button-box {
+    padding: 5rem 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      ion-icon {
+        color: $color-primary;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+
+    h3 {
+      color: $color-white;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: none;
+      transition: all 0.2s;
+      height: 30rem;
+      width: 30rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      backface-visibility: hidden;
+
+      &:link,
+      &:visited {
+        background-image: linear-gradient(
+          to bottom right,
+          darken($color-teal, 10%),
+          darken($color-pink, 10%),
+          darken($color-purp, 10%)
+        );
+        box-shadow: 1rem 2rem rgba($color-black, 0.5);
+        backface-visibility: hidden;
+      }
+
+      &:hover {
+        transform: translateY(-0.5rem) scale(1.05);
+        background-image: linear-gradient(
+          to bottom right,
+          darken($color-teal, 20%),
+          darken($color-pink, 20%),
+          darken($color-purp, 20%)
+        );
+        box-shadow: 2rem 3rem 1rem rgba($color-black, 0.5);
+        backface-visibility: hidden;
+      }
+      &:active {
+        transform: translateY(0) scale(1);
+        background-color: transparent;
+        // background-image: linear-gradient(
+        //   to bottom right,
+        //   $color-primary,
+        //   $color-secondary
+        // );
+        background-image: linear-gradient(
+          to bottom right,
+          darken($color-teal, 30%),
+          darken($color-pink, 30%),
+          darken($color-purp, 30%)
+        );
+        box-shadow: 1rem 2rem rgba($color-black, 0.5);
+      }
+
+      img {
+        height: 70%;
+        width: 70%;
+        backface-visibility: hidden;
+      }
+
+      p {
+        color: $color-white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        backface-visibility: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+  &--text-box {
+    p {
+      color: $color-white;
+      font-size: $default-font-size;
+    }
+  }
+}
+
+.reboot__text-span {
+  color: $color-primary;
+  font-weight: bold;
+}

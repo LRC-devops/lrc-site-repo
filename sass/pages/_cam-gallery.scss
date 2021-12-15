@@ -97,9 +97,23 @@
         font-size: 1.5rem;
         text-transform: none;
       }
-      h3 {
-        text-transform: none;
+
+    }
+    &--link {
+      text-decoration: none;
+      transition: all 0.2s; 
+      &:link,
+      &:visited {
+        color: $color-secondary-ada;
+        border-bottom:1px solid $color-secondary-ada;
       }
+      &:hover,
+      &:active {
+        color: $color-secondary;
+        border-bottom:1px solid $color-secondary;
+
+      }
+
     }
   }
 }

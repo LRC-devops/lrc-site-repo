@@ -7482,6 +7482,7 @@ html {
   padding: 10rem 12rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#18363e), color-stop(#31111c), to(#191131));
   background-image: linear-gradient(to bottom right, #18363e, #31111c, #191131);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.3);
 }
 
 @media (max-width: 37.5em) {

@@ -89,6 +89,7 @@
     darken($color-pink, 50%),
     darken($color-purp, 50%)
   );
+  border-bottom: 10px solid rgba($color-white, 0.3);
 
   @include respond(phone) {
     padding: 2rem 3rem;

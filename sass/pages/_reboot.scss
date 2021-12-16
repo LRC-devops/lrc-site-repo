@@ -10,8 +10,8 @@
   //create keyframe animation on background position for header element
   ////////////////////
   animation: aniGradient 10s infinite;
-  background-image: linear-gradient(
-    to bottom right,
+  background-image: radial-gradient(
+    circle at 100%,
     darken($color-teal, 45%),
     darken($color-pink, 45%),
     darken($color-purp, 45%)
@@ -89,12 +89,13 @@
 .reboot__sessions {
   padding: 10rem 12rem;
   // background-color: #4b4f51;
-  background-image: linear-gradient(
-    to bottom right,
+  background-image: radial-gradient(
+    circle at 100%,
     darken($color-teal, 50%),
     darken($color-pink, 50%),
     darken($color-purp, 50%)
   );
+  animation: aniGradientVert 1s infinite;
   border-bottom: 10px solid rgba($color-white, 0.3);
 
   @include respond(phone) {

@@ -1114,6 +1114,30 @@ html {
   }
 }
 
+@-webkit-keyframes aniGradientVert {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+@keyframes aniGradientVert {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -7391,8 +7415,7 @@ html {
 .reboot__header {
   -webkit-animation: aniGradient 10s infinite;
           animation: aniGradient 10s infinite;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#204650), color-stop(#441726), to(#231744));
-  background-image: linear-gradient(to bottom right, #204650, #441726, #231744);
+  background-image: radial-gradient(circle at 100%, #204650, #441726, #231744);
   background-size: 300%;
   height: 80vh;
   display: -webkit-box;
@@ -7507,8 +7530,9 @@ html {
 
 .reboot__sessions {
   padding: 10rem 12rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#18363e), color-stop(#31111c), to(#191131));
-  background-image: linear-gradient(to bottom right, #18363e, #31111c, #191131);
+  background-image: radial-gradient(circle at 100%, #18363e, #31111c, #191131);
+  -webkit-animation: aniGradientVert 1s infinite;
+          animation: aniGradientVert 1s infinite;
   border-bottom: 10px solid rgba(255, 255, 255, 0.3);
 }
 

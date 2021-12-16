@@ -1138,6 +1138,58 @@ html {
   }
 }
 
+@-webkit-keyframes aniRadialBlur {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@keyframes aniRadialBlur {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@-webkit-keyframes aniRadialMotion {
+  from {
+    -webkit-transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+  }
+}
+
+@keyframes aniRadialMotion {
+  from {
+    -webkit-transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+  }
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -7451,10 +7503,13 @@ html {
 
 .reboot__header--img-box {
   padding: 2rem 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .reboot__header--img-box img {
   height: 70vh;
+  position: relative;
 }
 
 @media (max-width: 75em) {
@@ -7467,6 +7522,26 @@ html {
   .reboot__header--img-box img {
     height: 20rem;
   }
+}
+
+.reboot__header--img-box::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  z-index: -1;
+  -webkit-animation: aniRadialBlur 15s infinite ease-in-out;
+          animation: aniRadialBlur 15s infinite ease-in-out;
+  -webkit-animation: aniRadialMotion 10s infinite;
+          animation: aniRadialMotion 10s infinite;
 }
 
 .reboot__header--right-box {

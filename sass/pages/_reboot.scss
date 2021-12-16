@@ -35,8 +35,12 @@
 
   &--img-box {
     padding: 2rem 3rem;
+    position: relative;
+    z-index: 2;
+
     img {
       height: 70vh;
+      position: relative;
 
       @include respond(tab-land) {
         height: 40rem;
@@ -45,6 +49,22 @@
       @include respond(tab-port) {
         height: 20rem;
       }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      background-color: #fff;
+      filter: blur(200px);
+      z-index: -1;
+      animation: aniRadialBlur 15s infinite ease-in-out;
+      animation: aniRadialMotion 10s infinite;
     }
   }
   &--right-box {
@@ -69,6 +89,7 @@
         width: auto;
       }
     }
+
     h1 {
       color: $color-primary;
       font-size: 13rem;

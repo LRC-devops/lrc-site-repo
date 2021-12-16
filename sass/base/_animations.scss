@@ -308,3 +308,24 @@
     background-position: top;
   }
 }
+
+@keyframes aniRadialBlur {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@keyframes aniRadialMotion {
+  from {
+    transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+  }
+}

@@ -30,9 +30,11 @@ VSCode Keyboard Shortcuts
 
     TO CREATE MULTIPLE CURSORS ON DIFFERENT LINES - place your cursor on a line, hold alt + click on another line to create a 2nd cursor (you can do this as many times as you want, however, check to make sure your edits are correct on all lines after you make the edit).
 
-    TO DUPLICATE SELECTION - this works when you are selecting multiple lines/elements of code that are identical. Select the identical line/word you want to select multiple times, press CMD/CTRL + D to select the next iteration of the element you are selecting
+    TO SELECT DUPLICATE LINES - this works when you are selecting multiple lines/elements of code that are identical. Select the identical line/word you want to select multiple times, press CMD/CTRL + D to select the next iteration of the element you are selecting
 
     TO MOVE/SHIFT AN ELEMENT/SELECTION'S POSITION - Select a tine or block of code that you want to move, press alt + up/down arrow key to shift that line/block up or down.
+
+    TO COMMENT OUT A LINE/CODE BLOCK - place your cursor on the link you want to comment, or select the block you want to omit, and press CMD + / to add the comment tags at the beginning and end of the line/block.
 
 Basic HTML formatting explanation
 

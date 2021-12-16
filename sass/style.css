@@ -1090,6 +1090,106 @@ html {
   }
 }
 
+@-webkit-keyframes aniGradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes aniGradient {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@-webkit-keyframes aniGradientVert {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+@keyframes aniGradientVert {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+@-webkit-keyframes aniRadialBlur {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@keyframes aniRadialBlur {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+@-webkit-keyframes aniRadialMotion {
+  from {
+    -webkit-transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+  }
+}
+
+@keyframes aniRadialMotion {
+  from {
+    -webkit-transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+            transform: rotate(0deg) translate(100%, 50%) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+            transform: rotate(360deg) translate(100%, 50%) rotate(-360deg);
+  }
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -7365,8 +7465,10 @@ html {
 }
 
 .reboot__header {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#204650), color-stop(#441726), to(#231744));
-  background-image: linear-gradient(to bottom right, #204650, #441726, #231744);
+  -webkit-animation: aniGradient 10s infinite;
+          animation: aniGradient 10s infinite;
+  background-image: radial-gradient(circle at 100%, #204650, #441726, #231744);
+  background-size: 300%;
   height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7401,10 +7503,13 @@ html {
 
 .reboot__header--img-box {
   padding: 2rem 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .reboot__header--img-box img {
   height: 70vh;
+  position: relative;
 }
 
 @media (max-width: 75em) {
@@ -7417,6 +7522,26 @@ html {
   .reboot__header--img-box img {
     height: 20rem;
   }
+}
+
+.reboot__header--img-box::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  z-index: -1;
+  -webkit-animation: aniRadialBlur 15s infinite ease-in-out;
+          animation: aniRadialBlur 15s infinite ease-in-out;
+  -webkit-animation: aniRadialMotion 10s infinite;
+          animation: aniRadialMotion 10s infinite;
 }
 
 .reboot__header--right-box {
@@ -7480,8 +7605,9 @@ html {
 
 .reboot__sessions {
   padding: 10rem 12rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#18363e), color-stop(#31111c), to(#191131));
-  background-image: linear-gradient(to bottom right, #18363e, #31111c, #191131);
+  background-image: radial-gradient(circle at 100%, #18363e, #31111c, #191131);
+  -webkit-animation: aniGradientVert 1s infinite;
+          animation: aniGradientVert 1s infinite;
   border-bottom: 10px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -7691,27 +7817,27 @@ html {
           box-shadow: 1rem 2rem rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  background-size: 300%;
+  background-position: left;
 }
 
 .reboot__sessions--button-box a:hover {
   -webkit-transform: translateY(-0.5rem) scale(1.05);
           transform: translateY(-0.5rem) scale(1.05);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#4496ab), color-stop(#a3385c), to(#5538a3));
-  background-image: linear-gradient(to bottom right, #4496ab, #a3385c, #5538a3);
   -webkit-box-shadow: 2rem 3rem 1rem rgba(0, 0, 0, 0.5);
           box-shadow: 2rem 3rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  background-position: right;
 }
 
 .reboot__sessions--button-box a:active {
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#357687), color-stop(#7d2b46), to(#412b7d));
-  background-image: linear-gradient(to bottom right, #357687, #7d2b46, #412b7d);
   -webkit-box-shadow: 1rem 2rem rgba(0, 0, 0, 0.5);
           box-shadow: 1rem 2rem rgba(0, 0, 0, 0.5);
+  background-position: center;
 }
 
 .reboot__sessions--button-box a img {

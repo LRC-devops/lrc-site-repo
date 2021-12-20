@@ -9,7 +9,7 @@
   ////////////////////
   //create keyframe animation on background position for header element
   ////////////////////
-  animation: aniGradient 10s infinite;
+  animation: aniGradient 25s infinite;
   background-image: radial-gradient(
     circle at 100%,
     darken($color-teal, 45%),
@@ -63,8 +63,8 @@
       background-color: #fff;
       filter: blur(200px);
       z-index: -1;
-      animation: aniRadialBlur 15s infinite ease-in-out;
-      animation: aniRadialMotion 10s infinite;
+      animation: aniRadialBlur 20s infinite ease-in-out;
+      animation: aniRadialMotion 20s infinite;
     }
   }
   &--right-box {

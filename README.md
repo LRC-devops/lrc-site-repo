@@ -20,6 +20,22 @@ Once you have downloaded VSCode, you will need to install the following extensio
 2. Live Sass Compiler by Ritwick Dey (This extension may install automatically when you install the live server extension)
 3. GitHub by KnisterPeter (This extension has an icon that looks like a cartoon person dressed up like a cat)
 
+VSCode Keyboard Shortcuts
+
+---
+
+    Some keyboard shortcuts for VSCode that I find extremely helpful:
+
+    TO DUPLICATE LINE/SELECTION - place your cursor on a line that you would like to duplicate (or select multiple lines to duplicate), hold shift + alt/option + up-arrow/down-arrow to duplicate that line/selection up or down.
+
+    TO CREATE MULTIPLE CURSORS ON DIFFERENT LINES - place your cursor on a line, hold alt + click on another line to create a 2nd cursor (you can do this as many times as you want, however, check to make sure your edits are correct on all lines after you make the edit).
+
+    TO SELECT DUPLICATE LINES - this works when you are selecting multiple lines/elements of code that are identical. Select the identical line/word you want to select multiple times, press CMD/CTRL + D to select the next iteration of the element you are selecting
+
+    TO MOVE/SHIFT AN ELEMENT/SELECTION'S POSITION - Select a tine or block of code that you want to move, press alt + up/down arrow key to shift that line/block up or down.
+
+    TO COMMENT OUT A LINE/CODE BLOCK - place your cursor on the link you want to comment, or select the block you want to omit, and press CMD + / to add the comment tags at the beginning and end of the line/block.
+
 Basic HTML formatting explanation
 
 ---

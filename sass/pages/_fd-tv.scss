@@ -1,0 +1,135 @@
+.fd-tv__section {
+  // background-color: #403641;
+  background-image: linear-gradient(rgba(#000, 0.5));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+// .fd-tv__section::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient($color-pink, $color-secondary);
+//   clip-path: circle(30% at right 70%);
+// }
+// .fd-tv__section::after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient(to left, $color-primary, $color-teal);
+//   clip-path: circle(20% at 10% 10%);
+// }
+
+.tv-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.tv-container .tv-card {
+  position: relative;
+  width: 30vw;
+  // width: 80vw;
+  height: 70vh;
+  margin: 3rem;
+  box-shadow: 2rem 2rem 5rem rgba($color-black, 0.5);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba($color-white, 0.5);
+  border-left: 1px solid rgba($color-white, 0.5);
+  backdrop-filter: blur(2rem);
+}
+
+.tv-container .tv-card .tv-content {
+  padding: 2rem 2.5rem;
+  text-align: center;
+}
+
+.tv-content__header {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  h3 {
+    color: $color-primary !important;
+  }
+}
+
+.tv-container .tv-card .tv-content h2 {
+  position: absolute;
+  top: -76px;
+  right: -19px;
+  font-size: 20rem;
+  color: rgba($color-white, 0.05) !important;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.tv-container .tv-card .tv-content h3 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 300;
+  z-index: 1;
+  text-align: left;
+}
+
+.tv-container .tv-card .tv-content p {
+  color: #fff !important;
+  font-size: 2.4rem;
+}
+
+.heading-primary__fd-tv {
+  font-size: 10rem;
+  -webkit-text-stroke: 2px rgba(white, 0.3);
+  -webkit-text-fill-color: rgba($color-white, 0.1);
+  text-transform: uppercase;
+  // backdrop-filter: blur(5px);
+}
+
+.tv-card__info {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--box {
+    text-align: left;
+    &:not(:last-child) {
+      margin-right: 5rem;
+      // border-right: 1px solid $color-white;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.tv-card__img--large {
+  img {
+    height: 76rem;
+    width: auto;
+  }
+}
+// .tv-card__img--small {
+//   img {
+//     height: 53rem;
+//     width: auto;
+//   }
+// }
+.tv-card__img--studyTips {
+  height: 68rem;
+  width: auto;
+}
+// .heading-tertiary--tv {
+//   color: $color-black !important;
+// }

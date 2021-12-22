@@ -43,3 +43,24 @@
     background-color: $color-grey-dark;
   }
 }
+
+.table-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem 2rem;
+  // align-items: center;
+
+  &__text {
+    margin-right: 3rem;
+    order: 2;
+  }
+  &__btn {
+    // flex: 0 0 150%;
+    margin-bottom: 3rem;
+
+    a {
+      width: 100%;
+    }
+  }
+}

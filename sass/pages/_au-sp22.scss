@@ -1,0 +1,79 @@
+.au22 {
+  &__primary-header {
+    font-size: 15rem;
+    color: $color-white;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+  }
+
+  &__gallery {
+    background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/design_1.png?sfvrsn=f156a1ba_2);
+    background-size: cover;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    &--header-box {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(#fff, 0.1),
+        rgba(#fff, 0.6)
+      );
+      border-radius: 20px;
+      padding: 2rem 3rem;
+      backdrop-filter: blur(5px);
+      box-shadow: 2rem 3rem 2rem rgba(#000, 0.3);
+      margin-bottom: 10rem;
+      border: 2px solid rgba(#fff, 0.6);
+
+      display: flex;
+      align-self: center;
+    }
+
+    &--container {
+      display: flex;
+      gap: 5rem;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 3rem;
+      // background-color: orangered;
+    }
+    &--img-box {
+      img {
+        height: 30rem;
+        border-radius: 20px;
+      }
+      height: 100%;
+      width: 100%;
+      padding: 2rem 3rem;
+      border-radius: 20px;
+      padding: 2rem 3rem;
+      backdrop-filter: blur(5px);
+      box-shadow: 2rem 3rem 2rem rgba(#000, 0.3);
+      flex-basis: 33%;
+
+      &--1 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba($color-pink, 0.1),
+          rgba($color-pink, 0.6)
+        );
+      }
+      &--2 {
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(#fff, 0.1),
+          rgba(#fff, 0.6)
+        );
+      }
+    }
+  }
+}
+
+// background-image: linear-gradient(
+//   to bottom right,
+//   rgba(#fff, 0.1),
+//   rgba(#fff, 0.6)
+// );

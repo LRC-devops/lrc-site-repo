@@ -11,10 +11,10 @@
   background-attachment: fixed;
   position: relative;
 
-  @include respond(phone) {
-    background-image: none;
-    background-color: $color-teal-dark;
-  }
+  // @include respond(phone) {
+  //   background-image: none;
+  //   background-color: $color-teal-dark;
+  // }
 
   &__logo-box {
     position: absolute;
@@ -115,10 +115,10 @@
     background-attachment: fixed;
     background-position: bottom;
 
-    @include respond(phone) {
-      background-image: none;
-      background-color: $color-grey-dark;
-    }
+    // @include respond(phone) {
+    //   background-image: none;
+    //   background-color: $color-grey-dark;
+    // }
   }
   &--ip {
     background-image: linear-gradient(
@@ -139,10 +139,10 @@
     background-attachment: fixed;
     background-position: bottom;
 
-    @include respond(phone) {
-      background-image: none;
-      background-color: $color-pink;
-    }
+    // @include respond(phone) {
+    //   background-image: none;
+    //   background-color: $color-pink;
+    // }
   }
   &--ssw {
     background-image: linear-gradient(
@@ -156,10 +156,10 @@
     background-attachment: fixed;
     background-position: bottom;
 
-    @include respond(phone) {
-      background-image: none;
-      background-color: $color-pink;
-    }
+    // @include respond(phone) {
+    //   background-image: none;
+    //   background-color: $color-pink;
+    // }
   }
   &--ssw-asp {
     background-image: linear-gradient(
@@ -198,10 +198,10 @@
     background-attachment: fixed;
     background-position: bottom;
 
-    @include respond(phone) {
-      background-image: none;
-      background-color: $color-pink;
-    }
+    // @include respond(phone) {
+    //   background-image: none;
+    //   background-color: $color-pink;
+    // }
   }
   &--au {
     background-image: linear-gradient(
@@ -214,10 +214,10 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
-    @include respond(phone) {
-      background-image: none;
-      background-color: $color-purp-dark;
-    }
+    // @include respond(phone) {
+    //   background-image: none;
+    //   background-color: $color-purp-dark;
+    // }
   }
 }
 

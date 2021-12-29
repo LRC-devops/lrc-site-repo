@@ -8357,4 +8357,119 @@ html {
        object-position: center;
   }
 }
+
+.au22-gal {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.au22-gal::before {
+  content: "";
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-color: #cf7291;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+.au22-gal::after {
+  content: "";
+  height: 60rem;
+  width: 60rem;
+  border-radius: 50%;
+  background-color: #86c0cf;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+.au22-gal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5rem 7rem;
+  gap: 10rem;
+  width: 100%;
+}
+
+.au22-gal__header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.3)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  text-align: center;
+  border-radius: 20px;
+  z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.au22-gal__header h1 {
+  font-size: 15rem;
+  color: #fff;
+}
+
+.au22-gal__box {
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  justify-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.3)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 10;
+  width: 50%;
+}
+
+.au22-gal__box img {
+  height: 15rem;
+  width: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+}
+
+.au22-gal__text {
+  color: #fff;
+}
+
+.box-2 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 /*# sourceMappingURL=style.css.map */

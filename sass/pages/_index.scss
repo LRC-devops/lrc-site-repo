@@ -204,3 +204,103 @@
     }
   }
 }
+
+//VFD BUILD
+
+.vfd {
+  background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index-imgs/vfd_background.png?sfvrsn=59aca2ba_2);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 10rem;
+  // height: 90vh;
+  // filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  @include respond(tab-port) {
+    height: 100vh;
+  }
+
+  &__glass {
+    &--link {
+      text-decoration: none;
+      color: $color-pink;
+      font-size: 3.81rem;
+      transition: all 0.2s;
+      background-color: rgba(#000, 0.1);
+      padding: 1rem 3rem;
+      border-radius: 20px;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: rgba(#000, 0.3);
+        transform: translateX(3rem);
+      }
+    }
+    &--gold-text,
+    &--teal-text {
+      font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica,
+        Arial, sans-serif;
+      font-weight: 100;
+      line-height: 1.7;
+    }
+    &--gold-text {
+      font-size: 6.18rem;
+      line-height: 1.7;
+      color: $color-white;
+      font-weight: 900;
+      text-transform: uppercase;
+
+      @include respond(tab-port) {
+        font-size: 4rem;
+      }
+    }
+    &--teal-text {
+      color: $color-grey-dark;
+      font-size: 10rem;
+      border-bottom: 2px solid $color-grey;
+
+      @include respond(tab-port) {
+        font-size: 6rem;
+      }
+    }
+    h2 {
+      // margin-bottom: 2rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+    &--text-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10rem;
+    }
+    &--icon {
+      font-size: 15rem;
+      color: rgba($color-secondary, 0.9);
+    }
+
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(#fff, 0.4),
+      rgba(#fff, 0.7)
+    );
+    padding: 4rem 6rem;
+    border-radius: 20px;
+    border: 1px solid rgba(#fff, 0.2);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5rem;
+    // width: 50vw;
+  }
+}

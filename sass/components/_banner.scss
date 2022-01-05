@@ -1,59 +1,89 @@
+// .banner {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   // background-color: rgba($color-secondary, 0.9);
+
+//   // display: block;
+//   text-align: center;
+//   width: 100vw;
+//   // padding: 1rem 2rem;
+//   z-index: 100;
+
+//   &__checkbox:checked ~ &__box {
+//     // display: none;
+//     // visibility: hidden;
+//     background-color: orangered;
+//   }
+
+//   &__box {
+//     display: flex;
+//     justify-content: space-evenly;
+//     background-image: linear-gradient(
+//       to right,
+//       rgba($color-secondary, 0.9),
+//       rgba($color-pink, 0.9)
+//     );
+//     transition: all 0.2s;
+//   }
+//   &__text {
+//     align-self: center;
+//     justify-self: center;
+//     p {
+//       font-size: 2rem;
+//     }
+//   }
+//   //FIXME: TROUBLE CONFIGURING BANNER CLOSE
+//   &__close {
+//     justify-self: flex-end;
+//     align-self: flex-end;
+//     // &--checkbox {
+//     //   display: none;
+//     // }
+
+//     &--icon {
+//       font-size: 4rem;
+//       line-height: 1.7;
+//       a:link,
+//       a:visited {
+//         text-decoration: none;
+//         color: $color-grey-dark;
+//         transition: all 0.2s;
+//         cursor: pointer;
+//       }
+//       a:hover {
+//         transform: rotate(360deg);
+//       }
+//     }
+//   }
+// }
+
 .banner {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  // background-color: rgba($color-secondary, 0.9);
 
-  // display: block;
-  text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.1),
+    rgba(#fff, 0.6)
+  );
+  border: 1px solid rgba(#fff, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 1rem 1rem rgba(#000, 0.3);
+  height: 5rem;
   width: 100vw;
-  // padding: 1rem 2rem;
-  z-index: 100;
 
-  &__checkbox:checked ~ &__box {
-    // display: none;
-    // visibility: hidden;
-    background-color: orangered;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &__box {
-    display: flex;
-    justify-content: space-evenly;
-    background-image: linear-gradient(
-      to right,
-      rgba($color-secondary, 0.9),
-      rgba($color-pink, 0.9)
-    );
-    transition: all 0.2s;
+  p {
+    color: $color-white;
+    font-size: $default-font-size;
   }
-  &__text {
-    align-self: center;
-    justify-self: center;
-    p {
-      font-size: 2rem;
-    }
-  }
-  //FIXME: TROUBLE CONFIGURING BANNER CLOSE
-  &__close {
-    justify-self: flex-end;
-    align-self: flex-end;
-    // &--checkbox {
-    //   display: none;
-    // }
-
-    &--icon {
-      font-size: 4rem;
-      line-height: 1.7;
-      a:link,
-      a:visited {
-        text-decoration: none;
-        color: $color-grey-dark;
-        transition: all 0.2s;
-        cursor: pointer;
-      }
-      a:hover {
-        transform: rotate(360deg);
-      }
-    }
-  }
+}
+//set <main> to relative positioning
+main {
+  position: relative;
 }

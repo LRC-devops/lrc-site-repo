@@ -6058,6 +6058,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.5rem;
 }
 
 @media (max-width: 37.5em) {
@@ -6131,6 +6132,141 @@ html {
 .nav-box__link:hover, .nav-box__link:active {
   color: #cfb87c;
   border-bottom: 2px solid transparent;
+}
+
+.vfd {
+  background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index-imgs/vfd_background.png?sfvrsn=59aca2ba_2);
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10rem;
+}
+
+@media (max-width: 56.25em) {
+  .vfd {
+    height: 100vh;
+  }
+}
+
+.vfd__glass {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.7)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7));
+  padding: 4rem 6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+
+.vfd__glass--link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3.81rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 56.25em) {
+  .vfd__glass--link {
+    font-size: 3rem;
+  }
+}
+
+.vfd__glass--link:hover, .vfd__glass--link:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.vfd__glass--gold-text, .vfd__glass--teal-text {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.vfd__glass--gold-text {
+  font-size: 6.18rem;
+  line-height: 1.7;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 56.25em) {
+  .vfd__glass--gold-text {
+    font-size: 4rem;
+  }
+}
+
+.vfd__glass--teal-text {
+  color: #565a5c;
+  font-size: 10rem;
+}
+
+@media (max-width: 56.25em) {
+  .vfd__glass--teal-text {
+    font-size: 6rem;
+  }
+}
+
+.vfd__glass h2 {
+  line-height: 1.7;
+  text-align: center;
+}
+
+.vfd__glass--text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10rem;
+}
+
+.vfd__glass--text-box p {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.vfd__glass--icon {
+  font-size: 15rem;
+  color: rgba(207, 184, 124, 0.9);
 }
 
 .section__about-us--au {

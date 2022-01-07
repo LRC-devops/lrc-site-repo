@@ -5528,6 +5528,126 @@ html {
   font-size: 1.6rem;
 }
 
+.missNav {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  z-index: 5;
+  overflow: hidden;
+}
+
+.missNav h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  -webkit-transform: rotate(-5.5deg);
+          transform: rotate(-5.5deg);
+}
+
+.missNav__background div {
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.missNav__background div:nth-child(1) {
+  height: 40rem;
+  background-color: #cf7291;
+  top: 10rem;
+  left: 5rem;
+}
+
+.missNav__background div:nth-child(2) {
+  height: 30rem;
+  background-color: #86c0cf;
+  top: 10rem;
+  right: 5rem;
+}
+
+.missNav__background div:nth-child(3) {
+  height: 30rem;
+  background-color: #91cf96;
+  bottom: 10rem;
+  right: 5rem;
+}
+
+.missNav__background div:nth-child(4) {
+  height: 80rem;
+  background-color: #8b72cf;
+  top: 50rem;
+  left: 5rem;
+}
+
+.missNav__box {
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+  z-index: 100;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.missNav__box h2 {
+  z-index: 10;
+}
+
+.missNav__heading--secondary {
+  font-weight: 300;
+  color: #fff;
+}
+
+.missNav__heading--primary {
+  font-weight: bold;
+  color: #fff;
+  font-size: 7rem;
+}
+
+.missNav__link:link, .missNav__link:visited {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.missNav__link:link:nth-child(1), .missNav__link:visited:nth-child(1) {
+  color: #cf7291;
+}
+
+.missNav__link:link:nth-child(2), .missNav__link:visited:nth-child(2) {
+  color: #91cf96;
+}
+
+.missNav__link:link:nth-child(3), .missNav__link:visited:nth-child(3) {
+  color: #cfb87c;
+}
+
+.missNav__link:link:nth-child(4), .missNav__link:visited:nth-child(4) {
+  color: #8b72cf;
+}
+
+.missNav__link:hover, .missNav__link:active {
+  -webkit-transform: translateY(-0.5rem) scale(1.1);
+          transform: translateY(-0.5rem) scale(1.1);
+  color: #fff;
+}
+
 .section__services--ag {
   background-color: #fff;
   padding: 10rem 0;
@@ -6138,7 +6258,7 @@ html {
   background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index-imgs/vfd_background.png?sfvrsn=59aca2ba_2);
   background-size: cover;
   background-position: center;
-  padding: 7rem 10rem;
+  padding: 15rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6153,6 +6273,8 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10rem;
+  z-index: 4;
+  margin-top: -15rem;
 }
 
 @media (max-width: 56.25em) {

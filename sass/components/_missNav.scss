@@ -1,0 +1,112 @@
+// missNav (Mission Navigation) header element located on the index.html (LRC homepage)
+
+.missNav {
+  height: 100vh;
+  background-color: #000;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  z-index: 5;
+  overflow: hidden;
+
+  h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 10;
+    transform: rotate(-5.5deg);
+  }
+
+  //circles {
+  &__background {
+    div {
+      aspect-ratio: 1;
+      position: absolute;
+      border-radius: 50%;
+      &:nth-child(1) {
+        height: 40rem;
+        background-color: $color-pink;
+        top: 10rem;
+        left: 5rem;
+      }
+      &:nth-child(2) {
+        height: 30rem;
+        background-color: $color-teal;
+        top: 10rem;
+        right: 5rem;
+      }
+      &:nth-child(3) {
+        height: 30rem;
+        background-color: $color-primary;
+        bottom: 10rem;
+        right: 5rem;
+      }
+      &:nth-child(4) {
+        height: 80rem;
+        background-color: $color-purp;
+        top: 50rem;
+        left: 5rem;
+      }
+    }
+  }
+
+  &__box {
+    height: 100%;
+    width: 100%;
+    //There are two different spaces to blur now! BAD!
+    backdrop-filter: blur(100px);
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(#000, 0.3),
+      rgba(#000, 0.8)
+    );
+    z-index: 100;
+    padding: 2rem 3rem;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      z-index: 10;
+    }
+  }
+  &__heading {
+    &--secondary {
+      font-weight: 300;
+      color: #fff;
+    }
+    &--primary {
+      font-weight: bold;
+      color: #fff;
+      font-size: 7rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      transition: all 0.2s;
+      &:nth-child(1) {
+        color: $color-pink;
+      }
+      &:nth-child(2) {
+        color: $color-primary;
+      }
+      &:nth-child(3) {
+        color: $color-secondary;
+      }
+      &:nth-child(4) {
+        color: $color-purp;
+      }
+    }
+
+    // FIXME: the hover and active states are not showing up in the inspector. ALSO there is an animation glitch happening in the upper left side of<section__vfd> when you hove the vfd__glass--link
+    &:hover,
+    &:active {
+      // transform: scale(1.1);
+      transform: translateY(-0.5rem) scale(1.1);
+      color: #fff;
+    }
+  }
+}

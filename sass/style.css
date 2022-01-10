@@ -8474,6 +8474,7 @@ html {
 }
 
 .au22-glass {
+  background-color: #000;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8637,5 +8638,25 @@ html {
 
 .au22-glass__box:not(:last-of-type) {
   border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+#pinkBack {
+  background-color: rgba(207, 114, 145, 0.3);
+}
+
+#blueBack {
+  background-color: rgba(134, 192, 207, 0.3);
+}
+
+#goldBack {
+  background-color: rgba(207, 184, 124, 0.3);
+}
+
+#greenBack {
+  background-color: rgba(145, 207, 150, 0.3);
+}
+
+#purpBack {
+  background-color: rgba(139, 114, 207, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

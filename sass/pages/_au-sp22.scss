@@ -303,7 +303,7 @@
   padding: 10rem 12rem;
 
   &__box-heading {
-    font-size: 8rem;
+    font-size: 5rem;
     color: rgba(#fff, 0.2);
     text-transform: uppercase;
     // z-index: 1;
@@ -404,14 +404,5 @@
     &:not(:last-of-type) {
       border-right: 1px solid rgba(#fff, 0.4);
     }
-  }
-}
-
-#ag-heading {
-  font-size: 5rem;
-  top: -5rem;
-
-  @include respond(tab-land) {
-    font-size: 3rem;
   }
 }

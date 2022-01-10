@@ -8492,7 +8492,7 @@ html {
 }
 
 .au22-glass__box-heading {
-  font-size: 8rem;
+  font-size: 5rem;
   color: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
   text-align: center;
@@ -8637,16 +8637,5 @@ html {
 
 .au22-glass__box:not(:last-of-type) {
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-}
-
-#ag-heading {
-  font-size: 5rem;
-  top: -5rem;
-}
-
-@media (max-width: 75em) {
-  #ag-heading {
-    font-size: 3rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */

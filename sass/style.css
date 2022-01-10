@@ -8530,7 +8530,9 @@ html {
 .au22-glass__heading h1 {
   font-size: 7rem;
   font-weight: 100;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
   position: relative;
   margin-bottom: 5rem;
 }
@@ -8658,5 +8660,25 @@ html {
 
 #purpBack {
   background-color: rgba(139, 114, 207, 0.3);
+}
+
+#glass__box--stretch {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#glass__box--stretch50 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+#Michelle {
+  -o-object-position: 5% 16%;
+     object-position: 5% 16%;
+}
+
+#Elizabeth {
+  -o-object-position: 0% 20%;
+     object-position: 0% 20%;
 }
 /*# sourceMappingURL=style.css.map */

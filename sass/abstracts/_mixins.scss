@@ -27,6 +27,10 @@
   justify-content: center;
 }
 
+@mixin helvetLight {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+}
+
 //MEDIA QUERY MANAGER
 
 /*

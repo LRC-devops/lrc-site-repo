@@ -326,7 +326,11 @@
     h1 {
       font-size: 7rem;
       font-weight: 100;
-      color: $color-white;
+      color: rgba($color-white, 0.5);
+      text-transform: uppercase;
+
+      @include helvetLight;
+
       position: relative;
       margin-bottom: 5rem;
     }
@@ -419,4 +423,21 @@
 }
 #purpBack {
   background-color: rgba($color-purp, 0.3);
+}
+
+#glass__box--stretch {
+  flex-basis: 100%;
+}
+#glass__box--stretch50 {
+  flex-basis: 50%;
+}
+
+////////////////
+// PHOTO ID STYLING
+////////////////
+#Michelle {
+  object-position: 5% 16%;
+}
+#Elizabeth {
+  object-position: 0% 20%;
 }

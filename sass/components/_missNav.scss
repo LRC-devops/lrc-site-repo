@@ -28,24 +28,32 @@
         background-color: $color-pink;
         top: 10rem;
         left: 5rem;
+
+        animation: aniCircleBlur1 30s infinite;
       }
       &:nth-child(2) {
         height: 30rem;
         background-color: $color-teal;
         top: 10rem;
         right: 5rem;
+
+        animation: aniCircleBlur2 30s infinite;
       }
       &:nth-child(3) {
         height: 30rem;
         background-color: $color-primary;
         bottom: 10rem;
         right: 5rem;
+
+        animation: aniCircleBlur3 30s infinite;
       }
       &:nth-child(4) {
         height: 80rem;
         background-color: $color-purp;
         top: 50rem;
         left: 5rem;
+
+        animation: aniCircleBlur4 30s infinite;
       }
     }
   }

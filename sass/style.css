@@ -8474,6 +8474,7 @@ html {
 }
 
 .au22-glass {
+  background-color: #000;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8492,7 +8493,7 @@ html {
 }
 
 .au22-glass__box-heading {
-  font-size: 8rem;
+  font-size: 5rem;
   color: rgba(255, 255, 255, 0.2);
   text-transform: uppercase;
   text-align: center;
@@ -8639,14 +8640,23 @@ html {
   border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-#ag-heading {
-  font-size: 5rem;
-  top: -5rem;
+#pinkBack {
+  background-color: rgba(207, 114, 145, 0.3);
 }
 
-@media (max-width: 75em) {
-  #ag-heading {
-    font-size: 3rem;
-  }
+#blueBack {
+  background-color: rgba(134, 192, 207, 0.3);
+}
+
+#goldBack {
+  background-color: rgba(207, 184, 124, 0.3);
+}
+
+#greenBack {
+  background-color: rgba(145, 207, 150, 0.3);
+}
+
+#purpBack {
+  background-color: rgba(139, 114, 207, 0.3);
 }
 /*# sourceMappingURL=style.css.map */

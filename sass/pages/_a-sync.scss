@@ -1,6 +1,7 @@
 .a-sync__header {
   padding: 0 5rem;
   display: flex;
+  gap: 5rem;
   // height: 70vh;
   align-items: center;
   justify-content: center;
@@ -19,23 +20,32 @@
     justify-self: flex-end;
     flex-basis: 33%;
 
+    &-span {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
     @include respond(tab-port) {
       flex-basis: 100%;
     }
     h1 {
       @include helvetLight;
-      font-size: 4rem;
+      font-size: 6rem;
       font-weight: 100;
       line-height: 1;
-
-      span {
-        font-size: 2.5rem;
-        font-weight: 300;
-      }
     }
     h2 {
       font-size: $default-font-size;
       font-weight: 300;
     }
   }
+}
+
+.a-sync-span--gold {
+  font-size: 6rem;
+  color: $color-secondary;
+}
+.a-sync-span--pink {
+  font-size: 6rem;
+  color: $color-pink;
 }

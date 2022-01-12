@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+
+  <body>
+    <!--Main Navigation-->
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center"
+              class="navigation__link"
+              >Home</a
+            >
+          </li>
+          <div class="dropdown">
+            <li class="navigation__item">
+              <a
+                href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer"
+                class="navigation__link dropdown__link"
+                >Peer to Peer<ion-icon
+                  name="caret-forward-outline"
+                  class="dropdown__icon"
+                ></ion-icon
+              ></a>
+            </li>
+            <div class="dropdown__content">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link dropdown__link--sub">ELL</a>
+              </li>
+            </div>
+          </div>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction"
+              class="navigation__link"
+              >Supplemental Instruction</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/intense-preparation"
+              class="navigation__link"
+              >iPrep</a
+            >
+          </li>
+          <div class="dropdown">
+            <li class="navigation__item">
+              <a
+                href="https://www.ucdenver.edu/learning-resources-center/resources"
+                class="navigation__link dropdown__link"
+                >Workshops<ion-icon
+                  name="caret-forward-outline"
+                  class="dropdown__icon"
+                ></ion-icon
+              ></a>
+            </li>
+            <div class="dropdown__content">
+              <li class="navigation__item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs"
+                  class="navigation__link dropdown__link--sub"
+                  >Academic Support</a
+                >
+              </li>
+            </div>
+          </div>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources"
+              class="navigation__link"
+              >Faculty/Staff Resources</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/join-our-team"
+              class="navigation__link"
+              >Join Our Team</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/about"
+              class="navigation__link"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div class="banner">
+        <p>
+          The University of Colorado Denver is remote until January 28th.
+          In-person services begin January 31st.
+        </p>
+      </div>
+
+      <header class="a-sync__header">
+        <img
+          src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/v2logo-gen-v2.png?sfvrsn=fb69aeba_2"
+          alt="A-Sync Logo"
+          class="a-sync__header--img"
+        />
+        <div class="a-sync__header--text">
+          <h1>
+            Genetics <br /><span class="a-sync-span--gold">A-</span
+            ><span class="a-sync-span--pink">Sync</span> <br /><span
+              class="a-sync__header--text-span"
+              >by Supplemental Learning</span
+            >
+          </h1>
+          <h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum,
+            numquam possimus blanditiis pariatur expedita cupiditate neque
+          </h2>
+        </div>
+      </header>
+
+      <section class="a-sync__container">
+        <div class="a-sync__tabs">
+          <input
+            type="radio"
+            class="a-sync__tabs--radio"
+            name="a-sync__tabs"
+            id="a-sync__tab1"
+            checked
+          />
+          <label for="a-sync__tab1" class="a-sync__tabs--label">Unit 1</label>
+          <div class="a-sync__tabs--content">
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week One</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Two</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Three</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+          </div>
+
+          <input
+            type="radio"
+            class="a-sync__tabs--radio"
+            name="a-sync__tabs"
+            id="a-sync__tab2"
+          />
+          <label for="a-sync__tab2" class="a-sync__tabs--label">Unit 2</label>
+          <div class="a-sync__tabs--content">
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Three</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Four</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Five</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+          </div>
+
+          <input
+            type="radio"
+            class="a-sync__tabs--radio"
+            name="a-sync__tabs"
+            id="a-sync__tab3"
+          />
+          <label for="a-sync__tab3" class="a-sync__tabs--label">Unit 3</label>
+          <div class="a-sync__tabs--content">
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Six</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Seven</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Eight</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+          </div>
+
+          <input
+            type="radio"
+            class="a-sync__tabs--radio"
+            name="a-sync__tabs"
+            id="a-sync__tab4"
+          />
+          <label for="a-sync__tab4" class="a-sync__tabs--label">Unit 4</label>
+          <div class="a-sync__tabs--content">
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week Nine</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week 10</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+            <div class="a-sync__tabs--content--text-box">
+              <h2>Week 11</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident ab aut, rem omnis sed dignissimos natus quasi unde
+                sapiente, labore obcaecati laboriosam dolore ea odit nobis.
+                Distinctio impedit ipsa quod!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Standard Footer-->
+      <footer class="section__end">
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="section__end--logo-box">
+              <a href="#section-head" class="scroll-link"
+                ><img
+                  src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/lrc-logo-horz-gold-white@1.png?sfvrsn=9df3c4ba_2"
+                  alt="LRC Logo"
+                  class="section__end--logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="section__end--add">
+              <h3 class="heading-tertiary__gold--keep">
+                Learning Resources Center
+              </h3>
+              <p class="section__end--text">
+                CU Denver City Heights
+                <span class="section__end--text--div-line">|</span> Learning
+                Commons<br />
+                <a
+                  href="https://www.google.com/maps/search/1191+Larimer+St+%231201,+Denver,+CO+80204/@39.7446014,-105.0109047,16z/data=!3m1!4b1"
+                  class="box__link"
+                  target="_blank"
+                  >1191 Larimer, Suite 1201 Denver, CO 80204</a
+                ><br />
+                <a href="mailto: lrc@ucdenver.edu" class="box__link"
+                  >LRC@ucdenver.edu</a
+                ><br />
+                <a href="tel: 303-315-3531" class="box__link">303-315-3531</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section__end--policy">
+            <div class="section__end--policy-box">
+              <h3 class="heading-tertiary__gold--keep u-center-text">
+                LRC graded assignment policy
+              </h3>
+            </div>
+            <p class="section__end--policy-box--text">
+              <em
+                >Tutors are prohibited from assisting students with any
+                assignments that will be submitted for a grade. The tutor can
+                clarify concepts related to an assignment and/or do similar
+                practice problems. Please view the CU Denver
+                <a
+                  href="https://www.ucdenver.edu/student/health-wellness/student-conduct/academic-integrity"
+                  class="box__link"
+                  >Academic Integrity Policy</a
+                >
+                for more information.</em
+              >
+            </p>
+          </div>
+        </div>
+
+        <!--   SOCIAL LINKS   -->
+        <div class="row u-center-text">
+          <div class="section__end--social">
+            <a
+              href="https://www.facebook.com/CUDenverLRC"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-facebook" class="fb-icon"></ion-icon
+            ></a>
+            <a
+              href="https://www.instagram.com/cudenverlrc/"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-instagram" class="insta-icon"></ion-icon
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/uc-denver-learning-resources-center"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-linkedin" class="lin-icon"></ion-icon
+            ></a>
+            <a
+              href="https://twitter.com/CUDenverLRC/"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-twitter" class="twit-icon"></ion-icon
+            ></a>
+          </div>
+        </div>
+
+        <!--   NAVI LINKS   -->
+        <div class="row u-center-text">
+          <div class="section__end--navigation u-center-text">
+            <!--MAIN NAVIGATION-->
+            <ul class="section__end--list">
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center"
+                  class="section__end--link"
+                  >Home</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer"
+                  class="section__end--link"
+                  >P2P</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a href="#" class="section__end--link">ELL</a>
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction"
+                  class="section__end--link"
+                  >SI</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/intense-preparation"
+                  class="section__end--link"
+                  >iPrep</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/resources"
+                  class="section__end--link"
+                  >Workshops</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs"
+                  class="section__end--link"
+                  >Academic Support</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources"
+                  class="section__end--link"
+                  >Faculty/Staff Resources</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/join-our-team"
+                  class="section__end--link"
+                  >Join Us</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/about"
+                  class="section__end--link"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="section__end--text">
+              Please note, regardless of synchronous or asynchronous course
+              delivery, students are unable to sign up for any LRC service that
+              conflicts with a scheduled class time.
+            </p>
+          </div>
+          <div class="col-1-of-2">
+            <p class="section__end--text">
+              If you're unable to sign up for LRC services for any reason other
+              than technical issues, please let us know by completing the form
+              below. This will help us in future planning and how we deliver
+              services to best meet the needs of our CU Denver
+              student/community. Contact us at LRC@ucdenver.edu for questions.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

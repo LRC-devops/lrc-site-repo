@@ -8222,12 +8222,58 @@ html {
 }
 
 .a-sync__header {
+  padding: 0 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 56.25em) {
+  .a-sync__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.a-sync__header--img {
+  height: auto;
+  width: 40%;
+}
+
+.a-sync__header--text {
+  justify-self: flex-end;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+@media (max-width: 56.25em) {
+  .a-sync__header--text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.a-sync__header--text h1 {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.a-sync__header--text h1 span {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.a-sync__header--text h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=style.css.map */

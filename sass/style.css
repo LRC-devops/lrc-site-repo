@@ -8350,6 +8350,11 @@ html {
   font-size: 1.6rem;
 }
 
+.a-sync__tabs--content--text-box h2 {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-weight: 11;
+}
+
 .a-sync__tabs--radio:checked + .a-sync__tabs--label {
   font-weight: bold;
   color: #cfb87c;

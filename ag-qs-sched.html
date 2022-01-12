@@ -43,7 +43,7 @@
             <h2 class="heading-secondary">
               Question Sessions
             </h2>
-            <h3 class="heading-tertiary">Sessions will resume January 18th, 2021</h3>
+            <h3 class="heading-tertiary">Sessions will resume January 22nd, 2021</h3>
             <!-- <h3 class="heading-tertiary">No Sign-up Necessary!</h3> -->
           </div>
           <div class="qs-tile-box u-margin-bottom-big">
@@ -111,7 +111,7 @@
               
             </div>
           </div>
-          <!-- <div class="btn-box u-margin-bottom-medium">
+          <div class="btn-box u-margin-bottom-medium">
             <a href="#popup-courses__bio--btns" class="btn-colorShadow btn-colorShadow__gold">Biology</a>
             <a href="#popup-courses__chem--btns" class="btn-colorShadow btn-colorShadow__gold">Chemistry</a>
             <a href="#popup-courses__phys" class="btn-colorShadow btn-colorShadow__gold">Physics</a>
@@ -121,7 +121,7 @@
             <a href="#popup-courses__philo" class="btn-colorShadow btn-colorShadow__green">Philosophy</a>
             <a href="#popup-courses__modLang" class="btn-colorShadow btn-colorShadow__green">Modern Languages</a>
             <a href="#popup-courses__other" class="btn-colorShadow btn-colorShadow__pink">Other Courses</a>
-          </div> -->
+          </div>
 
           <!-- <div class="footnote u-center-text">
             <h3 class="heading-tertiary__green">**No services Sun Nov 21 - Sat Nov 27 for fall break**</h3>
@@ -163,37 +163,79 @@ Instructions for copying this code over to Sitefinity:
 
 <!------------------------------------------COURSE LIST POPUPS------------------------------------------------------>
 
-<!--BIO BTNS TO POPUPS-->
-<div class="popupBtn" id="popup-courses__bio--btns">
-  <div class="popupBtn__content popupBtn__content-sl">
-      <a href="#qs-section" class="popupBtn__close">&times;</a>
 
-
-      <div class="btn-box btn-box__pop">
-        <a href="#popup-courses__bio--anat" class="btn-colorShadow btn-colorShadow__pink">Anatomy & Physiology</a>
-        <a href="#popup-courses__bio--cbio" class="btn-colorShadow btn-colorShadow__pink">Cell Bio & Genetics</a>
-        <a href="#popup-courses__bio--gen" class="btn-colorShadow btn-colorShadow__pink">Gen Bio</a>
+<!-- BUILDING POPUP WITH TABS: -->
+<div class="popup" id="popup-courses__bio--btns">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Anatomy and Physiology</h2>
       </div>
-      
+      <div class="row">
+
+          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
+          <!-- TABS SKELETON -->
+          <div class="ag-popup__tabs">
+            <input type="radio" class="ag-popup__tabs--radio" name="ag-popup__chem-tabs" id="ag-popup__o-chem-tab" checked>
+            <label for="ag-popup__o-chem-tab" class="ag-popup__tabs--label">Organic Chemistry</label>
+            <div class="ag-popup__tabs--content">
+              <!-- Here is where the table goes -->
+              <div class="table-box">
+          
+                <table class="popup__table--courses">
+          
+                  <!-- CELL BIO -->
+          
+                  <tr>
+                    <th>Course 1</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+          
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+          
+                  <tr class="zoom-session">
+                    <td>Zoom Session</td>
+                    <td>Day/Time</td>
+                    <td><a href="#" title="AG's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+          
+                  <tr>
+                    <th>Course 2</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+          
+                  <tr class="inPerson-session">
+                    <td>In-Person Session</td>
+                    <td>Day/Time</td>
+                    <td title="AG's Name">In-Person Session</td>
+                  </tr>
+          
+                </table>
+              </div>
+            </div>
+          
+            <input type="radio" class="ag-popup__tabs--radio" name="ag-popup__chem-tabs" id="ag-popup__gen-chem-tab">
+            <label for="ag-popup__gen-chem-tab" class="ag-popup__tabs--label">General Chemistry</label>
+            <div class="ag-popup__tabs--content">
+              CONTENT for Gen-Chem Tab
+            </div>
+          </div>
+
+            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+      </div>
   </div>
 </div>
 
-<!--CHEM BTNS TO POPUPS-->
-<div class="popupBtn" id="popup-courses__chem--btns">
-  <div class="popupBtn__content popupBtn__content-sl">
-      <a href="#qs-section" class="popupBtn__close">&times;</a>
 
 
-      <div class="btn-box btn-box__pop">
-        <a href="#popup-courses__chem--found" class="btn-colorShadow btn-colorShadow__pink">Foundations of Chem</a>
-        <a href="#popup-courses__chem--gfchem" class="btn-colorShadow btn-colorShadow__pink">Gen Chem & Chem for ENGR</a>
-        <a href="#popup-courses__chem--o" class="btn-colorShadow btn-colorShadow__pink">Organic Chemistry</a>
-      </div>
-      
-  </div>
-</div>
 
 <!--BIO -- ANATOMY -->
+
+<!-- FIXME: UPDATE POPUP BACKGROUND AND CARD STYLING AFTER MOVING SCSS CODE TO _ag-sched.scss -->
 <div class="popup" id="popup-courses__bio--anat">
   <div class="popup__content popup__content-sl">
       <a href="#qs-instruct" class="popup__close">&times;</a>

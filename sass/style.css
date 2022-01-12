@@ -5528,6 +5528,56 @@ html {
   font-size: 1.6rem;
 }
 
+.ag-popup {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+}
+
+.ag-popup__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.ag-popup__tabs--label {
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.ag-popup__tabs--radio {
+  display: none;
+}
+
+.ag-popup__tabs--content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  display: none;
+}
+
+.ag-popup__tabs--radio:checked + .ag-popup__tabs--label {
+  font-weight: bold;
+  color: #cfb87c;
+  border-bottom: 3px solid #cfb87c;
+}
+
+.ag-popup__tabs--radio:checked
++ .ag-popup__tabs--label
++ .ag-popup__tabs--content {
+  display: initial;
+}
+
 .section__services--ag {
   background-color: #fff;
   padding: 10rem 0;

@@ -12,6 +12,25 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin glass {
+  background-image: linear-gradient(rgba(#fff, 0.1), rgba(#fff, 0.5));
+  border-radius: 20px;
+  border: 2px solid rgba(#fff, 0.5);
+  backdrop-filter: blur(20px);
+}
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin helvetLight {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+}
+
 //MEDIA QUERY MANAGER
 
 /*

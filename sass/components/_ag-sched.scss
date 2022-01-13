@@ -20,11 +20,16 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  gap: 0.5rem;
 
   &--label {
     padding: 1rem 1.6rem;
     cursor: pointer;
     font-size: 1.7rem;
+    color: #fff;
+    background-color: rgb(168, 168, 168);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   &--radio {
     display: none;
@@ -40,10 +45,10 @@
 
 .ag-popup__tabs--radio:checked + .ag-popup__tabs--label {
   font-weight: bold;
-  color: $color-secondary;
-  border-bottom: 3px solid $color-secondary;
-  border-left: 3px solid $color-secondary;
-  border-right: 3px solid $color-secondary;
+  color: $color-grey-dark;
+  background-color: #eee;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .ag-popup__tabs--radio:checked

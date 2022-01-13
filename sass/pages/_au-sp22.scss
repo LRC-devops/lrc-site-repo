@@ -405,6 +405,146 @@
   }
 }
 
+.au22-fill {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  &__box {
+    width: 33vw;
+    img {
+      width: 100%;
+      object-fit: cover;
+      // height: 40rem;
+      // aspect-ratio: 1;
+      overflow: hidden;
+    }
+
+    &--text {
+      display: none;
+    }
+  }
+}
+
+.au22-bubbles {
+  // height: 100vh;
+  background-color: #fff;
+  padding: 15rem 5rem;
+  position: relative;
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  // align-items: center;
+  justify-content: center;
+
+  &__heading {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    h1 {
+      font-size: 4rem;
+      @include helvetLight;
+      font-weight: 100;
+    }
+    h2 {
+      font-size: 2.5rem;
+      @include helvetLight;
+      font-weight: 100;
+    }
+  }
+
+  &__text {
+    height: $au-bubbles-size;
+    width: $au-bubbles-size;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem;
+
+    h2 {
+      font-size: $default-font-size;
+    }
+    &--ps {
+      background-color: $color-primary;
+    }
+    &--ag {
+      background-color: $color-secondary;
+    }
+    &--lha {
+      background-color: $color-purp;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+  img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  &__cap {
+    display: none;
+  }
+
+  &__bubble {
+    cursor: pointer;
+  }
+}
+
+.au22-bubbles__bubble {
+  transition: all 0.2s;
+  position: relative;
+  img {
+    box-shadow: 0.5rem 1rem 0.5rem rgba(#000, 0.3);
+  }
+  figcaption {
+    position: absolute;
+    @include absCenter;
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+    text-align: center;
+  }
+}
+
+.au22-bubbles__bubble:hover {
+  transform: scale(1.05);
+  img {
+    box-shadow: 1rem 2rem 1rem rgba(#000, 0.3);
+    filter: blur(2px);
+  }
+  figcaption {
+    display: initial;
+  }
+}
+// .au22-bubbles__bubble:active {
+//   transform: scale(0.95);
+//   img {
+//     box-shadow: 0.2rem 0.5rem 0.2rem rgba(#000, 0.3);
+//   }
+// }
+
+.ps-bubble img {
+  border: 1rem solid $color-primary;
+  height: $au-bubbles-size;
+}
+.ag-bubble img {
+  border: 1rem solid $color-secondary;
+  height: $au-bubbles-size;
+}
+.lha-bubble img {
+  border: 1rem solid $color-purp;
+  height: $au-bubbles-size;
+}
+.ct-bubble img {
+  border: 1rem solid $color-pink;
+  height: $au-bubbles-size;
+}
+
 ////////////////
 // ID STYLING
 ////////////////

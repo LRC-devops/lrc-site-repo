@@ -8145,7 +8145,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2rem;
 }
 
 .au22__gallery--header-box {
@@ -8755,7 +8754,17 @@ html {
 .au22-bubbles__bubble {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -ms-flex-negative: 100%;
+      flex-shrink: 100%;
+}
+
+.au22-bubbles__bubble div {
+  width: 100%;
+  margin: auto;
   position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .au22-bubbles__bubble img {
@@ -8765,15 +8774,19 @@ html {
 
 .au22-bubbles__bubble figcaption {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 1.5rem 2rem;
   color: #fff;
   font-size: 1.5rem;
   display: none;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .au22-bubbles__bubble:hover {
@@ -8784,8 +8797,6 @@ html {
 .au22-bubbles__bubble:hover img {
   -webkit-box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
           box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
 }
 
 .au22-bubbles__bubble:hover figcaption {
@@ -8850,5 +8861,51 @@ html {
 #Elizabeth {
   -o-object-position: 0% 20%;
      object-position: 0% 20%;
+}
+
+#bimg-test {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.6))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.6)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  background-position: center;
+  background-size: cover;
+}
+
+#bimg-test:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+#ps-text {
+  height: 12rem;
+  width: 12rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#la-bubble img {
+  height: 40rem;
+  width: 40rem;
+}
+
+#ari-bubble img {
+  height: 30rem;
+  width: 30rem;
+}
+
+#natalie-bubble {
+  height: 15rem;
+  width: 15rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#agTest-1 img {
+  height: 17rem;
+  width: 17rem;
 }
 /*# sourceMappingURL=style.css.map */

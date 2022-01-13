@@ -13,7 +13,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
 
     &--header-box {
       background-image: linear-gradient(
@@ -494,20 +493,35 @@
     cursor: pointer;
   }
 }
-
+// FIXME: There is a bug in the figcaption over natalie's face for some reason
 .au22-bubbles__bubble {
   transition: all 0.2s;
-  position: relative;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  flex-shrink: 100%;
+  div {
+    // height: 100%;
+    width: 100%;
+    // text-align: center;
+    margin: auto;
+    position: relative;
+    align-self: center;
+  }
   img {
     box-shadow: 0.5rem 1rem 0.5rem rgba(#000, 0.3);
   }
   figcaption {
-    position: absolute;
     @include absCenter;
+    padding: 1.5rem 2rem;
     color: #fff;
     font-size: 1.5rem;
     display: none;
     text-align: center;
+    background-color: rgba(#000, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
   }
 }
 
@@ -515,7 +529,7 @@
   transform: scale(1.05);
   img {
     box-shadow: 1rem 2rem 1rem rgba(#000, 0.3);
-    filter: blur(2px);
+    // filter: blur(2px);
   }
   figcaption {
     display: initial;
@@ -580,4 +594,51 @@
 }
 #Elizabeth {
   object-position: 0% 20%;
+}
+
+//background-img worked, but cant animate gradient or blur the img...
+#bimg-test {
+  height: $au-bubbles-size;
+  width: $au-bubbles-size;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba($color-primary, 0.6)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  background-position: center;
+  background-size: cover;
+}
+
+#bimg-test:hover {
+  background-image: linear-gradient(rgba(#000, 0.2)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  backdrop-filter: blur(5px);
+}
+
+#ps-text {
+  height: 12rem;
+  width: 12rem;
+  align-self: flex-end;
+}
+#la-bubble {
+  img {
+    height: 40rem;
+    width: 40rem;
+  }
+}
+#ari-bubble {
+  img {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+#natalie-bubble {
+  height: 15rem;
+  width: 15rem;
+  align-self: flex-end;
+}
+
+#agTest-1 {
+  img {
+    height: 17rem;
+    width: 17rem;
+  }
 }

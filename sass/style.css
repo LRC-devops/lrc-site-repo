@@ -8672,7 +8672,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7rem;
+  gap: 3rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -8724,6 +8724,8 @@ html {
 
 .au22-bubbles__text--ps {
   background-color: #91cf96;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .au22-bubbles__text--ag {
@@ -8757,8 +8759,6 @@ html {
 .au22-bubbles__bubble {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   -ms-flex-negative: 100%;
       flex-shrink: 100%;
 }
@@ -8791,26 +8791,6 @@ html {
 
 .au22-bubbles__bubble:hover figcaption {
   display: initial;
-}
-
-.ps-bubble img {
-  border: 1rem solid #91cf96;
-  height: 20rem;
-}
-
-.ag-bubble img {
-  border: 1rem solid #cfb87c;
-  height: 20rem;
-}
-
-.lha-bubble img {
-  border: 1rem solid #8b72cf;
-  height: 20rem;
-}
-
-.ct-bubble img {
-  border: 1rem solid #86c0cf;
-  height: 20rem;
 }
 
 #pinkBack {
@@ -8873,8 +8853,8 @@ html {
 #ps-text {
   height: 12rem;
   width: 12rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 #ag-text {
@@ -8884,9 +8864,13 @@ html {
       align-self: flex-end;
 }
 
-#la-bubble img {
-  height: 40rem;
-  width: 40rem;
+#cheyenne-bubble {
+  height: 25rem;
+  width: 25rem;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
 }
 
 #ari-bubble {
@@ -8903,43 +8887,326 @@ html {
 }
 
 #natalie-bubble {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/yc8brdan);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/yc8brdan);
+}
+
+#ravisher-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/ravisher_singh.jpg?sfvrsn=ffbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/ravisher_singh.jpg?sfvrsn=ffbaaeba_2);
+}
+
+#la-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
 }
 
 #caleb-bubble {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-#caleb-bubble img {
   height: 25rem;
   width: 25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 192, 207, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-faculty-staff-emailsig-imgs/caleb-circlecrop.png?sfvrsn=5e4cfcba_2);
+  background-image: linear-gradient(rgba(134, 192, 207, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-faculty-staff-emailsig-imgs/caleb-circlecrop.png?sfvrsn=5e4cfcba_2);
 }
 
 #michelle-bubble {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-#michelle-bubble img {
   height: 35rem;
   width: 35rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/michelleaeaca6e6302864d9a5bfff0a001ce385.jpg?sfvrsn=6184c2ba_2);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/michelleaeaca6e6302864d9a5bfff0a001ce385.jpg?sfvrsn=6184c2ba_2);
 }
 
-#agTest-1 img {
-  height: 17rem;
-  width: 17rem;
+#elizabeth-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/elizabeth.jpg?sfvrsn=1b5f1fb9_0);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/elizabeth.jpg?sfvrsn=1b5f1fb9_0);
 }
 
-#cheyenne-bubble {
+#alexis-bubble {
+  height: 23rem;
+  width: 23rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/alexis_benedis.jpg?sfvrsn=15b9aeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/alexis_benedis.jpg?sfvrsn=15b9aeba_2);
+}
+
+#andrea-bubble {
   height: 25rem;
   width: 25rem;
-  background-size: cover;
   border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
-  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/andrea_laurin.jpg?sfvrsn=d8baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/andrea_laurin.jpg?sfvrsn=d8baaeba_2);
+}
+
+#darian-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+}
+
+#daniel-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+}
+
+#fatima-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/fatima_abulobaida.jpg?sfvrsn=d6baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/fatima_abulobaida.jpg?sfvrsn=d6baaeba_2);
+}
+
+#karl-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/karl_buehler.jpg?sfvrsn=ebbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/karl_buehler.jpg?sfvrsn=ebbaaeba_2);
+}
+
+#katie-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+}
+
+#maya-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/maya_sardar.jpg?sfvrsn=93baaeba_2://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/maya_sardar.jpg?sfvrsn=93baaeba_2://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+}
+
+#momta-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/momta_bhujel.jpg?sfvrsn=92baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/momta_bhujel.jpg?sfvrsn=92baaeba_2);
+}
+
+#nicole-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/nicole_marrero.jpg?sfvrsn=e0baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/nicole_marrero.jpg?sfvrsn=e0baaeba_2);
+}
+
+#tram-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/tram_nguyen.jpg?sfvrsn=febaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/tram_nguyen.jpg?sfvrsn=febaaeba_2);
+}
+
+#yuxin-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/yuxin_cai.jpg?sfvrsn=2db9aeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/yuxin_cai.jpg?sfvrsn=2db9aeba_2);
+}
+
+#zeyna-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/zeyna_aouad.jpg?sfvrsn=abbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/zeyna_aouad.jpg?sfvrsn=abbaaeba_2);
+}
+
+#jose-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
+}
+
+#tyson-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.5))), url(https://tinyurl.com/bddkpxv2);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.5)), url(https://tinyurl.com/bddkpxv2);
+}
+
+#daniela-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/3b47bbmr);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/3b47bbmr);
+}
+
+#saaida-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/3vfuc2d8);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/3vfuc2d8);
+}
+
+#dani-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/k8nd97p8);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/k8nd97p8);
+}
+
+#maya-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/4ustnd55);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/4ustnd55);
+}
+
+#mya-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/58w64can);
+  background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/58w64can);
+}
+
+#laura-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 192, 207, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/laura_mcknight.jpg?sfvrsn=11b9aeba_2);
+  background-image: linear-gradient(rgba(134, 192, 207, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/laura_mcknight.jpg?sfvrsn=11b9aeba_2);
 }
 /*# sourceMappingURL=style.css.map */

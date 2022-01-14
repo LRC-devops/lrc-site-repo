@@ -432,7 +432,7 @@
   padding: 15rem 5rem;
   position: relative;
   display: flex;
-  gap: 7rem;
+  gap: 3rem;
   flex-wrap: wrap;
   // align-items: center;
   justify-content: center;
@@ -469,6 +469,7 @@
     }
     &--ps {
       background-color: $color-primary;
+      align-self: flex-start;
     }
     &--ag {
       background-color: $color-secondary;
@@ -498,36 +499,8 @@
 //UPDATE: Solved with align-items:center (this prevents the boxes (divs) from stretching vertically!!!
 .au22-bubbles__bubble {
   transition: all 0.2s;
-  box-shadow: 0.5rem 1rem 0 rgba(#000, 0.3);
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 
   flex-shrink: 100%;
-  // div {
-  //   // height: 100%;
-  //   width: 100%;
-  //   // text-align: center;
-  //   margin: auto;
-  //   position: relative;
-  //   align-self: center;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  img {
-    // position: relative;
-    // opacity: 0.5;
-    // background: red;
-  }
-  // img::after {
-  //   @include absCenter;
-  //   content: "";
-  //   height: 100%;
-  //   width: 100%;
-  //   border-radius: 50%;
-  //   color: red;
-  // }
   figcaption {
     @include absCenter;
     padding: 1.5rem 2rem;
@@ -556,22 +529,22 @@
 //   }
 // }
 
-.ps-bubble img {
-  border: 1rem solid $color-primary;
-  height: $au-bubbles-size;
-}
-.ag-bubble img {
-  border: 1rem solid $color-secondary;
-  height: $au-bubbles-size;
-}
-.lha-bubble img {
-  border: 1rem solid $color-purp;
-  height: $au-bubbles-size;
-}
-.ct-bubble img {
-  border: 1rem solid $color-teal;
-  height: $au-bubbles-size;
-}
+// .ps-bubble img {
+//   border: 1rem solid $color-primary;
+//   height: $au-bubbles-size;
+// }
+// .ag-bubble img {
+//   border: 1rem solid $color-secondary;
+//   height: $au-bubbles-size;
+// }
+// .lha-bubble img {
+//   border: 1rem solid $color-purp;
+//   height: $au-bubbles-size;
+// }
+// .ct-bubble img {
+//   border: 1rem solid $color-teal;
+//   height: $au-bubbles-size;
+// }
 
 ////////////////
 // ID STYLING
@@ -630,40 +603,12 @@
 #ps-text {
   height: 12rem;
   width: 12rem;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 #ag-text {
   height: 14rem;
   width: 14rem;
   align-self: flex-end;
-}
-#la-bubble {
-  img {
-    height: 40rem;
-    width: 40rem;
-  }
-}
-
-#caleb-bubble {
-  img {
-    height: 25rem;
-    width: 25rem;
-  }
-  align-self: flex-start;
-}
-#michelle-bubble {
-  img {
-    height: 35rem;
-    width: 35rem;
-  }
-  align-self: flex-start;
-}
-
-#agTest-1 {
-  img {
-    height: 17rem;
-    width: 17rem;
-  }
 }
 
 #cheyenne-bubble {
@@ -686,12 +631,279 @@
   background-image: linear-gradient(rgba($color-primary, 0.5)),
     url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ari-photo?sfvrsn=d794c5ba_2&download=true);
 }
-
+//LHA img library has " ' " in title, so URL wont link in VSCode
 #natalie-bubble {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
   align-self: flex-end;
   background-image: linear-gradient(rgba($color-purp, 0.5)),
-    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/lha's-img/natalie.jpg?sfvrsn=dd88c2ba_2);
+    url(https://tinyurl.com/yc8brdan);
+}
+
+#ravisher-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/ravisher_singh.jpg?sfvrsn=ffbaaeba_2);
+}
+
+#la-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/la-img.jpg?sfvrsn=2083c2ba_2);
+}
+
+#caleb-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-teal, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-faculty-staff-emailsig-imgs/caleb-circlecrop.png?sfvrsn=5e4cfcba_2);
+}
+
+#michelle-bubble {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/michelleaeaca6e6302864d9a5bfff0a001ce385.jpg?sfvrsn=6184c2ba_2);
+}
+#elizabeth-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/elizabeth.jpg?sfvrsn=1b5f1fb9_0);
+}
+#alexis-bubble {
+  height: 23rem;
+  width: 23rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/alexis_benedis.jpg?sfvrsn=15b9aeba_2);
+}
+#andrea-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/andrea_laurin.jpg?sfvrsn=d8baaeba_2);
+}
+#darian-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-end;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+}
+#daniel-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+}
+#fatima-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/fatima_abulobaida.jpg?sfvrsn=d6baaeba_2);
+}
+#karl-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/karl_buehler.jpg?sfvrsn=ebbaaeba_2);
+}
+#katie-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+}
+#maya-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/maya_sardar.jpg?sfvrsn=93baaeba_2://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
+}
+#momta-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/momta_bhujel.jpg?sfvrsn=92baaeba_2);
+}
+#nicole-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/nicole_marrero.jpg?sfvrsn=e0baaeba_2);
+}
+#tram-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/tram_nguyen.jpg?sfvrsn=febaaeba_2);
+}
+#yuxin-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/yuxin_cai.jpg?sfvrsn=2db9aeba_2);
+}
+#zeyna-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/zeyna_aouad.jpg?sfvrsn=abbaaeba_2);
+}
+#jose-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-center;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
+}
+
+#tyson-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://tinyurl.com/bddkpxv2);
+}
+#daniela-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://tinyurl.com/3b47bbmr);
+}
+#saaida-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://tinyurl.com/3vfuc2d8);
+}
+#dani-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://tinyurl.com/k8nd97p8);
+}
+#maya-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://tinyurl.com/4ustnd55);
+}
+#mya-bubble {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://tinyurl.com/58w64can);
+}
+#laura-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-end;
+  background-image: linear-gradient(rgba($color-teal, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/laura_mcknight.jpg?sfvrsn=11b9aeba_2);
 }

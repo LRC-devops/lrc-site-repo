@@ -8672,12 +8672,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
+  gap: 7rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .au22-bubbles__heading {
@@ -8754,6 +8757,8 @@ html {
 .au22-bubbles__bubble {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   -ms-flex-negative: 100%;
       flex-shrink: 100%;
 }
@@ -8763,13 +8768,16 @@ html {
   margin: auto;
   position: relative;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
-}
-
-.au22-bubbles__bubble img {
-  -webkit-box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .au22-bubbles__bubble figcaption {
@@ -8787,16 +8795,15 @@ html {
   border-radius: 20px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .au22-bubbles__bubble:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-.au22-bubbles__bubble:hover img {
-  -webkit-box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
-          box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1rem 2rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1rem 2rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .au22-bubbles__bubble:hover figcaption {
@@ -8819,7 +8826,7 @@ html {
 }
 
 .ct-bubble img {
-  border: 1rem solid #cf7291;
+  border: 1rem solid #86c0cf;
   height: 20rem;
 }
 
@@ -8887,6 +8894,13 @@ html {
       align-self: flex-end;
 }
 
+#ag-text {
+  height: 14rem;
+  width: 14rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 #la-bubble img {
   height: 40rem;
   width: 40rem;
@@ -8895,6 +8909,9 @@ html {
 #ari-bubble img {
   height: 30rem;
   width: 30rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #natalie-bubble {
@@ -8904,8 +8921,41 @@ html {
       align-self: flex-end;
 }
 
+#caleb-bubble {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#caleb-bubble img {
+  height: 25rem;
+  width: 25rem;
+}
+
+#michelle-bubble {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#michelle-bubble img {
+  height: 35rem;
+  width: 35rem;
+}
+
 #agTest-1 img {
   height: 17rem;
   width: 17rem;
+}
+
+#cheyenne {
+  -o-object-position: top;
+     object-position: top;
+}
+
+#cheyenne-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
 }
 /*# sourceMappingURL=style.css.map */

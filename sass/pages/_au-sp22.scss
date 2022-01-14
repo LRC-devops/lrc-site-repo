@@ -432,10 +432,11 @@
   padding: 15rem 5rem;
   position: relative;
   display: flex;
-  gap: 5rem;
+  gap: 7rem;
   flex-wrap: wrap;
   // align-items: center;
   justify-content: center;
+  align-items: center;
 
   &__heading {
     position: absolute;
@@ -494,8 +495,10 @@
   }
 }
 // FIXME: There is a bug in the figcaption over natalie's face for some reason
+//UPDATE: Solved with align-items:center (this prevents the boxes (divs) from stretching vertically!!!
 .au22-bubbles__bubble {
   transition: all 0.2s;
+  box-shadow: 0.5rem 1rem 0 rgba(#000, 0.3);
   // display: flex;
   // align-items: center;
   // justify-content: center;
@@ -508,10 +511,23 @@
     margin: auto;
     position: relative;
     align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   img {
-    box-shadow: 0.5rem 1rem 0.5rem rgba(#000, 0.3);
+    // position: relative;
+    // opacity: 0.5;
+    // background: red;
   }
+  // img::after {
+  //   @include absCenter;
+  //   content: "";
+  //   height: 100%;
+  //   width: 100%;
+  //   border-radius: 50%;
+  //   color: red;
+  // }
   figcaption {
     @include absCenter;
     padding: 1.5rem 2rem;
@@ -522,15 +538,13 @@
     background-color: rgba(#000, 0.2);
     border-radius: 20px;
     backdrop-filter: blur(5px);
+    transition: all 0.2s;
   }
 }
 
 .au22-bubbles__bubble:hover {
   transform: scale(1.05);
-  img {
-    box-shadow: 1rem 2rem 1rem rgba(#000, 0.3);
-    // filter: blur(2px);
-  }
+  box-shadow: 1rem 2rem 0 rgba(#000, 0.3);
   figcaption {
     display: initial;
   }
@@ -555,7 +569,7 @@
   height: $au-bubbles-size;
 }
 .ct-bubble img {
-  border: 1rem solid $color-pink;
+  border: 1rem solid $color-teal;
   height: $au-bubbles-size;
 }
 
@@ -618,6 +632,11 @@
   width: 12rem;
   align-self: flex-end;
 }
+#ag-text {
+  height: 14rem;
+  width: 14rem;
+  align-self: flex-end;
+}
 #la-bubble {
   img {
     height: 40rem;
@@ -628,6 +647,7 @@
   img {
     height: 30rem;
     width: 30rem;
+    align-self: center;
   }
 }
 #natalie-bubble {
@@ -635,10 +655,39 @@
   width: 15rem;
   align-self: flex-end;
 }
+#caleb-bubble {
+  img {
+    height: 25rem;
+    width: 25rem;
+  }
+  align-self: flex-start;
+}
+#michelle-bubble {
+  img {
+    height: 35rem;
+    width: 35rem;
+  }
+  align-self: flex-start;
+}
 
 #agTest-1 {
   img {
     height: 17rem;
     width: 17rem;
   }
+}
+
+//trying background image again
+// IT WORKED!
+
+#cheyenne {
+  object-position: top;
+}
+#cheyenne-bubble {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  // background-color: orangered;
+  background-image: linear-gradient(rgba($color-secondary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
 }

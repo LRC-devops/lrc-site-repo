@@ -504,17 +504,17 @@
   // justify-content: center;
 
   flex-shrink: 100%;
-  div {
-    // height: 100%;
-    width: 100%;
-    // text-align: center;
-    margin: auto;
-    position: relative;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  // div {
+  //   // height: 100%;
+  //   width: 100%;
+  //   // text-align: center;
+  //   margin: auto;
+  //   position: relative;
+  //   align-self: center;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
   img {
     // position: relative;
     // opacity: 0.5;
@@ -643,18 +643,7 @@
     width: 40rem;
   }
 }
-#ari-bubble {
-  img {
-    height: 30rem;
-    width: 30rem;
-    align-self: center;
-  }
-}
-#natalie-bubble {
-  height: 15rem;
-  width: 15rem;
-  align-self: flex-end;
-}
+
 #caleb-bubble {
   img {
     height: 25rem;
@@ -677,17 +666,32 @@
   }
 }
 
-//trying background image again
-// IT WORKED!
-
-#cheyenne {
-  object-position: top;
-}
 #cheyenne-bubble {
   height: 25rem;
   width: 25rem;
+  background-size: cover;
   border-radius: 50%;
   // background-color: orangered;
   background-image: linear-gradient(rgba($color-secondary, 0.5)),
     url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/cheyenne_adhikari.jpg?sfvrsn=d7baaeba_2);
+}
+
+#ari-bubble {
+  height: 30rem;
+  width: 30rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  align-self: center;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ari-photo?sfvrsn=d794c5ba_2&download=true);
+}
+
+#natalie-bubble {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  align-self: flex-end;
+  background-image: linear-gradient(rgba($color-purp, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/lha's-img/natalie.jpg?sfvrsn=dd88c2ba_2);
 }

@@ -5862,7 +5862,7 @@ html {
 .missNav__link:link, .missNav__link:visited {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  font-size: 5rem;
+  font-size: 2rem;
   font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
   font-weight: 100;
   color: #fff;

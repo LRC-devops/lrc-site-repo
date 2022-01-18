@@ -4366,7 +4366,8 @@ html {
 }
 
 .cancel-session-span {
-  background-color: rgba(255, 69, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
 }
 
 .popup__text--list {
@@ -5526,6 +5527,63 @@ html {
 .banner p {
   color: #fff;
   font-size: 1.6rem;
+}
+
+.ag-popup {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+}
+
+.ag-popup__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.ag-popup__tabs--label {
+  padding: 1rem 1.6rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #a8a8a8;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.ag-popup__tabs--radio {
+  display: none;
+}
+
+.ag-popup__tabs--content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  display: none;
+}
+
+.ag-popup__tabs--radio:checked + .ag-popup__tabs--label {
+  font-weight: bold;
+  color: #565a5c;
+  background-color: #eee;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.ag-popup__tabs--radio:checked
++ .ag-popup__tabs--label
++ .ag-popup__tabs--content {
+  display: initial;
 }
 
 .section__services--ag {

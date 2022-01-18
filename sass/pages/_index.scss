@@ -221,7 +221,7 @@
   justify-content: center;
   gap: 10rem;
   z-index: 4;
-  margin-top: -15rem;
+  // margin-top: -15rem;
   @include respond(tab-port) {
     height: 100vh;
   }

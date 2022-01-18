@@ -5748,8 +5748,6 @@ html {
   height: 100vh;
   background-color: #000;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   z-index: 5;
   overflow: hidden;
 }
@@ -5760,8 +5758,6 @@ html {
   bottom: 1rem;
   left: 1rem;
   z-index: 10;
-  -webkit-transform: rotate(-5.5deg);
-          transform: rotate(-5.5deg);
 }
 
 .missNav__background div {
@@ -6498,7 +6494,6 @@ html {
           justify-content: center;
   gap: 10rem;
   z-index: 4;
-  margin-top: -15rem;
 }
 
 @media (max-width: 56.25em) {

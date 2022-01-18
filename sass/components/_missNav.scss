@@ -4,7 +4,7 @@
   height: 100vh;
   background-color: #000;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   z-index: 5;
   overflow: hidden;
 
@@ -14,7 +14,7 @@
     bottom: 1rem;
     left: 1rem;
     z-index: 10;
-    transform: rotate(-5.5deg);
+    // transform: rotate(-5.5deg);
   }
 
   //circles {

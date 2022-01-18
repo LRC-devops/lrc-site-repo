@@ -5752,14 +5752,6 @@ html {
   overflow: hidden;
 }
 
-.missNav h1 {
-  color: #fff;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 10;
-}
-
 .missNav__background div {
   aspect-ratio: 1;
   position: absolute;
@@ -5826,6 +5818,31 @@ html {
           flex-direction: column;
 }
 
+.missNav__box ul {
+  list-style: none;
+}
+
+.missNav__box li {
+  padding: 1rem 2rem;
+  display: block;
+}
+
+.missNav__box li:nth-of-type(2) {
+  background-color: #cf7291;
+}
+
+.missNav__box li:nth-of-type(4) {
+  background-color: #91cf96;
+}
+
+.missNav__box li:nth-of-type(6) {
+  background-color: #cfb87c;
+}
+
+.missNav__box li:nth-of-type(8) {
+  background-color: #8b72cf;
+}
+
 .missNav__box h2 {
   z-index: 10;
 }
@@ -5838,34 +5855,22 @@ html {
 .missNav__heading--primary {
   font-weight: bold;
   color: #fff;
-  font-size: 7rem;
+  font-size: 1.7rem;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
 }
 
 .missNav__link:link, .missNav__link:visited {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-
-.missNav__link:link:nth-child(1), .missNav__link:visited:nth-child(1) {
-  color: #cf7291;
-}
-
-.missNav__link:link:nth-child(2), .missNav__link:visited:nth-child(2) {
-  color: #91cf96;
-}
-
-.missNav__link:link:nth-child(3), .missNav__link:visited:nth-child(3) {
-  color: #cfb87c;
-}
-
-.missNav__link:link:nth-child(4), .missNav__link:visited:nth-child(4) {
-  color: #8b72cf;
+  font-size: 5rem;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-weight: 100;
+  color: #fff;
 }
 
 .missNav__link:hover, .missNav__link:active {
-  -webkit-transform: translateY(-0.5rem) scale(1.1);
-          transform: translateY(-0.5rem) scale(1.1);
-  color: #fff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .section__services--ag {

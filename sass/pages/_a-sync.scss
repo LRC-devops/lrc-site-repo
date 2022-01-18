@@ -1,0 +1,122 @@
+.a-sync__header {
+  padding: 0 5rem;
+  display: flex;
+  gap: 5rem;
+  // height: 70vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+  }
+
+  &--img {
+    height: auto;
+    width: 40%;
+  }
+
+  &--text {
+    justify-self: flex-end;
+    flex-basis: 33%;
+
+    &-span {
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+
+    @include respond(tab-port) {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    h1 {
+      @include helvetLight;
+      font-size: 6rem;
+      font-weight: 100;
+      line-height: 1;
+    }
+    h2 {
+      font-size: $default-font-size;
+      font-weight: 300;
+    }
+  }
+}
+
+.a-sync-span--gold {
+  font-size: 6rem;
+  color: $color-secondary;
+}
+.a-sync-span--pink {
+  font-size: 6rem;
+  color: $color-pink;
+}
+
+.a-sync__container {
+  padding: 5rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+//////////////////
+//TABS STYLING
+//////////////////
+
+.a-sync__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  &--label {
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    flex-basis: 20%;
+    text-align: center;
+    color: $color-teal-dark;
+    border: 1px solid $color-teal-dark;
+    box-shadow: 1rem 1rem 0 $color-teal-dark;
+    transition: all 0.2s;
+  }
+  &--radio {
+    display: none;
+  }
+  &--content {
+    order: 1;
+    width: 100%;
+    // line-height: 1.6;
+    // font-size: $default-font-size;
+    display: none;
+    padding: 5rem 3rem;
+
+    &--text-box {
+      p {
+        font-size: $default-font-size;
+      }
+      h2 {
+        @include helvetLight;
+        font-weight: 11;
+      }
+    }
+  }
+}
+
+.a-sync__tabs--radio:checked + .a-sync__tabs--label {
+  font-weight: bold;
+  color: $color-secondary;
+  border: 1px solid $color-secondary;
+  box-shadow: 1rem 1rem 0 $color-secondary;
+}
+
+.a-sync__tabs--radio:checked + .a-sync__tabs--label + .a-sync__tabs--content {
+  display: flex;
+  gap: 3rem;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}

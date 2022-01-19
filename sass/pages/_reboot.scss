@@ -126,8 +126,26 @@
   &--container {
     display: flex;
     justify-content: space-between;
+    position: relative;
     @include respond(tab-land) {
       flex-wrap: wrap;
+    }
+  }
+
+  .reboot__hBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    &--h2 {
+      font-size: 7rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: rgba(#fff, 0.3);
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
     }
   }
 

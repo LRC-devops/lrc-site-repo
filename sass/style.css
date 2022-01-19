@@ -8665,6 +8665,28 @@ html {
   display: none;
 }
 
+.au22-bubbles__radio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.au22-bubbles__radio:checked + div {
+  background-color: orangered;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .au22-bubbles {
   background-color: #fff;
   padding: 15rem 5rem;
@@ -8716,6 +8738,15 @@ html {
           justify-content: center;
   text-align: center;
   padding: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.au22-bubbles__text:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .au22-bubbles__text h2 {
@@ -8730,6 +8761,10 @@ html {
 
 .au22-bubbles__text--ag {
   background-color: #cfb87c;
+}
+
+.au22-bubbles__text--ct {
+  background-color: #86c0cf;
 }
 
 .au22-bubbles__text--lha {
@@ -9168,8 +9203,8 @@ html {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/k8nd97p8);
   background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/k8nd97p8);
 }
@@ -9180,8 +9215,8 @@ html {
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(139, 114, 207, 0.5))), url(https://tinyurl.com/4ustnd55);
   background-image: linear-gradient(rgba(139, 114, 207, 0.5)), url(https://tinyurl.com/4ustnd55);
 }

@@ -426,6 +426,21 @@
   }
 }
 
+//checkbox styling
+.au22-bubbles__radio {
+  @include absCenter;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+}
+.au22-bubbles__radio:checked + div {
+  // content: "";
+  background-color: orangered;
+  height: 100vh;
+  width: 100vw;
+  @include absCenter;
+}
+
 .au22-bubbles {
   // height: 100vh;
   background-color: #fff;
@@ -463,6 +478,18 @@
     justify-content: center;
     text-align: center;
     padding: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    // FIXME:
+    //need to make text divs check boxes so that there can be a screen takeover and highlight specific bubbles with zindex
+    &:active {
+      // transform: scale(10);
+    }
 
     h2 {
       font-size: $default-font-size;
@@ -473,6 +500,9 @@
     }
     &--ag {
       background-color: $color-secondary;
+    }
+    &--ct {
+      background-color: $color-teal;
     }
     &--lha {
       background-color: $color-purp;
@@ -873,7 +903,7 @@
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  align-self: flex-start;
+  align-self: flex-end;
   background-image: linear-gradient(rgba($color-purp, 0.5)),
     url(https://tinyurl.com/k8nd97p8);
 }
@@ -883,7 +913,7 @@
   border-radius: 50%;
   background-size: cover;
   background-position: center;
-  align-self: flex-start;
+  align-self: flex-end;
   background-image: linear-gradient(rgba($color-purp, 0.5)),
     url(https://tinyurl.com/4ustnd55);
 }

@@ -1,10 +1,10 @@
 .popup {
   // background-color: rgba($color-black, 0.8);
-  background-image: linear-gradient(
-    to bottom right,
-    $color-secondary,
-    $color-pink
-  );
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   $color-secondary,
+  //   $color-pink
+  // );
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -19,6 +19,20 @@
   overflow-y: auto;
   overflow-x: auto;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: rgb(24, 24, 24);
+  }
+  h2,
+  h3 {
+    @include helvetLight;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
   iframe {
     height: 90vh;
     width: 100%;
@@ -32,11 +46,18 @@
     left: 50%;
     transform: translate(-50%, -50%), scale(0.25);
 
-    background-color: rgba($color-white, 0.5);
+    // background-color: rgba($color-white, 0.5);
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#fff, 0.4),
+      rgba(#fff, 0.8)
+    );
+    border: 1px solid rgba(#fff, 0.1);
+    backdrop-filter: blur(10px);
     width: 75%;
     margin: 0 auto;
-    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-    border-radius: 3px;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
+    border-radius: 20px;
     display: table;
     overflow: hidden;
     opacity: 0;
@@ -129,7 +150,7 @@
     z-index: 10000;
     &:link,
     &:visited {
-      color: $color-grey-light;
+      color: rgb(37, 37, 37);
       position: absolute;
       top: 0rem;
       right: 1rem;
@@ -183,6 +204,7 @@
     border-radius: 5px;
     overflow: hidden;
     padding: 0.2rem 0.5rem;
+    color: rgb(32, 32, 32);
     // thead,
     // tr {
     //   background-color: rgba($color-secondary, 0.7);

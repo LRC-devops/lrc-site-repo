@@ -5752,6 +5752,66 @@ html {
   overflow: hidden;
 }
 
+.missNav__textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 1rem;
+  width: 45vw;
+}
+
+.missNav__textBox h2 {
+  color: #fff;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.missNav__textBox:nth-of-type(1) {
+  color: #8b72cf;
+}
+
+.missNav__textBox:nth-of-type(2) {
+  color: #91cf96;
+}
+
+.missNav__textBox:nth-of-type(3) {
+  color: #cfb87c;
+}
+
+.missNav__textBox:nth-of-type(4) {
+  color: #cf7291;
+}
+
+.missNav__textBox:nth-of-type(5) {
+  color: #86c0cf;
+}
+
+.missNav__textBox:nth-of-type(6) {
+  color: #91cf96;
+}
+
+.missNav__textBox ion-icon {
+  font-size: 7rem;
+}
+
+.missNav__link:active, .missNav__link:visited {
+  color: inherit;
+}
+
+.missNav__link--sub {
+  font-size: 3rem;
+}
+
+.missNav__link--sub:active, .missNav__link--sub:visited {
+  color: inherit;
+}
+
 .missNav__background div {
   aspect-ratio: 1;
   position: absolute;
@@ -5806,16 +5866,15 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  gap: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .missNav__box ul {
@@ -5862,10 +5921,9 @@ html {
 .missNav__link:link, .missNav__link:visited {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
   font-weight: 100;
-  color: #fff;
 }
 
 .missNav__link:hover, .missNav__link:active {

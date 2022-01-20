@@ -364,6 +364,14 @@ html {
   }
 }
 
+.container .t-CUMainContainer {
+  display: none !important;
+}
+
+.ankle .t-ankle {
+  display: none !important;
+}
+
 @-webkit-keyframes animationMoveInLeft {
   0% {
     opacity: 0;

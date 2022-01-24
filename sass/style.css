@@ -5931,6 +5931,239 @@ html {
           transform: scale(1.1);
 }
 
+.missNav__logo-box {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.missNav__logo {
+  height: 4rem;
+  width: auto;
+}
+
+.missNav__container {
+  position: relative;
+}
+
+.missNav__nav {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+}
+
+.missNav__nav ul {
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.missNav__nav a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+}
+
+.missNav__header {
+  background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/missnav-header_img.png?sfvrsn=9ada8ba_2);
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.missNav__header--img {
+  height: 95%;
+  width: 33%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-self: flex-start;
+  border-radius: 20px;
+}
+
+.missNav__header--box {
+  padding: 2rem;
+  height: 30rem;
+  width: 70rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.7)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: -25rem;
+}
+
+.missNav__header--box--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.missNav__header--box--text h1:nth-of-type(1) {
+  color: #cfb87c;
+  font-size: 1.7rem;
+}
+
+.missNav__header--box--text h1:nth-of-type(2) {
+  color: #5b7a82;
+  font-size: 3rem;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-weight: 100;
+}
+
+.missNav__header--box--text h1:nth-of-type(3) {
+  color: #565a5c;
+  font-size: 1.7rem;
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-weight: 100;
+}
+
+.missNav__tile-box {
+  background-color: #eee;
+  padding: 15rem 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.missNav__tile {
+  background-color: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.missNav__tile--top {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.missNav__tile--top ion-icon {
+  font-size: 15rem;
+}
+
+.missNav__tile--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.missNav__tile--bottom h2 {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.missNav__tile--bottom h3 {
+  font-size: 1.7rem;
+  text-transform: none;
+}
+
+.missNav__tile--btn {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  color: #565a5c;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.missNav__tile--btn:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+  -webkit-box-shadow: 1rem 1.5rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1rem 1.5rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.missNav__tile--btn:active {
+  -webkit-box-shadow: 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(0.1rem);
+          transform: translateY(0.1rem);
+}
+
+.tile-green {
+  background-color: #91cfb9;
+}
+
+.tile-teal {
+  background-color: #86c0cf;
+}
+
+.btn-green {
+  background-color: #91cfb9;
+}
+
+.btn-teal {
+  background-color: #86c0cf;
+}
+
 .section__services--ag {
   background-color: #fff;
   padding: 10rem 0;

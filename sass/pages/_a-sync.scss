@@ -35,8 +35,8 @@
       font-weight: 100;
       line-height: 1;
     }
-    h2 {
-      font-size: $default-font-size;
+    p {
+      font-size: 1.5rem;
       font-weight: 300;
     }
   }
@@ -54,9 +54,17 @@
 .a-sync__container {
   padding: 5rem 7rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #eee;
+}
+.a-sync__description {
+  flex-basis: 100%;
+  padding: 5rem 7rem;
+  font-size: 1.7rem;
+  column-count: 2;
+  text-indent: 1rem;
 }
 
 //////////////////
@@ -68,17 +76,27 @@
   flex-wrap: wrap;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   &--label {
     padding: 1rem 1.6rem;
     cursor: pointer;
     font-size: 1.7rem;
-    flex-basis: 20%;
+    // flex-basis: 20%;
     text-align: center;
-    color: $color-teal-dark;
-    border: 1px solid $color-teal-dark;
-    box-shadow: 1rem 1rem 0 $color-teal-dark;
+    // color: $color-teal-dark;
+    // border: 1px solid $color-teal-dark;
+    // box-shadow: 1rem 1rem 0 $color-teal-dark;
+
+    //restyling
+
+    color: $color-teal;
+    background-color: $color-grey-dark;
+
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     transition: all 0.2s;
   }
   &--radio {
@@ -92,13 +110,52 @@
     display: none;
     padding: 5rem 3rem;
 
+    &--text {
+      display: flex;
+      gap: 3rem;
+
+      @include respond(tab-port) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &--review-span {
+      flex-basis: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-top: 1px solid $color-grey-dark;
+      margin-top: 1rem;
+      padding: 2rem 3rem;
+      a {
+        font-size: 1.7rem;
+        color: $color-teal-dark;
+        transition: all 0.2s;
+
+        &:hover,
+        &:active {
+          color: $color-secondary;
+        }
+      }
+    }
+
     &--text-box {
       p {
         font-size: $default-font-size;
       }
       h2 {
         @include helvetLight;
-        font-weight: 11;
+        font-weight: 100;
+        font-size: 2.75rem;
+        margin-bottom: 1.5rem;
+        a {
+          color: $color-teal-dark;
+          transition: all 0.2s;
+          &:hover,
+          &:active {
+            color: $color-secondary;
+          }
+        }
       }
     }
   }
@@ -106,13 +163,15 @@
 
 .a-sync__tabs--radio:checked + .a-sync__tabs--label {
   font-weight: bold;
-  color: $color-secondary;
-  border: 1px solid $color-secondary;
-  box-shadow: 1rem 1rem 0 $color-secondary;
+  color: #fff;
+  background-color: $color-grey-light;
+  // box-shadow: 1rem 1rem 0 $color-secondary;
 }
 
 .a-sync__tabs--radio:checked + .a-sync__tabs--label + .a-sync__tabs--content {
   display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
   gap: 3rem;
 
   @include respond(tab-port) {

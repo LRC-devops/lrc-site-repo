@@ -259,6 +259,7 @@
       );
       backdrop-filter: blur(5px);
       border-radius: 20px;
+      border: 1px solid rgba(#fff, 0.3);
       display: flex;
       align-items: center;
       gap: 2rem;
@@ -297,6 +298,8 @@
     background-color: #eee;
     padding: 15rem 7rem;
     display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -306,9 +309,12 @@
     // height: 35rem;
     // width: 25rem;
     display: flex;
+
     flex-direction: column;
     box-shadow: 1rem 2rem 1rem rgba(#000, 0.3);
-    padding: 2rem;
+    flex-basis: 30%;
+    padding-bottom: 1rem;
+    // padding: 2rem;
 
     //left off trying to get padding to work with background color
     box-sizing: content-box;
@@ -340,6 +346,7 @@
       h3 {
         font-size: 1.7rem;
         text-transform: none;
+        font-weight: 300;
       }
     }
     &--btn {
@@ -370,9 +377,17 @@
 .tile-teal {
   background-color: $color-teal;
 }
+.tile-teal-dark {
+  background-color: $color-teal-dark;
+  color: #fff;
+}
 .btn-green {
   background-color: $color-washed-green;
 }
 .btn-teal {
   background-color: $color-teal;
+}
+.btn-teal-dark {
+  background-color: $color-teal-dark;
+  color: #fff;
 }

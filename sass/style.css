@@ -9503,6 +9503,10 @@ html {
   background-color: #eee;
 }
 
+.a-sync__container a {
+  text-decoration: underline;
+}
+
 .a-sync__description {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -9582,6 +9586,10 @@ html {
 }
 
 .a-sync__tabs--content--text-box h2 a {
+  text-decoration: underline;
+}
+
+.a-sync__tabs--content--text-box h2 a:link, .a-sync__tabs--content--text-box h2 a:visited {
   color: #5b7a82;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

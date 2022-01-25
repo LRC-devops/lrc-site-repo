@@ -148,12 +148,17 @@
 .a-sync__review-span {
   border-top: 0.5rem solid $color-grey-dark;
   width: 100%;
+  flex-direction: column;
+  p {
+    font-size: 1.7rem;
+  }
 }
 
 .a-sync__tabs--content--review-span,
 .a-sync__review-span {
   flex-basis: max-content;
   display: flex;
+
   align-items: center;
   justify-content: space-evenly;
 

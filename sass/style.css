@@ -8402,6 +8402,14 @@ html {
 .a-sync__review-span {
   border-top: 0.5rem solid #565a5c;
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.a-sync__review-span p {
+  font-size: 1.7rem;
 }
 
 .a-sync__tabs--content--review-span,

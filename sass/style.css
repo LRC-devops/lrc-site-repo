@@ -5952,11 +5952,19 @@ html {
   right: 0;
 }
 
+@media (max-width: 56.25em) {
+  .missNav__nav {
+    display: none;
+  }
+}
+
 .missNav__nav ul {
   width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5999,8 +6007,7 @@ html {
 
 .missNav__header--box {
   padding: 2rem;
-  height: 30rem;
-  width: 70rem;
+  height: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.7)));
   background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7));
   -webkit-backdrop-filter: blur(5px);
@@ -6015,6 +6022,15 @@ html {
           align-items: center;
   gap: 2rem;
   margin-bottom: -25rem;
+}
+
+@media (max-width: 37.5em) {
+  .missNav__header--box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .missNav__header--box--text {
@@ -6051,7 +6067,7 @@ html {
 
 .missNav__tile-box {
   background-color: #eee;
-  padding: 15rem 7rem;
+  padding: 20rem 7rem 5rem 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6066,6 +6082,12 @@ html {
           justify-content: space-evenly;
 }
 
+@media (max-width: 37.5em) {
+  .missNav__tile-box {
+    padding: 20rem 5rem 5rem 5rem;
+  }
+}
+
 .missNav__tile {
   background-color: #fff;
   border-radius: 20px;
@@ -6078,11 +6100,25 @@ html {
           flex-direction: column;
   -webkit-box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
           box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+  padding-bottom: 1rem;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  padding-bottom: 1rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+}
+
+@media (max-width: 56.25em) {
+  .missNav__tile {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .missNav__tile {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .missNav__tile--top {

@@ -5604,6 +5604,12 @@ html {
   display: initial;
 }
 
+.qs-instruct__box p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  color: #5f5f5f;
+}
+
 .section__services--ag {
   background-color: #fff;
   padding: 10rem 0;

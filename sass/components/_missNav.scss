@@ -212,7 +212,14 @@
     position: relative;
   }
   &__nav {
-    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $color-grey-dark;
+    padding: 1rem 1.5rem;
+    z-index: 10000;
+
     top: 1rem;
     right: 0;
 
@@ -221,7 +228,7 @@
     }
     // background-color: #fff;
     ul {
-      width: 50vw;
+      // width: 50vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -235,10 +242,38 @@
       font-size: 1.5rem;
       text-decoration: none;
       @include helvetLight;
+      transition: all 0.2s;
+      padding: 1rem 1.5rem;
+
+      &:hover,
+      &:active {
+        color: $color-grey-dark;
+        background-color: #fff;
+      }
+    }
+  }
+  &__dropdown {
+    position: relative;
+    // padding: 2rem 3rem;
+    &--content {
+      display: none;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    &:hover {
+      height: 5rem;
+    }
+
+    &:hover + &--content {
+      display: initial;
+      // flex-direction: column;
     }
   }
   &__header {
     background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/missnav-header_img.png?sfvrsn=9ada8ba_2);
+    background-size: cover;
     height: 40vh;
     display: flex;
     align-items: center;

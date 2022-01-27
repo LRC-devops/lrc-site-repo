@@ -5947,7 +5947,19 @@ html {
 }
 
 .missNav__nav {
-  position: absolute;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #565a5c;
+  padding: 1rem 1.5rem;
+  z-index: 10000;
   top: 1rem;
   right: 0;
 }
@@ -5959,7 +5971,6 @@ html {
 }
 
 .missNav__nav ul {
-  width: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5979,10 +5990,38 @@ html {
   font-size: 1.5rem;
   text-decoration: none;
   font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 1rem 1.5rem;
+}
+
+.missNav__nav a:hover, .missNav__nav a:active {
+  color: #565a5c;
+  background-color: #fff;
+}
+
+.missNav__dropdown {
+  position: relative;
+}
+
+.missNav__dropdown--content {
+  display: none;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.missNav__dropdown:hover {
+  height: 5rem;
+}
+
+.missNav__dropdown:hover + .missNav__dropdown--content {
+  display: initial;
 }
 
 .missNav__header {
   background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/missnav-header_img.png?sfvrsn=9ada8ba_2);
+  background-size: cover;
   height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -9521,9 +9521,18 @@ html {
       flex-basis: 100%;
   padding: 5rem 7rem;
   font-size: 1.7rem;
-  -webkit-column-count: 2;
-          column-count: 2;
-  text-indent: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  text-align: justify;
+}
+
+@media (max-width: 56.25em) {
+  .a-sync__description {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .a-sync__tabs {

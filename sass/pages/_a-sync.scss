@@ -67,8 +67,14 @@
   flex-basis: 100%;
   padding: 5rem 7rem;
   font-size: 1.7rem;
-  column-count: 2;
-  text-indent: 1rem;
+  // text-indent: 1rem;
+  display: flex;
+  gap: 3rem;
+  text-align: justify;
+
+  @include respond(tab-port) {
+    flex-wrap: wrap;
+  }
 }
 
 //////////////////

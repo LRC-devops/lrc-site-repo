@@ -199,13 +199,18 @@
 }
 
 .missNav {
-  &__logo-box {
+  &__logo-box--mobile {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    display: none;
+
+    @include respond(tab-port) {
+      display: initial;
+    }
   }
   &__logo {
-    height: 4rem;
+    height: 3.5rem;
     width: auto;
   }
   &__container {
@@ -216,12 +221,30 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: $color-grey-dark;
+    flex-wrap: nowrap;
+    // overflow: hidden;
+    // background-color: $color-grey-dark;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(#000, 0.1),
+      rgba(#000, 0.5)
+    );
+    backdrop-filter: blur(5px);
     padding: 1rem 1.5rem;
+    padding-right: 3rem;
     z-index: 10000;
+    width: 100%;
 
-    top: 1rem;
+    top: 0;
     right: 0;
+
+    //FIXME: Having lots of issues making the logo and navBar responsive at 1000px
+    //With flex-wrap: wrap; it looks terrible, but with flex-wrap:nowrap; it pushes the logo off-screen, and I cant get the logo to display: none; at my nav-shrink breakpoint @ 1000px
+    #missNav__logo {
+      @include respond(nav-shrink) {
+        display: none;
+      }
+    }
 
     @include respond(tab-port) {
       display: none;
@@ -230,12 +253,16 @@
     ul {
       // width: 50vw;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       gap: 2rem;
       list-style: none;
       margin-left: auto;
       margin-right: 2rem;
+
+      @include respond(tab-land) {
+        gap: 0.5rem;
+        margin-right: 1rem;
+      }
     }
     a {
       color: #fff;
@@ -258,16 +285,26 @@
     &--content {
       display: none;
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      // min-width: 50rem;
+      top: 3rem;
+      // right: 2rem;
+      text-align: right;
+      backdrop-filter: blur(5px);
+      background-color: rgba(#000, 0.5);
+      box-shadow: 1rem 2rem 2rem rgba(#000, 0.3);
+
+      a {
+        display: block;
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
     }
 
-    &:hover {
-      height: 5rem;
-    }
+    &:hover &--content {
+      display: block;
 
-    &:hover + &--content {
-      display: initial;
       // flex-direction: column;
     }
   }

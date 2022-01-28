@@ -58,6 +58,10 @@
   align-items: center;
   justify-content: center;
   background-color: #eee;
+
+  a {
+    text-decoration: underline;
+  }
 }
 .a-sync__description {
   flex-basis: 100%;
@@ -135,11 +139,17 @@
         font-size: 2.75rem;
         margin-bottom: 1.5rem;
         a {
-          color: $color-teal-dark;
-          transition: all 0.2s;
+          text-decoration: underline;
+          &:link,
+          &:visited {
+            color: $color-teal-dark;
+            transition: all 0.2s;
+            // border-bottom: 1px solid $color-teal-dark;
+          }
           &:hover,
           &:active {
             color: $color-secondary;
+            // border-bottom: 1px solid $color-secondary;
           }
         }
       }

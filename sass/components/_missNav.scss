@@ -236,7 +236,7 @@
     z-index: 10000;
     width: 100%;
 
-    top: 0;
+    top: 4.7rem;
     right: 0;
 
     //FIXME: Having lots of issues making the logo and navBar responsive at 1000px
@@ -444,7 +444,7 @@
     }
     &--btn {
       // background-color: inherit;
-      text-decoration: none;
+      text-decoration: none !important;
       font-size: 2rem;
       padding: 1.5rem;
       border-radius: 20px;
@@ -455,6 +455,7 @@
       &:hover {
         transform: translateY(-1rem);
         box-shadow: 1rem 1.5rem 0 rgba(#000, 0.3);
+        color: initial;
       }
       &:active {
         box-shadow: 0.2rem 0.5rem 0 rgba(#000, 0.3);

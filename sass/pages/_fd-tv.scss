@@ -1,5 +1,64 @@
+.background-anima__fd-tv {
+  position: relative;
+
+  div {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+    &:nth-child(1) {
+      height: 90rem;
+      background-color: $color-pink;
+      top: 1rem;
+      left: 7rem;
+
+      animation: aniBubbles 35s infinite;
+    }
+    &:nth-child(2) {
+      height: 145rem;
+      background-color: $color-secondary;
+      top: 50rem;
+      left: -100rem;
+
+      animation: aniBubbles 30s infinite;
+      animation-direction: reverse;
+    }
+    &:nth-child(3) {
+      height: 90rem;
+      background-color: $color-primary;
+
+      bottom: 1rem;
+      right: 2rem;
+
+      animation-direction: alternate;
+      animation: aniBubbles 40s infinite;
+    }
+    &:nth-child(4) {
+      height: 55rem;
+      background-color: $color-purp;
+
+      bottom: -100rem;
+      right: 2rem;
+
+      animation-direction: reverse;
+      animation: aniBubbles 25s infinite;
+    }
+    &:nth-child(5) {
+      height: 145rem;
+      background-color: $color-primary-light;
+
+      bottom: 1rem;
+      left: -250rem;
+
+      animation-direction: alternate-reverse;
+      animation: aniBubbles 50s infinite;
+    }
+  }
+}
+
 .fd-tv__section {
-  // background-color: #403641;
+  background-color: $color-teal;
   background-image: linear-gradient(rgba(#000, 0.5));
   min-height: 100vh;
   display: flex;
@@ -7,26 +66,6 @@
   align-items: center;
   justify-content: center;
 }
-// .fd-tv__section::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-image: linear-gradient($color-pink, $color-secondary);
-//   clip-path: circle(30% at right 70%);
-// }
-// .fd-tv__section::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-image: linear-gradient(to left, $color-primary, $color-teal);
-//   clip-path: circle(20% at 10% 10%);
-// }
 
 .tv-container {
   position: relative;
@@ -97,6 +136,7 @@
   -webkit-text-stroke: 2px rgba(white, 0.3);
   -webkit-text-fill-color: rgba($color-white, 0.1);
   text-transform: uppercase;
+  z-index: 100;
   // backdrop-filter: blur(5px);
 }
 

@@ -17,18 +17,6 @@
     <body>
     <main>
 
-      <!-- <header class="banner banner-gold">
-        <div class="banner__box">
-          <div class="banner__text">
-            <p class="paragraph">** New updates to the Question Session schedule. Check here to find new sessions and subjects! **</p>
-          </div>
-          <div class="banner__close">
-            <input type="checkbox" class="banner__checkbox">
-            <p class="paragraph banner__close--icon"><a>&times;</a></p>
-          </div>
-        </div>
-      </header> -->
-
 
 <!--
   Start of Question Session Interface 
@@ -41,15 +29,14 @@
         <section class="qs-overview" id="qs-overview">
           <div class="u-center-text u-margin-bottom-medium">
             <h2 class="heading-secondary">
-              Question Sessions
+              Guided Study Groups
             </h2>
-            <h3 class="heading-tertiary">Sessions will resume January 18th, 2021</h3>
             <!-- <h3 class="heading-tertiary">No Sign-up Necessary!</h3> -->
           </div>
           <div class="qs-tile-box u-margin-bottom-big">
             <div class="qs-tile qs-tile__dropin">
               <div class="qs-tile__title">
-                <h3 class="heading-tertiary--white">Drop-In</h3>
+                <h3 class="heading-tertiary--white">Sign-up or Show Up!</h3>
               </div>
                 <div class="qs-tile__icon-box">
                   <ion-icon name="log-in-outline" class="qs-tile__icon"></ion-icon>
@@ -58,12 +45,12 @@
             </div>
             <div class="qs-tile qs-tile__time">
               <div class="qs-tile__title">
-                <h3 class="heading-tertiary--white">1-2 hour</h3>
+                <h3 class="heading-tertiary--white">Your Class</h3>
               </div>
               <div class="qs-tile__icon-box">
                 <ion-icon name="checkmark-outline" class="qs-tile__icon"></ion-icon>
               </div>
-              <p class="paragraph">open sessions for your convenience</p>
+              <p class="paragraph">Study with classmates and have an Academic Guide there to answer questions.</p>
             </div>
             <div class="qs-tile qs-tile__checkin">
               <div class="qs-tile__title">
@@ -111,17 +98,33 @@
               
             </div>
           </div>
-          <!-- <div class="btn-box u-margin-bottom-medium">
-            <a href="#popup-courses__bio--btns" class="btn-colorShadow btn-colorShadow__gold">Biology</a>
-            <a href="#popup-courses__chem--btns" class="btn-colorShadow btn-colorShadow__gold">Chemistry</a>
+          <div class="btn-box u-margin-bottom-medium">
+            <a href="#popup-courses__bio" class="btn-colorShadow btn-colorShadow__gold">Biology</a>
+            <a href="#popup-courses__chem" class="btn-colorShadow btn-colorShadow__gold">Chemistry</a>
             <a href="#popup-courses__phys" class="btn-colorShadow btn-colorShadow__gold">Physics</a>
             <a href="#popup-courses__eac" class="btn-colorShadow btn-colorShadow__gold">Engineering and Computing</a>
             <a href="#popup-courses__pbhl" class="btn-colorShadow btn-colorShadow__gold">Public Health</a>
             <a href="#popup-courses__pmus" class="btn-colorShadow btn-colorShadow__green">Music</a>
-            <a href="#popup-courses__philo" class="btn-colorShadow btn-colorShadow__green">Philosophy</a>
+            <!-- <a href="#popup-courses__psych" class="btn-colorShadow btn-colorShadow__green">Psychology</a> -->
+            <a href="#popup-courses__phil" class="btn-colorShadow btn-colorShadow__green">Philosophy</a>
             <a href="#popup-courses__modLang" class="btn-colorShadow btn-colorShadow__green">Modern Languages</a>
-            <a href="#popup-courses__other" class="btn-colorShadow btn-colorShadow__pink">Other Courses</a>
-          </div> -->
+            <a href="#popup-courses__acct" class="btn-colorShadow btn-colorShadow__pink">Accounting</a>
+            <a href="#popup-courses__sod" class="btn-colorShadow btn-colorShadow__pink">Statistics for other Disciplines</a>
+          </div>
+
+          <div class="qs-instruct__box">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              4. Navigate Sign-Up / Drop-In
+            </h3>
+
+          </div>
+          <div class="qs-instruct__box u-margin-bottom-small">
+            <ion-icon name="arrow-down-outline" class="qs-instruct__box--icon qs-instruct__box--icon--teal"></ion-icon>
+          </div>
+          <div class="qs-instruct__box">
+            <a href="https://ucdenver.campus.eab.com/capabilities#/my/appointment-new" class="btn-colorShadow btn-colorShadow__teal">Navigate Sign-Up</a>
+            <p>* Sign-up for some courses is only available through February 6 at this time. Sign-up for times later in the semester will open soon. *</p>
+          </div>
 
           <!-- <div class="footnote u-center-text">
             <h3 class="heading-tertiary__green">**No services Sun Nov 21 - Sat Nov 27 for fall break**</h3>
@@ -158,85 +161,265 @@ Instructions for copying this code over to Sitefinity:
 6. Publish the page. I also recommend opening the live page (www.ucdenver.edu/learning-resources-center/peer-to-peer) to check that your changes are actually live
 -->
 
+<!-- UNDERSTANDING DOCUMENTATION FOR DUPLICATE SESSIONS
+This is the note attached to all duplicate sessions: 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (name of popup/course divider (if applicable)/and name of course)
+  V2 = (name of popup/course divider (if applicable)/and name of course)
+  ----------------------------------------------------------------------
+ The note features a directory of all version of the session above it. The directory is read from left to right, denotes the popup, course divider, and the name of the course.-->
+
 
 <!-- vvv BEGIN TO COPY CODE HERE vvv -->
 
 <!------------------------------------------COURSE LIST POPUPS------------------------------------------------------>
 
-<!--BIO BTNS TO POPUPS-->
-<div class="popupBtn" id="popup-courses__bio--btns">
-  <div class="popupBtn__content popupBtn__content-sl">
-      <a href="#qs-section" class="popupBtn__close">&times;</a>
+<!-- 
+  Daniela: We're going to add the Academic Guide's name into the table structure. Currently the tables are super redundant in that the table heading (<th>) lists the courses, and the first column in each table also lists the courses. We are going to go through each session and update the first cell to
+    <td>Hosted by: {AG's Name}</td> 
+  so that the course divider displays the course, and the sessions under show the AG's name. 
+-->
 
-
-      <div class="btn-box btn-box__pop">
-        <a href="#popup-courses__bio--anat" class="btn-colorShadow btn-colorShadow__pink">Anatomy & Physiology</a>
-        <a href="#popup-courses__bio--cbio" class="btn-colorShadow btn-colorShadow__pink">Cell Bio & Genetics</a>
-        <a href="#popup-courses__bio--gen" class="btn-colorShadow btn-colorShadow__pink">Gen Bio</a>
-      </div>
-      
-  </div>
-</div>
-
-<!--CHEM BTNS TO POPUPS-->
-<div class="popupBtn" id="popup-courses__chem--btns">
-  <div class="popupBtn__content popupBtn__content-sl">
-      <a href="#qs-section" class="popupBtn__close">&times;</a>
-
-
-      <div class="btn-box btn-box__pop">
-        <a href="#popup-courses__chem--found" class="btn-colorShadow btn-colorShadow__pink">Foundations of Chem</a>
-        <a href="#popup-courses__chem--gfchem" class="btn-colorShadow btn-colorShadow__pink">Gen Chem & Chem for ENGR</a>
-        <a href="#popup-courses__chem--o" class="btn-colorShadow btn-colorShadow__pink">Organic Chemistry</a>
-      </div>
-      
-  </div>
-</div>
-
-<!--BIO -- ANATOMY -->
-<div class="popup" id="popup-courses__bio--anat">
+<!-- ---------- -->
+<!-- ACCOUNTING -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__acct">
   <div class="popup__content popup__content-sl">
       <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__bio--btns" class="popup__back">&larr;</a>
       <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Anatomy and Physiology</h2>
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Accounting</h2>
       </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
 
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">BIOL 2010 | Organisms to Ecosystems</li>
-                  <li class="collapsible__item">BIOL 3225 | Human Physiology</li>
-                  <li class="collapsible__item">BIOL 3244 | Human Anatomy</li>
-                  <li class="collapsible__item">BIOL 3611 | General Cell Biology </li>
-                  <li class="collapsible__item">BIOL 3832 Genetics | General Genetics</li>
-                  
-      
-
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
           
 
               <div class="table-box">
 
                 <table class="popup__table--courses">
 
-                  <!-- ------------- ------- ---------------- -->
-                  <!-- ------------- Anatomy ---------------- -->
-                  <!-- ------------- ------- ---------------- -->
                   <tr>
   
-                    <th>Anatomy</th>
+                    <th>Financial Accounting and Financial Statement Analysis</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+          
+                  <!-- <tr class="inPerson-session"> 
+                    <td>Course Session</td>
+                    <td>Day/Time</td>
+                    <td>* In Person</td>
+                  </tr> -->
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+       
+
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Monday 3:30 - 4:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Tuesday 2 - 3 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Wednesday 3:30 - 4:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Wednesday 4:30 - 5:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title= "Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Thursday 2 - 3 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Hosted by: Fatima</td>
+                    <td>Friday 11 am - 12 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                </table>
+              </div>
+
+              
+            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div>
+
+<!-- Physics -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__phys">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Physics</h2>
+
+                  <tr>
+  
+                    <th>College Physics I </th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+                  <tr class="zoom-session"> 
+                    <td>College Physics I</td>
+                    <td>Monday 3 - 4 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98138253144?pwd=MjRLVVVrUi9US083eHo0SGRMQjdOUT09" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  
+                    <th>College Physics II </th>
+                    <th></th> 
+                    <th></th>
+  
+                
+                  </tr>
+
+ <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <tr class="zoom-session"> 
+                    <td>College Physics II</td>
+                    <td>Monday 4 - 5 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98138253144?pwd=MjRLVVVrUi9US083eHo0SGRMQjdOUT09" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                   </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div>
+
+
+<!-- ---------- -->
+<!-- PHILOSOPHY -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__phil">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Philosophy</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+
+              <tr>
+
+                <th>Introduction to Philosophy</th>
+                <th></th> 
+                <th></th>
+
+              </tr>
+                      
+                <!-- <tr class="inPerson-session"> 
+                  <td>Course Session</td>
+                  <td>Day/Time</td>
+                  <td>* In Person</td>
+                </tr> -->
+
+              <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                <tr class="zoom-session">
+                  <td>Introduction to Philosophy</td>
+                  <td>Tuesday 1-2 pm</td>
+                  <td><a href="https://ucdenver.zoom.us/j/93546423998?pwd=MDh2eTh4ZXIrZHdEK3FBcDBxNnNmdz09" title="Eli Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                </tr>
+
+                <!-- <tr class="zoom-session">
+                  <td>Introduction to Philosophy</td>
+                  <td>Wednesday 1-2 pm</td>
+                  <td><a href="https://ucdenver.zoom.us/j/93546423998?pwd=MDh2eTh4ZXIrZHdEK3FBcDBxNnNmdz09" title="Eli Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                </tr> -->
+
+                <tr>
+
+                  <th>Logic, Language and Scientific Reasoning</th>
+                  <th></th> 
+                  <th></th>
+  
+                </tr>
+                        
+                  <!-- <tr class="inPerson-session"> 
+                    <td>Course Session</td>
+                    <td>Day/Time</td>
+                    <td>* In Person</td>
+                  </tr> -->
+  
+                <!-- ------------- ZOOM SESSIONS ---------------- -->
+  
+                  <tr class="zoom-session">
+                    <td>Logic Language and Scientific Reasoning</td>
+                    <td>Tuesday 12-1 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93546423998?pwd=MDh2eTh4ZXIrZHdEK3FBcDBxNnNmdz09" title="Eli Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Logic Language and Scientific Reasoning</td>
+                    <td>Tuesday 7-8 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93546423998?pwd=MDh2eTh4ZXIrZHdEK3FBcDBxNnNmdz09" title="Eli Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <!-- <tr class="zoom-session">
+                    <td>Logic Language and Scientific Reasoning</td>
+                    <td>Wednesday 12-1 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93546423998?pwd=MDh2eTh4ZXIrZHdEK3FBcDBxNnNmdz09" title="Eli Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+   -->
+              </table>
+            </div>
+
+            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+        <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+</div>
+</div>
+<!-- ---------- -->
+<!-- PUBLIC HEALTH -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__pbhl">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Public Health</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+                  <tr>
+  
+                    <th>Introduction to Epidemiology</th>
                     <th></th> 
                     <th></th>
   
@@ -244,1360 +427,930 @@ Instructions for copying this code over to Sitefinity:
 
                  
                   <tr class="inPerson-session"> 
-                    <td>Anatomy</td>
-                    <td>Tu 12:15-3pm</td>
+                    <td>Introduction to Epidemiology</td>
+                    <td>Monday 1 - 3 pm</td>
                     <td>* In Person</td>
                   </tr>
 
                   <!-- ------------- ZOOM SESSIONS ---------------- -->
 
 
-                  <tr class="zoom-session">
-                    <td>Anatomy</td>
-                    <td>W 7-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0sfuGsqjkpGtyXX092VOhEUmIRoqa0ucXK" title="Katie H. Wednesday Anatomy Sessions Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-
-                  <tr class="zoom-session">
-                    <td>Anatomy</td>
-                    <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAqcuGrrzMsH9I5GLv_E0dqsFtZ1_dDjS0N" title="Katie H. Saturday Anatomy Sessions Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <!-- ------------- ---------- ---------------- -->
-                  <!-- ------------- Physiology ---------------- -->
-                  <!-- ------------- ---------- ---------------- -->
-                 
-                  <tr>
-                    <th>Physiology</th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+                  <!-- <tr class="zoom-session">
+                    <td>Introduction to Epidemiology</td>
+                    <td>Monday 1 - 3 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/99991739337?pwd=YXFQMFJienpLeDdsTTUvcEN4azlDZz09" title= "Henley Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
 
                   <tr class="zoom-session">
-                    <td>Human Physiology</td>
-                    <td>Tu 10-11:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>Introduction to Epidemiology</td>
+                    <td>Wednesday 1 - 3 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/99991739337?pwd=YXFQMFJienpLeDdsTTUvcEN4azlDZz09" title= "Henley Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
                   <tr class="zoom-session">
-                    <!-- zoom-session -->
-                    <td>Human Physiology</td>
-                    <td>Th 1:30-3pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>Introduction to Epidemiology</td>
+                    <td>Thursday 4 - 6 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/99991739337?pwd=YXFQMFJienpLeDdsTTUvcEN4azlDZz09" title= "Henley Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
-
-                  <tr class="zoom-session">
-                    <td>Human Physiology</td>
-                    <td>F 10-11am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-
-
 
                 </table>
               </div>
 
-              
-            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
           <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
 
-      </div>
   </div>
 </div>
 
-<!--BIO __ CBIO and Genetics -->
-<div class="popup" id="popup-courses__bio--cbio">
+
+<!-- ---------- -->
+<!-- Music -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__pmus">
   <div class="popup__content popup__content-sl">
       <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__bio--btns" class="popup__back">&larr;</a>
       <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Cell Biology & Genetics</h2>
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Music</h2>
       </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
 
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">BIOL 2010 | Organisms to Ecosystems</li>
-                  <li class="collapsible__item">BIOL 3225 | Human Physiology</li>
-                  <li class="collapsible__item">BIOL 3244 | Human Anatomy</li>
-                  <li class="collapsible__item">BIOL 3611 | General Cell Biology </li>
-                  <li class="collapsible__item">BIOL 3832 Genetics | General Genetics</li>
-                  
-      
-
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
           
 
               <div class="table-box">
 
                 <table class="popup__table--courses">
 
-                  <!-- CELL BIO -->
+                  <tr>
+  
+                    <th>Music Theory 1</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                 
+                  <tr class="inPerson-session" title= "Music Theory 1"> 
+                    <td>Hosted by: Hunter</td>
+                    <td>Monday 1:30 - 2:30 pm </td>
+                    <td>In-Person Session</td>
+                  </tr>
+
+                  <th>Ear Training/Sight Singing 1</th>
+                    <th></th> 
+                    <th></th>
+
+                    <tr class="inPerson-session" title= "Ear Training/Sight Singing 1"> 
+                      <td>Hosted by: Hunter</td>
+                      <td>Monday 2:30 - 3:30 pm </td>
+                      <td>In-Person Session</td>
+  
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div>
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+<!-- ---------- -->
+<!-- BIOL -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__bio">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Biology</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
 
                   <tr>
-                    <th>Cell Biology</th>
+  
+                    <th>Human Anatomy</th>
+                    <th></th> 
                     <th></th>
-                    <th></th>
+  
                   </tr>
+
+                 
+                  <!-- <tr class="inPerson-session"> 
+                    <td>Course Session</td>
+                    <td>Day/Time</td>
+                    <td>* In Person</td>
+                  </tr> -->
 
                   <!-- ------------- ZOOM SESSIONS ---------------- -->
 
                   <tr class="zoom-session">
-                    <td>Cell Bio</td>
-                    <td>Tu 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>Human Anatomy</td>
+                    <td>Monday 7 - 8 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
-                  
+                  <tr class="zoom-session">
+                    <td>Human Anatomy</td>
+                    <td>Thursday 11 am - 12:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Human Anatomy</td>
+                    <td>Thursday 7 - 8 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  <!-- BIOL 2020 -  Molecules to Cells (Gen Bio)  (3 Credits)  -->
+                    <th>Gen Bio</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Molecules to Cells</td>
+                    <td>Monday 7:30 - 9 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/91368744088?pwd=bDZHRmFoQUdOSUVYWmFBQ2VOSVJxQT09" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Molecules to Cells</td>
+                    <td>Tuesday 8-9 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/91368744088?pwd=bDZHRmFoQUdOSUVYWmFBQ2VOSVJxQT09" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div>
+<!-- ---------- -->
+<!-- LANG -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__modLang">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Spanish</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+                  <tr>
+  
+                    <th>Spanish</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                 
+                  <!-- <tr class="inPerson-session"> 
+                    <td>Course Session</td>
+                    <td>Day/Time</td>
+                    <td>* In Person</td>
+                  </tr> -->
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <tr class="zoom-session">
+                    <td>Beginning Spanish I, Beginning Spanish II, Second Year Spanish I, Second Yr. Spanish II, Spanish Comp. I, Spanish Comp. II</td>
+                    <td>Monday 8 - 9 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Beginning Spanish I, Beginning Spanish II, Second Year Spanish I, Second Yr. Spanish II, Spanish Comp. I, Spanish Comp. II</td>
+                    <td>Wednesday 8 - 9  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Beginning Spanish I, Beginning Spanish II, Second Year Spanish I, Second Yr. Spanish II, Spanish Comp. I, Spanish Comp. II</td>
+                    <td>Thursday 12:30 - 1:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/92314100883?pwd=MEMxZUZaN2hZSm1mRTdrcGRoNFRaZz09" title= "Katie H Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <th>French</th>
+                    <th></th> 
+                    <th></th>
+
+                    <tr class="inPerson-session" title= "French Language I, French Language II, French Language III "> 
+                    <td>Hosted by: Jennifer </td>
+                    <td>Monday 2 - 3 pm</td>
+                    <td>In-Person Session</td>
+                  </tr>
+
+                   <!-- ------------- ZOOM SESSIONS ---------------- -->
+                   <tr class="zoom-session">
+                   <td>French Language I, French Language II, French Language III</td>
+                   <td>Monday 2 - 3 pm</td>
+                   <td><a href="https://ucdenver.zoom.us/j/98138253144?pwd=MjRLVVVrUi9US083eHo0SGRMQjdOUT09" title= "Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                 </tr>
+
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div>
+<!-- ---------- -->
+<!-- ENGR + COMP -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__eac">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Engineering and Computing</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+                  <tr>
+  
+                    <th>Fundamentals of Computing</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                 
+                  <!-- <tr class="inPerson-session"> 
+                    <td>Course Session</td>
+                    <td>Day/Time</td>
+                    <td>* In Person</td>
+                  </tr> -->
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <tr class="zoom-session">
+                    <td>Fundamentals of Computing</td>
+                    <td>Monday 10 am - 12 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/96475091205?pwd=ZFpHenNGR3IyTG5zai9JV09zNy9RQT09" title= "Zoe Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Fundamentals of Computing</td>
+                    <td>Tuesday 2:30 - 4 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/92310857800?pwd=VGsxQ3Mrd3QwdGRSQnJORlk5SldUQT09" title= "Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  
+                    <th>Logic Design</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+
+                  <tr class="zoom-session">
+                    <td>Logic Design</td>
+                    <td>Thursday 2:30 - 4 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/92310857800?pwd=VGsxQ3Mrd3QwdGRSQnJORlk5SldUQT09" title= "Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  
+                    <th>Object Oriented Programming</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class="inPerson-session" title= "Object Orientated Programming">
+                    <td>Hosted by: Ravisher</td>
+                    <td>Monday 10 am - 11:30 am </td>
+                    <td>In-Person Session</td>
+                  </tr>
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <!-- <tr class="zoom-session">
+                    <td>Object Oriented Programming</td>
+                    <td>Monday 10 am - 11:30 am </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99238179049?pwd=aWZ0b09vQS9vOGVGV29QbjhaWlhFZz09" title= "Ravisher Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
+
+                  <tr class="zoom-session">
+                    <td>Object Oriented Programming</td>
+                    <td>Friday 12 - 1:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/92310857800?pwd=VGsxQ3Mrd3QwdGRSQnJORlk5SldUQT09" title= "Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  
+                    <th>Database System Concepts</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Database System Concepts</td>
+                    <td>Friday 6:30 - 8 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99238179049?pwd=aWZ0b09vQS9vOGVGV29QbjhaWlhFZz09" title= "Ravisher Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr>
+  
+                    <th>Algorithms</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+
+                  <tr class="zoom-session">
+                    <td>Algorithms</td>
+                    <td>Wednesday 10 am - 11:30 am </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99238179049?pwd=aWZ0b09vQS9vOGVGV29QbjhaWlhFZz09" title= "Ravisher Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
 
 
                   <tr>
-                    <th>Genetics</th>
+  
+                    <th>Data Structures and Program Design</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class= "inPerson-session" title= "Data Structures and Program Design">
+                    <td>Hosted by: Zoe</td>
+                    <td>Monday 1 - 3 pm </td>
+                    <td>In-Person Session</td>
+
+                  </tr>
+
+<!-- ------------- ZOOM SESSIONS ---------------- -->
+                  <!-- <tr class="zoom-session">
+                    <td>Data Structures and Program Design</td>
+                    <td>Monday 1 - 3 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/96475091205?pwd=ZFpHenNGR3IyTG5zai9JV09zNy9RQT09" title= "Zoe Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
+
+                  <tr class="zoom-session">
+                    <td>Data Structures and Program Design</td>
+                    <td>Tuesday 3:30 - 5 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/99317162379?pwd=dXhVZDZzTCtNaU1rZGR3OHRxa2lsQT09" title= "Zoe Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+        </div>
+      </div>
+<!-- ---------- -->
+<!-- PSYCH -->
+<!-- ---------- -->
+<!-- <div class="popup" id="popup-courses__psych">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Psychology</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+                  <tr>
+  
+                    <th>Statistics and Research Methods</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Statistics and Research Methods</td>
+                    <td> Monday 3 - 4 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Statistics and Research Methods</td>
+                    <td>Tuesday 1 - 2 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Statistics and Research Methods</td>
+                    <td>Tuesday 3 - 4 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Statistics and Research Methods</td>
+                    <td>Saturday 10 - 11 am </td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div> -->
+<!-- ---------- -->
+<!-- STATS FOR OTHER DISCP -->
+<!-- ---------- -->
+ <div class="popup" id="popup-courses__sod">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Statistics for other Disciplines</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          
+
+              <div class="table-box">
+
+                <table class="popup__table--courses">
+
+                  <tr>
+  
+                    <th>Business Statistics</th>
+                    <th></th> 
+                    <th></th>
+  
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Business Statistics</td>
+                    <td>Monday 3:30 - 4:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Business Statistics</td>
+                    <td>Wednesday 3:30 - 4:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/93311361435?pwd=WFhMWXFBeFdrZlJ1UThQSkZpSm4xQT09" title="Fatima Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <!--<tr class="zoom-session">
+                    <td>Business Statistics</td>
+                    <td>Monday 11 am - 12 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>Business Statistics</td>
+                    <td>Saturday 11 am - 12 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/94728859122?pwd=WEZkbHpWTHNlR0VSOGpYVURQQlRPdz09" title= "Daniel Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>-->
+
+                </table>
+              </div>
+
+              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
+          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
+
+  </div>
+</div> 
+<!-- ---------- -->
+<!-- CHEM -->
+<!-- ---------- -->
+<div class="popup" id="popup-courses__chem">
+  <div class="popup__content popup__content-sl">
+      <a href="#qs-instruct" class="popup__close">&times;</a>
+      <div class="u-center-text">
+        <h2 class="heading-secondary__pe u-margin-bottom-small">Chemistry</h2>
+      </div>
+
+          <h3 class="heading-tertiary">Guided Study Groups:</h3>
+          <!-- TABS SKELETON -->
+          <div class="ag-popup__tabs">
+  <!-- ---------- -->
+  <!-- Organic CHEM -->
+  <!-- ---------- -->
+            <input type="radio" class="ag-popup__tabs--radio" name="ag-popup__chem-tabs" id="ag-popup__o-chem-tab" checked>
+            <label for="ag-popup__o-chem-tab" class="ag-popup__tabs--label">Organic Chemistry</label>
+            <div class="ag-popup__tabs--content">
+              <!-- Here is where the table goes -->
+              <div class="table-box">
+          
+                <table class="popup__table--courses">
+          
+                  <!-- Course Divider -->
+          
+                  <tr>
+                    <th>O-Chem 1 </th>
                     <th></th>
                     <th></th>
                   </tr>
 
+                  <tr class="inPerson-session" title= "O-Chem 1">
+                    <td>Hosted by: Mayada</td>
+                    <td>Monday 3:30 - 4:30 pm</td>
+                    <td>In-Person Session</td>
+                  </tr>
+          
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <!-- <tr class="zoom-session">
+                    <td>O-Chem 1</td>
+                    <td>Monday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/93162384435?pwd=NzhtZktRL3NFeHR6U05Ecnlydm8xdz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
+
                   <tr class="zoom-session">
-                    <td>Genetics</td>
-                    <td>Tu 10-11:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>O-Chem 1</td>
+                    <td>Monday 8 - 9 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
                   <tr class="zoom-session">
-                    <!-- zoom-session -->
-                    <td>Genetics</td>
-                    <td>Th 1:30-3pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>O-Chem 1</td>
+                    <td>Wednesday 12:30 - 1:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/93162384435?pwd=NzhtZktRL3NFeHR6U05Ecnlydm8xdz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
                   <tr class="zoom-session">
-                    <td>Genetics</td>
-                    <td>F 10-11am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>O-Chem 1</td>
+                    <td>Thursday 12:30 - 1:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/93162384435?pwd=NzhtZktRL3NFeHR6U05Ecnlydm8xdz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
+                  <tr class="zoom-session">
+                    <td>O-Chem 1</td>
+                    <td>Friday 5 - 6 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
 
+                  <!-- Course Divider -->
+          
+                  <tr>
+                    <th>O-Chem II</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  
+                  <tr class="inPerson-session" title= "O-Chem 2">
+                    <td>Hosted by: Aymen</td>
+                    <td>Monday 3 - 4 pm</td>
+                    <td>In-Person Session</td>
+                  </tr>
+
+                
+
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+
+                  <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Monday 2 - 3 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99687446356?pwd=ZU80ZkxHYVNlMnpoT2Rsa3c0QzBWUT09" title="Aymen Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <!-- <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Monday 3 - 4 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99687446356?pwd=ZU80ZkxHYVNlMnpoT2Rsa3c0QzBWUT09" title="Aymen Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
+
+                  <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Monday 7 - 8 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Thursday 2 - 3  pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/99687446356?pwd=ZU80ZkxHYVNlMnpoT2Rsa3c0QzBWUT09" title="Aymen Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Friday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>O-Chem 2</td>
+                    <td>Friday 7:30 - 8:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+          
+                  
+          
+                </table>
+              </div>
+            </div>
+  <!-- ---------- -->
+  <!-- GEN CHEM -->
+  <!-- ---------- -->
+            <input type="radio" class="ag-popup__tabs--radio" name="ag-popup__chem-tabs" id="ag-popup__gen-chem-tab">
+            <label for="ag-popup__gen-chem-tab" class="ag-popup__tabs--label">General Chemistry</label>
+            <div class="ag-popup__tabs--content">
+              <div class="table-box">
+          
+                <table class="popup__table--courses">
+          
+                  <!-- Course Divider -->
+          
+                  <tr>
+                    <th>Gen Chem I</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+          
+                  <!-- ------------- ZOOM SESSIONS ---------------- -->
+          
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Monday 6-7 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/found of chem)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
 <!-- 
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/93162384435?pwd=NzhtZktRL3NFeHR6U05Ecnlydm8xdz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
+
+<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/found of chem)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
+
+              
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Wednesday 11:30am - 12:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                <tr class="zoom-session">
+                  <td>General Chemistry I</td>
+                  <td>Thursday 11:30 am - 1 pm</td>
+                  <td><a href="https://ucdenver.zoom.us/j/97850665588?pwd=cGovV0pnMTgzMHc5VUtvTlNkbVBNQT09" title="Momta Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Thursday 6:30 - 7:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/91368744088?pwd=bDZHRmFoQUdOSUVYWmFBQ2VOSVJxQT09" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+  <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/chem for engr)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                      <td>Friday 1 - 2 pm </td>
+                      <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    </tr>
+  <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FIXME: THIS SESSION IS A DUPLICATE! 
+    V1 = (chem/found and engr chem/found of chem)
+    V2 = (chem/gen chem/gen chem 1) 
+  ----------------------------------------------------->
+  
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Friday 6-7 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/95530088595?pwd=aks4WnBhRld5OTFSN2tiODBFUSt3Zz09" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry I</td>
+                    <td>Sunday 12 - 1 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne" Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+
+                  <!-- Course Divider -->
+          
+                  <tr>
+                    <th>Gen Chem II </th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/93162384435?pwd=NzhtZktRL3NFeHR6U05Ecnlydm8xdz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> 
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Wednesday 3:30 - 4:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Wednesday 5 - 6 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Thursday 12:30 - 1:30  pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/99687446356?pwd=ZU80ZkxHYVNlMnpoT2Rsa3c0QzBWUT09" title="Aymen Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Friday 2 - 3 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+
+                  <tr class="zoom-session">
+                    <td>General Chemistry II</td>
+                    <td>Sunday 1 - 2:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/97850665588?pwd=cGovV0pnMTgzMHc5VUtvTlNkbVBNQT09" title="Momta Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+          
+                  <!-- <tr class="inPerson-session">
+                    <td>In-Person Session</td>
+                    <td>Day/Time</td>
+                    <td title="AG's Name">In-Person Session</td>
+                  </tr>
+           -->
+                </table>
+              </div>
+            </div>
+  <!-- ---------- -->
+  <!-- FOUNDATIONS AND CHEM FOR ENGR -->
+  <!-- ---------- -->
+            <input type="radio" class="ag-popup__tabs--radio" name="ag-popup__chem-tabs" id="ag-popup__found-chem-tab">
+            <label for="ag-popup__found-chem-tab" class="ag-popup__tabs--label">Foundations of Chemistry and Chemistry for Engineers</label>
+            <div class="ag-popup__tabs--content">
+              <div class="table-box">
+          
+                <table class="popup__table--courses">
+          
+                  <!-- Course Divider -->
+          
                   <tr>
                     <th>Chemistry for Engineers</th>
                     <th></th>
                     <th></th>
                   </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-<!--
-                  <tr class="zoom-session">
-                    <td>Chemistry for Engineers</td>
-                    <td>Tu 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session"> 
-                    <td>Chemistry for Engineers</td>
-                    <td>Th 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-   -->
-                    
-
-                </table>
-              </div>
-
-              
-            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-
-      </div>
-  </div>
-</div>
-
-<!--BIO GEN-->
-<div class="popup" id="popup-courses__bio--gen">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__bio--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">General Biology</h2>
-      </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">BIOL 2010 | Organisms to Ecosystems</li>
-                  <li class="collapsible__item">BIOL 3225 | Human Physiology</li>
-                  <li class="collapsible__item">BIOL 3244 | Human Anatomy</li>
-                  <li class="collapsible__item">BIOL 3611 | General Cell Biology </li>
-                  <li class="collapsible__item">BIOL 3832 Genetics | General Genetics</li>
-                  
-      
-
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
           
 
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-
-                 
-                  <tr>
-                    <th>Gen Biology</th>
-                    <th></th>
-                    <th></th>
+                  <tr class="zoom-session">
+                    <td>Chemistry for Engineers</td>
+                    <td>Tuesday 7 - 8 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/91368744088?pwd=bDZHRmFoQUdOSUVYWmFBQ2VOSVJxQT09" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
 
                   <tr class="zoom-session">
-                    <td>Gen Bio Organisms to Ecosystems</td>
-                    <td>Tu 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>Chemistry for Engineers</td>
+                    <td>Thursday 6:30 - 7:30 pm</td>
+                    <td><a href="https://ucdenver.zoom.us/j/91368744088?pwd=bDZHRmFoQUdOSUVYWmFBQ2VOSVJxQT09" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
-
-                  
-
-
-                 
+<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/chem for engr)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
 
   
-                </table>
-              </div>
 
-              
-            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-
-      </div>
-  </div>
-</div>
-
-<!--CHEM__Foundations-->
-<div class="popup" id="popup-courses__chem--found">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__chem--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Foundations of Chemistry</h2>
-      </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">CHEM 1000 | Foundations for General Chemistry</li>
-                  <li class="collapsible__item">CHEM 2031 Gen Chem 1 | General Chemistry I</li>
-                  <li class="collapsible__item">CHEM 2061 | General Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3411 | Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3421 | Organic Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3481| Majors Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3491 | Majors Organic Chemistry II</li>
-                  <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-      
-                  
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
+                  <!-- Course Divider -->
           
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-
-                  <!-- ------------- ----------------- ---------------- -->
-                  <!-- ------------- GEN CHEM ---------------- -->
-                  <!-- ------------- ----------------- ---------------- -->
-
                   <tr>
-  
                     <th>Foundations of Chemistry</th>
-                    <th></th> 
-                    <!-- <th></th> -->
-  
+                    <th></th>
+                    <th></th>
                   </tr>
-                  <tr class="inPerson-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>M 4-5pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>Tu 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJUrduCsrzoqGtVi6S7TuTvOC3yQbPn2kKFm" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td></td></td>
-                  </tr>
-  
-                  <tr class="inPerson-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>Tu 3-4:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  <tr class="inPerson-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>W 12:30-1:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  
-                  <tr class="inPerson-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td> W 4:30-7pm</td>
-                    <td>* In Person</td>
-                  </tr>
+          
+                  <!-- <tr class="inPerson-session">
+                    <td>In-Person Session</td>
+                    <td>Day/Time</td>
+                    <td title="AG's Name">In-Person Session</td>
+                  </tr> -->
 
-                  <tr class="inPerson-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>Th 11-1:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-
-                  <tr class="zoom-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>M 6:30-7:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJIkcOCsrT8uHtTU1NrbR8fsHujAi3tPcNad" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>Tu 7-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJYqd-GuqTMsGtWFsCGL19WysalmA1gladyr" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>F 12-1:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJwofu2vqz0oHtGVm2VxyyVqJT_YxMu-hoD8" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  
                   <!-- <tr class="zoom-session">
+                    <td>Foundations of Chemistry</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr> -->
 
-                    <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
+  <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/found of chem)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
 
                   <tr class="zoom-session">
+                    <td>Foundations of Chemistry</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+<!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/found of chem)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
 
-                    <td>Sat 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  <!-- <tr class="zoom-session">
+                    <td>Foundations of Chemistry</td>
+                    <td>Tuesday 3:30 - 4:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr> -->
 
                   <tr class="zoom-session">
-
-                    <td>Sat 12:30-3:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJUpdu2orDwjEtHrWKvRXZ8y8urY7dm7XNBA" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr> 
-
-                  <tr class="zoom-session">
-                    <!-- <td>Foundations of Chem</td> -->
-                    <td>Sun 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJMkdOCpqD0rEtSM7Ib-1XBC4FS0tQcbp2jt" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    <td>Foundations of Chemistry</td>
+                    <td>Thursday 11:30 - 12:30 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>
 
+                  <tr class="zoom-session">
+                    <td>Foundations of Chemistry</td>
+                    <td>Friday 1 - 2 pm </td>
+                    <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                  </tr>
+
+  <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    FIXME: THIS SESSION IS A DUPLICATE! 
+  V1 = (chem/found and engr chem/found of chem)
+  V2 = (chem/gen chem/gen chem 1) 
+----------------------------------------------------->
+
+
+                    <tr class="zoom-session">
+                      <td>Foundations of Chemistry</td>
+                      <td>Sunday 1 - 2 pm</td>
+                      <td><a href="https://ucdenver.zoom.us/j/98903340368?pwd=dlc2Q1hSRi9jZ3NsUFA3MzVldHhHZz09" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+                    </tr>
+          
                 </table>
               </div>
-              
-              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-              <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-      </div>
-  </div>
-</div>
-
-<!--CHEM__GenChem & chemForEngr-->
-<div class="popup" id="popup-courses__chem--gfchem">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__chem--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">General Chemistry & Chemistry for Engineers</h2>
-      </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">CHEM 1000 | Foundations for General Chemistry</li>
-                  <li class="collapsible__item">CHEM 2031 Gen Chem 1 | General Chemistry I</li>
-                  <li class="collapsible__item">CHEM 2061 | General Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3411 | Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3421 | Organic Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3481| Majors Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3491 | Majors Organic Chemistry II</li>
-                  <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-      
-                  
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-
-                  <!-- ------------- ----------------- ---------------- -->
-                  <!-- ------------- GEN CHEM ---------------- -->
-                  <!-- ------------- ----------------- ---------------- -->
-
-                  <tr>
-  
-                    <th>General Chemistry</th>
-                    <th></th> 
-                    <th></th>
-  
-                  </tr>
-                  <tr class="cancel-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>M 4-5pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Tu 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJUrduCsrzoqGtVi6S7TuTvOC3yQbPn2kKFm" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td></td>
-                  </tr>
-  
-                  <!-- <tr class="inPerson-session">
-                    <td>Gen Chem 1</td>
-                    <td>Tu 3-4:30pm</td>
-                    <td>* In Person</td>
-                  </tr> -->
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>W 12:30-1:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>W 4:30-7pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1</td>
-                    <td>Th 11-1:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>M 6:30-7:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAlcumgrTwjH9Xhqyq5ZmWk2BmSHm89iyQ5" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Tu 7-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJYqd-GuqTMsGtWFsCGL19WysalmA1gladyr" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1</td>
-                    <td>F 12-1:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJwofu2vqz0oHtGVm2VxyyVqJT_YxMu-hoD8" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-                  <!-- <tr class="zoom-session">
-                    <td>Gen Chem 1</td>
-                    <td>F 2-4pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr> -->
-                  <!-- <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sat 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr> -->
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sat 12:30-3:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJUpdu2orDwjEtHrWKvRXZ8y8urY7dm7XNBA" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sun 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJMkdOCpqD0rEtSM7Ib-1XBC4FS0tQcbp2jt" title="Cheyenne Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr>
-                    <th>Chem for Engineers</th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-  
-                    <!-- ------------- ZOOM SESSIONS ---------------- -->
-
-                  <tr class="zoom-session">
-                    <td>Chemistry for Engineers</td>
-                    <td>Tu 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session"> 
-                    <td>Chemistry for Engineers</td>
-                    <td>Th 6-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  
-                  
-  
-                </table>
-              </div>
-              
-              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-              <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-      </div>
-  </div>
-</div>
-
-<!--CHEM__O-->
-<div class="popup" id="popup-courses__chem--o">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <a href="#popup-courses__chem--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Organic Chemistry</h2>
-      </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">CHEM 1000 | Foundations for General Chemistry</li>
-                  <li class="collapsible__item">CHEM 2031 Gen Chem 1 | General Chemistry I</li>
-                  <li class="collapsible__item">CHEM 2061 | General Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3411 | Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3421 | Organic Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3481| Majors Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3491 | Majors Organic Chemistry II</li>
-                  <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-      
-                  
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-
-                  <!-- ------------- ----------------- ---------------- -->
-                  <!-- ------------- O CHEM ---------------- -->
-                  <!-- ------------- ----------------- ---------------- -->
-
-                  <tr>
-  
-                    <th>Organic Chemistry</th>
-                    <th></th> 
-                    <th></th>
-  
-                  </tr>
-                  
-                  <tr class="inPerson-session">
-                    <td>O-Chem 1 & 2</td>
-                    <td>M 12:30-2:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <tr class="cancel-session">
-                    <td>O-Chem 1 & 2</td>
-                    <td>M 4-5pm</td>
-                    <td>* In Person</td>
-                  </tr>
-  
-
-                  <!-- <tr class="inPerson-session">
-                    <td>O-Chem 2</td>
-                    <td>Tu 3-4:30pm</td>
-                    <td>* In Person</td>
-                  </tr> -->
-
-                  <tr class="zoom-session">
-                    <td>O-Chem 1 & 2</td>
-                    <td>Tu 3:30-5pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/4429229807" title="Aymen Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="cancel-session" title="Aarti">
-                    <td>O-Chem 1</td>
-                    <td>W 8-9:45am</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- <tr class="inPerson-session">
-                    <td>O-Chem 1</td>
-                    <td>W 2-3pm</td>
-                    <td>* In Person</td>
-                  </tr> -->
-
-                  <tr class="inPerson-session" title="Aarti">
-                    <td>O-Chem 1</td>
-                    <td>W 4-7pm</td>
-                    <td>* In Person</td>
-                  </tr>
-                  
-                  <tr class="inPerson-session">
-                    <td>O-Chem 2</td>
-                    <td>Th 11-1:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- <tr class="inPerson-session">
-                    <td>O-Chem 1</td>
-                    <td>Th 4-5pm</td>
-                    <td>* In Person</td>
-                  </tr> -->
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-                  
-                 
-
-                  <tr class="zoom-session">
-                    <td>O Chem 1</td>
-                    <td>Tu 5-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/93228174355" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                 
-                  <tr class="zoom-session">
-                    <td>O-Chem 2</td>
-                    <td>F 12-1:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                 
-                  <tr class="zoom-session">
-                    <td>O-Chem 2</td>
-                    <td>F 2-4pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>O-Chem 1</td>
-                    <td>Sun 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJMkf-yvrDMjHtM8Xgm1ZoveTanLANEaT7Nw" title="Aarti's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>O-Chem 1</td>
-                    <td>Sat 8-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJIqd-uoqTIiH9Ut6TCCbXCKWMLWie8QWVg1" title="Aarti's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-  
-                </table>
-              </div>
-              
-              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-              <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-      </div>
-  </div>
-</div>
-
-<!--PHYSICS-->
-<div class="popup" id="popup-courses__phys">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Physics</h2>
-      </div>
-      <div class="row">
-          <!-- <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">PHYS 2010 | College Physics I</li>
-                  <li class="collapsible__item">PHYS 2020 | College Physics II</li>
-                  <li class="collapsible__item">PHYS 2311 | General Physics I: Calculus-Based</li>
-                  <li class="collapsible__item">PHYS 2331 | General Physics II: Calculus-Based</li>
-      
-      
-                </ul>
-
-          </div>
-        </div> -->
-
-        
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-
-                  <!-- COLLEGE PHYSICS 1 & 2-->
-                  <tr>
-  
-                    <th>College Physics 1 & 2</th>
-                    <th></th> 
-                    <th></th>
-  
-                  </tr>
-  
-                  <tr class="cancel-session"> 
-                    <!--  -->
-                    <td>College Physics 1 & 2</td>
-                    <td>M 4-5pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-                  
-                  <tr class="zoom-session">
-                    <td>College Physics 1 & 2</td>
-                    <td>M 6-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/93228174355" title="Karl's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>College Physics 1 & 2</td>
-                    <td>Tu 5-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/93228174355" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <!-- <tr class="zoom-session">
-                    <td>Make-up Session<br>College Physics 1 & 2</td>
-                    <td>Th 5-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJAlcumgrTwjH9Xhqyq5ZmWk2BmSHm89iyQ5" title="Karl Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr> -->
-
-                  <tr class="zoom-session">
-                    <td>College Physics 1 and 2</td>
-                    <td>Sun 3-4:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <!-- UNIVERSITY PHYSICS-->
-
-                  <tr>
-                    <th>General Physics</th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>General Physics</td>
-                    <td>Tu 3:30-5pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94978938471" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                  <!-- <tr class="zoom-session">
-                    <td>General Physics</td>
-                    <td>Tu 3:30-5pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96801852281" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr> -->
-
-                  <tr class="inPerson-session">
-                    <td>General Physics</td>
-                    <td>W 10-11am</td>
-                    <td>* In Person</td>
-                  </tr>
-
-
-                  <tr class="inPerson-session">
-                    <td>General Physics</td>
-                    <td>Th 9:30-12:30pm</td>
-                    <td>* In Person</td>
-                  </tr>
-
-                  <!-- <tr class="inPerson-session">
-                    <td>PHYS 2010 2020</td>
-                    <td>Th 1-4pm</td>
-                    <td>* In Person</td>
-                  </tr> -->
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-                  <tr class="zoom-session">
-                    <td>General Physics</td>
-                    <td>M 4-5:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  </tr>
-
-                </table>
-              </div>
-              
-              <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-              <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-      </div>
-  </div>
-</div>
-
-<!--PMUS-->
-<div class="popup" id="popup-courses__pmus">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Performance Music</h2>
-      </div>
-      <div class="row">
-        <!-- <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-            <p class="popup__text">
-      
-              <ul class="collapsible__list">
-      
-                <li class="collapsible__item">PMUS 1023 | Piano Class I</li>
-                <li class="collapsible__item">PMUS 1024 | Piano Class II</li>
-                <li class="collapsible__item">PMUS 1025 | Piano Class III</li>
-                <li class="collapsible__item">PMUS 1110/1119 | Ear Training and Sight Singing I</li>
-                <li class="collapsible__item">PMUS 1210 | Ear Training and Sight Singing II</li>
-                <li class="collapsible__item">PMUS 2110 | Ear Training and Sight Singing III</li>
-                <li class="collapsible__item">PMUS 1100/1120 | Music Theory I</li>
-                <li class="collapsible__item">PMUS 1200 | Music Theory II</li>
-                <li class="collapsible__item">PMUS 2100 | Music Theory III</li>
-                <li class="collapsible__item">MUSC 3210 | Music and Entertainment Marketing</li>
-              
-              </ul>
-            </p>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>PMUS Sessions</th>
-                <th></th> 
-                <th></th>
-
-              </tr>
-              <!-- ------------- IN PERSON SESSIONS ---------------- -->
-              
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>All Music Courses</td>
-                <td>Tu 1-2pm</td>
-                <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0oceugqz4vG9d5KtIJWN_FTJ70u-I0A5G_" title="Katie Y. Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td><tr class="zoom-session">
-                <td>Piano</td>
-                <td>Tu 5-6pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/96193439379" title="Katie Y. Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-               
-              </tr>
-
-            </table>
-          </div>
-
-         <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-          <p class="paragraph"></p>
-        <!-- </div> -->
-
-      </div>
-  </div>
-</div>
-
-<!-- Engineering and Computing  -->
-<div class="popup" id="popup-courses__eac">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-       <h2 class="heading-secondary__pe u-margin-bottom-small">Engineering and Computing</h2>
-      </div>
-      <div class="row">
-        <!-- <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-            <ul class="collapsible__list">
-    
-              <li class="collapsible__item">CSCI 1410 | Fundamentals of Computing</li>
-              <li class="collapsible__item">CSCI 1510 | Logic Design</li>
-              <li class="collapsible__item">CSCI 2312 | Object Oriented Programming</li>
-              <li class="collapsible__item">CSCI 2421 | Data Structures and Program Design</li>
-              <li class="collapsible__item">CSCI 3287 | Database System Concepts</li>
-              <li class="collapsible__item">CSCI 3412 | Algorithms</li>
-              <!-- <li class="collapsible__item">ELEC 1510 | Digital Logic</li>
-              <li class="collapsible__item">ELEC 1520 | Programming for Electrical Engineers</li>
-              <li class="collapsible__item">ELEC 2132 | Circuit Analysis I</li>
-              <li class="collapsible__item">ELEC 3316 | Signals and Systems</li>
-              <li class="collapsible__item">ELEC 3817 | Engineering Probability and Statistics</li>
-              <li class="collapsible__item">ELEC 4174 | Power Electronic Systems</li> -->
-              <!-- <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-              
-            
-            </ul>
-          </p>
-        </div>
-        </div>  -->
-          <!-- <div class="col-1-of-2"> -->
-            <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-            
-            
-            <div class="table-box">
-
-              <table class="popup__table--courses">
-                <tr>
-
-                  <th>Computer Science</th>
-                  <th></th> 
-                  <th></th>
-
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>Tu 3:30-5pm</td>
-                  <td>* In Person</td>
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>Tu 2:30-4pm</td>
-                  <td>* In Person</td>
-                </tr>
-
-              
-
-                <!-- <tr class="inPerson-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>W 5-7pm</td>
-                  <td>* In Person</td>
-                </tr> -->
-
-                <!-- <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>W 11-12:30pm</td>
-                  <td>* In Person</td>
-                </tr> -->
-
-
-
-                <!-- ------------- ZOOM SESSIONS ---------------- -->
-                <!-- <tr class="zoom-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>M 7-9pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-                <!-- </tr> -->
-
-                <!-- <tr class="zoom-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>Th 7-9pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                  <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-                <!-- </tr>  -->
-
-               <tr class="zoom-session">
-                  <td>Computer Science</td>
-                  <td>F 12-1:30pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/92310857800" title="Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                </tr> 
-
-                <tr>
-
-                  <th>Fundamentals of Computing & Data Structures & Program Design</th>
-                  <th></th> 
-                  <th></th>
-
-                </tr>
-                <tr class="inPerson-session">
-                  <td>Fundamentals of Computing & Data Structures & Program Design</td>
-                  <td>Th 9-12pm</td>
-                  <td>* In Person</td>
-                </tr>
-
-                <tr>
-                  <th>Chem for Engineers</th>
-                  <th></th>
-                  <th></th>
-                </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-
-                <tr class="zoom-session">
-                  <td>Chemistry for Engineers</td>
-                  <td>Tu 6-8pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                </tr>
-
-                
-                </tr>
-
-              </table>
             </div>
+          </div>
+
             <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
           <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-    </div>
+
   </div>
 </div>
 
-<!-- Public Health  -->
-<div class="popup" id="popup-courses__pbhl">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Public Health</h2>
-      </div>
-      <div class="row">
-        <!-- <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-            <ul class="collapsible__list">
-    
-              <li class="collapsible__item">PBHL 3001 | Introduction to Epidemiology</li>
-              
-            </ul>
-          </p>
-        </div>
-        </div> -->
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>Epidemiology / Public Health</th>
-                <th></th> 
-                <th></th>
-
-              </tr>
-<!--
-
-  <tr class="inPerson-session">
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
--->
-
-              <tr class="inPerson-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Wed 4-6pm</td>
-                <td>* In Person</td>
-                <!-- ________ Zoom Link for Henley ________________________________________________________________ -->
-              </tr>
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Tues 1-3pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/93379915489" title="Henley Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-              <tr class="zoom-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Wed 4-6pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/93379915489" title="Henley Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-            </table>
-          </div>
-
-          <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-          <p class="paragraph"></p>
-      <!-- </div> -->
-    </div>
-  </div>
-</div>
-
-<!-- MODERN LANGUAGES -->
-<div class="popup" id="popup-courses__modLang">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Modern Languages</h2>
-      </div>
-      <div class="row">
-        <!-- <div class="col-1-of-2">
-          
-            <div class="u-center-text-2">
-              <p class="popup__text">
-        
-                <ul class="collapsible__list">
-        
-                  <li class="collapsible__item">FREN 1001 | French Language I</li>
-                  <li class="collapsible__item">FREN 1002 | French Language II</li>
-                  <li class="collapsible__item">FREN 1010 | Beginning French I</li>
-                  <li class="collapsible__item">FREN 1020 | Beginning French II</li>
-                  <li class="collapsible__item">FREN 2003 | French Language III</li>
-                  <li class="collapsible__item">SPAN 1010 | Beginning Spanish I</li>
-                  <li class="collapsible__item">SPAN 1011 | Intensive Spanish</li>
-                  <li class="collapsible__item">SPAN 1020 | Beginning Spanish II</li>
-                  <li class="collapsible__item">SPAN 2110 | Second Year Spanish I</li>
-                  <li class="collapsible__item">SPAN 2120 | Second Year Spanish II</li>
-        
-                </ul>
-        
-              </p>
-          </div>
-        </div> -->
-        <!-- <div class="col-1-of-2"> -->
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-          
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-                
-                <th>Spanish</th>
-                <th></th> 
-                <th></th>
-
-              </tr>
-              <tr class="inPerson-session"> 
-                <td>Spanish Language</td>
-                <td>Tu 3-4pm</td>
-                <td>* In Person</td>
-              </tr>
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>Spanish Language</td>
-                <td>Tu 3-4pm</td>
-                <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0qduqsrTIqHteDIB84ZrdcjfB2_-eYuQBs" title="Katie H. Tuesday session Spanish Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-              <tr class="zoom-session">
-                <td>Spanish Language</td>
-                <td>W 5:30-7pm</td>
-                <td><a href="https://ucdenver.zoom.us/meeting/register/tJ0sfuGsqjkpGtyXX092VOhEUmIRoqa0ucXK" title="Katie H. Wednesday session Spanish Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-              <tr>
-                
-                <th>French</th>
-                <th></th> 
-                <th></th>
-
-              </tr>
-
-              <tr class="zoom-session">
-                <td>French Language</td>
-                <td>W 4-5:30pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-            </table>
-          </div>
-          <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-      <!-- </div> -->
-      </div>
-  </div>
-</div>
-
-<!-- PHILO -->
-<div class="popup" id="popup-courses__philo">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <div class="u-center-text">
-       <h2 class="heading-secondary__pe u-margin-bottom-small">Philosophy</h2>
-      </div>
-      <div class="row">
-
-            <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-            
-            
-            <div class="table-box">
-
-              <table class="popup__table--courses">
-                <tr>
-
-                  <th>Philosophy</th>
-                  <th></th> 
-                  <th></th>
-
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Philosophy</td>
-                  <td>W 2:30-4:30pm</td>
-                  <td>* In Person</td>
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Philosophy</td>
-                  <td>Th 1-3pm</td>
-                  
-                <td>* In Person </td>
-                </tr>
 
 
-                <!-- ------------- ZOOM SESSIONS ---------------- -->
-                
 
-               <tr class="zoom-session">
-                  <td>Philosophy</td>
-                  <td>Tu 5:30-7:30pm</td>
-                  <td><a href="https://ucdenver.zoom.us/meeting/register/tJcrc-CvqzovGd3K9kIObW2gKmCnm1Zjw8Kx" title="Eli's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                </tr> 
-<!--FIXME: IS THIS A DUPLICATE SESSION? I HAVE TWO MONDAY TASKS SET FOR SAME SUBJECT AND TIME, BOTH ONLINE-->
-               <!-- <tr class="zoom-session">
-                  <td>Philosophy</td>
-                  <td>Tu 5:30-7:30pm</td>
-                  <td><a href="https://ucdenver.zoom.us/meeting/register/tJcrc-CvqzovGd3K9kIObW2gKmCnm1Zjw8Kx" title="AG's Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                </tr>  -->
-
-              </table>
-            </div>
-            <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        <!-- </div> -->
-    </div>
-  </div>
-</div>
-  
-<!--Other Courses-->
-<div class="popup" id="popup-courses__other">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-instruct" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Other Courses</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-              <ul class="collapsible__list">
-    
-                <li class="collapsible__item"><strong>Statistics for Other Disciplines</strong></li>
-                <li class="collapsible__item">BANA 2010 | Business Statistics</li>
-                <li class="collapsible__item">PSYC 2090 | Statistics and Research Methods</li>
-                <li class="collapsible__item"><strong>MATH</strong></li>
-                <li class="collapsible__item">MATH 1120 | College Trigonometry</li>
-                <li class="collapsible__item"><a href="https://clas.ucdenver.edu/mathematical-and-statistical-sciences/merc-lab" class="list-link">Visit MASS for more MATH assistance</a></li>
-                <br>
-                <li class="collapsible__item"><a href="mailto:lrc@ucdenver.edu" class="list-link">Don't see your course? Contact us at lrc@ucdenver.edu</a></li>
-              
-    
-                <!--	-->
-              </ul>
-          </p>
-        </div>
-        </div>
-
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-          
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>Course</th>
-                <th>Time</th> 
-                <th>Format</th>
-
-              </tr>
-
-              <!-- <tr class="inPerson-session">
-                <td>Coming Soon</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr> -->
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <!-- <tr class="zoom-session">
-                <td>Statistics for Other Disciplines</td>
-                <td>M 7-9pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                <!-- ________ Zoom Link for Yalda ________________________________________________________________
-              </tr> -->
-
-              <tr class="zoom-session">
-                <td>Statistics for Other Disciplines PSYC 2090 & BANA 2010</td>
-                <td>W 6-7pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-              </tr>
-
-              <!-- <tr class="zoom-session">
-                <td>Statistics for Other Disciplines</td>
-                <td>Th 7-9pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">** Online - Zoom Session</a></td>
-                <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-             <!-- </tr> -->
-
-            </table>
-          </div>
-          <h4 class="heading-quaternary"><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. <span class="cancel-session-span">Canceled sessions appear like this.</span><br>*Enter at 12th and Larimer for in person sessions<br>**Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-      </div>
-
-      </div>
-  </div>
-</div>
 
 <!-- ^^^ STOP COPY CODE HERE ^^^ -->
 
-</main>
+      </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
+

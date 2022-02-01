@@ -212,7 +212,7 @@
   background-image: url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index-imgs/vfd_background.png?sfvrsn=59aca2ba_2);
   background-size: cover;
   background-position: center;
-  padding: 7rem 10rem;
+  padding: 15rem 10rem;
   // height: 90vh;
   // filter: blur(5px);
   display: flex;
@@ -220,6 +220,8 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
+  z-index: 4;
+  // margin-top: -15rem;
   @include respond(tab-port) {
     height: 100vh;
   }

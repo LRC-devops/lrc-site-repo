@@ -16,7 +16,7 @@
 
 
     <body>
-  <!--Main Navigation-->
+  <!--Mobile Navigation-->
 
   <div class="navigation">
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -52,105 +52,121 @@
 
 
     <main>
-      <div class="banner">
-        <p>The University of Colorado Denver is remote until January 28th. In-person services begin January 31st.</p>
+<div class="missNav__container">
+  <nav class="missNav__nav">
+    <div class="missNav__logo-box" id="missNav__logo">
+      <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/artboard-1.png?sfvrsn=17aba8ba_2" alt="LRC Logo" class="missNav__logo">
+    </div>
+    <ul>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center">Home</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer-tutoring">Peer Tutoring</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-learning">Supplemental Learning</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-learning/genetics-a-sync">A-Sync</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/rise">RISE</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation">iPrep</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/ssw">Workshops</a></li>
+      <li><a href="https://www.ucdenver.edu/learning-resources-center/reboot">REBOOT</a></li>
+      <!-- <li><a href="#">CTA</a></li> -->
+      <div class="missNav__dropdown">
+        <li><a href="#" >Other</a></li>
+        <div class="missNav__dropdown--content">
+          <li><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources">Faculty/Staff Resources</a></li>
+          <li><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team">Join Our Team</a></li>
+          <li><a href="https://www.ucdenver.edu/learning-resources-center/about-us">About Us</a></li>
+        </div>
       </div>
+    </ul>
+  </nav>
 
-      <header class="section-intro3">
-       
-        <div class="bg-video-index">
-          <video class="bg-video-index__content"  autoplay muted loop>
-            <source src="https://www.ucdenver.edu/videos/librariesprovider132/lrc-css-vids/index_hero-vid_v2.mp4?sfvrsn=c1fbdeba_2" type="video/mp4">
-            Your browser is not supported!
-          </video>
-        </div>
-        <div class="section-intro3__modal">
-          <div class="section-intro3__logo-box">
-            <img
-              src="https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/lrc-logo-horz-gold-white@2x.png?sfvrsn=e949f8ba_2"
-              alt="LRC logo"
-              class="section-intro__logo"
-            />
-            <img
-              src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/lrc-logo-vert-gold-white@1.png?sfvrsn=fff3c4ba_2"
-              alt="LRC logo"
-              class="section-intro__logo--vert"
-            />
-          </div>
-  
-          <div class="section-intro3__heading">
-            <h1 class="main__heading u-margin-bottom-big">
-              <span class="main__heading--gold">CU Denver</span> Learning
-              Resources Center
-              <span class="main__heading--sub"
-                >Discover your learning potential</span
-              >
-            </h1>
-            <div class="nav-box">
-              <div class="nav-box__col">
-                <p class="nav-box__head">Peer Education</p>
-                <ul class="nav-box__list">
-                  <li class="nav-box__item">
-                    <a
-                      href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer-tutoring"
-                      class="nav-box__link"
-                      >Peer Tutoring
-                      <span class="nav-box__link--arr">&rarr;</span></a
-                    >
-                  </li>
-                  <li class="nav-box__item">
-                    <a
-                      href="https://www.ucdenver.edu/learning-resources-center/rise"
-                      class="nav-box__link"
-                      >RISE <span class="nav-box__link--arr">&rarr;</span></a
-                    >
-                  </li>
-                  <li class="nav-box__item">
-                    <a
-                      href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction"
-                      class="nav-box__link"
-                      >Supplemental Instruction
-                      <span class="nav-box__link--arr">&rarr;</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-box__col">
-                <p class="nav-box__head">Workshops</p>
-                <ul class="nav-box__list">
-                  <li class="nav-box__item">
-                    <a
-                      href="https://www.ucdenver.edu/learning-resources-center/ssw"
-                      class="nav-box__link"
-                      >Study Skills Workshops
-                      <span class="nav-box__link--arr">&rarr;</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="nav-box__col">
-                <p class="nav-box__head">Virtual Front Desk</p>
-                <ul class="nav-box__list">
-                  <li class="nav-box__item">
-                    <a
-                      href="https://ucdenver.zoom.us/j/95905565379"
-                      class="nav-box__link"
-                      >Stop by on Zoom!
-                      <span class="nav-box__link--arr">&rarr;</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  <header class="missNav__header">
+    <div class="missNav__logo-box--mobile">
+      <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/artboard-1.png?sfvrsn=17aba8ba_2" alt="LRC Logo" class="missNav__logo">
+    </div>
+    <!-- <div class="missNav__logo-box">
+      <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/artboard-1.png?sfvrsn=17aba8ba_2" alt="LRC Logo" class="missNav__logo">
+    </div> -->
+    <div class="missNav__header--box">
+      <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/v2-cleancitymountianscape.png?sfvrsn=faea8ba_2" alt="Header Image" class="missNav__header--img">
+      <div class="missNav__header--box--text">
+        <h1>CU Denver</h1>
+        <h1>Learning Resources Center</h1>
+        <h1>Discover Your Learning Potential</h1>
+      </div>
+    </div>
+  </header>
+  <div class="missNav__tile-box">
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-green">
+        <ion-icon name="people"></ion-icon>
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>Guided Study Groups</h2>
+        <h3>With a Peer Tutor</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer-tutoring" class="missNav__tile--btn btn-green">Browse Courses &rarr;</a>
+      </div>
+    </div>
 
-        </div>
-      </header>
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-teal-dark">
+        <ion-icon name="easel"></ion-icon>
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>Supplemental Learning</h2>
+        <h3>With an Academic Guide and Classmates</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/supplemental-learning" class="missNav__tile--btn btn-teal-dark">Check it out! &rarr;</a>
+      </div>
+    </div>
+
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-teal">
+        <ion-icon name="arrow-up"></ion-icon>
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>RISE</h2>
+        <h3>Resources for Immigrant Students and English Language Learners</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/rise" class="missNav__tile--btn btn-teal">Sign me up! &rarr;</a>
+      </div>
+    </div>
+
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-teal">
+        <ion-icon name="layers"></ion-icon>
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>Intensive Preparation</h2>
+        <h3>Get ready for the semester</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="missNav__tile--btn btn-teal">Registration &rarr;</a>
+      </div>
+    </div>
+
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-green">
+        <ion-icon name="hammer"></ion-icon>
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>Workshops / Individual Coaching</h2>
+        <h3>Study skills, stress management..., you name it!</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/ssw" class="missNav__tile--btn btn-green">Semester Calendar &rarr;</a>
+      </div>
+    </div>
+
+    <div class="missNav__tile">
+      <div class="missNav__tile--top tile-teal-dark">
+        <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/reboot_logo-solo__white.png?sfvrsn=1741a7ba_2" alt="reboot logo">
+      </div>
+      <div class="missNav__tile--bottom">
+        <h2>REBOOT</h2>
+        <h3>To get back into the groove!</h3>
+        <a href="https://www.ucdenver.edu/learning-resources-center/reboot" class="missNav__tile--btn btn-teal-dark">Rebooting in 3, 2, 1 &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- SECTION VFD -->
 
-<section class="vfd">
+<!-- <section class="vfd">
 
   <div class="vfd__glass">
     <div class="vfd__glass--text-box">
@@ -164,7 +180,7 @@
   </div>
 
 
-</section>
+</section> -->
 
  <!--Section __ LRC-->
  <section class="section__lrc">

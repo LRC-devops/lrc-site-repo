@@ -6008,6 +6008,11 @@ html {
   font-size: 15rem;
 }
 
+.missNav__tile--top img {
+  height: 17rem;
+  width: auto;
+}
+
 .missNav__tile--bottom {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -531,6 +531,11 @@
   transition: all 0.2s;
 
   flex-shrink: 100%;
+
+  span {
+    font-weight: bold;
+    color: $color-secondary;
+  }
   figcaption {
     @include absCenter;
     padding: 1.5rem 2rem;
@@ -796,7 +801,7 @@
   background-image: linear-gradient(rgba($color-secondary, 0.5)),
     url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
 }
-#maya-bubble {
+#mayas-bubble {
   height: 27rem;
   width: 27rem;
   border-radius: 50%;

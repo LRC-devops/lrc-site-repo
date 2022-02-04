@@ -781,6 +781,18 @@
   background-image: linear-gradient(rgba($color-secondary, 0.5)),
     url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/fatima_abulobaida.jpg?sfvrsn=d6baaeba_2);
 }
+
+#angelo-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  align-self: flex-start;
+  background-image: linear-gradient(rgba($color-primary, 0.5)),
+    url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/angelo-gallegos.jpg?sfvrsn=603eb4ba_2);
+}
+
 #karl-bubble {
   height: 27rem;
   width: 27rem;

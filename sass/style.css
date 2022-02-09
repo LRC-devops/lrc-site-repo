@@ -6864,6 +6864,13 @@ html {
   }*/
 }
 
+.si__popup--link:visited,
+.si__popup--link:link {
+  text-decoration: none;
+  color: #565a5c;
+  border-bottom: 1px solid #565a5c;
+}
+
 .section__ip--overview {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-iprep-1-min.jpg?sfvrsn=93fdc1ba_2);
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-iprep-1-min.jpg?sfvrsn=93fdc1ba_2);

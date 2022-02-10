@@ -9988,6 +9988,10 @@ html {
   text-decoration: underline;
 }
 
+.a-sync__container:nth-child(odd) {
+  background-color: #fff;
+}
+
 .a-sync__description {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;

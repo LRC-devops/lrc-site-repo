@@ -170,6 +170,25 @@ This is the note attached to all duplicate sessions:
   ----------------------------------------------------------------------
  The note features a directory of all version of the session above it. The directory is read from left to right, denotes the popup, course divider, and the name of the course.-->
 
+ <!-- UNDERSTANDING INDIVIDUAL SESSION FORMATS
+  whenever you see a string (text that is visible on the website) inside of this bracketing system ${insert string here}, use that string and replace the entire variable (${}, and the filler text) with the requested information. 
+    ex: "Hosted by: ${insert AG's name here}" -> "Hosted by: Caleb Theil"
+ 
+This is how sessions in the AG Schedule are formatted for SP22:
+    <tr class="zoom-session" title="${Course Name}">
+      <td>Hosted by: ${Academic Guide's Name}</td>
+      <td>${Insert Day of Week and Time (time format: 00:00a/p)}</td>
+      <td><a href="${Academic Guide's Zoom Link}" title="${Academic Guide's Name}" class="popup__table--courses--link">** Online - Zoom Session</a></td>
+    </tr>
+
+    ------------------------------------
+    BREAKING DOWN THE FORMATTING CHOICES
+    ------------------------------------
+    <tr class="zoom-session" title="${course name}"> tr means table row, the class is used to style the row as a zoom session, in-person session, or a cancelled session. the title attribute allows the student to hover the row and see the course that the session is associated with. This reduces the redundancy of the course divider above and the session. 
+      <td>Hosted by: ${academic guide's name}</td> the 1st td = the first cell of this rwo of the table. The academic guide's name is listed here.
+      <td>${Insert Day of Week and Time (time format: 00:00a/p)}</td> the 2nd <td
+  -->
+
 
 <!-- vvv BEGIN TO COPY CODE HERE vvv -->
 
@@ -929,8 +948,8 @@ This is the note attached to all duplicate sessions:
                     <td><a href="https://ucdenver.zoom.us/j/99238179049?pwd=aWZ0b09vQS9vOGVGV29QbjhaWlhFZz09" title= "Ravisher Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr> -->
 
-                  <tr class="zoom-session" title="Object Oriented Programming">
-                    <td>Hosted by: Manharsh</td>
+                  <tr class="cancel-session" title="Object Oriented Programming">
+                    <td>&times; CANCELED 02/11<br> Hosted by: Manharsh</td>
                     <td>Friday 12 - 1:30 pm </td>
                     <td><a href="https://ucdenver.zoom.us/j/92310857800?pwd=VGsxQ3Mrd3QwdGRSQnJORlk5SldUQT09" title= "Manharsh Zoom Link" class="popup__table--courses--link">** Online - Zoom Session</a></td>
                   </tr>

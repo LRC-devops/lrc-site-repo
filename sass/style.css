@@ -9988,8 +9988,8 @@ html {
   text-decoration: underline;
 }
 
-.a-sync__container:nth-child(odd) {
-  background-color: #fff;
+#a-sync__container--odd {
+  background-color: #fff !important;
 }
 
 .a-sync__description {

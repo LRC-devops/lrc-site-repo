@@ -4008,6 +4008,12 @@ html {
   margin-bottom: 1rem;
 }
 
+@-moz-document url-prefix() {
+  .popup__content {
+    background-color: #fff;
+  }
+}
+
 .popup {
   height: 100vh;
   width: 100%;

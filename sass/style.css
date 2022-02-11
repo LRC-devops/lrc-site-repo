@@ -4050,8 +4050,8 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, -50%), scale(0.25);
           transform: translate(-50%, -50%), scale(0.25);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.8)));
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(white));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), white);
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);

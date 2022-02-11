@@ -62,6 +62,10 @@
   a {
     text-decoration: underline;
   }
+
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
 }
 .a-sync__description {
   flex-basis: 100%;

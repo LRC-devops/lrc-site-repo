@@ -8,3 +8,9 @@
     transform: skewY(6deg);
   }*/
 }
+.si__popup--link:visited,
+.si__popup--link:link {
+  text-decoration: none;
+  color:$color-grey-dark;
+  border-bottom: 1px solid $color-grey-dark;
+}

@@ -4056,8 +4056,8 @@ html {
   left: 50%;
   -webkit-transform: translate(-50%, -50%), scale(0.25);
           transform: translate(-50%, -50%), scale(0.25);
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.8)));
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(white));
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), white);
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -6870,6 +6870,13 @@ html {
   }*/
 }
 
+.si__popup--link:visited,
+.si__popup--link:link {
+  text-decoration: none;
+  color: #565a5c;
+  border-bottom: 1px solid #565a5c;
+}
+
 .section__ip--overview {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-iprep-1-min.jpg?sfvrsn=93fdc1ba_2);
   background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-iprep-img-resp/hero-iprep-1-min.jpg?sfvrsn=93fdc1ba_2);
@@ -9433,6 +9440,11 @@ html {
       flex-shrink: 100%;
 }
 
+.au22-bubbles__bubble span {
+  font-weight: bold;
+  color: #cfb87c;
+}
+
 .au22-bubbles__bubble figcaption {
   position: absolute;
   top: 50%;
@@ -9688,6 +9700,18 @@ html {
   background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/fatima_abulobaida.jpg?sfvrsn=d6baaeba_2);
 }
 
+#angelo-bubble {
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(145, 207, 150, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/angelo-gallegos.jpg?sfvrsn=603eb4ba_2);
+  background-image: linear-gradient(rgba(145, 207, 150, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/angelo-gallegos.jpg?sfvrsn=603eb4ba_2);
+}
+
 #karl-bubble {
   height: 27rem;
   width: 27rem;
@@ -9712,7 +9736,7 @@ html {
   background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/katie_hall.png?sfvrsn=eabaaeba_2);
 }
 
-#maya-bubble {
+#mayas-bubble {
   height: 27rem;
   width: 27rem;
   border-radius: 50%;
@@ -9968,6 +9992,10 @@ html {
 
 .a-sync__container a {
   text-decoration: underline;
+}
+
+#a-sync__container--odd {
+  background-color: #fff !important;
 }
 
 .a-sync__description {

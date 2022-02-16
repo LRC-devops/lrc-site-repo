@@ -3177,19 +3177,27 @@ html {
 }
 
 .feature-box {
-  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.6)));
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.6));
+  border: 1px solid RGBA(#fff, 0.9);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(86, 90, 92, 0.15);
           box-shadow: 0 1.5rem 4rem rgba(86, 90, 92, 0.15);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .feature-box__text {
-  color: #565a5c;
+  color: #232323;
+}
+
+.feature-box h3 {
+  color: #232323;
 }
 
 .feature-box:hover {
@@ -3219,7 +3227,7 @@ html {
 
 .feature-box__icon {
   font-size: 6rem;
-  color: #565a5c;
+  color: #232323;
 }
 
 .section__ip--overview--hero-box {
@@ -6471,8 +6479,8 @@ html {
 }
 
 .section__about-us {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-index-section-about-min.jpg?sfvrsn=48e5c1ba_2);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/hero/hero-index-resp/hero-index-section-about-min.jpg?sfvrsn=48e5c1ba_2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index_aboutus_citymountianscape_coolcolors.png?sfvrsn=e0efb6ba_2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index_aboutus_citymountianscape_coolcolors.png?sfvrsn=e0efb6ba_2);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

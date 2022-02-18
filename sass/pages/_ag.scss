@@ -71,7 +71,40 @@
   display: flex;
   justify-content: space-between;
   //height: 100%;
-  @include respond(tab-land) {
+  @include respond(tablet-landscape) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 75em) {
+  .qs-tile-box {
+    flex-direction: column;
+  }
+  .qs-tile {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .qs-tile__tile {
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+  }
+  .qs-tile__tile--big {
+    width: 100%;
+  }
+  .qs-tile__dropin {
+    background-image: linear-gradient(to right, $color-primary, $color-teal);
+  }
+  .qs-tile__time {
+    background-image: linear-gradient(to right, $color-teal-dark, $color-teal);
+  }
+  .qs-tile__checkin {
+    background-image: linear-gradient(to right, $color-pink, $color-secondary);
+  }
+  .qs-tile__format {
+    background-image: linear-gradient(to right, $color-purp-dark, $color-purp);
+  }
+  .btn-box {
     flex-direction: column;
   }
 }
@@ -98,10 +131,10 @@
   &:not(:last-child) {
     margin-right: 4rem;
 
-    @include respond(tab-land) {
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
+    // @include respond(tab-land) {
+    //   margin-right: 0;
+    //   margin-bottom: 2rem;
+    // }
   }
 
   h3 {
@@ -120,17 +153,17 @@
     text-align: center;
     transition: all 1s;
 
-    @include respond(tab-land) {
-      background-color: transparent;
-      width: 100%;
-      text-align: left;
-    }
+    // @include respond(tab-land) {
+    //   background-color: transparent;
+    //   width: 100%;
+    //   text-align: left;
+    // }
 
     &--big {
       width: 60%;
-      @include respond(tab-land) {
-        width: 100%;
-      }
+      // @include respond(tab-land) {
+      //   width: 100%;
+      // }
     }
   }
   &:hover &__icon {

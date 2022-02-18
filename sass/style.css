@@ -4193,6 +4193,14 @@ html {
   transition: all 0.4s;
 }
 
+@media (max-height: 30.5em) {
+  .popup__close:link, .popup__close:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
 .popup__close:hover {
   color: #91cf96;
   -webkit-transform: rotate(360deg);
@@ -4210,6 +4218,14 @@ html {
   display: inline-block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media (max-height: 30.5em) {
+  .popup__back:link, .popup__back:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .popup__back:hover {
@@ -4381,6 +4397,14 @@ html {
   transition: all 0.4s;
 }
 
+@media (max-height: 30.5em) {
+  .popupBtn__close:link, .popupBtn__close:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
 .popupBtn__close:hover {
   color: #91cf96;
   -webkit-transform: rotate(360deg);
@@ -4398,6 +4422,14 @@ html {
   display: inline-block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media (max-height: 30.5em) {
+  .popupBtn__back:link, .popupBtn__back:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .popupBtn__back:hover {
@@ -4669,6 +4701,14 @@ html {
   transition: all 0.4s;
 }
 
+@media (max-height: 30.5em) {
+  .popup__reboot__close:link, .popup__reboot__close:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
 .popup__reboot__close:hover {
   color: #91cf96;
   -webkit-transform: rotate(360deg);
@@ -4686,6 +4726,14 @@ html {
   display: inline-block;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+}
+
+@media (max-height: 30.5em) {
+  .popup__reboot__back:link, .popup__reboot__back:visited {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 .popup__reboot__back:hover {
@@ -6241,6 +6289,15 @@ html {
           justify-content: space-between;
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .qs-tile {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -6274,6 +6331,13 @@ html {
   margin-right: 4rem;
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .qs-tile h3 {
   font-size: 2.5rem;
   font-weight: 100;
@@ -6293,8 +6357,22 @@ html {
   transition: all 1s;
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile__title {
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 .qs-tile__title--big {
   width: 60%;
+}
+
+@media (max-width: 56.25em) {
+  .qs-tile__title--big {
+    width: 100%;
+  }
 }
 
 .qs-tile:hover .qs-tile__icon {
@@ -6302,11 +6380,27 @@ html {
           transform: scale(1.1);
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile:hover .qs-tile__icon {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
 .qs-tile:hover .qs-tile__title {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 56.25em) {
+  .qs-tile:hover .qs-tile__title {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 .qs-tile__dropin {
@@ -6320,10 +6414,24 @@ html {
       flex-shrink: 1;
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile__dropin {
+    background-image: -webkit-gradient(linear, left top, right top, from(#91cf96), to(#86c0cf));
+    background-image: linear-gradient(to right, #91cf96, #86c0cf);
+  }
+}
+
 .qs-tile__time {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), color-stop(80%, rgba(10, 10, 10, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v3-qs-artwork-2.png?sfvrsn=98eac9ba_2);
   background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(10, 10, 10, 0.5) 80%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v3-qs-artwork-2.png?sfvrsn=98eac9ba_2);
   background-size: cover;
+}
+
+@media (max-width: 56.25em) {
+  .qs-tile__time {
+    background-image: -webkit-gradient(linear, left top, right top, from(#5b7a82), to(#86c0cf));
+    background-image: linear-gradient(to right, #5b7a82, #86c0cf);
+  }
 }
 
 .qs-tile__time p {
@@ -6337,11 +6445,25 @@ html {
   padding: 2rem 3rem;
 }
 
+@media (max-width: 56.25em) {
+  .qs-tile__checkin {
+    background-image: -webkit-gradient(linear, left top, right top, from(#cf7291), to(#cfb87c));
+    background-image: linear-gradient(to right, #cf7291, #cfb87c);
+  }
+}
+
 .qs-tile__format {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, rgba(10, 10, 10, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v3-qs-artworl-4.png?sfvrsn=97eac9ba_2);
   background-image: linear-gradient(to bottom, transparent 0%, rgba(10, 10, 10, 0.5) 80%), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/qs-tile-media/v3-qs-artworl-4.png?sfvrsn=97eac9ba_2);
   background-size: cover;
   background-position: bottom;
+}
+
+@media (max-width: 56.25em) {
+  .qs-tile__format {
+    background-image: -webkit-gradient(linear, left top, right top, from(#534182), to(#8b72cf));
+    background-image: linear-gradient(to right, #534182, #8b72cf);
+  }
 }
 
 .qs-tile__format p {
@@ -6426,6 +6548,15 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 56.25em) {
+  .btn-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .btn-box-qs {

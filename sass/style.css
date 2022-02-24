@@ -8147,10 +8147,21 @@ html {
 }
 
 .background-anima__fd-tv {
-  position: relative;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
 }
 
-.background-anima__fd-tv div {
+.background-anima__fd-tv--overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.background-anima__fd-tv--bubble {
   border-radius: 50%;
   aspect-ratio: 1;
   position: absolute;
@@ -8158,7 +8169,7 @@ html {
   overflow: hidden;
 }
 
-.background-anima__fd-tv div:nth-child(1) {
+.background-anima__fd-tv--bubble:nth-child(1) {
   height: 90rem;
   background-color: #cf7291;
   top: 1rem;
@@ -8167,7 +8178,7 @@ html {
           animation: aniBubbles 35s infinite;
 }
 
-.background-anima__fd-tv div:nth-child(2) {
+.background-anima__fd-tv--bubble:nth-child(2) {
   height: 145rem;
   background-color: #cfb87c;
   top: 50rem;
@@ -8177,7 +8188,7 @@ html {
   animation-direction: reverse;
 }
 
-.background-anima__fd-tv div:nth-child(3) {
+.background-anima__fd-tv--bubble:nth-child(3) {
   height: 90rem;
   background-color: #91cf96;
   bottom: 1rem;
@@ -8188,7 +8199,7 @@ html {
           animation: aniBubbles 40s infinite;
 }
 
-.background-anima__fd-tv div:nth-child(4) {
+.background-anima__fd-tv--bubble:nth-child(4) {
   height: 55rem;
   background-color: #8b72cf;
   bottom: -100rem;
@@ -8198,7 +8209,7 @@ html {
           animation: aniBubbles 25s infinite;
 }
 
-.background-anima__fd-tv div:nth-child(5) {
+.background-anima__fd-tv--bubble:nth-child(5) {
   height: 145rem;
   background-color: #91cfb9;
   bottom: 1rem;
@@ -8226,6 +8237,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .tv-container {
@@ -8280,8 +8292,11 @@ html {
   left: 2rem;
 }
 
-.tv-content__header h3 {
-  color: #91cf96 !important;
+#pt--paragraph {
+  -webkit-column-count: 2;
+          column-count: 2;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .tv-container .tv-card .tv-content h2 {
@@ -8315,6 +8330,28 @@ html {
   z-index: 100;
 }
 
+.tv-card__stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tv-card__stack--card {
+  width: 30vw;
+  height: 100% !important;
+}
+
 .tv-card__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8327,9 +8364,48 @@ html {
   text-align: left;
 }
 
+.tv-card__info--box span {
+  font-weight: bold;
+}
+
 .tv-card__info--box:not(:last-child) {
   margin-right: 5rem;
   padding-right: 1rem;
+}
+
+.tv-card__info--box--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.tv-card__info--box--flex div {
+  padding: 1rem;
+}
+
+.tv-card__info--box--flex div:not(:last-child) {
+  border-right: 1px solid rgba(207, 184, 124, 0.5);
+}
+
+.tv-card__info--box--flex div h3 {
+  font-size: 1.7rem !important;
+  color: #cfb87c !important;
+  border-bottom: 1px solid rgba(207, 184, 124, 0.5);
+  font-weight: bold;
+}
+
+.tv-card__info--box--flex div ul {
+  list-style: none;
+  color: #fff;
+  font-size: 1.7rem;
 }
 
 .tv-card__img--large img {

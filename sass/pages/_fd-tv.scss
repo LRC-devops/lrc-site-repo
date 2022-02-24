@@ -5,9 +5,10 @@
 
   &--overlay {
     height: 100vh;
+
     width: 100vw;
     background-color: rgba(#000, 0.3);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
   }
@@ -77,6 +78,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .tv-container {
@@ -86,13 +88,15 @@
   align-items: center;
   flex-wrap: wrap;
   z-index: 1;
+  zoom: 1.5;
 }
 
 .tv-container .tv-card {
   position: relative;
-  width: 30vw;
+  // width: 30vw;
+  padding: 10rem 15rem;
   // width: 80vw;
-  height: 70vh;
+  // height: 70vh;
   margin: 3rem;
   box-shadow: 2rem 2rem 5rem rgba($color-black, 0.5);
   border-radius: 15px;
@@ -163,7 +167,7 @@
   justify-content: center;
 
   &--card {
-    width: 30vw;
+    // width: 30vw;
     height: 100% !important;
   }
 }
@@ -171,6 +175,7 @@
 .tv-card__info {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 
   &--box {
     text-align: left;

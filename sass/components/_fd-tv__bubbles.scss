@@ -1,0 +1,157 @@
+.pink-bubble,
+.gold-bubble,
+.green-bubble,
+.purp-bubble,
+.lGreen-bubble {
+  position: relative;
+}
+.pink-bubble {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.5),
+    rgba($color-pink, 0.5)
+  );
+}
+.gold-bubble {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.5),
+    rgba($color-secondary, 0.5)
+  );
+}
+.green-bubble {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.5),
+    rgba($color-primary, 0.5)
+  );
+}
+.purp-bubble {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.5),
+    rgba($color-purp, 0.5)
+  );
+}
+.lGreen-bubble {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.5),
+    rgba($color-primary-light, 0.5)
+  );
+}
+.gold-bubble::after,
+.pink-bubble::after,
+.green-bubble::after,
+.purp-bubble::after,
+.lGreen-bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 99%;
+  width: 99%;
+  border-radius: 50%;
+  // background-image: radial-gradient(lighten($color-fd-bkg, 10%), transparent);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 70%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.x1 {
+  animation: animateBubble 25s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+
+  left: 5%;
+  top: 5%;
+
+  transform: scale(0.6);
+}
+
+.x2 {
+  animation: animateBubble 20s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+
+  left: -10%;
+  top: 80%;
+
+  transform: scale(0.4);
+}
+
+.x3 {
+  animation: animateBubble 28s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+
+  left: 40%;
+  top: 40%;
+
+  transform: scale(0.7);
+}
+
+.x4 {
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+
+  left: 80%;
+  top: 0;
+
+  transform: scale(0.3);
+}
+
+.x5 {
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+
+  left: 90%;
+  top: 50%;
+
+  transform: scale(0.5);
+}
+
+.x6 {
+  animation: animateBubble 21s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+
+  left: 50%;
+  top: 0;
+
+  transform: scale(0.8);
+}
+
+.x7 {
+  animation: animateBubble 20s linear infinite,
+    sideWays 2s ease-in-out infinite alternate;
+
+  left: 65%;
+  top: 70%;
+
+  transform: scale(0.4);
+}
+
+.x8 {
+  animation: animateBubble 22s linear infinite,
+    sideWays 3s ease-in-out infinite alternate;
+
+  left: 80%;
+  top: 10%;
+
+  transform: scale(0.3);
+}
+
+.x9 {
+  animation: animateBubble 29s linear infinite,
+    sideWays 4s ease-in-out infinite alternate;
+
+  left: 90%;
+  top: 50%;
+
+  transform: scale(0.6);
+}

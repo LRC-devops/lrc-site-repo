@@ -19,59 +19,15 @@
     position: absolute;
     z-index: 0;
     overflow: hidden;
-    &:nth-child(1) {
-      height: 90rem;
-      background-color: $color-pink;
-      top: 1rem;
-      left: 7rem;
-
-      animation: aniBubbles 35s infinite;
-    }
-    &:nth-child(2) {
-      height: 145rem;
-      background-color: $color-secondary;
-      top: 50rem;
-      left: -100rem;
-
-      animation: aniBubbles 30s infinite;
-      animation-direction: reverse;
-    }
-    &:nth-child(3) {
-      height: 90rem;
-      background-color: $color-primary;
-
-      bottom: 1rem;
-      right: 2rem;
-
-      animation-direction: alternate;
-      animation: aniBubbles 40s infinite;
-    }
-    &:nth-child(4) {
-      height: 55rem;
-      background-color: $color-purp;
-
-      bottom: -100rem;
-      right: 2rem;
-
-      animation-direction: reverse;
-      animation: aniBubbles 25s infinite;
-    }
-    &:nth-child(5) {
-      height: 145rem;
-      background-color: $color-primary-light;
-
-      bottom: 1rem;
-      left: -250rem;
-
-      animation-direction: alternate-reverse;
-      animation: aniBubbles 50s infinite;
-    }
+    height: 200rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9),
+      inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
   }
 }
 
 .fd-tv__section {
-  background-color: $color-teal;
-  background-image: linear-gradient(rgba(#000, 0.5));
+  background-color: $color-fd-bkg;
+  // background-image: linear-gradient(rgba(#000, 0.5));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,6 +40,7 @@
 .tv-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -93,14 +50,15 @@
 
 .tv-container .tv-card {
   position: relative;
-  // width: 30vw;
   padding: 10rem 15rem;
-  // width: 80vw;
-  // height: 70vh;
   margin: 3rem;
   box-shadow: 2rem 2rem 5rem rgba($color-black, 0.5);
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(#fff, 0.1),
+    rgba(#fff, 0.5)
+  );
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -161,7 +119,7 @@
 
 .tv-card__stack {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -175,7 +133,7 @@
 .tv-card__info {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  // flex-direction: column;
 
   &--box {
     text-align: left;

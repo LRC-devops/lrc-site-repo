@@ -330,7 +330,6 @@
   }
 }
 
-
 //Background circle animation
 
 @keyframes aniCircleBlur1 {
@@ -441,5 +440,25 @@
   }
   100% {
     transform: translate(10%, 30%);
+  }
+}
+
+/* KEYFRAMES */
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
   }
 }

@@ -4492,7 +4492,7 @@ html {
 }
 
 .cancel-session {
-  background-color: rgba(255, 69, 0, 0.8) !important;
+  background-color: rgba(255, 0, 0, 0.5) !important;
   color: #000 !important;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4507,7 +4507,7 @@ html {
 }
 
 .cancel-session:hover {
-  background-color: orangered !important;
+  background-color: rgba(255, 0, 0, 0.8) !important;
 }
 
 .week th {

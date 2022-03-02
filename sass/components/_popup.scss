@@ -732,6 +732,7 @@
       border-bottom: 2px solid $color-white !important;
       background-color: $color-secondary;
       white-space: nowrap;
+      column-span: all;
     }
 
     tr {

@@ -4786,6 +4786,7 @@ html {
   border-radius: 5px;
   overflow: hidden;
   padding: 0.2rem 0.5rem;
+  table-layout: fixed;
 }
 
 .popup__reboot__table--courses th {
@@ -4793,7 +4794,7 @@ html {
   font-size: 2rem;
   border-bottom: 2px solid #fff !important;
   background-color: #cfb87c;
-  white-space: nowrap;
+  border-collapse: collapse;
 }
 
 .popup__reboot__table--courses td {
@@ -4814,6 +4815,7 @@ html {
 
 .popup__reboot table {
   width: 100%;
+  table-layout: fixed;
 }
 
 .section__how-to {

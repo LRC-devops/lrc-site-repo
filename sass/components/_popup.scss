@@ -421,7 +421,7 @@
 }
 
 .cancel-session {
-  background-color: rgba(orangered, 0.8) !important;
+  background-color: rgba(red, 0.5) !important;
   color: #000 !important;
   // position: relative;
 
@@ -438,7 +438,7 @@
 
   transition: all 0.2s;
   &:hover {
-    background-color: orangered !important;
+    background-color: rgba(red, 0.8) !important;
   }
   // &:hover > .cancel-hov {
   //   display: block;
@@ -720,6 +720,7 @@
     border-radius: 5px;
     overflow: hidden;
     padding: 0.2rem 0.5rem;
+    table-layout: fixed;
     // thead,
     // tr {
     //   background-color: rgba($color-secondary, 0.7);
@@ -731,7 +732,8 @@
       // box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
       border-bottom: 2px solid $color-white !important;
       background-color: $color-secondary;
-      white-space: nowrap;
+      // white-space: nowrap;
+      border-collapse: collapse;
     }
 
     tr {
@@ -758,5 +760,6 @@
 
   table {
     width: 100%;
+    table-layout: fixed;
   }
 }

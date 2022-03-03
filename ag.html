@@ -1,1317 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="sass/style.css" />
   </head>
 
-
-    <body>
-
-<!--
+  <body>
+    <!--
   NAVIGATION
 -->
 
-  <!--Main Navigation-->
+    <!--Main Navigation-->
 
-  <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-    <label for="navi-toggle" class="navigation__button">
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon">&nbsp;</span>
-    </label>
-  
-  
-    <div class="navigation__background">&nbsp;</div>
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center" class="navigation__link">Home</a></li>
-        <div class="dropdown">
-         <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer" class="navigation__link dropdown__link">Peer to Peer<!--<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon>--></a></li>
-         <!--
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center"
+              class="navigation__link"
+              >Home</a
+            >
+          </li>
+          <div class="dropdown">
+            <li class="navigation__item">
+              <a
+                href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer"
+                class="navigation__link dropdown__link"
+                >Peer to Peer<!--<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon>--></a
+              >
+            </li>
+            <!--
           <div class="dropdown__content">
             <li class="navigation__item"><a href="#" class="navigation__link dropdown__link--sub">ELL</a></li>
           </div>
-          -->
-        </div>
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction" class="navigation__link">Supplemental Instruction</a></li>
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="navigation__link">iPrep</a></li>
-        <div class="dropdown">
-          <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources" class="navigation__link dropdown__link">Workshops
-            <!--<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon>--></a></li>
-          <div class="dropdown__content">
-            <!--
+          --></div>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction"
+              class="navigation__link"
+              >Supplemental Instruction</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/intense-preparation"
+              class="navigation__link"
+              >iPrep</a
+            >
+          </li>
+          <div class="dropdown">
+            <li class="navigation__item">
+              <a
+                href="https://www.ucdenver.edu/learning-resources-center/resources"
+                class="navigation__link dropdown__link"
+                >Workshops
+                <!--<ion-icon name="caret-forward-outline" class="dropdown__icon"></ion-icon>--></a
+              >
+            </li>
+            <div class="dropdown__content">
+              <!--
             <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs" class="navigation__link dropdown__link--sub">Academic Support</a></li>
-            -->
+            --></div>
           </div>
-        </div>
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources" class="navigation__link">Faculty/Staff Resources</a></li>
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team" class="navigation__link">Join Our Team</a></li>
-        <li class="navigation__item"><a href="https://www.ucdenver.edu/learning-resources-center/about" class="navigation__link">About Us</a></li>
-      </ul>
-    </nav>
-  </div>
-
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources"
+              class="navigation__link"
+              >Faculty/Staff Resources</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/join-our-team"
+              class="navigation__link"
+              >Join Our Team</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="https://www.ucdenver.edu/learning-resources-center/about"
+              class="navigation__link"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
-
-
-              <!--Intro-->
-        <header class="section__intro--sub section__intro--sub--ag" id="section-head">
-          <!--<div class="section__intro--logo-box row">
+      <!--Intro-->
+      <header
+        class="section__intro--sub section__intro--sub--ag"
+        id="section-head"
+      >
+        <!--<div class="section__intro--logo-box row">
             <img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-demosite-library/lrc-logo-horz-gold-white@2x.png?sfvrsn=e949f8ba_2" alt="LRC logo" class="section__intro--logo">
           </div>-->
-          <div class="row">
-            <div class="intro__heading">
-              <h1 class="main__heading u-margin-bottom-big"><span class="main__heading--gold">Learning Resources Center</span> Peer to Peer Tutoring <span class="main__heading--sub">Maximize Your Understanding of Concepts</span></h1>
-              <div class="section__intro--btns">
-                <a href="#qs-instruct" class="btn btn-full u-marRight-btn">Guided Study Groups</a>
-                <a href="https://ucdenver.campus.eab.com/capabilities#/my/appointment-new" class="btn btn-full u-marRight-btn">Sign-Up</a>
-
-                
-              </div>
+        <div class="row">
+          <div class="intro__heading">
+            <h1 class="main__heading u-margin-bottom-big">
+              <span class="main__heading--gold">Learning Resources Center</span>
+              Peer to Peer Tutoring
+              <span class="main__heading--sub"
+                >Maximize Your Understanding of Concepts</span
+              >
+            </h1>
+            <div class="section__intro--btns">
+              <a href="#qs-instruct" class="btn btn-full u-marRight-btn"
+                >Guided Study Groups</a
+              >
+              <a
+                href="https://ucdenver.campus.eab.com/capabilities#/my/appointment-new"
+                class="btn btn-full u-marRight-btn"
+                >Sign-Up</a
+              >
             </div>
           </div>
-        </header>
+        </div>
+      </header>
 
-        <!--CARDS-->
-        <section class="section__services--ag" id="section__services-ag">
-
-          <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary-cards">
-              Find the service for you
-            </h2>
-          </div>
-  
-          <div class="row">
-
-            <!--Card 1 Guided Study Groups-->
-            <!--Card 1 FRONT-->
-  
-            <div class="col-1-of-3">
-              <div class="card">
-                <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--ag-1">
-                    &nbsp;
-                  </div>
-  
-                  <h3 class="card__heading">
-                    <span class="card__heading-span card__heading-span--1">
-                    Guided Study Groups 
-                    </span>
-                  </h3>
-  
-                  <div class="card__details">
-                    <ul>
-                      <li>Weekly Sessions</li>
-                      <li>Connect With Classmates</li>
-                      <li>Practice Problems</li>
-                      <li>Better Prepared for Class</li>
-  
-                    </ul>
-                  </div>
-
-                  <!--Card 1 BACK-->
-                </div>
-  
-                <div class="card__side card__side--back card__side--back-1">
-                  <div class="card__cta">
-                    <div class="card__signup">
-  
-                      <p class="card__signup-service u-margin-bottom-small card__signup-service--back-heading">Sign up Now</p>
-                      <p class="card__signup-service u-margin-bottom-small">Limited Spots!</p>
-  
-  
-                    </div>
-                    <a href="#popup-gsg" class="btn btn-full--white-1 u-margin-bottom-small">More Info</a>
-                    <a href="#section-courses" class="btn btn-full--white-1">Supported Courses</a>
-                    <!--
-
-                    -->
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <!--Card 2 Question Sessions-->
-            <div class="col-1-of-3">
-              <div class="card">
-                <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--ag-2">
-                    &nbsp;
-                  </div>
-  
-                  <h3 class="card__heading">
-                    <span class="card__heading-span card__heading-span--2">
-                    Question Sessions 
-                    </span>
-                  </h3>
-  
-                  <div class="card__details">
-                    <ul>
-                      <li>Drop-In Sessions</li>
-                      <li>1 to 2 hour sessions</li>
-                      <li>Ask questions as you go</li>
-                      <li>Work Independently</li>
-                    </ul>
-                  </div>
-  
-                  <!--Card 2 BACK-->
-  
-                </div>
-  
-                <div class="card__side card__side--back card__side--back-2">
-                  <div class="card__cta">
-                    <div class="card__signup">
-  
-                      <p class="card__signup-service card__signup-service--back-heading">Drop In</p>
-                      <p class="card__signup-service u-margin-bottom-small">No sign up Necessary</p>
-
-                    </div>
-                    <a href="#popup-qs" class="btn btn-full--white-2">Learn More</a>
-                    <a href="#section-courses" class="btn btn-full--white-2">Schedule</a>
-
-                    <!--
-
-                    -->
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <!--Card 3 Boost-->
-            <div class="col-1-of-3">
-              <div class="card">
-                <div class="card__side card__side--front">
-                  <div class="card__picture card__picture--ag-3">
-                    &nbsp;
-                  </div>
-  
-                  <h3 class="card__heading">
-                    <span class="card__heading-span card__heading-span--3">
-                    BOOST pilot program 
-                    </span>
-                  </h3>
-  
-                  <div class="card__details">
-                    <ul>
-                      <li>Boost with difficult concepts</li>
-                      <li>Monthly Sessions</li>
-                      <li>Covers a specific concept or difficult topic</li>
-                    </ul>
-                  </div>
-  
-                  <!--Card 3 BACK-->
-  
-                </div>
-  
-                <div class="card__side card__side--back card__side--back-3">
-                  <div class="card__cta">
-                    <div class="card__signup">
-  
-
-                      <p class="card__signup-service u-margin-bottom-small">Review Sessions at set time</p>
-                      <p class="card__signup-service u-margin-bottom-small">No sign up Necessary</p>
-  
-  
-                    </div>
-                    <a href="#popup-boost" class="btn btn-full--white-3">Still Curious? &rarr;</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-          </div>
-
-        </section>
-<!--
-  CARD SUBSTITUTE BUILD
--->
-
-        <section class="qs-overview" id="qs-overview">
-          <div class="u-center-text u-margin-bottom-medium">
-            <h2 class="heading-secondary">
-              Question Sessions
-            </h2>
-            <h3 class="heading-tertiary">No Sign-up Necessary!<br>&darr; Scroll Down to find your subject &darr;</h3>
-          
-          </div>
-          <div class="qs-tile-box u-margin-bottom-big">
-            <div class="qs-tile qs-tile__dropin">
-              <div class="qs-tile__title">
-                <h3 class="heading-tertiary--white">Drop-In</h3>
-              </div>
-                <div class="qs-tile__icon-box">
-                  <ion-icon name="log-in-outline" class="qs-tile__icon"></ion-icon>
-                </div>
-                <p class="paragraph">at anytime during the session</p>
-            </div>
-            <div class="qs-tile qs-tile__time">
-              <div class="qs-tile__title">
-                <h3 class="heading-tertiary--white">1-2 hour</h3>
-              </div>
-              <div class="qs-tile__icon-box">
-                <ion-icon name="checkmark-outline" class="qs-tile__icon"></ion-icon>
-              </div>
-              <p class="paragraph">open sessions for your convenience</p>
-            </div>
-            <div class="qs-tile qs-tile__checkin">
-              <div class="qs-tile__title">
-                <h3 class="heading-tertiary--white">Check-in</h3>
-              </div>
-              <div class="qs-tile__icon-box">
-                <ion-icon name="watch-outline" class="qs-tile__icon"></ion-icon>
-              </div>
-              <p class="paragraph">at the Learning Hub front desk, <em>or register when signing onto Zoom for an Online Appointment.</em></p>
-            </div>
-            <div class="qs-tile qs-tile__format">
-              <div class="qs-tile__title qs-tile__title--big">
-                <h3 class="heading-tertiary--white">Online <br>or In-Person</h3>
-              </div>
-              <div class="qs-tile__icon-box" id="qs-instruct">
-                <ion-icon name="desktop-outline" class="qs-tile__icon"></ion-icon>
-              </div>
-              <p class="paragraph">session formats are available</p>
-            </div>
-          </div>
-
-          <div class="qs-instruct u-margin-bottom-medium">
-            <div class="qs-instruct__box">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                1. Click on your subject 
-              </h3>
-                
-            </div>
-            <div class="qs-instruct__box">
-              <ion-icon name="arrow-down-outline" class="qs-instruct__box--icon"></ion-icon>
-            </div>
-            <div class="qs-instruct__box">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                2. Search for your course 
-              </h3>
-              
-            </div>
-            <div class="qs-instruct__box">
-              <ion-icon name="arrow-forward-outline" class="qs-instruct__box--icon"></ion-icon>
-            </div>
-            <div class="qs-instruct__box">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                3. Find a session! 
-              </h3>
-              
-            </div>
-          </div>
-          <div class="btn-box u-margin-bottom-medium">
-            <a href="#popup-courses__bioChemPhys--btns" class="btn-span__qs btn-span__qs-1">Bio, Chem, and Physics</a>
-            <a href="#popup-courses__pmus" class="btn-span__qs btn-span__qs-2">Music</a>
-            <a href="#popup-courses__eac" class="btn-span__qs btn-span__qs-3">Engineering and Computing</a>
-            <a href="#popup-courses__pbhl" class="btn-span__qs btn-span__qs-4">Public Health</a>
-            <a href="#popup-courses__modLang" class="btn-span__qs btn-span__qs-5">Modern Languages</a>
-            <a href="#popup-courses__philo" class="btn-span__qs btn-span__qs-1">Philosophy</a>
-            <a href="#popup-courses__other" class="btn-span__qs btn-span__qs-2">Other Courses</a>
-          </div>
-
-          <div class="footnote u-center-text">
-            <h3 class="heading-quaternary">* Academic Guides are Unavailable from 2-4pm on <span class="QS-conflicts">Friday 10/15</span> and <span class="QS-conflicts">Friday 11/05</span> due to training *</h3>
-          </div> 
-          </div>
-
-        </section>
-
-<!--
-  CARD SUBSTITUTE BUILD
--->
- 
-
-<!--Section Overview-->
+      <!--Section Overview-->
       <section class="section__overview--ag">
         <div class="row">
-
           <div class="section__overview--hero-box">
-            <h3 class="heading-tertiary__gold u-center-text u-margin-bottom-medium">
+            <h3
+              class="heading-tertiary__gold u-center-text u-margin-bottom-medium"
+            >
               What to Expect
             </h3>
             <p class="section__overview--hero-box-text">
-              Our Academic Guides are perfect for helping you navigate and overcome obstacles in the course or courses that are historically challenging for most students. Because the guides are fellow students, they were once in the exact spot you may find yourself in now! If there's anyone who truly understands, it's your peers!
-              The goal of each session is to help you wherever you feel you could improve. You explain what you want to work on, and we make it our job to strengthen the scaffolding that makes success possible!
+              Our Academic Guides are perfect for helping you navigate and
+              overcome obstacles in the course or courses that are historically
+              challenging for most students. Because the guides are fellow
+              students, they were once in the exact spot you may find yourself
+              in now! If there's anyone who truly understands, it's your peers!
+              The goal of each session is to help you wherever you feel you
+              could improve. You explain what you want to work on, and we make
+              it our job to strengthen the scaffolding that makes success
+              possible!
             </p>
           </div>
         </div>
-          <div class="row">
-            <div class="section__overview--hero-box">
-              <h3 class="heading-tertiary__gold u-center-text u-margin-bottom-medium">
-                Partnering for your success
+        <div class="row">
+          <div class="section__overview--hero-box">
+            <h3
+              class="heading-tertiary__gold u-center-text u-margin-bottom-medium"
+            >
+              Partnering for your success
+            </h3>
+            <p class="section__overview--hero-box-text">
+              Our Academic Guides are perfect for helping you navigate and
+              overcome obstacles in the course or courses that are historically
+              challenging for most students. Because the guides are fellow
+              students, they were once in the exact spot you may find yourself
+              in now! If there's anyone who truly understands, it's your peers!
+              Our Academic Guides have taken the classes they support and have
+              practiced the material. They want to guide other students to
+              practice the material and feel more confident, too. Academic
+              Guides can share study tips, answer questions, and suggest
+              practice problems, all to strengthen your own study habits and
+              understanding!​
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Standard Footer-->
+      <footer class="section__end">
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="section__end--logo-box">
+              <a href="#section-head" class="scroll-link"
+                ><img
+                  src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/lrc-logo-horz-gold-white@1.png?sfvrsn=9df3c4ba_2"
+                  alt="LRC Logo"
+                  class="section__end--logo"
+              /></a>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="section__end--add">
+              <h3 class="heading-tertiary__gold--keep">
+                Learning Resources Center
               </h3>
-              <p class="section__overview--hero-box-text">
-                Our Academic Guides are perfect for helping you navigate and overcome obstacles in the course or courses that are historically challenging for most students. Because the guides are fellow students, they were once in the exact spot you may find yourself in now! If there's anyone who truly understands, it's your peers!  Our Academic Guides have taken the classes they support and have practiced the material.  They want to guide other students to practice the material and feel more confident, too.  Academic Guides can share study tips, answer questions, and suggest practice problems, all to strengthen your own study habits and understanding!​
+              <p class="section__end--text">
+                CU Denver City Heights
+                <span class="section__end--text--div-line">|</span> Learning
+                Commons<br />
+                <a
+                  href="https://www.google.com/maps/search/1191+Larimer+St+%231201,+Denver,+CO+80204/@39.7446014,-105.0109047,16z/data=!3m1!4b1"
+                  class="box__link"
+                  target="_blank"
+                  >1191 Larimer, Suite 1201 Denver, CO 80204</a
+                ><br />
+                <a href="mailto: lrc@ucdenver.edu" class="box__link"
+                  >LRC@ucdenver.edu</a
+                ><br />
+                <a href="tel: 303-315-3531" class="box__link">303-315-3531</a>
               </p>
             </div>
           </div>
-      </section>
-
-      <section class="section-courses" id="section-courses">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">Question Session schedule</h2>
-          <!-- <h3 class="heading-tertiary lc">Question Session schedule</h3> -->
-          <h3 class="heading-quaternary">* Academic Guides are Unavailable from 2-4pm on<span class="QS-conflicts">Friday 10/15</span> and <span class="QS-conflicts">Friday 11/05</span> due to training *</h3>
-        </div> 
-        <div class="section-courses__collapsible">
-          <div class="btn-triangle">
-
-            <a href="#popup-courses__bioChemPhys" class="btn-span__ql btn-span__ql-1">Bio, Chem, and Physics</a>
-            <a href="#popup-courses__pmus" class="btn-span__ql btn-span__ql-2">Music</a>
-            <a href="#popup-courses__eac" class="btn-span__ql btn-span__ql-3">Engineering and Computing</a>
-            <a href="#popup-courses__pbhl" class="btn-span__ql btn-span__ql-4">Public Health</a>
-            <a href="#popup-courses__modLang" class="btn-span__ql btn-span__ql-5">Modern Languages</a>
-            <a href="#popup-courses__philo" class="btn-span__ql btn-span__ql-1">Philosophy</a>
-            <a href="#popup-courses__other" class="btn-span__ql btn-span__ql-2">Other Courses</a>
-
-          </div>
-
-      </section>
- 
-    <!--Standard Footer-->
-    <footer class="section__end">
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="section__end--logo-box">
-            <a href="#section-head" class="scroll-link"><img src="https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/logos/lrc-logo-horz-gold-white@1.png?sfvrsn=9df3c4ba_2" alt="LRC Logo" class="section__end--logo"></a>
-          </div>
         </div>
-        <div class="col-1-of-2">
-          <div class="section__end--add">
-            <h3 class="heading-tertiary__gold--keep">Learning Resources Center</h3>
-            <p class="section__end--text">
-              CU Denver City Heights <span class="section__end--text--div-line">|</span> Learning Commons<br>
-              <a href="https://www.google.com/maps/search/1191+Larimer+St+%231201,+Denver,+CO+80204/@39.7446014,-105.0109047,16z/data=!3m1!4b1" class="box__link" target="_blank">1191 Larimer, Suite 1201 Denver, CO 80204</a><br>
-              <a href="mailto: lrc@ucdenver.edu" class="box__link">LRC@ucdenver.edu</a><br>
-              <a href="tel: 303-315-3531" class="box__link">303-315-3531</a>
+        <div class="row">
+          <div class="section__end--policy">
+            <div class="section__end--policy-box">
+              <h3 class="heading-tertiary__gold--keep u-center-text">
+                LRC graded assignment policy
+              </h3>
+            </div>
+            <p class="section__end--policy-box--text">
+              <em
+                >Tutors are prohibited from assisting students with any
+                assignments that will be submitted for a grade. The tutor can
+                clarify concepts related to an assignment and/or do similar
+                practice problems. Please view the CU Denver
+                <a
+                  href="https://www.ucdenver.edu/student/health-wellness/student-conduct/academic-integrity"
+                  class="box__link"
+                  >Academic Integrity Policy</a
+                >
+                for more information.</em
+              >
             </p>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="section__end--policy">
-          <div class="section__end--policy-box">
-            <h3 class="heading-tertiary__gold--keep u-center-text">
-              LRC graded assignment policy
-            </h3>
-          </div>
-            <p class="section__end--policy-box--text"><em>Tutors are prohibited from assisting students with any assignments that will be submitted for a grade. The tutor can clarify concepts related to an assignment and/or do similar practice problems. Please view the CU Denver <a href="https://www.ucdenver.edu/student/health-wellness/student-conduct/academic-integrity" class="box__link">Academic Integrity Policy</a> for more information.</em></p>
-        </div>
-      </div>
 
         <!--   SOCIAL LINKS   -->
         <div class="row u-center-text">
           <div class="section__end--social">
-            <a href="https://www.facebook.com/CUDenverLRC" class="section__end--social-link" target="_blank"><ion-icon name="logo-facebook" class="fb-icon"></ion-icon></a>
-            <a href="https://www.instagram.com/cudenverlrc/" class="section__end--social-link" target="_blank"><ion-icon name="logo-instagram" class="insta-icon"></ion-icon></a>
-            <a href="https://www.linkedin.com/company/uc-denver-learning-resources-center" class="section__end--social-link" target="_blank"><ion-icon name="logo-linkedin" class="lin-icon"></ion-icon></a>
-            <a href="https://twitter.com/CUDenverLRC/" class="section__end--social-link" target="_blank"><ion-icon name="logo-twitter" class="twit-icon"></ion-icon></a>
+            <a
+              href="https://www.facebook.com/CUDenverLRC"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-facebook" class="fb-icon"></ion-icon
+            ></a>
+            <a
+              href="https://www.instagram.com/cudenverlrc/"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-instagram" class="insta-icon"></ion-icon
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/uc-denver-learning-resources-center"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-linkedin" class="lin-icon"></ion-icon
+            ></a>
+            <a
+              href="https://twitter.com/CUDenverLRC/"
+              class="section__end--social-link"
+              target="_blank"
+              ><ion-icon name="logo-twitter" class="twit-icon"></ion-icon
+            ></a>
           </div>
         </div>
 
-      <!--   NAVI LINKS   -->
-      <div class="row u-center-text">
-        <div class="section__end--navigation u-center-text">
-          <!--MAIN NAVIGATION-->
-        <ul class="section__end--list">
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center" class="section__end--link">Home</a></li>
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer" class="section__end--link">P2P</a></li>
-            <!--<li class="section__end--item"><a href="#" class="section__end--link">ELL</a></li>-->
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction" class="section__end--link">SI</a></li>
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/intense-preparation" class="section__end--link">iPrep</a></li>
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/resources" class="section__end--link">Workshops</a></li>
-             <!--
+        <!--   NAVI LINKS   -->
+        <div class="row u-center-text">
+          <div class="section__end--navigation u-center-text">
+            <!--MAIN NAVIGATION-->
+            <ul class="section__end--list">
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center"
+                  class="section__end--link"
+                  >Home</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/peer-to-peer"
+                  class="section__end--link"
+                  >P2P</a
+                >
+              </li>
+              <!--<li class="section__end--item"><a href="#" class="section__end--link">ELL</a></li>-->
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/supplemental-instruction"
+                  class="section__end--link"
+                  >SI</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/intense-preparation"
+                  class="section__end--link"
+                  >iPrep</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/resources"
+                  class="section__end--link"
+                  >Workshops</a
+                >
+              </li>
+              <!--
                <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/resources/academic-support-programs" class="section__end--link">Academic Support</a></li>
               -->
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources" class="section__end--link">Faculty/Staff Resources</a></li>
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/join-our-team" class="section__end--link">Join Us</a></li>
-            <li class="section__end--item"><a href="https://www.ucdenver.edu/learning-resources-center/about" class="section__end--link">About Us</a></li>
-          </ul>
-
-        </div>
-      </div>
-
-
-      
-      <div class="row">
-        <div class="col-1-of-2">
-          <p class="section__end--text">Please note, regardless of synchronous or asynchronous course delivery, students are unable to sign up for any LRC service that conflicts with a scheduled class time. </p>
-        </div>
-        <div class="col-1-of-2">
-          <p class="section__end--text">
-            If you're unable to sign up for LRC services for any reason other than technical issues, please let us know by completing the form below. This will help us in future planning and how we deliver services to best meet the needs of our CU Denver student/community. Contact us at LRC@ucdenver.edu for questions.<br>
-            <a href="https://ucdenverdata.formstack.com/forms/unfilled_request_form" class="box__link">Submit Feedback</a>
-          </p>
-
-          </div>
-        </div>
-      </footer>
-
-<!-- ________________________________________________________________________________________________________________________________________________________________________________________________-->
-<!-- __________________________________________________________________________________________    POPUPS      ______________________________________________________________________________________________ -->
-<!-- ____________________________________________________________________________________________________________________________________________________________________________________________________
-
-
-<!-- ________________________________________________________________________________________________________________________________________________________________________________________________-->
-<!-- __________________________________________________________________________________________    POPUPS      ______________________________________________________________________________________________ -->
-<!-- ____________________________________________________________________________________________________________________________________________________________________________________________________
-
-
-<!------------------------------------------COURSE LIST POPUPS------------------------------------------------------>
-
-<!--BIO CHEM AND PHYSICS BTNS TO POPUPS-->
-<div class="popupBtn" id="popup-courses__bioChemPhys--btns">
-  <div class="popupBtn__content popupBtn__content-sl">
-      <a href="#qs-section" class="popupBtn__close">&times;</a>
-
-
-      <div class="btn-box btn-box__pop">
-        <a href="#popup-courses__bio" class="btn btn-full">Biology</a>
-        <a href="#popup-courses__chem" class="btn btn-full">Chemistry</a>
-        <a href="#popup-courses__phys" class="btn btn-full">Physics</a>
-      </div>
-      
-  </div>
-</div>
-
-<!--BIO CHEM AND PHYSICS-->
-<div class="popup" id="popup-courses__bio">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <a href="#popup-courses__bioChemPhys--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Biology</h2>
-      </div>
-      <div class="row">
-          <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">BIOL 2010 | Organisms to Ecosystems</li>
-                  <li class="collapsible__item">BIOL 3225 | Human Physiology</li>
-                  <li class="collapsible__item">BIOL 3244 | Human Anatomy</li>
-                  <li class="collapsible__item">BIOL 3611 | General Cell Biology </li>
-                  <li class="collapsible__item">BIOL 3832 Genetics | General Genetics</li>
-                  
-      
-                  <!-- BIOL 3611, ENGR 1130, BIOL 2010 -->
-      
-                </ul>
-
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/faculty-staff-resources"
+                  class="section__end--link"
+                  >Faculty/Staff Resources</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/join-our-team"
+                  class="section__end--link"
+                  >Join Us</a
+                >
+              </li>
+              <li class="section__end--item">
+                <a
+                  href="https://www.ucdenver.edu/learning-resources-center/about"
+                  class="section__end--link"
+                  >About Us</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
-        
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-                  <tr>
-  
-                    <th>Course</th>
-                    <th>Time</th> 
-                    <th>Format</th>
-  
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>Cell Bio, Gen Bio Organisms to Ecosystems, Chemistry for Engineers</td>
-                    <td>Tu 9:30-11am</td>
-                    <td>In Person</td>
-                  </tr>
-  
-                  <tr class="inPerson-session cancel-session">
-                    <td>&times; CANCELED Tuesday 9/28<br><span style="border-bottom: 1px solid #000;">makeup time available Thurs 9/23</span>Anatomy/Human Anatomy</td>
-                    <td>Tu 12:15-3pm</td>
-                    <td>In Person</td>
-                  </tr>
-              
-                  <tr class="inPerson-session">
-                    <td>Human Physiology & Genetics</td>
-                    <td>Th 1:30-3pm</td>
-                    <td>In Person</td>
-                  </tr>
-  
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-
-                  <tr class="zoom-session">
-                    <td>Human Physiology & Genetics</td>
-                    <td>Tu 10-11:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Human Anatomy</td>
-                    <td>W 7-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Cell Bio, Gen Bio Organisms to Ecosystems, Chemistry for Engineers</td>
-                    <td>Th 9-12pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/95191834496" title="Andrea Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Human Physiology & Genetics</td>
-                    <td>Th 1:30-3pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Human Physiology & Genetics</td>
-                    <td>F 10-11am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94541648848" title="Michaela Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Anatomy/Human Anatomy</td>
-                    <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-  
-                </table>
-              </div>
-              
-            <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        </div>
-      </div>
-  </div>
-</div>
-
-<!--BIO CHEM AND PHYSICS-->
-<div class="popup" id="popup-courses__chem">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <a href="#popup-courses__bioChemPhys--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Chemistry</h2>
-      </div>
-      <div class="row">
-          <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">CHEM 1000 | Foundations for General Chemistry</li>
-                  <li class="collapsible__item">CHEM 2031 Gen Chem 1 | General Chemistry I</li>
-                  <li class="collapsible__item">CHEM 2061 | General Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3411 | Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3421 | Organic Chemistry II</li>
-                  <li class="collapsible__item">CHEM 3481| Majors Organic Chemistry I</li>
-                  <li class="collapsible__item">CHEM 3491 | Majors Organic Chemistry II</li>
-                  <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-      
-                  <!-- BIOL 3611, ENGR 1130, BIOL 2010 -->
-      
-                </ul>
-
+        <div class="row">
+          <div class="col-1-of-2">
+            <p class="section__end--text">
+              Please note, regardless of synchronous or asynchronous course
+              delivery, students are unable to sign up for any LRC service that
+              conflicts with a scheduled class time.
+            </p>
           </div>
-        </div>
-
-        
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-                  <tr>
-  
-                    <th>Course</th>
-                    <th>Time</th> 
-                    <th>Format</th>
-  
-                  </tr>
-
-                  
-                  <tr class="inPerson-session">
-                    <td>O-Chem 1 & 2</td>
-                    <td>M 12:30-2:30pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & O-Chem 1 & 2</td>
-                    <td>M 4-5pm</td>
-                    <td>In Person</td>
-                  </tr>
-  
-                  <tr class="inPerson-session">
-                    <td>Cell Bio, Gen Bio Organisms to Ecosystems, Chemistry for Engineers</td>
-                    <td>Tu 9:30-11am</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Tu 12:30-2pm</td>
-                    <td>In Person</td>
-                  </tr>
-  
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & O-Chem 2</td>
-                    <td>Tu 3-4:30pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>O-Chem 1 & 2</td>
-                    <td>Tu 3:30-5pm</td>
-                    <td>In Person</td>
-                  </tr>
-                  
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>W 12:30-1:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-                  
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>W 6-7pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>Gen Chem 1 & O-Chem 2</td>
-                    <td>Th 11-1:30pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-                  
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 and 2</td>
-                    <td>M 6:30-7:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session cancel-session">
-                    <td>CANCELED 9/28<br>Gen Chem 1 & 2</td>
-                    <td>Tu 7-9pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>O Chem 1</td>
-                    <td>Tu 6:30-8pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96298180285" title="Karl Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & O-Chem 2</td>
-                    <td>F 12-1:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & O-Chem 2</td>
-                    <td>F 2-4pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sat 9-10:30am</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 & 2</td>
-                    <td>Sat 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>Gen Chem 1 and 2</td>
-                    <td>Sun 12:30-2pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96877566433" title="Cheyenne Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-                  
-  
-                </table>
-              </div>
-              
-            <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        </div>
-      </div>
-  </div>
-</div>
-
-<!--PHYSICS-->
-<div class="popup" id="popup-courses__phys">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <a href="#popup-courses__bioChemPhys--btns" class="popup__back">&larr;</a>
-      <div class="u-center-text">
-        <h2 class="heading-secondary__pe u-margin-bottom-small">Physics</h2>
-      </div>
-      <div class="row">
-          <div class="col-1-of-2 col-small">
-            
-            <div class="u-center-text-2">
-
-                <ul class="collapsible__list">
-      
-                  <li class="collapsible__item">PHYS 2010 | College Physics I</li>
-                  <li class="collapsible__item">PHYS 2020 | College Physics II</li>
-                  <li class="collapsible__item">PHYS 2311 | General Physics I: Calculus-Based</li>
-                  <li class="collapsible__item">PHYS 2331 | General Physics II: Calculus-Based</li>
-      
-                  <!-- BIOL 3611, ENGR 1130, BIOL 2010 -->
-      
-                </ul>
-
-          </div>
-        </div>
-
-        
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-
-              <div class="table-box">
-
-                <table class="popup__table--courses">
-                  <tr>
-  
-                    <th>Course</th>
-                    <th>Time</th> 
-                    <th>Format</th>
-  
-                  </tr>
-  
-                  <tr class="inPerson-session">
-                    <td>College Physics 1 & 2</td>
-                    <td>M 4-5pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>University and College Physics</td>
-                    <td>Tu 3:30-5pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>University and College Physics</td>
-                    <td>W 9:30-11am</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <tr class="inPerson-session">
-                    <td>University and College Physics</td>
-                    <td>Th 9:30-12:30pm</td>
-                    <td>In Person</td>
-                  </tr>
-
-                  <!-- <tr class="inPerson-session">
-                    <td>PHYS 2010 2020</td>
-                    <td>Th 1-4pm</td>
-                    <td>In Person</td>
-                  </tr> -->
-
-                  <!-- ------------- ZOOM SESSIONS ---------------- -->
-                  <tr class="zoom-session">
-                    <td>University and College Physics</td>
-                    <td>M 4-5:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>College Physics 1 & 2</td>
-                    <td>Tu 5-6:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/96298180285" title="Karl Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>College Physics 1 and 2</td>
-                    <td>Th 6-7:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/98084922645" title="Lauren Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-
-                  <tr class="zoom-session">
-                    <td>College Physics 1 and 2</td>
-                    <td>Sun 3-4:30pm</td>
-                    <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  </tr>
-  
-                </table>
-              </div>
-              
-            <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        </div>
-      </div>
-  </div>
-</div>
-
-
-
-<!--PMUS-->
-<div class="popup" id="popup-courses__pmus">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Performance Music</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-            <p class="popup__text">
-      
-              <ul class="collapsible__list">
-      
-                <li class="collapsible__item">PMUS 1023 | Piano Class I</li>
-                <li class="collapsible__item">PMUS 1024 | Piano Class II</li>
-                <li class="collapsible__item">PMUS 1025 | Piano Class III</li>
-                <li class="collapsible__item">PMUS 1110/1119 | Ear Training and Sight Singing I</li>
-                <li class="collapsible__item">PMUS 1210 | Ear Training and Sight Singing II</li>
-                <li class="collapsible__item">PMUS 2110 | Ear Training and Sight Singing III</li>
-                <li class="collapsible__item">PMUS 1100/1120 | Music Theory I</li>
-                <li class="collapsible__item">PMUS 1200 | Music Theory II</li>
-                <li class="collapsible__item">PMUS 2100 | Music Theory III</li>
-                <li class="collapsible__item">MUSC 3210 | Music and Entertainment Marketing</li>
-              
-              </ul>
+          <div class="col-1-of-2">
+            <p class="section__end--text">
+              If you're unable to sign up for LRC services for any reason other
+              than technical issues, please let us know by completing the form
+              below. This will help us in future planning and how we deliver
+              services to best meet the needs of our CU Denver
+              student/community. Contact us at LRC@ucdenver.edu for
+              questions.<br />
+              <a
+                href="https://ucdenverdata.formstack.com/forms/unfilled_request_form"
+                class="box__link"
+                >Submit Feedback</a
+              >
             </p>
           </div>
         </div>
+      </footer>
+    </main>
 
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>Course</th>
-                <th>Time</th> 
-                <th>Format</th>
-
-              </tr>
-              <!-- ------------- IN PERSON SESSIONS ---------------- -->
-              <tr class="inPerson-session">
-                <!-- COURSE -->
-                <td>All PMUS Courses</td>
-                <!-- TIME -->
-                <td>Th 1-3pm</td>
-                <!-- FORMAT -->
-                <td>In Person</td>
-              </tr>
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>Piano</td>
-                <td>Tu 5-6pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/96193439379" title="Katie Y. Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-            </table>
-          </div>
-
-         <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-          <p class="paragraph"></p>
-        </div>
-
-      </div>
-  </div>
-</div>
-
-
-<!-- Engineering and Computing  -->
-<div class="popup" id="popup-courses__eac">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Engineering and Computing</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-            <ul class="collapsible__list">
-    
-              <li class="collapsible__item">CSCI 1410 | Fundamentals of Computing</li>
-              <li class="collapsible__item">CSCI 1510 | Logic Design</li>
-              <li class="collapsible__item">CSCI 2312 | Object Oriented Programming</li>
-              <li class="collapsible__item">CSCI 2421 | Data Structures and Program Design</li>
-              <li class="collapsible__item">CSCI 3287 | Database System Concepts</li>
-              <li class="collapsible__item">CSCI 3412 | Algorithms</li>
-              <!-- <li class="collapsible__item">ELEC 1510 | Digital Logic</li>
-              <li class="collapsible__item">ELEC 1520 | Programming for Electrical Engineers</li>
-              <li class="collapsible__item">ELEC 2132 | Circuit Analysis I</li>
-              <li class="collapsible__item">ELEC 3316 | Signals and Systems</li>
-              <li class="collapsible__item">ELEC 3817 | Engineering Probability and Statistics</li>
-              <li class="collapsible__item">ELEC 4174 | Power Electronic Systems</li> -->
-              <li class="collapsible__item">ENGR 1130 | Chemistry for Engineers</li>
-              
-            
-            </ul>
-          </p>
-        </div>
-        </div>
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-            
-            
-            <div class="table-box">
-
-              <table class="popup__table--courses">
-                <tr>
-
-                  <th>Course</th>
-                  <th>Time</th> 
-                  <th>Format</th>
-
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>Tu 11-1pm</td>
-                  <td>In Person</td>
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>Tu 2:30-4pm</td>
-                  <td>In Person</td>
-                </tr>
-
-                <!-- <tr class="inPerson-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>W 5-7pm</td>
-                  <td>In Person</td>
-                </tr> -->
-
-                <tr class="inPerson-session">
-                  <td>Computer Science</td>
-                  <td>W 11-12:30pm</td>
-                  <td>In Person</td>
-                </tr>
-
-                <tr class="inPerson-session">
-                  <td>Fundamentals of Computing & Data Structures & Program Design</td>
-                  <td>Th 9-12pm</td>
-                  <td>In Person</td>
-                </tr>
-
-                <!-- ------------- ZOOM SESSIONS ---------------- -->
-                <!-- <tr class="zoom-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>M 7-9pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-                <!-- </tr> -->
-
-                <!-- <tr class="zoom-session">
-                  <td>ELEC and STATS for other Disciplines</td>
-                  <td>Th 7-9pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                  <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-                <!-- </tr>  -->
-
-               <tr class="zoom-session">
-                  <td>Computer Science</td>
-                  <td>F 12-1:30pm</td>
-                  <td><a href="https://ucdenver.zoom.us/j/92310857800" title="Manharsh Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                </tr> 
-
-              </table>
-            </div>
-           <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-            <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!-- Public Health  -->
-<div class="popup" id="popup-courses__pbhl">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Public Health</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-            <ul class="collapsible__list">
-    
-              <li class="collapsible__item">PBHL 3001 | Introduction to Epidemiology</li>
-              
-            </ul>
-          </p>
-        </div>
-        </div>
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>Course</th>
-                <th>Time</th> 
-                <th>Format</th>
-
-              </tr>
-<!--
-
-  <tr class="inPerson-session">
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
--->
-
-              <tr class="inPerson-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Wed 4-6pm</td>
-                <td>In Person</td>
-                <!-- ________ Zoom Link for Henley ________________________________________________________________ -->
-              </tr>
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Tues 1-3pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/93379915489" title="Henley Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-              <tr class="zoom-session">
-                <td>Epidemiology/PBHL</td>
-                <td>Wed 4-6pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/93379915489" title="Henley Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-            </table>
-          </div>
-
-         <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-          <p class="paragraph"></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- MODERN LANGUAGES -->
-<div class="popup" id="popup-courses__modLang">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Modern Languages</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-            <div class="u-center-text-2">
-              <p class="popup__text">
-        
-                <ul class="collapsible__list">
-        
-                  <li class="collapsible__item">FREN 1001 | French Language I</li>
-                  <li class="collapsible__item">FREN 1002 | French Language II</li>
-                  <li class="collapsible__item">FREN 1010 | Beginning French I</li>
-                  <li class="collapsible__item">FREN 1020 | Beginning French II</li>
-                  <li class="collapsible__item">FREN 2003 | French Language III</li>
-                  <li class="collapsible__item">SPAN 1010 | Beginning Spanish I</li>
-                  <li class="collapsible__item">SPAN 1011 | Intensive Spanish</li>
-                  <li class="collapsible__item">SPAN 1020 | Beginning Spanish II</li>
-                  <li class="collapsible__item">SPAN 2110 | Second Year Spanish I</li>
-                  <li class="collapsible__item">SPAN 2120 | Second Year Spanish II</li>
-        
-                </ul>
-        
-              </p>
-          </div>
-        </div>
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-          
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-                
-                <th>Course</th>
-                <th>Time</th> 
-                <th>Format</th>
-
-              </tr>
-              <tr class="cancel-session"> <!--inPerson-session-->
-                <td>&times; CANCELED Tuesday 9/28<br><span style="border-bottom: 1px solid #000;">makeup time available Thurs 9/23</span><br>Spanish Language</td>
-                <td>Tu 3-4pm</td>
-                <td>In Person</td>
-              </tr>
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <tr class="zoom-session">
-                <td>Spanish Language</td>
-                <td>W 5:30-7pm</td>
-                <td><a href="https://ucdenver.zoom.us/meeting/register/tJEudO-opzgjH93PbMAJRLDw6LKRXEqG26ZE" title="Katie H. Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-              <tr class="zoom-session">
-                <td>French Language</td>
-                <td>W 4-5:30pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/91553462265" title="Jennifer Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-            </table>
-          </div>
-         <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-      </div>
-      </div>
-  </div>
-</div>
-
-<!-- PHILO -->
-<div class="popup" id="popup-courses__philo">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Philosophy</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-            <div class="u-center-text-2">
-              <p class="popup__text">
-        
-                <ul class="collapsible__list">
-        
-                  <li class="collapsible__item">Coming Soon!</li>
-        
-                </ul>
-        
-              </p>
-          </div>
-        </div>
-<!--
-
-  <div class="col-1-of-2">
-    <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-   <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-    <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-    <p class="paragraph"></p>
-</div>
--->
-
-      </div>
-  </div>
-</div>
-  
-
-<!--Other Courses-->
-<div class="popup" id="popup-courses__other">
-  <div class="popup__content popup__content-sl">
-      <a href="#qs-section" class="popup__close">&times;</a>
-      <h2 class="heading-secondary__pe u-margin-bottom-small">Other Courses</h2>
-      <div class="row">
-        <div class="col-1-of-2">
-          
-          <div class="u-center-text-2">
-          <p class="popup__text">
-    
-              <ul class="collapsible__list">
-    
-                <li class="collapsible__item"><strong>Statistics for Other Disciplines</strong></li>
-                <li class="collapsible__item">BANA 2010 | Business Statistics</li>
-                <li class="collapsible__item">PSYC 2090 | Statistics and Research Methods</li>
-                <li class="collapsible__item"><strong>MATH</strong></li>
-                <li class="collapsible__item">MATH 1120 | College Trigonometry</li>
-                <li class="collapsible__item"><a href="https://clas.ucdenver.edu/mathematical-and-statistical-sciences/merc-lab" class="list-link">Visit MASS for more MATH assistance</a></li>
-                <br>
-                <li class="collapsible__item"><a href="mailto:lrc@ucdenver.edu" class="list-link">Don't see your course? Contact Us at lrc@ucdenver.edu</a></li>
-              
-    
-                <!--	-->
-              </ul>
-          </p>
-        </div>
-        </div>
-
-        <div class="col-1-of-2">
-          <h3 class="heading-tertiary">Question / Drop In Sessions</h3>
-          
-          
-          <div class="table-box">
-
-            <table class="popup__table--courses">
-              <tr>
-
-                <th>Course</th>
-                <th>Time</th> 
-                <th>Format</th>
-
-              </tr>
-
-              <!-- <tr class="inPerson-session">
-                <td>Coming Soon</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-              </tr> -->
-
-              <!-- ------------- ZOOM SESSIONS ---------------- -->
-              <!-- <tr class="zoom-session">
-                <td>Statistics for Other Disciplines</td>
-                <td>M 7-9pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                <!-- ________ Zoom Link for Yalda ________________________________________________________________
-              </tr> -->
-
-              <tr class="zoom-session">
-                <td>Statistics for Other Disciplines PSYC 2090 & BANA 2010</td>
-                <td>W 6-7pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/94594184652" title="Mayada Zoom Link" class="popup__table--courses--link">Online - Zoom Session</a></td>
-              </tr>
-
-              <!-- <tr class="zoom-session">
-                <td>Statistics for Other Disciplines</td>
-                <td>Th 7-9pm</td>
-                <td><a href="https://ucdenver.zoom.us/j/97521792440" class="popup__table--courses--link">Online - Zoom Session</a></td>
-                <!-- ________ Zoom Link for Yalda ________________________________________________________________ -->
-             <!-- </tr> -->
-
-            </table>
-          </div>
-         <h4 class="heading-quaternary"><span class="cancel-session-span">Canceled sessions look like this,</span><span class="zoom-session-span"> Zoom sessions are marked with this color</span> , <span class="inPerson-session-span">in-person sessions are marked with this color</span>. Zoom log-in requires your CU Denver Student account.</h4>
-          <h4 class="heading-quaternary u-margin-bottom-small">Times are subject to change throughout the semester.  We will adjust based on student demand and Academic Guide availability</h4>
-      </div>
-
-      </div>
-  </div>
-</div>
-
-  
-  
-</main>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

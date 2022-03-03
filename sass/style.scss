@@ -16,24 +16,15 @@
 @import "components/composition";
 @import "components/features-box";
 @import "components/logos";
-@import "components/testimonials";
 @import "components/bg-video";
-@import "components/cards";
 @import "components/popup";
 @import "components/howTO";
 @import "components/overview";
 @import "components/tiles";
-@import "components/clock-widget";
-@import "components/calendar";
-@import "components/collapsible";
-@import "components/popup-takeOver";
 @import "components/banner";
 @import "components/fd-tv__bubbles";
-
 @import "components/missNav";
-
 @import "components/ag-sched";
-
 
 @import "pages/ag";
 @import "pages/index";
@@ -42,11 +33,8 @@
 @import "pages/iprep";
 @import "pages/jot";
 @import "pages/ssw";
-@import "pages/ssw-asp";
 @import "pages/fsr";
 @import "pages/rise";
-@import "pages/lh";
-@import "pages/element-build";
 @import "pages/quicklinks";
 @import "pages/fd-tv";
 @import "pages/cam-gallery";
@@ -54,3 +42,13 @@
 @import "pages/au-sp22";
 @import "pages/a-sync";
 
+// NOTE UNUSED
+// @import "pages/lh";
+// @import "pages/element-build";
+// @import "pages/ssw-asp";
+// @import "components/clock-widget";
+// @import "components/calendar";
+// @import "components/collapsible";
+// @import "components/popup-takeOver";
+// @import "components/cards";
+// @import "components/testimonials";

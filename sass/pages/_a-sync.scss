@@ -1,3 +1,10 @@
+.a-sync__body {
+  p {
+    max-width: 60ch;
+    line-height: 1.7;
+  }
+}
+
 .a-sync__header {
   padding: 0 5rem;
   display: flex;
@@ -74,7 +81,8 @@
   // text-indent: 1rem;
   display: flex;
   gap: 3rem;
-  text-align: justify;
+  // text-align: justify;
+  line-height: 1.7;
 
   @include respond(tab-port) {
     flex-wrap: wrap;

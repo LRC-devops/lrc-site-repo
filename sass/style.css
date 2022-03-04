@@ -8491,6 +8491,11 @@ html {
   background-image: linear-gradient(rgba(134, 192, 207, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/laura_mcknight.jpg?sfvrsn=11b9aeba_2);
 }
 
+.a-sync__body p {
+  max-width: 60ch;
+  line-height: 1.7;
+}
+
 .a-sync__header {
   padding: 0 5rem;
   display: -webkit-box;
@@ -8594,7 +8599,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   gap: 3rem;
-  text-align: justify;
+  line-height: 1.7;
 }
 
 @media (max-width: 56.25em) {

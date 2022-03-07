@@ -1,0 +1,25 @@
+{
+  "name": "lrc-compiled-site",
+  "version": "1.0.0",
+  "description": "Learning Resources Center's Official Website",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "postcss sass/style.css -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LRC-devops/lrc-site-repo.git"
+  },
+  "author": "Caleb Theil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LRC-devops/lrc-site-repo/issues"
+  },
+  "homepage": "https://github.com/LRC-devops/lrc-site-repo#readme",
+  "devDependencies": {
+    "cssnano": "^5.1.0",
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "postcss-preset-env": "^7.4.2"
+  }
+}

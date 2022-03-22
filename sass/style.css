@@ -6818,6 +6818,241 @@ html {
   width: 100%;
 }
 
+.ssw__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 10px solid #a2a4a3;
+}
+
+.ssw__tabs--label {
+  padding: 1rem 1.6rem;
+  width: 45%;
+  cursor: pointer;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #91cf96;
+  background-color: #565a5c;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.ssw__tabs--radio {
+  display: none;
+}
+
+.ssw__tabs--content {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 100%;
+  display: none;
+  padding: 5rem 3rem;
+}
+
+.ssw__tabs--content ul {
+  list-style: none;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ssw__tabs--content ul li {
+  background: #91cf96;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  width: 20rem;
+  height: 20rem;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.ssw__tabs--content ul li ion-icon {
+  font-size: 3rem;
+}
+
+.ssw__tabs--content--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 56.25em) {
+  .ssw__tabs--content--text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.ssw__tabs--content--text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2rem 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.ssw__tabs--content--text-box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.ssw__tabs--content--text-box p {
+  font-size: 1.6rem;
+}
+
+.ssw__tabs--content--text-box h2 {
+  font-family: HelveticaNeueLTW05-45Light, "Source Sans Pro", Helvetica, Arial;
+  font-weight: 100;
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.ssw__tabs--content--text-box h2 a {
+  text-decoration: underline;
+}
+
+.ssw__tabs--content--text-box h2 a:link, .ssw__tabs--content--text-box h2 a:visited {
+  color: #5b7a82;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.ssw__tabs--content--text-box h2 a:hover, .ssw__tabs--content--text-box h2 a:active {
+  color: #cfb87c;
+}
+
+.ssw__tabs--content--review-span {
+  border-top: 1px solid #565a5c;
+}
+
+.ssw__review-span {
+  border-top: 0.5rem solid #565a5c;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ssw__review-span p {
+  font-size: 1.7rem;
+}
+
+.ssw__tabs--content--review-span,
+.ssw__review-span {
+  -ms-flex-preferred-size: max-content;
+      flex-basis: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1rem;
+  padding: 2rem 3rem;
+}
+
+.ssw__tabs--content--review-span a,
+.ssw__review-span a {
+  font-size: 1.7rem;
+  color: #5b7a82;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.ssw__tabs--content--review-span a:hover, .ssw__tabs--content--review-span a:active,
+.ssw__review-span a:hover,
+.ssw__review-span a:active {
+  color: #cfb87c;
+}
+
+.ssw__tabs--radio:checked + .ssw__tabs--label {
+  font-weight: bold;
+  color: #fff;
+  background-color: #a2a4a3;
+}
+
+.ssw__tabs--radio:checked + .ssw__tabs--label + .ssw__tabs--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 56.25em) {
+  .ssw__tabs--radio:checked + .ssw__tabs--label + .ssw__tabs--content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.ssw__tabs--container {
+  width: 100vw;
+  background: #eee;
+}
+
 .section__overview--fsr {
   background-color: #fff;
   padding: 15rem 0;
@@ -8405,6 +8640,102 @@ html {
       align-self: flex-center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
   background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
+}
+
+#daniel-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+}
+
+#aymen-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/aymen_ali.jpg?sfvrsn=1c3dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/aymen_ali.jpg?sfvrsn=1c3dbfba_2);
+}
+
+#henley-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/henley_huang.jpg?sfvrsn=ba3dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/henley_huang.jpg?sfvrsn=ba3dbfba_2);
+}
+
+#mayada-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/mayada_arbab.jpg?sfvrsn=143dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/mayada_arbab.jpg?sfvrsn=143dbfba_2);
+}
+
+#eli-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/eli_polk.jpg?sfvrsn=b93dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/eli_polk.jpg?sfvrsn=b93dbfba_2);
+}
+
+#hunter-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/hunter_gammel.jpg?sfvrsn=193dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/hunter_gammel.jpg?sfvrsn=193dbfba_2);
+}
+
+#darian-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+}
+
+#jack-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/screen-shot-2022-03-22-at-10-51-53-am.png?sfvrsn=2d3ebfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/screen-shot-2022-03-22-at-10-51-53-am.png?sfvrsn=2d3ebfba_2);
 }
 
 #tyson-bubble {

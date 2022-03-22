@@ -8407,6 +8407,102 @@ html {
   background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/jose_reyna.jpg?sfvrsn=69bbaeba_2);
 }
 
+#daniel-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/daniel_simmons.jpg?sfvrsn=9bbaaeba_2);
+}
+
+#aymen-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/aymen_ali.jpg?sfvrsn=1c3dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/aymen_ali.jpg?sfvrsn=1c3dbfba_2);
+}
+
+#henley-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/henley_huang.jpg?sfvrsn=ba3dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/henley_huang.jpg?sfvrsn=ba3dbfba_2);
+}
+
+#mayada-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/mayada_arbab.jpg?sfvrsn=143dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/mayada_arbab.jpg?sfvrsn=143dbfba_2);
+}
+
+#eli-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/eli_polk.jpg?sfvrsn=b93dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/eli_polk.jpg?sfvrsn=b93dbfba_2);
+}
+
+#hunter-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/hunter_gammel.jpg?sfvrsn=193dbfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/hunter_gammel.jpg?sfvrsn=193dbfba_2);
+}
+
+#darian-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/darian_williams.jpg?sfvrsn=9abaaeba_2);
+}
+
+#jack-bubble {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-item-align: flex-center;
+      align-self: flex-center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(207, 184, 124, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/screen-shot-2022-03-22-at-10-51-53-am.png?sfvrsn=2d3ebfba_2);
+  background-image: linear-gradient(rgba(207, 184, 124, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/au-img/ag-img/screen-shot-2022-03-22-at-10-51-53-am.png?sfvrsn=2d3ebfba_2);
+}
+
 #tyson-bubble {
   height: 40rem;
   width: 40rem;

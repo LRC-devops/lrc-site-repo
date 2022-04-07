@@ -6733,6 +6733,12 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .peerEducators-sp22__listBox {
@@ -6758,6 +6764,10 @@ html {
 
 .peerEducators-sp22__cta p {
   margin-bottom: 1rem;
+}
+
+.peer-educators-job__span {
+  color: #a99256;
 }
 
 .section__services--ssw {

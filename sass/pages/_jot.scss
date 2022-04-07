@@ -140,6 +140,9 @@
   &__whoHowBox {
     display: flex;
     margin-bottom: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
   &__listBox {
     margin-right: 1rem;
@@ -155,4 +158,8 @@
       margin-bottom: 1rem;
     }
   }
+}
+
+.peer-educators-job__span {
+  color: $color-secondary-ada;
 }

@@ -229,6 +229,8 @@
 
 .ssw__tabs--radio:checked + .ssw__tabs--label + .ssw__tabs--content {
   display: flex;
+  align-items: center;
+  justify-content: center;
   // flex-direction: column;
   // flex-wrap: wrap;
   gap: 3rem;

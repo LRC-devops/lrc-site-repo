@@ -4881,7 +4881,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
           box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
-  height: 5rem;
+  height: 8rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4898,6 +4898,10 @@ html {
 .banner p {
   color: #fff;
   font-size: 1.6rem;
+}
+
+.banner a {
+  color: #fff;
 }
 
 .pink-bubble,

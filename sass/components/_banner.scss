@@ -63,7 +63,7 @@
   border: 1px solid rgba(#fff, 0.1);
 
   box-shadow: 0 1rem 1rem rgba(#000, 0.3);
-  height: 5rem;
+  height: 8rem;
   width: 100%;
 
   display: flex;
@@ -76,6 +76,9 @@
   p {
     color: $color-white;
     font-size: $default-font-size;
+  }
+  a {
+    color: #fff;
   }
 }
 //set <main> to relative positioning

@@ -1,0 +1,65 @@
+.overview {
+  display: flex;
+  align-items: center;
+
+  &--icon {
+    font-size: 7rem;
+    color: $color-teal-dark;
+  }
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 5rem 7rem;
+    // background-image: linear-gradient(to bottom right, $color-teal, #000);
+  }
+  &__content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    // background-color: #eee;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    );
+    backdrop-filter: blur(5px);
+    box-shadow: 2rem 2rem 0 rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 3rem 5rem;
+    width: 75rem;
+
+    &--heading {
+      font-size: 2rem;
+      display: flex;
+      // flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+
+      &__icon {
+        font-size: 5rem;
+        ion-icon {
+          font-size: 5rem;
+        }
+      }
+    }
+    &--text {
+      // width: 50%;
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+.section__intro--sub--coaching {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.coaching--main {
+  background-image: linear-gradient(to bottom right, $color-teal, #000);
+}

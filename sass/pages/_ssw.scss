@@ -245,3 +245,10 @@
   width: 100vw;
   background: #eee;
 }
+
+.ssw-fsr {
+  background-image: linear-gradient(
+    to bottom right rgba($color-teal, 0.7),
+    rgba($color-teal-dark, 0.9)
+  );
+}

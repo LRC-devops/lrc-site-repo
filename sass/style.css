@@ -7119,6 +7119,11 @@ html {
   background: #eee;
 }
 
+.ssw-fsr {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(91, 122, 130, 0.9)));
+  background-image: linear-gradient(to bottom right rgba(134, 192, 207, 0.7), rgba(91, 122, 130, 0.9));
+}
+
 .section__overview--fsr {
   background-color: #fff;
   padding: 15rem 0;
@@ -9249,5 +9254,18 @@ html {
 .coaching--main {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#86c0cf), to(#000));
   background-image: linear-gradient(to bottom right, #86c0cf, #000);
+}
+
+.overview__content-box--holds-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

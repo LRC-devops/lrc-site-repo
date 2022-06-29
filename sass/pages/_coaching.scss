@@ -63,3 +63,10 @@
 .coaching--main {
   background-image: linear-gradient(to bottom right, $color-teal, #000);
 }
+
+.overview__content-box--holds-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

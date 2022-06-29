@@ -5995,6 +5995,51 @@ html {
   margin-right: 0.5rem;
 }
 
+.section__db-embed {
+  overflow: hidden;
+}
+
+.section__db-embed iframe {
+  width: 100vw;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 3000px) {
+  .section__db-embed iframe {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section__db-embed iframe {
+    height: 90rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section__db-embed iframe {
+    height: 120rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .section__db-embed iframe {
+    height: 190rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__db-embed iframe {
+    height: 140rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .section__db-embed iframe {
+    height: 170rem;
+  }
+}
+
 .section__about-us {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index_aboutus_citymountianscape_coolcolors.png?sfvrsn=e0efb6ba_2);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(https://www.ucdenver.edu/images/librariesprovider132/lrc-css-img/index_aboutus_citymountianscape_coolcolors.png?sfvrsn=e0efb6ba_2);

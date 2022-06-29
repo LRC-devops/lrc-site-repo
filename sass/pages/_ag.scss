@@ -382,3 +382,55 @@
     }
   }
 }
+
+.section__db-embed {
+  overflow: hidden;
+  iframe {
+    width: 100vw;
+    // height: 100vh;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 3000px) {
+  .section__db-embed {
+    iframe {
+      height: 100vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section__db-embed {
+    iframe {
+      height: 90rem;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .section__db-embed {
+    iframe {
+      height: 120rem;
+    }
+  }
+}
+@media screen and (max-width: 675px) {
+  .section__db-embed {
+    iframe {
+      height: 190rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .section__db-embed {
+    iframe {
+      height: 140rem;
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .section__db-embed {
+    iframe {
+      height: 170rem;
+    }
+  }
+}

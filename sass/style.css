@@ -5476,6 +5476,34 @@ html {
   }
 }
 
+.missNav__tile--row-of-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media (max-width: 56.25em) {
+  .missNav__tile--row-of-two {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.missNav__tile--row-of-two div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
 .missNav__tile--top {
   height: 50%;
   width: 100%;
@@ -5576,6 +5604,16 @@ html {
 .btn-teal-dark {
   background-color: #5b7a82;
   color: #fff;
+}
+
+.tutor-me__logo {
+  background-color: #fff;
+  -webkit-mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2) no-repeat center;
+          mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2) no-repeat center;
+  --webkit-mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2)
+    no-repeat center;
+  height: 7rem;
+  width: 100%;
 }
 
 .ag-popup {

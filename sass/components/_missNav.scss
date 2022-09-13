@@ -412,6 +412,26 @@
     //left off trying to get padding to work with background color
     box-sizing: content-box;
 
+    &--row-of-two {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      padding: 2rem;
+      @include respond(tab-port) {
+        // flex-direction: column;
+        flex-wrap: wrap;
+      }
+
+      div {
+        flex: 1 0 50%;
+        @include respond(tab-port) {
+          // flex: 0 0 80%;
+          // flex-basis: 50%;
+        }
+      }
+    }
     &--top {
       height: 50%;
       width: 100%;
@@ -488,6 +508,15 @@
 .btn-teal-dark {
   background-color: $color-teal-dark;
   color: #fff;
+}
+.tutor-me__logo {
+  background-color: #fff;
+  mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2)
+    no-repeat center;
+  --webkit-mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2)
+    no-repeat center;
+  height: 7rem;
+  width: 100%;
 }
 
 .missNav__logo-box .missNav__logo {

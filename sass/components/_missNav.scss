@@ -445,7 +445,7 @@
         font-size: 15rem;
       }
       img {
-        height: 17rem;
+        height: 13rem;
         width: auto;
       }
     }
@@ -488,7 +488,24 @@
     }
   }
 }
-
+.tile-tutorme {
+  background-color: $color-tutorme;
+  padding: 1rem;
+}
+.btn-tutorme {
+  background-color: $color-tutorme;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.tile-gold {
+  background-color: $color-secondary;
+}
+.btn-gold {
+  background-color: $color-secondary;
+}
 .tile-green {
   background-color: $color-washed-green;
 }
@@ -511,11 +528,10 @@
 }
 .tutor-me__logo {
   background-color: #fff;
-  mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2)
-    no-repeat center;
-  --webkit-mask: url(https://www.ucdenver.edu/images/librariesprovider132/tutor-me/tutorme-logo.svg?sfvrsn=a50b69bb_2)
-    no-repeat center;
-  height: 7rem;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1000;
+  height: 3rem;
   width: 100%;
 }
 
